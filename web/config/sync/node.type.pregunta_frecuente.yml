@@ -1,0 +1,18 @@
+uuid: d5daa3f5-b70a-47f7-ba8c-20d4127d60db
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Preguntas Frecuentes CNU'
+type: pregunta_frecuente
+description: 'permite ingresar las preguntas frecuentes'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,30 @@
+uuid: 094392fd-3fda-48b3-995e-e5794073e150
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-colombiaanosune
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_colombiaanosune
+theme: colombianosune
+region: sidebar_left
+weight: -21
+provider: null
+plugin: 'system_menu_block:menu-colombiaanosune'
+settings:
+  id: 'system_menu_block:menu-colombiaanosune'
+  label: 'Colombia Nos Une'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/cnu/*\r\n/servicios/*\r\n/colombianosune\r\n/proyectosproductivos\r\n/proyectosproductivos/*\r\n/premiosarquitecturadiasporacolombiana\r\n/noticias-colombia-nos-une-exterior\r\n/premiosarquitecturadiasporacolombiana/*\r\n/noticias-para-colombianos-cnu"
+    context_mapping: {  }

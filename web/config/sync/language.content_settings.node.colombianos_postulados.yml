@@ -1,0 +1,11 @@
+uuid: 771b9394-649e-471e-b8ab-c696c7fb57f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colombianos_postulados
+id: node.colombianos_postulados
+target_entity_type_id: node
+target_bundle: colombianos_postulados
+default_langcode: site_default
+language_alterable: false

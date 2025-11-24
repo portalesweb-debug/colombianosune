@@ -1,0 +1,27 @@
+uuid: 155d3ba6-6781-4739-852c-aa62b4005d12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_retorno
+    - node.type.incentivos_retorno
+id: node.incentivos_retorno.field_retorno
+field_name: field_retorno
+entity_type: node
+bundle: incentivos_retorno
+label: 'Contenido retorno'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      incentivos_retorno: incentivos_retorno
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

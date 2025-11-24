@@ -1,0 +1,217 @@
+determine_menu: true
+disable_admin_page: false
+append_current_page: false
+current_page_as_link: false
+append_member_page: false
+member_page_as_link: false
+remove_home: false
+add_home: true
+menu_breadcrumb_menus:
+  main:
+    weight: '-10'
+    enabled: 0
+    taxattach: 0
+  footer:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-oficina-atencion-quindio:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-redes-amigas:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-patrimoniobibliografico:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  secondary-menu:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-oficina-atencion-santander:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-oficina-atencion-atlantico:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-quindio-oficina:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-oficina-atencion-caldas:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-oficina:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-ipiales-oficina:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-servicios-migrantes:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-serviciosmigrantes:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-herramientas:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-micrositio-ninos:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-redes:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-como-migrar:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-novedades:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-afrocolombianos:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-xiiiconfsobremigracion:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-terminoscondiciones:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  tools:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  account:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-semanabinacional:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-multiplicadores:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-multimedia:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-ejesdetrabajo:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  devel:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-eventos20dejulio:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-gestionar-red:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-informacion-de-inetres:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-colombianosunes:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-crearcontenidoscnu:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-administracion:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-colombiacelebra:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-colombiaanosune:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-crearasociacion:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-informacioninteres:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-integrantes:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-mesa-sociedad-civil:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-misenlaces:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-valorescolombianos:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-mujer-migrante:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menucompletoportal:
+    enabled: '1'
+    weight: '0'
+    taxattach: 0
+  menu-menu-administrador-noticias:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-oficina-atencion-jura:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  admin:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-menu-mensajes-red:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-concurso-seleccion-colombia:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+  menu-suenomigrante:
+    weight: '0'
+    enabled: 0
+    taxattach: 0
+_core:
+  default_config_hash: cQ5PlGtatt2RcAsy3ZvFrnpvCRT-VdbdrFEV-XUpEAI
+langcode: es
+front_title: 1

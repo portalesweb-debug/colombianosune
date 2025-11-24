@@ -1,0 +1,21 @@
+uuid: e24f0e11-6c0b-4887-a966-ba7365c24ad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desc_autor_columnista
+    - node.type.columnista_invitado
+  module:
+    - text
+id: node.columnista_invitado.field_desc_autor_columnista
+field_name: field_desc_autor_columnista
+entity_type: node
+bundle: columnista_invitado
+label: 'Descripcion del autor'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

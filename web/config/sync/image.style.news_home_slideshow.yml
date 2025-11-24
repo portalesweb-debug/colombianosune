@@ -1,0 +1,15 @@
+uuid: 4e472d03-c986-43e5-9339-21291487ae97
+langcode: es
+status: true
+dependencies: {  }
+name: news_home_slideshow
+label: 'News Home Slideshow'
+effects:
+  259a78a8-ace4-484f-9b86-5709d3723bc1:
+    uuid: 259a78a8-ace4-484f-9b86-5709d3723bc1
+    id: image_scale
+    weight: 1
+    data:
+      width: 753
+      height: 335
+      upscale: false

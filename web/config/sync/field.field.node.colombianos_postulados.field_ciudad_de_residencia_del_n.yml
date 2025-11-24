@@ -1,0 +1,21 @@
+uuid: b2e9e456-4836-477f-86b9-838dcf5ab32e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_de_residencia_del_n
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_ciudad_de_residencia_del_n
+field_name: field_ciudad_de_residencia_del_n
+entity_type: node
+bundle: colombianos_postulados
+label: 'Ciudad de residencia del nominado'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

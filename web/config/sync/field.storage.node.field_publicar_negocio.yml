@@ -1,0 +1,27 @@
+uuid: f1f65b9b-a8dc-46a2-8ab7-5275975b64bf
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_publicar_negocio
+field_name: field_publicar_negocio
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Publicar contenido'
+      label: 'Publicar contenido'
+    -
+      value: 'No publicar'
+      label: 'No publicar'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 38cabbea-eb21-4272-a017-b4c32dd3fe6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.body
+field_name: body
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

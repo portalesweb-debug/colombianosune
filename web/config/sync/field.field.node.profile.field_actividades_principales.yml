@@ -1,0 +1,24 @@
+uuid: bb1a9807-e4dd-44df-8773-da97ba07473a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actividades_principales
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_actividades_principales
+field_name: field_actividades_principales
+entity_type: node
+bundle: profile
+label: Actividades_principales
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_actividades_principales][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

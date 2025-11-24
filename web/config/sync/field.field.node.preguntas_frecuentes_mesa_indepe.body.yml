@@ -1,0 +1,23 @@
+uuid: 46cb4549-62b7-441e-b968-1fbc20e3ec11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.preguntas_frecuentes_mesa_indepe
+  module:
+    - text
+id: node.preguntas_frecuentes_mesa_indepe.body
+field_name: body
+entity_type: node
+bundle: preguntas_frecuentes_mesa_indepe
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

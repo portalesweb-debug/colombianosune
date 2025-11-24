@@ -1,0 +1,21 @@
+uuid: cd3ac611-e906-4c94-b305-407e2a9a1ff6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pa_s_de_residencia_del_nom
+    - node.type.directorio_consulados
+id: node.directorio_consulados.field_pa_s_de_residencia_del_nom
+field_name: field_pa_s_de_residencia_del_nom
+entity_type: node
+bundle: directorio_consulados
+label: 'País '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

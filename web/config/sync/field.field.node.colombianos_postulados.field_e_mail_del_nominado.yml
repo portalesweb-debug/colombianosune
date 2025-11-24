@@ -1,0 +1,21 @@
+uuid: f2a19b4e-7253-4427-98c1-759e6a445574
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_mail_del_nominado
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_e_mail_del_nominado
+field_name: field_e_mail_del_nominado
+entity_type: node
+bundle: colombianos_postulados
+label: 'e-mail del nominado'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

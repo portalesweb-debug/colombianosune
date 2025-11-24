@@ -1,0 +1,23 @@
+uuid: a694dbc1-8183-4aba-9770-829b4138c652
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.participacion
+  module:
+    - text
+id: node.participacion.body
+field_name: body
+entity_type: node
+bundle: participacion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

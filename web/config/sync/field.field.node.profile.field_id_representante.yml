@@ -1,0 +1,24 @@
+uuid: d9402cbd-8a5d-44cd-abb2-50401a6e93d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_representante
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_id_representante
+field_name: field_id_representante
+entity_type: node
+bundle: profile
+label: Representante_id
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_id_representante][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

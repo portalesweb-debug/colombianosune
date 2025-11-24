@@ -1,0 +1,8 @@
+uuid: f45f7a77-4117-4214-9e9f-59e19096fd9c
+langcode: es
+status: true
+dependencies: {  }
+id: menu-valorescolombianos
+label: 'Muestra de dibujo: Valores Colombianos 20 de Julio'
+description: ''
+locked: false

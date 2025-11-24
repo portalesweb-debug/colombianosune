@@ -1,0 +1,22 @@
+uuid: 52064d4c-5fcf-46d4-910b-e509216aceb1
+langcode: es
+status: true
+dependencies: {  }
+name: galleryformater
+label: galleryformater
+effects:
+  b09839c7-88c5-497e-a962-07af02f1e97f:
+    uuid: b09839c7-88c5-497e-a962-07af02f1e97f
+    id: image_scale
+    weight: -10
+    data:
+      width: 550
+      height: 400
+      upscale: false
+  27d4ef92-32b5-470a-965e-a31b6b01ef87:
+    uuid: 27d4ef92-32b5-470a-965e-a31b6b01ef87
+    id: image_resize
+    weight: 2
+    data:
+      width: 500
+      height: 440

@@ -1,0 +1,21 @@
+uuid: f36a34b7-5eb6-446c-a337-aba886e7958a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correorepre_aso
+    - node.type.asociaciones
+id: node.asociaciones.field_correorepre_aso
+field_name: field_correorepre_aso
+entity_type: node
+bundle: asociaciones
+label: 'Correo electrónico'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: email

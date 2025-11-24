@@ -1,0 +1,23 @@
+uuid: ee328164-59c7-4a22-bfac-8a198d507c14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.videos_para_videos
+  module:
+    - text
+id: node.videos_para_videos.body
+field_name: body
+entity_type: node
+bundle: videos_para_videos
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

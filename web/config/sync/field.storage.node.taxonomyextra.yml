@@ -1,0 +1,20 @@
+uuid: 413e5c61-46c2-4b74-98f1-dad5e44dbdce
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.taxonomyextra
+field_name: taxonomyextra
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

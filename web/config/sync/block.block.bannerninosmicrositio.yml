@@ -1,0 +1,31 @@
+uuid: 8233ca3b-3ed4-441a-abff-d54852472d83
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c5f85f78-e980-47ba-bf15-aaf4479b9e4f'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannerninosmicrositio
+theme: colombianosune
+region: content_navigation
+weight: -55
+provider: null
+plugin: 'block_content:c5f85f78-e980-47ba-bf15-aaf4479b9e4f'
+settings:
+  id: 'block_content:c5f85f78-e980-47ba-bf15-aaf4479b9e4f'
+  label: 'banner niños micrositio'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/ninos-colombianos/*\r\n/concursoloquemeneacolombia\r\n/loquemeuneaColombia\r\n/micrositio-concurso-niños"
+    negate: false
+    context_mapping: {  }

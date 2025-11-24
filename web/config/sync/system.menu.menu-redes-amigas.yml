@@ -1,0 +1,8 @@
+uuid: 75836a14-49c5-4ffc-9734-59db658a911f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-redes-amigas
+label: 'Redes Amigas'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: f1b3f030-cf53-427d-b55a-ed5063487447
+langcode: es
+status: true
+dependencies: {  }
+name: Ciudades
+vid: vocabulary_24
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 03322892-275b-4892-a2ce-6bf9a287cff6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_c_dula
+field_name: field_c_dula
+entity_type: node
+type: text
+settings:
+  max_length: 100
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

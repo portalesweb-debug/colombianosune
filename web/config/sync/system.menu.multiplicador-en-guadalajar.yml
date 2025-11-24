@@ -1,0 +1,8 @@
+uuid: d208d666-0dcf-4f4e-92cc-01d69e8baff3
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-guadalajar
+label: 'Multiplicador en Guadalajara'
+description: ''
+locked: false

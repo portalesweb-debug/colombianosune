@@ -1,0 +1,266 @@
+uuid: 1742add5-0f66-4bf9-8a6c-3f05e73fe79c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.asociaciones.comment_node_asociaciones
+    - field.field.node.asociaciones.field_actividades_aso
+    - field.field.node.asociaciones.field_anuo_aso
+    - field.field.node.asociaciones.field_ciudad_aso
+    - field.field.node.asociaciones.field_correorepre_aso
+    - field.field.node.asociaciones.field_datos_aso
+    - field.field.node.asociaciones.field_direccion_aso
+    - field.field.node.asociaciones.field_email_aso
+    - field.field.node.asociaciones.field_estado
+    - field.field.node.asociaciones.field_imagen_aso
+    - field.field.node.asociaciones.field_legal_aso
+    - field.field.node.asociaciones.field_mision_aso
+    - field.field.node.asociaciones.field_nombrerepre_aso
+    - field.field.node.asociaciones.field_numero_aso
+    - field.field.node.asociaciones.field_objeto_aso
+    - field.field.node.asociaciones.field_pais_aso_2
+    - field.field.node.asociaciones.field_publicar_aso
+    - field.field.node.asociaciones.field_recursos_aso
+    - field.field.node.asociaciones.field_servicios_aso
+    - field.field.node.asociaciones.field_telefono_aso
+    - field.field.node.asociaciones.field_telefonorepre_aso
+    - field.field.node.asociaciones.field_vision_aso
+    - field.field.node.asociaciones.field_web_aso
+    - image.style.thumbnail
+    - node.type.asociaciones
+  module:
+    - datetime
+    - image
+    - path
+    - text
+id: node.asociaciones.default
+targetEntityType: node
+bundle: asociaciones
+mode: default
+content:
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actividades_aso:
+    weight: 24
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_anuo_aso:
+    weight: 16
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_aso:
+    weight: 10
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_correorepre_aso:
+    weight: 18
+    type: email_default
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_datos_aso:
+    weight: 25
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_direccion_aso:
+    weight: 11
+    type: text_textfield
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_email_aso:
+    weight: 13
+    type: email_default
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_estado:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_imagen_aso:
+    weight: 8
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_legal_aso:
+    weight: 27
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mision_aso:
+    weight: 20
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_nombrerepre_aso:
+    weight: 17
+    type: text_textfield
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_numero_aso:
+    weight: 15
+    type: text_textfield
+    settings:
+      size: 6
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_objeto_aso:
+    weight: 22
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pais_aso_2:
+    weight: 9
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publicar_aso:
+    weight: 28
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_recursos_aso:
+    weight: 26
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_servicios_aso:
+    weight: 23
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_telefono_aso:
+    weight: 12
+    type: text_textfield
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_telefonorepre_aso:
+    weight: 19
+    type: text_textfield
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_vision_aso:
+    weight: 21
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_web_aso:
+    weight: 14
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_asociaciones: true

@@ -1,0 +1,20 @@
+uuid: cadd6d01-707e-42ad-bf4a-95f3dd9fa777
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_profesi_n_u_oficio
+field_name: field_profesi_n_u_oficio
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

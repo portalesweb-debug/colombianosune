@@ -1,0 +1,8 @@
+uuid: a1818965-6a6b-4384-b928-75686337b9bd
+langcode: es
+status: true
+dependencies: {  }
+name: Categoria
+vid: vocabulary_25
+description: 'Contiene las categorias para los eventos'
+weight: 0

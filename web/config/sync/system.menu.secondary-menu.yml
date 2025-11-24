@@ -1,0 +1,8 @@
+uuid: b4dbf5ef-0fa4-46bf-92c1-e75f9c10e807
+langcode: es
+status: true
+dependencies: {  }
+id: secondary-menu
+label: 'Secondary menu'
+description: 'Los enlaces secundarios se utilizan normalmente para páginas como información legal, noticias, contacto, detalles y otros elementos de navegación secundaria, no tan importantes como los enlaces primarios.'
+locked: false

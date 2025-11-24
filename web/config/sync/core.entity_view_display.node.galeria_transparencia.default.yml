@@ -1,0 +1,34 @@
+uuid: 71458a7e-29c6-40ad-8f4f-eee4abb87b72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria_transparencia.body
+    - node.type.galeria_transparencia
+  module:
+    - text
+    - user
+id: node.galeria_transparencia.default
+targetEntityType: node
+bundle: galeria_transparencia
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

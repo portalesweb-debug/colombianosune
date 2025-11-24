@@ -1,0 +1,31 @@
+uuid: b84337a1-3757-4b81-9ca6-387fc518d71d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0390bcb0-357a-4a01-8ea4-2a8b4429ba73'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: noticiasparacolombianos
+theme: colombianosune
+region: content
+weight: -56
+provider: null
+plugin: 'block_content:0390bcb0-357a-4a01-8ea4-2a8b4429ba73'
+settings:
+  id: 'block_content:0390bcb0-357a-4a01-8ea4-2a8b4429ba73'
+  label: 'noticias para colombianos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /noticias-para-colombianos-cnu
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,43 @@
+uuid: 52701b7a-5b99-4a7b-aa15-108fb497bb3c
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_proyecto_curso
+    - field.field.comment.comment_node_proyecto_curso.comment_body
+  module:
+    - text
+id: comment.comment_node_proyecto_curso.default
+targetEntityType: comment
+bundle: comment_node_proyecto_curso
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

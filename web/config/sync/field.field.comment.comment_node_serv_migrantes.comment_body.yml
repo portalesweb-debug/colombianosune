@@ -1,0 +1,21 @@
+uuid: bdbd98d7-fb4f-4ef5-b771-7afe1052011c
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_serv_migrantes
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_serv_migrantes.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_serv_migrantes
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

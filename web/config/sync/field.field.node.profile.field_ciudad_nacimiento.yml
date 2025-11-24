@@ -1,0 +1,24 @@
+uuid: b79c4bcc-bf50-4280-ac44-d03f776d82ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_nacimiento
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_ciudad_nacimiento
+field_name: field_ciudad_nacimiento
+entity_type: node
+bundle: profile
+label: 'Ciudad de Nacimiento'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_ciudad_nacimiento][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

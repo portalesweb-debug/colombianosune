@@ -1,0 +1,47 @@
+uuid: 26ab266d-f579-4d5e-b7cd-35dfa73d1c10
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d788da91-fe0e-4a0a-9701-ca71360e795c'
+  module:
+    - block_content
+    - ctools
+    - node
+    - system
+  theme:
+    - colombianosune
+id: preguntasfrecuentes_transparencia
+theme: colombianosune
+region: navigation
+weight: -59
+provider: null
+plugin: 'block_content:d788da91-fe0e-4a0a-9701-ca71360e795c'
+settings:
+  id: 'block_content:d788da91-fe0e-4a0a-9701-ca71360e795c'
+  label: 'Preguntas Frecuentes_Transparencia'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      transparencia_faq: transparencia_faq
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      transparencia_faq: transparencia_faq
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /FAQ_transparencia
+    negate: false
+    context_mapping: {  }

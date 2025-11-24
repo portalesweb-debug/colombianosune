@@ -1,0 +1,21 @@
+uuid: 60123b4e-315b-4f58-b82f-6591f20a5538
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_32
+    - node.type.patrimonio_bibliografico_colombi
+id: node.patrimonio_bibliografico_colombi.taxonomy_vocabulary_32
+field_name: taxonomy_vocabulary_32
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: Clasificación
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

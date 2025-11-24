@@ -1,0 +1,21 @@
+uuid: 2b6c554f-7515-40b3-b61c-db7628b445c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fec_consulado
+    - node.type.noticias
+  module:
+    - datetime
+id: node.noticias.field_fec_consulado
+field_name: field_fec_consulado
+entity_type: node
+bundle: noticias
+label: 'Fecha Consulado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

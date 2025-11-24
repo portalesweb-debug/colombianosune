@@ -1,0 +1,19 @@
+uuid: e7853ea0-1196-4a4e-afbe-3befd6287bcd
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_enlace_banco
+field_name: field_enlace_banco
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 1316d846-c9e2-468a-a475-5ff2f7102585
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pa_s_concurso
+    - node.type.concurso_ninos_exterior
+  module:
+    - text
+id: node.concurso_ninos_exterior.field_pa_s_concurso
+field_name: field_pa_s_concurso
+entity_type: node
+bundle: concurso_ninos_exterior
+label: País
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

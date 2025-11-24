@@ -1,0 +1,8 @@
+uuid: 75e8d084-bafd-46f9-931f-b0bac67ebf23
+langcode: es
+status: true
+dependencies: {  }
+id: devel-buuubremokouabruspudreshi
+label: Sw
+description: 'Descripción de Sw'
+locked: false

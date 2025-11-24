@@ -1,0 +1,8 @@
+uuid: fb94b5e5-69ee-491c-879c-1d3c45ce5315
+langcode: es
+status: true
+dependencies: {  }
+id: oficina-atencion-al-migrant
+label: 'Oficina de Atención al Migrante Bogotá'
+description: ''
+locked: false

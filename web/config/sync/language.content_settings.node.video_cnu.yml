@@ -1,0 +1,11 @@
+uuid: 569d2321-f65a-4180-bc8e-1a0781515b44
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.video_cnu
+id: node.video_cnu
+target_entity_type_id: node
+target_bundle: video_cnu
+default_langcode: site_default
+language_alterable: false

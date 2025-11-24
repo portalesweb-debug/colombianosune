@@ -1,0 +1,33 @@
+uuid: aeb63ebf-1fdf-4bfc-8f77-24d4f690976b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen
+    - node.type.noticias
+  module:
+    - image
+id: node.noticias.field_imagen
+field_name: field_imagen
+entity_type: node
+bundle: noticias
+label: Imagen
+description: "Ingresar fotos relacionadas con la noticia.\r\n\r\n"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: img_noticias
+  max_filesize: 8M
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: true
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

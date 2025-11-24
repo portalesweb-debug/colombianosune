@@ -1,0 +1,14 @@
+uuid: 070f721e-25a8-4412-af70-32a1c38ac1ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuarioadminnoticias
+  module:
+    - user
+id: user_remove_role_action.usuarioadminnoticias
+label: 'Eliminar el rol UsuarioAdminNoticias a los usuarios seleccionados'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: usuarioadminnoticias

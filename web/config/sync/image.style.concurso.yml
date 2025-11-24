@@ -1,0 +1,15 @@
+uuid: b55f1079-8390-471d-856f-b257a9c89758
+langcode: es
+status: true
+dependencies: {  }
+name: concurso
+label: Concurso
+effects:
+  302049b0-3dd7-48de-9825-4225ef39d48e:
+    uuid: 302049b0-3dd7-48de-9825-4225ef39d48e
+    id: image_scale
+    weight: 1
+    data:
+      width: 340
+      height: 340
+      upscale: false

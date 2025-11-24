@@ -1,0 +1,22 @@
+uuid: 9f00e5dc-d223-4e7f-8f2c-d70666b0d3f1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: contenido_general_portal
+label: 'Contenido general portal'
+type: 'canonical_entities:node'
+pattern: 'servicios/[node:title]'
+selection_criteria:
+  cb85cf26-64e1-4eb3-a43b-2b43f950b467:
+    id: node_type
+    bundles:
+      contenido_general_portal: contenido_general_portal
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cb85cf26-64e1-4eb3-a43b-2b43f950b467
+selection_logic: and
+weight: -5
+relationships: {  }

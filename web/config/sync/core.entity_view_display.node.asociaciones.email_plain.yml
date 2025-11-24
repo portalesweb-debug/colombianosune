@@ -1,0 +1,199 @@
+uuid: 63495d2d-d8b0-45a9-b029-ac713eb228da
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.asociaciones.comment_node_asociaciones
+    - field.field.node.asociaciones.field_actividades_aso
+    - field.field.node.asociaciones.field_anuo_aso
+    - field.field.node.asociaciones.field_ciudad_aso
+    - field.field.node.asociaciones.field_correorepre_aso
+    - field.field.node.asociaciones.field_datos_aso
+    - field.field.node.asociaciones.field_direccion_aso
+    - field.field.node.asociaciones.field_email_aso
+    - field.field.node.asociaciones.field_estado
+    - field.field.node.asociaciones.field_imagen_aso
+    - field.field.node.asociaciones.field_legal_aso
+    - field.field.node.asociaciones.field_mision_aso
+    - field.field.node.asociaciones.field_nombrerepre_aso
+    - field.field.node.asociaciones.field_numero_aso
+    - field.field.node.asociaciones.field_objeto_aso
+    - field.field.node.asociaciones.field_pais_aso_2
+    - field.field.node.asociaciones.field_publicar_aso
+    - field.field.node.asociaciones.field_recursos_aso
+    - field.field.node.asociaciones.field_servicios_aso
+    - field.field.node.asociaciones.field_telefono_aso
+    - field.field.node.asociaciones.field_telefonorepre_aso
+    - field.field.node.asociaciones.field_vision_aso
+    - field.field.node.asociaciones.field_web_aso
+    - node.type.asociaciones
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.asociaciones.email_plain
+targetEntityType: node
+bundle: asociaciones
+mode: email_plain
+content:
+  field_actividades_aso:
+    label: inline
+    weight: 48
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_anuo_aso:
+    label: inline
+    weight: 40
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_ciudad_aso:
+    label: inline
+    weight: 34
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_correorepre_aso:
+    label: inline
+    weight: 42
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_datos_aso:
+    label: hidden
+    weight: 49
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_direccion_aso:
+    label: inline
+    weight: 35
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email_aso:
+    label: inline
+    weight: 37
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_aso:
+    label: hidden
+    weight: 31
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_legal_aso:
+    label: above
+    weight: 51
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mision_aso:
+    label: inline
+    weight: 44
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_nombrerepre_aso:
+    label: inline
+    weight: 41
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_numero_aso:
+    label: inline
+    weight: 39
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_objeto_aso:
+    label: above
+    weight: 46
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publicar_aso:
+    label: above
+    weight: 52
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_recursos_aso:
+    label: above
+    weight: 50
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_servicios_aso:
+    label: inline
+    weight: 47
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_telefono_aso:
+    label: inline
+    weight: 36
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_telefonorepre_aso:
+    label: inline
+    weight: 43
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_vision_aso:
+    label: inline
+    weight: 45
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_web_aso:
+    label: inline
+    weight: 38
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment_node_asociaciones: true
+  field_estado: true
+  field_pais_aso_2: true
+  langcode: true

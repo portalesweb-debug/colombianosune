@@ -1,0 +1,24 @@
+uuid: b2913c9c-99b3-4782-8848-57bd7eeb4e7c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_ninos
+    - node.type.imagen_ninos_exterior
+  module:
+    - text
+id: node.imagen_ninos_exterior.field_autor_ninos
+field_name: field_autor_ninos
+entity_type: node
+bundle: imagen_ninos_exterior
+label: Autor
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_autor_ninos][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

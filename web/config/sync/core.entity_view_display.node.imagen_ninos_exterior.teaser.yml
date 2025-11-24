@@ -1,0 +1,56 @@
+uuid: a96fd49b-4ccd-431e-838a-8418634df1f6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.imagen_ninos_exterior.field_autor_ninos
+    - field.field.node.imagen_ninos_exterior.field_img_ninos_exterior
+    - field.field.node.imagen_ninos_exterior.field_pais_ninos
+    - field.field.node.imagen_ninos_exterior.upload
+    - node.type.imagen_ninos_exterior
+  module:
+    - image
+    - text
+    - user
+id: node.imagen_ninos_exterior.teaser
+targetEntityType: node
+bundle: imagen_ninos_exterior
+mode: teaser
+content:
+  field_autor_ninos:
+    label: inline
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img_ninos_exterior:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_ninos:
+    label: inline
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  upload: true

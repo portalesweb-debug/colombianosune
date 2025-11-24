@@ -1,0 +1,23 @@
+uuid: f0b4f244-b86e-4d8d-ab95-995726be22cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tip_org
+    - node.type.profile
+  module:
+    - options
+id: node.profile.field_tip_org
+field_name: field_tip_org
+entity_type: node
+bundle: profile
+label: 'Tipo de organizacion'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

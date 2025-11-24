@@ -1,0 +1,21 @@
+uuid: fe2c948c-b16b-4c84-a44a-5633ff283250
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_semana_sbs
+    - node.type.event
+  module:
+    - options
+id: node.event.field_semana_sbs
+field_name: field_semana_sbs
+entity_type: node
+bundle: event
+label: Semana
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

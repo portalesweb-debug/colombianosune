@@ -1,0 +1,29 @@
+uuid: 2c59c1a3-9cd2-4f54-9440-9502ec033e3e
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-menu-quindio-oficina
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_menu_quindio_oficina
+theme: Cancilleria
+region: ''
+weight: 13
+provider: null
+plugin: 'system_menu_block:menu-menu-quindio-oficina'
+settings:
+  id: 'system_menu_block:menu-menu-quindio-oficina'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-risaralda/*'

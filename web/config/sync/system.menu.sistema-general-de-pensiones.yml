@@ -1,0 +1,8 @@
+uuid: c6e25c70-b6c8-4071-ace7-8da008190412
+langcode: es
+status: true
+dependencies: {  }
+id: sistema-general-de-pensiones
+label: 'Sistema General de Pensiones'
+description: ''
+locked: false

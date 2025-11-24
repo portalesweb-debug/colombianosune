@@ -1,0 +1,39 @@
+uuid: 22451d89-c65c-4500-9e24-0b72a44212fd
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-suenomigrante
+  module:
+    - system
+    - user
+  theme:
+    - metamorph_flower
+id: metamorph_flower_menu_menu_suenomigrante
+theme: metamorph_flower
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-suenomigrante'
+settings:
+  id: 'system_menu_block:menu-suenomigrante'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /acciondiferida
+      /acciondiferida/*

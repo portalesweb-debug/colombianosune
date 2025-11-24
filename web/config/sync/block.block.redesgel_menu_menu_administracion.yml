@@ -1,0 +1,33 @@
+uuid: 5a0e5c98-adfd-4c5c-b2e3-6eb1b9600e1f
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-administracion
+  module:
+    - system
+    - user
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_administracion
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-administracion'
+settings:
+  id: 'system_menu_block:menu-administracion'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false

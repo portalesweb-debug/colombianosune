@@ -1,0 +1,18 @@
+uuid: deca479a-617c-4567-a1a0-bc2dc45ca11c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Encuesta
+type: encuesta
+description: 'Modulo para crear encuestas para el portal y para las redes,  con opción de seleccionar desde configuración con unica respuesta o multiple respuesta.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

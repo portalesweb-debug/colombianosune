@@ -1,0 +1,30 @@
+uuid: fffec698-ddd9-4dd6-8b9f-e0ea90d0b058
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-mujer-migrante
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_mujer_migrante
+theme: colombianosune
+region: content_navigation
+weight: -53
+provider: null
+plugin: 'system_menu_block:menu-mujer-migrante'
+settings:
+  id: 'system_menu_block:menu-mujer-migrante'
+  label: 'Menu Mujer migrante'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/mujer/migrante/*'
+    context_mapping: {  }

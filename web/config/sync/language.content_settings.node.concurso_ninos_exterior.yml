@@ -1,0 +1,11 @@
+uuid: e334ae1c-5819-419f-bd3d-d1a87a8b433e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.concurso_ninos_exterior
+id: node.concurso_ninos_exterior
+target_entity_type_id: node
+target_bundle: concurso_ninos_exterior
+default_langcode: site_default
+language_alterable: false

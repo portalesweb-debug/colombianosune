@@ -1,0 +1,18 @@
+uuid: cf488769-7ecc-4eba-99f1-68000845e37f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pregunta_frecuente
+id: node.pregunta_frecuente.title
+field_name: title
+entity_type: node
+bundle: pregunta_frecuente
+label: Pregunta
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

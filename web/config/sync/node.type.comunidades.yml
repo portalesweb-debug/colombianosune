@@ -1,0 +1,17 @@
+uuid: 94b7d1c2-29c2-4f0e-84ab-4d0487039688
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Comunidades
+type: comunidades
+description: 'Comunidades transparencia'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

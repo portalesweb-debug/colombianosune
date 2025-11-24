@@ -1,0 +1,23 @@
+uuid: 1369a525-4681-40ce-86e3-3b34ae31faf5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nivel_educativo
+    - node.type.profile
+  module:
+    - options
+id: node.profile.field_nivel_educativo
+field_name: field_nivel_educativo
+entity_type: node
+bundle: profile
+label: 'Nivel educatico'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

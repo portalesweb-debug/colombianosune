@@ -1,0 +1,21 @@
+uuid: 314dc481-347c-4882-8b9e-b586162d2850
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - datetime
+id: node.contenido_general_comunidad.field_fecha_unique
+field_name: field_fecha_unique
+entity_type: node
+bundle: contenido_general_comunidad
+label: Cuando
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

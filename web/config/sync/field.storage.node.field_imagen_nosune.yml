@@ -1,0 +1,30 @@
+uuid: 32868881-2fa0-4d9c-8176-8077ac051bab
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_imagen_nosune
+field_name: field_imagen_nosune
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 3f6d1663-6a85-4f2a-9aee-17fcd5792af1
+    alt: imagenprueba
+    title: imagenprueba
+    width: 250
+    height: 180
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

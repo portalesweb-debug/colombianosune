@@ -1,0 +1,20 @@
+uuid: 85d9c75d-d4fb-416e-82a7-65678c082730
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_autor_ninos
+field_name: field_autor_ninos
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,38 @@
+uuid: 096e8d99-dfa7-4691-b692-84923b7ceae0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adjunte_fotograf_as_del_no
+    - node.type.colombianos_postulados
+  module:
+    - image
+id: node.colombianos_postulados.field_adjunte_fotograf_as_del_no
+field_name: field_adjunte_fotograf_as_del_no
+entity_type: node
+bundle: colombianos_postulados
+label: 'Adjunte fotografías del nominado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,8 @@
+uuid: 4def7204-c5a9-4155-80d7-6ad2ecba820a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-novedades
+label: '¿Que Hay de Nuevo?'
+description: ''
+locked: false

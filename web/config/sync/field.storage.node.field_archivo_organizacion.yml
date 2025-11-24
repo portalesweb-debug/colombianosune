@@ -1,0 +1,23 @@
+uuid: cb04b3a6-a4f0-4675-bbda-89482cf4ab3c
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_archivo_organizacion
+field_name: field_archivo_organizacion
+entity_type: node
+type: file
+settings:
+  display_field: true
+  display_default: true
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

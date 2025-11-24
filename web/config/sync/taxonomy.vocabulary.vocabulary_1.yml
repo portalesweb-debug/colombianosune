@@ -1,0 +1,8 @@
+uuid: 68596778-1f59-4a41-be10-dd0f2724b91c
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo Organización'
+vid: vocabulary_1
+description: 'Vocabulario que almacena los tipos de Organización existentes en el portal.'
+weight: -4

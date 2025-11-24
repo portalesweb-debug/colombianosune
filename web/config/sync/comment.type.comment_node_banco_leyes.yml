@@ -1,0 +1,8 @@
+uuid: dc8caa72-2099-47a5-9bde-08b258daf591
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_banco_leyes
+label: 'comentario de Banco de leyes'
+target_entity_type_id: node
+description: null

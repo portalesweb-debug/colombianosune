@@ -1,0 +1,14 @@
+uuid: 5c113f37-2626-42ec-9c11-59374c3eeb2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.asociaciones
+  module:
+    - user
+id: user_remove_role_action.asociaciones
+label: 'Eliminar el rol Asociaciones a los usuarios seleccionados'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: asociaciones

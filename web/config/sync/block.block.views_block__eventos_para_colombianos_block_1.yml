@@ -1,0 +1,30 @@
+uuid: 5719430d-a475-4915-b66d-18a157f7e24c
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.eventos_para_colombianos
+  module:
+    - system
+    - views
+  theme:
+    - colombianosune
+id: views_block__eventos_para_colombianos_block_1
+theme: colombianosune
+region: sidebar_left
+weight: -19
+provider: null
+plugin: 'views_block:eventos_para_colombianos-block_1'
+settings:
+  id: 'views_block:eventos_para_colombianos-block_1'
+  label: 'Más eventos'
+  provider: views
+  label_display: visible
+  views_label: 'Más eventos'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/content/*\r\n/evento/*\r\n/diamigrante\r\n/eventos-comunidad-colombianos-en-el-exterior"
+    negate: false
+    context_mapping: {  }

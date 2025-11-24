@@ -1,0 +1,33 @@
+uuid: e3e24a74-2c89-4a4f-a75f-2ca06b5c4a30
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-micrositio-ninos
+  module:
+    - system
+  theme:
+    - bartik
+id: colombianosune_menu_menu_menu_micrositio_ninos
+theme: bartik
+region: content
+weight: 20
+provider: null
+plugin: 'system_menu_block:menu-menu-micrositio-ninos'
+settings:
+  id: 'system_menu_block:menu-menu-micrositio-ninos'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /ninos-colombianos/*
+      /concursoloquemeneacolombia
+      /loquemeuneaColombia
+      /micrositio-concurso-niños

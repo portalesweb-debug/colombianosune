@@ -1,0 +1,23 @@
+uuid: 1f65cf1e-422d-49fe-96a5-281c9d582e60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.webform
+  module:
+    - text
+id: node.webform.body
+field_name: body
+entity_type: node
+bundle: webform
+label: Cuerpo
+description: 'Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

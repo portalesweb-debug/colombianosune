@@ -1,0 +1,25 @@
+uuid: 90c4888b-397d-42a5-98af-c6a1554bc170
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-terminoscondiciones
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_terminoscondiciones
+theme: Cancilleria
+region: ''
+weight: 1
+provider: null
+plugin: 'system_menu_block:menu-terminoscondiciones'
+settings:
+  id: 'system_menu_block:menu-terminoscondiciones'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

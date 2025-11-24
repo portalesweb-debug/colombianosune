@@ -1,0 +1,118 @@
+uuid: 0ca571ed-3789-493a-81b3-f21118ddebb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_html
+    - field.field.node.negocio_colombiano.body
+    - field.field.node.negocio_colombiano.comment_node_negocio_colombiano
+    - field.field.node.negocio_colombiano.field_categoria_negocio
+    - field.field.node.negocio_colombiano.field_ciudad_negocio
+    - field.field.node.negocio_colombiano.field_direccion_negocio
+    - field.field.node.negocio_colombiano.field_email_negocio
+    - field.field.node.negocio_colombiano.field_estado
+    - field.field.node.negocio_colombiano.field_facebook_negocio
+    - field.field.node.negocio_colombiano.field_logo_negocio
+    - field.field.node.negocio_colombiano.field_pais_negocio
+    - field.field.node.negocio_colombiano.field_publicar_negocio
+    - field.field.node.negocio_colombiano.field_telefono_negocio
+    - field.field.node.negocio_colombiano.field_twitter_negocio
+    - field.field.node.negocio_colombiano.field_web_negocio
+    - node.type.negocio_colombiano
+  module:
+    - image
+    - text
+    - user
+id: node.negocio_colombiano.email_html
+targetEntityType: node
+bundle: negocio_colombiano
+mode: email_html
+content:
+  field_categoria_negocio:
+    label: inline
+    weight: 25
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_negocio:
+    label: inline
+    weight: 27
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_direccion_negocio:
+    label: inline
+    weight: 28
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email_negocio:
+    label: inline
+    weight: 30
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_facebook_negocio:
+    label: inline
+    weight: 32
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_logo_negocio:
+    label: hidden
+    weight: 22
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_publicar_negocio:
+    label: hidden
+    weight: 54
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_telefono_negocio:
+    label: inline
+    weight: 29
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_twitter_negocio:
+    label: inline
+    weight: 33
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_web_negocio:
+    label: inline
+    weight: 31
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_negocio_colombiano: true
+  field_estado: true
+  field_pais_negocio: true
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: 1228a64a-6b59-4b28-818f-d3e7548522d9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_fotocnu
+field_name: field_ciudad_fotocnu
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

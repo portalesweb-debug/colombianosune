@@ -1,0 +1,20 @@
+uuid: 89a2d736-16c9-47ce-9052-816970d8a542
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - colombianosune
+id: breadcrumbs
+theme: colombianosune
+region: breadcrumb
+weight: -61
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 02ce1ed0-12a0-4f4c-85b8-821fef605371
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tags de Clasificados'
+vid: vocabulary_28
+description: 'Estos son los tags para los clasificados'
+weight: 0

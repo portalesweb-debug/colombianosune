@@ -1,0 +1,8 @@
+uuid: 0d1bd742-2bff-47f2-b8e0-e10b5391f8f4
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorizacion Articulos'
+vid: vocabulary_31
+description: ''
+weight: 0

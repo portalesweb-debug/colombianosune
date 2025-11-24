@@ -1,0 +1,24 @@
+uuid: d645df80-5a4e-4959-a9a8-640780beb7bc
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_boletin_redescolombia
+field_name: field_boletin_redescolombia
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Recibir
+      label: Recibir
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

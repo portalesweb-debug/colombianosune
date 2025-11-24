@@ -1,0 +1,24 @@
+uuid: 50852f64-5f95-4596-b2fa-93931fb71092
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion_organizacion
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_descripcion_organizacion
+field_name: field_descripcion_organizacion
+entity_type: node
+bundle: profile
+label: 'Descripción de la organización '
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_descripcion_organizacion][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

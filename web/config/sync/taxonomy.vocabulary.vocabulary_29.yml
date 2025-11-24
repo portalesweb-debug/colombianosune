@@ -1,0 +1,8 @@
+uuid: 390916e7-a7f7-4565-9bf0-5684c8baff2f
+langcode: es
+status: true
+dependencies: {  }
+name: prueba_organizaciones
+vid: vocabulary_29
+description: ''
+weight: 0

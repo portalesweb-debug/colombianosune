@@ -1,0 +1,84 @@
+uuid: 6538828d-e769-4503-954a-80fe229a5292
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.colombianos_postulados.body
+    - field.field.node.colombianos_postulados.field_adjunte_fotograf_as_del_no
+    - field.field.node.colombianos_postulados.field_c_dula
+    - field.field.node.colombianos_postulados.field_ciudad_de_residencia_del_n
+    - field.field.node.colombianos_postulados.field_e_mail_del_nominado
+    - field.field.node.colombianos_postulados.field_facebook_del_nominado
+    - field.field.node.colombianos_postulados.field_linkedin_del_nominado
+    - field.field.node.colombianos_postulados.field_pa_s_de_residencia_del_nom
+    - field.field.node.colombianos_postulados.field_profesi_n_u_oficio
+    - field.field.node.colombianos_postulados.field_su_nominado_ha_consentido_
+    - field.field.node.colombianos_postulados.field_tel_fono_del_nominado
+    - field.field.node.colombianos_postulados.field_twitter_del_nominado
+    - node.type.colombianos_postulados
+  module:
+    - image
+    - text
+    - user
+id: node.colombianos_postulados.default
+targetEntityType: node
+bundle: colombianos_postulados
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_colombianos_postulados:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_adjunte_fotograf_as_del_no:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_ciudad_de_residencia_del_n:
+    label: hidden
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_profesi_n_u_oficio:
+    label: hidden
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_c_dula: true
+  field_e_mail_del_nominado: true
+  field_facebook_del_nominado: true
+  field_linkedin_del_nominado: true
+  field_pa_s_de_residencia_del_nom: true
+  field_su_nominado_ha_consentido_: true
+  field_tel_fono_del_nominado: true
+  field_twitter_del_nominado: true
+  langcode: true

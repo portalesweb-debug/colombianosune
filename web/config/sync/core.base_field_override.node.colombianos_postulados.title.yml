@@ -1,0 +1,18 @@
+uuid: cc54d392-69d2-4a98-acb4-b35f6165d61c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colombianos_postulados
+id: node.colombianos_postulados.title
+field_name: title
+entity_type: node
+bundle: colombianos_postulados
+label: 'Nombre completo del nominado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

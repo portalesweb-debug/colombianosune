@@ -1,0 +1,18 @@
+uuid: a40d4a4e-ccab-4414-898b-e59fcd19139b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Asociaciones
+type: asociaciones
+description: 'permite el ingreso de las asociaciones en el portal'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

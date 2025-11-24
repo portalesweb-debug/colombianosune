@@ -1,0 +1,33 @@
+uuid: 39806968-8f8e-45d8-9009-b01bb567f00f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_semana_sbs
+field_name: field_semana_sbs
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Semana binacional'
+      label: 'Semana binacional'
+    -
+      value: 'Conferencista CD'
+      label: 'Conferencista CD'
+    -
+      value: 'Eventos SD'
+      label: 'Eventos SD'
+    -
+      value: 'Eventos Navidad'
+      label: 'Eventos Navidad'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

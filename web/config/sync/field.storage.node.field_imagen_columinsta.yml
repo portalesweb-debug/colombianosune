@@ -1,0 +1,26 @@
+uuid: 6749abbe-4ab8-4598-b30e-4d298d79d77a
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_imagen_columinsta
+field_name: field_imagen_columinsta
+entity_type: node
+type: image
+settings:
+  default_image:
+    uuid: ''
+  uri_scheme: public
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 10
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: 98bc5c91-74c3-4f75-92bf-9b52c151caa8
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Informes transparencia'
+type: informes_transparencia_
+description: 'Informes transparencia '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

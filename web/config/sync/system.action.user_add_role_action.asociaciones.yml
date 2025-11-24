@@ -1,0 +1,14 @@
+uuid: ad896ec2-a44a-4613-acff-702ea3a80174
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.asociaciones
+  module:
+    - user
+id: user_add_role_action.asociaciones
+label: 'Agregar el rol Asociaciones a los usuarios seleccionados'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: asociaciones

@@ -1,0 +1,20 @@
+uuid: 09f49656-3071-4c0e-bfa1-a149ca33aa6f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_linkedin_del_nominado
+field_name: field_linkedin_del_nominado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

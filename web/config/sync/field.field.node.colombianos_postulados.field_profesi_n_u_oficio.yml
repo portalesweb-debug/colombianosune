@@ -1,0 +1,21 @@
+uuid: 919722c0-f9c7-4763-9e2a-9232ba47d448
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profesi_n_u_oficio
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_profesi_n_u_oficio
+field_name: field_profesi_n_u_oficio
+entity_type: node
+bundle: colombianos_postulados
+label: 'Profesión u oficio'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

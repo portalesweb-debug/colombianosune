@@ -1,0 +1,8 @@
+uuid: c8aceb28-4848-4b4c-9caa-1cfd0960c688
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_crear_blog
+label: 'comentario de Blogs'
+target_entity_type_id: node
+description: null

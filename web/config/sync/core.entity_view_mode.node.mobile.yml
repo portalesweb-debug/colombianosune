@@ -1,0 +1,10 @@
+uuid: a87b956a-0467-437c-9986-6af1357256e0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.mobile
+label: mobile
+targetEntityType: node
+cache: true

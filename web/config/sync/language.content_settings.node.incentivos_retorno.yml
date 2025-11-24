@@ -1,0 +1,11 @@
+uuid: 64975c4e-f9dc-4856-9fb0-785b2f9d1e3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.incentivos_retorno
+id: node.incentivos_retorno
+target_entity_type_id: node
+target_bundle: incentivos_retorno
+default_langcode: site_default
+language_alterable: false

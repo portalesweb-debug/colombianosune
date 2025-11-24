@@ -1,0 +1,30 @@
+uuid: de06d984-b5ce-4ab4-9b57-9c8a5abafb0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_16
+    - node.type.noticias
+    - taxonomy.vocabulary.vocabulary_16
+    - taxonomy.vocabulary.vocabulary_19
+id: node.noticias.taxonomy_vocabulary_16
+field_name: taxonomy_vocabulary_16
+entity_type: node
+bundle: noticias
+label: tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_19: vocabulary_19
+      vocabulary_16: vocabulary_16
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: vocabulary_19
+field_type: entity_reference

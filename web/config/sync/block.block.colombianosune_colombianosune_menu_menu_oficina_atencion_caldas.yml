@@ -1,0 +1,30 @@
+uuid: 02e076c2-d148-44df-8b10-d407bc8e1f8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-caldas
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_oficina_atencion_caldas
+theme: colombianosune
+region: content_navigation
+weight: -44
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-caldas'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-caldas'
+  label: 'Menu Oficina Caldas'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-caldas/*'
+    context_mapping: {  }

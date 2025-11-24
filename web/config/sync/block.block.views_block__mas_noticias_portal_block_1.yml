@@ -1,0 +1,30 @@
+uuid: 04e10c76-0894-45b7-94f0-72057e20af8b
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.mas_noticias_portal
+  module:
+    - system
+    - views
+  theme:
+    - colombianosune
+id: views_block__mas_noticias_portal_block_1
+theme: colombianosune
+region: sidebar_left
+weight: -20
+provider: null
+plugin: 'views_block:mas_noticias_portal-block_1'
+settings:
+  id: 'views_block:mas_noticias_portal-block_1'
+  label: 'Más Noticias'
+  provider: views
+  label_display: visible
+  views_label: 'Más Noticias'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/hangoutdanza\r\n/eventosparacolombianos\r\n/consuladosmoviles\r\n/consuladosmoviles/*\r\n/servicios/*\r\n/comunidad/foros/*\r\n/contact\r\n/content/*\r\n/noticia/*\r\n/destacado/*\r\n/suscripcionboletin\r\n/agradecimientoboletin\r\n/errorsuscripcion\r\n/confirmacionboletin\r\n/audienciapublica\r\n/noticia/becas-y-convocatorias-para-colombianos\r\n/columnistas-invitados"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,164 @@
+uuid: 5c9be8e5-945c-412b-a8e0-8e8836d9fa28
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.patrimonio_bibliografico_colombi.body
+    - field.field.node.patrimonio_bibliografico_colombi.field_autor_pat
+    - field.field.node.patrimonio_bibliografico_colombi.field_ciudad_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_codigo_pat
+    - field.field.node.patrimonio_bibliografico_colombi.field_correo_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_fecha_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_fijo_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_palabras_claves
+    - field.field.node.patrimonio_bibliografico_colombi.field_publicado_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.taxonomy_vocabulary_32
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - path
+    - text
+id: node.patrimonio_bibliografico_colombi.default
+targetEntityType: node
+bundle: patrimonio_bibliografico_colombi
+mode: default
+content:
+  body:
+    weight: 19
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_autor_pat:
+    weight: 20
+    type: text_textfield
+    settings:
+      size: 90
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_ciudad_pbc:
+    weight: 22
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_codigo_pat:
+    weight: 26
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_correo_pbc:
+    weight: 21
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_fecha_pbc:
+    weight: 23
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_fijo_pbc:
+    weight: 27
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_palabras_claves:
+    weight: 25
+    type: text_textfield
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_publicado_pbc:
+    weight: 24
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden:
+  taxonomy_vocabulary_32: true

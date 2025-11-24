@@ -1,0 +1,20 @@
+uuid: 0c6e00fa-b3ed-4e5d-b8ef-6ad017d1eb37
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_concurso_ninos
+field_name: field_ciudad_concurso_ninos
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

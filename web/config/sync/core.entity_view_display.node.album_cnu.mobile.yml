@@ -1,0 +1,54 @@
+uuid: c8a1137f-172e-462f-9585-4f0d7d27cb6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mobile
+    - field.field.node.album_cnu.body
+    - field.field.node.album_cnu.comment_node_album_cnu
+    - field.field.node.album_cnu.field_image_cnu_02
+    - field.field.node.album_cnu.field_pais_cnu
+    - field.field.node.album_cnu.field_value_independencia
+    - field.field.node.album_cnu.taxonomy_vocabulary_20
+    - node.type.album_cnu
+  module:
+    - image
+    - text
+    - user
+id: node.album_cnu.mobile
+targetEntityType: node
+bundle: album_cnu
+mode: mobile
+content:
+  field_image_cnu_02:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_cnu:
+    label: inline
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_album_cnu: true
+  field_value_independencia: true
+  langcode: true
+  taxonomy_vocabulary_20: true

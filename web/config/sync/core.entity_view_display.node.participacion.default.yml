@@ -1,0 +1,45 @@
+uuid: 49395bbb-4636-4d85-aec5-cbc1f6621502
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.participacion.body
+    - field.field.node.participacion.field_img_participacion
+    - node.type.participacion
+  module:
+    - image
+    - text
+    - user
+id: node.participacion.default
+targetEntityType: node
+bundle: participacion
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img_participacion:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,17 @@
+uuid: 0b171078-826b-47da-a00e-cf275905f8a6
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Beneficios de la ley'
+type: beneficios_de_la_ley_
+description: 'Retorno beneficios de la ley '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

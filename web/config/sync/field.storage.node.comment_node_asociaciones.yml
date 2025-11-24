@@ -1,0 +1,20 @@
+uuid: 8da1235a-6c5f-4a47-a78e-997ee197b590
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_asociaciones
+field_name: comment_node_asociaciones
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_asociaciones
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: dbe6f3e9-42f0-49f0-9131-6ede855ef4e0
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_negocio_colombiano
+label: 'comentario de Negocio colombiano'
+target_entity_type_id: node
+description: null

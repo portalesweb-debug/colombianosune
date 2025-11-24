@@ -1,0 +1,8 @@
+uuid: cea90557-001d-495e-9b46-c820f6fd5de8
+langcode: es
+status: true
+dependencies: {  }
+id: devel-soswutho
+label: Thaslo
+description: 'Descripción de Thaslo'
+locked: false

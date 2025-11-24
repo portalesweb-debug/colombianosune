@@ -1,0 +1,8 @@
+uuid: 381c745a-aa14-46ff-bc95-a17111a679c5
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_fotografia_cnu
+label: 'comentario de fotografia CNU'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,18 @@
+uuid: 110a5a1d-24ca-4a55-b03b-6a4eb532ad30
+langcode: es
+status: false
+dependencies:
+  theme:
+    - seven
+id: adminimal_menu_location_navigation
+theme: seven
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:location_navigation'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {  }

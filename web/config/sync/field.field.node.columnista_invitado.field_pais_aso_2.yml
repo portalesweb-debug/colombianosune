@@ -1,0 +1,21 @@
+uuid: 4e2e15ec-66e3-4339-8fe2-c8489f6c1925
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_aso_2
+    - node.type.columnista_invitado
+id: node.columnista_invitado.field_pais_aso_2
+field_name: field_pais_aso_2
+entity_type: node
+bundle: columnista_invitado
+label: 'País '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

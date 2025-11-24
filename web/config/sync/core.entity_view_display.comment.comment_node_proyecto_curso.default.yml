@@ -1,0 +1,28 @@
+uuid: 2c02e547-92a3-4088-b093-e87f1f36872f
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_proyecto_curso
+    - field.field.comment.comment_node_proyecto_curso.comment_body
+  module:
+    - text
+id: comment.comment_node_proyecto_curso.default
+targetEntityType: comment
+bundle: comment_node_proyecto_curso
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,32 @@
+uuid: ae2a8590-b86f-4fb0-afa5-9527de56e496
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-mesa-sociedad-civil
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_mesa_sociedad_civil
+theme: colombianosune
+region: content
+weight: -34
+provider: null
+plugin: 'system_menu_block:menu-mesa-sociedad-civil'
+settings:
+  id: 'system_menu_block:menu-mesa-sociedad-civil'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /como-participar
+      /mesa-nacional-sociedad-civil/*
+      /mesa-sociedad-civil/*

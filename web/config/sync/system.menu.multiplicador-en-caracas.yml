@@ -1,0 +1,8 @@
+uuid: b9fc3ee8-dad3-457b-bdb6-3841981cd444
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-caracas
+label: 'Multiplicador en Caracas'
+description: ''
+locked: false

@@ -1,0 +1,20 @@
+uuid: 3d4a0d17-62fe-466b-a0a4-16836056b701
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_mas_perfil
+field_name: field_mas_perfil
+entity_type: node
+type: text
+settings:
+  max_length: 500
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

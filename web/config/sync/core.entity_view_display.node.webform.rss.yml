@@ -1,0 +1,42 @@
+uuid: f16e86b7-fd8a-4d98-a84c-f5ac9a099fdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.webform.body
+    - field.field.node.webform.comment_node_webform
+    - field.field.node.webform.field_descripcion
+    - field.field.node.webform.upload
+    - node.type.webform
+  module:
+    - file
+    - user
+id: node.webform.rss
+targetEntityType: node
+bundle: webform
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_webform: true
+  field_descripcion: true
+  langcode: true

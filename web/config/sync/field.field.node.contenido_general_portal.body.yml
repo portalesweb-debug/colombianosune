@@ -1,0 +1,23 @@
+uuid: 53cb8657-8b04-454c-adb7-41b90ab734ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contenido_general_portal
+  module:
+    - text
+id: node.contenido_general_portal.body
+field_name: body
+entity_type: node
+bundle: contenido_general_portal
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

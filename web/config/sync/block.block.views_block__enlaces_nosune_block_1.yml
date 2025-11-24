@@ -1,0 +1,30 @@
+uuid: 051f1ce1-f2b5-48f3-b218-690392d8be01
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.enlaces_nosune
+  module:
+    - system
+    - views
+  theme:
+    - colombianosune
+id: views_block__enlaces_nosune_block_1
+theme: colombianosune
+region: content
+weight: -39
+provider: null
+plugin: 'views_block:enlaces_nosune-block_1'
+settings:
+  id: 'views_block:enlaces_nosune-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '7'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

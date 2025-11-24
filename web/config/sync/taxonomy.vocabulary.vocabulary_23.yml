@@ -1,0 +1,8 @@
+uuid: 0c3b05e2-b386-42d1-9b68-e75fcd45ec34
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tags del Video'
+vid: vocabulary_23
+description: ''
+weight: 0

@@ -1,0 +1,26 @@
+uuid: 33dce275-e499-4c78-898e-13a71a50c7ab
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_img_ninos_exterior
+field_name: field_img_ninos_exterior
+entity_type: node
+type: image
+settings:
+  default_image:
+    uuid: ''
+  uri_scheme: public
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

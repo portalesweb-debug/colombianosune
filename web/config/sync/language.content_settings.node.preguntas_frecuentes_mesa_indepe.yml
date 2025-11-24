@@ -1,0 +1,11 @@
+uuid: 5f9200a0-2d08-4672-9592-02aee1e12f12
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.preguntas_frecuentes_mesa_indepe
+id: node.preguntas_frecuentes_mesa_indepe
+target_entity_type_id: node
+target_bundle: preguntas_frecuentes_mesa_indepe
+default_langcode: site_default
+language_alterable: false

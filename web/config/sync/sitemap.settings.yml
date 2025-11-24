@@ -1,0 +1,744 @@
+page_title: Sitemap
+message:
+  value: ''
+  format: restricted_html
+_core:
+  default_config_hash: yUNkiSB-fp4pyUb6B2L9HiiCdISBDvK7r1v9_XkGUaQ
+langcode: es
+include_css: true
+plugins:
+  frontpage:
+    enabled: true
+    weight: -50
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+  'menu:account':
+    enabled: true
+    weight: -11
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:devel':
+    enabled: true
+    weight: -45
+    settings:
+      title: Desarrollo
+      show_disabled: false
+  'menu:footer':
+    enabled: true
+    weight: -44
+    settings:
+      title: 'Pie de página'
+      show_disabled: false
+  'menu:main':
+    enabled: true
+    weight: -43
+    settings:
+      title: 'Main navigation'
+      show_disabled: false
+  'menu:menu-afrocolombianos':
+    enabled: true
+    weight: -41
+    settings:
+      title: afrocolombianos
+      show_disabled: false
+  'menu:menu-colombiaanosune':
+    enabled: true
+    weight: -49
+    settings:
+      title: 'Colombia Nos Une'
+      show_disabled: false
+  'menu:menu-colombianosunes':
+    enabled: true
+    weight: -47
+    settings:
+      title: 'De interes'
+      show_disabled: false
+  'menu:menu-ejesdetrabajo':
+    enabled: true
+    weight: -48
+    settings:
+      title: 'Ejes de Trabajo'
+      show_disabled: false
+  'menu:menu-informacion-de-inetres':
+    enabled: true
+    weight: -14
+    settings:
+      title: 'Información de Interés'
+      show_disabled: false
+  'menu:menu-menu-ipiales-oficina':
+    enabled: true
+    weight: -23
+    settings:
+      title: 'Oficinas de atencion al migrante ipiales'
+      show_disabled: false
+  'menu:menu-menu-quindio-oficina':
+    enabled: true
+    weight: -28
+    settings:
+      title: 'Oficina atención al migrante risaralda'
+      show_disabled: false
+  'menu:menu-menucompletoportal':
+    enabled: true
+    weight: -26
+    settings:
+      title: 'Menú Completo Portal'
+      show_disabled: false
+  'menu:menu-mesa-sociedad-civil':
+    enabled: true
+    weight: -25
+    settings:
+      title: 'Mesa sociedad civil'
+      show_disabled: false
+  'menu:menu-mujer-migrante':
+    enabled: true
+    weight: -19
+    settings:
+      title: 'Mujer migrante'
+      show_disabled: false
+  'menu:menu-multimedia':
+    enabled: true
+    weight: -38
+    settings:
+      title: Multimedia
+      show_disabled: false
+  'menu:menu-oficina':
+    enabled: true
+    weight: -20
+    settings:
+      title: 'Oficina de atención al migrante'
+      show_disabled: false
+  'menu:menu-oficina-atencion-atlantico':
+    enabled: true
+    weight: -18
+    settings:
+      title: 'Oficina de atencion al migrante Atlantico'
+      show_disabled: false
+  'menu:menu-oficina-atencion-caldas':
+    enabled: true
+    weight: -17
+    settings:
+      title: 'Oficina de atencion al migrante Caldas'
+      show_disabled: false
+  'menu:menu-oficina-atencion-jura':
+    enabled: true
+    weight: -16
+    settings:
+      title: Jurado
+      show_disabled: false
+  'menu:menu-oficina-atencion-quindio':
+    enabled: true
+    weight: -15
+    settings:
+      title: Quindio
+      show_disabled: false
+  'menu:menu-oficina-atencion-santander':
+    enabled: true
+    weight: -12
+    settings:
+      title: 'Oficinas de atencion al migrante santander'
+      show_disabled: false
+  'menu:menu-patrimoniobibliografico':
+    enabled: true
+    weight: 14
+    settings:
+      title: 'Patrimonio Bibliografico Colombiano'
+      show_disabled: false
+  'menu:menu-semanabinacional':
+    enabled: true
+    weight: 17
+    settings:
+      title: 'XII Semana Binacional de Salud'
+      show_disabled: false
+  'menu:menu-servicios-migrantes':
+    enabled: true
+    weight: -6
+    settings:
+      title: 'Servicios '
+      show_disabled: false
+  'menu:menu-serviciosmigrantes':
+    enabled: true
+    weight: -5
+    settings:
+      title: 'Servicios para Migrantes'
+      show_disabled: false
+  'menu:menu-terminoscondiciones':
+    enabled: true
+    weight: -3
+    settings:
+      title: 'Terminos y Condiciones '
+      show_disabled: false
+  'menu:menu-xiiiconfsobremigracion':
+    enabled: true
+    weight: -1
+    settings:
+      title: 'XIII Conferencia Suramericana sobre Migraciones'
+      show_disabled: false
+  'menu:of':
+    enabled: true
+    weight: -9
+    settings:
+      title: 'Oficina de Atención al Migrante Valle del Cauca'
+      show_disabled: false
+  'menu:oficina-atencion-al-migrant':
+    enabled: true
+    weight: 10
+    settings:
+      title: 'Oficina de Atención al Migrante Bogotá'
+      show_disabled: false
+  'menu:oficina-de-atencion-al-migr':
+    enabled: true
+    weight: -7
+    settings:
+      title: 'Oficina de Atencion al Migrante Antioquia'
+      show_disabled: false
+  'menu:admin':
+    enabled: false
+    weight: -46
+    settings:
+      title: Management
+      show_disabled: false
+  'menu:menu-administracion':
+    enabled: false
+    weight: -42
+    settings:
+      title: Administracion
+      show_disabled: false
+  'menu:menu-colombiacelebra':
+    enabled: false
+    weight: -32
+    settings:
+      title: 'Colombia Celebra'
+      show_disabled: false
+  'menu:menu-como-migrar':
+    enabled: false
+    weight: -10
+    settings:
+      title: '¿Cómo Migrar?'
+      show_disabled: false
+  'menu:menu-concurso-seleccion-colombia':
+    enabled: false
+    weight: -37
+    settings:
+      title: Menu
+      show_disabled: false
+  'menu:menu-crearasociacion':
+    enabled: false
+    weight: -36
+    settings:
+      title: 'Crear Asociación'
+      show_disabled: false
+  'menu:menu-crearcontenidoscnu':
+    enabled: false
+    weight: -35
+    settings:
+      title: 'Crear contenido CNU'
+      show_disabled: false
+  'menu:menu-eventos20dejulio':
+    enabled: false
+    weight: -34
+    settings:
+      title: 'Eventos 20 de julio'
+      show_disabled: false
+  'menu:menu-herramientas':
+    enabled: false
+    weight: -33
+    settings:
+      title: menu_mi_pagina
+      show_disabled: false
+  'menu:menu-informacioninteres':
+    enabled: false
+    weight: -13
+    settings:
+      title: 'Información de interés'
+      show_disabled: false
+  'menu:menu-menu-administrador-noticias':
+    enabled: false
+    weight: -31
+    settings:
+      title: 'Menu Administrador Noticias'
+      show_disabled: false
+  'menu:menu-menu-gestionar-red':
+    enabled: false
+    weight: -40
+    settings:
+      title: 'Gestionar mi red'
+      show_disabled: false
+  'menu:menu-menu-integrantes':
+    enabled: false
+    weight: -24
+    settings:
+      title: 'Integrantes de red'
+      show_disabled: false
+  'menu:menu-menu-mensajes-red':
+    enabled: false
+    weight: -22
+    settings:
+      title: 'Mensajes de red'
+      show_disabled: false
+  'menu:menu-menu-micrositio-ninos':
+    enabled: false
+    weight: -21
+    settings:
+      title: 'menu micrositio niños'
+      show_disabled: false
+  'menu:menu-menu-redes':
+    enabled: false
+    weight: -27
+    settings:
+      title: menu_redes
+      show_disabled: false
+  'menu:menu-misenlaces':
+    enabled: false
+    weight: -30
+    settings:
+      title: 'Mis Enlaces'
+      show_disabled: false
+  'menu:menu-multiplicadores':
+    enabled: false
+    weight: -39
+    settings:
+      title: Multiplicadores
+      show_disabled: false
+  'menu:menu-novedades':
+    enabled: false
+    weight: -29
+    settings:
+      title: '¿Que Hay de Nuevo?'
+      show_disabled: false
+  'menu:menu-redes-amigas':
+    enabled: false
+    weight: 12
+    settings:
+      title: 'Redes Amigas'
+      show_disabled: false
+  'menu:menu-suenomigrante':
+    enabled: false
+    weight: -4
+    settings:
+      title: 'Acción diferida'
+      show_disabled: false
+  'menu:menu-valorescolombianos':
+    enabled: false
+    weight: -2
+    settings:
+      title: 'Muestra de dibujo: Valores Colombianos 20 de Julio'
+      show_disabled: false
+  'menu:secondary-menu':
+    enabled: false
+    weight: 3
+    settings:
+      title: 'Secondary menu'
+      show_disabled: false
+  'menu:tools':
+    enabled: false
+    weight: 4
+    settings:
+      title: Tools
+      show_disabled: false
+  'vocabulary:forums':
+    enabled: false
+    weight: 5
+    settings:
+      title: Forums
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:tags':
+    enabled: false
+    weight: 6
+    settings:
+      title: Etiquetas
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_1':
+    enabled: false
+    weight: 7
+    settings:
+      title: 'Tipo Organización'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_15':
+    enabled: false
+    weight: 8
+    settings:
+      title: 'Sub Categoría'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_16':
+    enabled: false
+    weight: 9
+    settings:
+      title: tags
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_17':
+    enabled: false
+    weight: 16
+    settings:
+      title: Foros
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_18':
+    enabled: false
+    weight: 2
+    settings:
+      title: 'Para que encuentren tu red más fácil'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_19':
+    enabled: false
+    weight: 15
+    settings:
+      title: tags
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_2':
+    enabled: false
+    weight: -8
+    settings:
+      title: 'Ubicación Geográfica'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_20':
+    enabled: false
+    weight: 18
+    settings:
+      title: 'Tags de Usuario'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_23':
+    enabled: false
+    weight: 19
+    settings:
+      title: 'Tags del Video'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_24':
+    enabled: false
+    weight: 20
+    settings:
+      title: Ciudades
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_25':
+    enabled: false
+    weight: 13
+    settings:
+      title: Categoria
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_27':
+    enabled: false
+    weight: 23
+    settings:
+      title: 'Tags entrada'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_28':
+    enabled: false
+    weight: 11
+    settings:
+      title: 'Tags de Clasificados'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_29':
+    enabled: false
+    weight: 0
+    settings:
+      title: prueba_organizaciones
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_3':
+    enabled: false
+    weight: 21
+    settings:
+      title: 'Tipo de Empresa'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_30':
+    enabled: false
+    weight: 27
+    settings:
+      title: 'Tags del Evento'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_31':
+    enabled: false
+    weight: 1
+    settings:
+      title: 'Categorizacion Articulos'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_32':
+    enabled: false
+    weight: 28
+    settings:
+      title: Clasificación
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_33':
+    enabled: false
+    weight: 29
+    settings:
+      title: 'Categoria Redes'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_34':
+    enabled: false
+    weight: 30
+    settings:
+      title: 'Semana binacional de la salud'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_35':
+    enabled: false
+    weight: 22
+    settings:
+      title: 'País de Residencia'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_36':
+    enabled: false
+    weight: 24
+    settings:
+      title: 'banco de leyes'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_4':
+    enabled: false
+    weight: 25
+    settings:
+      title: 'Actividad Empresa'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_5':
+    enabled: false
+    weight: 26
+    settings:
+      title: 'Tipo de Moneda'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:vocabulary_6':
+    enabled: false
+    weight: 31
+    settings:
+      title: 'Número de Empleados'
+      show_description: true
+      show_count: true
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: null
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: null
+      enable_rss: true
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9

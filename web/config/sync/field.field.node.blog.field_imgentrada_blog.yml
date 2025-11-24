@@ -1,0 +1,33 @@
+uuid: 7efba1db-515f-49d3-8134-64be6f3e3358
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imgentrada_blog
+    - node.type.blog
+  module:
+    - image
+id: node.blog.field_imgentrada_blog
+field_name: field_imgentrada_blog
+entity_type: node
+bundle: blog
+label: Imagen
+description: 'Ingrese una imagen referente a la entrada del blog.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: blogs
+  max_filesize: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

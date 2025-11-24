@@ -1,0 +1,17 @@
+uuid: da31c37b-3042-4642-a589-5ecf5c64d482
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Videos sala de prensa'
+type: videos_sala_de_prensa
+description: 'Videos para la categoria sala de prensa'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

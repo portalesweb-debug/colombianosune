@@ -1,0 +1,8 @@
+uuid: b57c1aad-a6ae-4fb4-883a-f1f9655b47ad
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_noticias
+label: 'comentario de Noticias'
+target_entity_type_id: node
+description: null

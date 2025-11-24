@@ -1,0 +1,24 @@
+uuid: 62ffe19c-7fb8-4a9c-b0d3-62ce4867e027
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook_negocio
+    - node.type.negocio_colombiano
+  module:
+    - text
+id: node.negocio_colombiano.field_facebook_negocio
+field_name: field_facebook_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: facebook
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_facebook_negocio][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

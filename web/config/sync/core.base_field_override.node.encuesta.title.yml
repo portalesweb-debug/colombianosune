@@ -1,0 +1,18 @@
+uuid: 2b583dfa-bce2-4f7b-a871-78ee3d951d98
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.encuesta
+id: node.encuesta.title
+field_name: title
+entity_type: node
+bundle: encuesta
+label: Pregunta
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

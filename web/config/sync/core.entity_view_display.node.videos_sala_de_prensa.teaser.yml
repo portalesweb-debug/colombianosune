@@ -1,0 +1,36 @@
+uuid: 77b03191-1657-4cd5-9d57-9bb70f4d2762
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.videos_sala_de_prensa.body
+    - node.type.videos_sala_de_prensa
+  module:
+    - text
+    - user
+id: node.videos_sala_de_prensa.teaser
+targetEntityType: node
+bundle: videos_sala_de_prensa
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

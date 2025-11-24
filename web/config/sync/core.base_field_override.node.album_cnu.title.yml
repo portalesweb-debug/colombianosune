@@ -1,0 +1,18 @@
+uuid: 9addad03-aa2d-4855-8be0-a8c14480fa8c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.album_cnu
+id: node.album_cnu.title
+field_name: title
+entity_type: node
+bundle: album_cnu
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

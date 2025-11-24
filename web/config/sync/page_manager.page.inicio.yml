@@ -1,0 +1,12 @@
+uuid: 1f489c9a-0af4-41c9-af7b-3ae16c5fd62b
+langcode: es
+status: true
+dependencies: {  }
+id: inicio
+label: Inicio
+description: ''
+use_admin_theme: false
+path: /inicio
+access_logic: and
+access_conditions: {  }
+parameters: {  }

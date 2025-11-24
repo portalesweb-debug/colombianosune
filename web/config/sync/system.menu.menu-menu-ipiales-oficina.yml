@@ -1,0 +1,8 @@
+uuid: 0ac3a7d8-eaf0-46e2-b3bd-ec5040fe3055
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-ipiales-oficina
+label: 'Oficinas de atencion al migrante ipiales'
+description: ''
+locked: false

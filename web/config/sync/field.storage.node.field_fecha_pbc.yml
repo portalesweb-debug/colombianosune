@@ -1,0 +1,20 @@
+uuid: f7d6ae7f-ceb7-4d6b-8064-0075fc9f1449
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_fecha_pbc
+field_name: field_fecha_pbc
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,42 @@
+uuid: 876d8ad5-342a-422d-90f9-c96bd63364b1
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_default_language
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Default language'
+source:
+  plugin: variable
+  variables:
+    - language_default
+process:
+  default_langcode:
+    -
+      plugin: default_value
+      source: language_default
+      default_value:
+        language: en
+    -
+      plugin: callback
+      callable:
+        - \Drupal\Component\Serialization\Json
+        - encode
+    -
+      plugin: callback
+      callable:
+        - \Drupal\Component\Serialization\Json
+        - decode
+    -
+      plugin: extract
+      index:
+        - language
+destination:
+  plugin: default_langcode
+  config_name: system.site
+migration_dependencies:
+  required:
+    - upgrade_language
+  optional: {  }

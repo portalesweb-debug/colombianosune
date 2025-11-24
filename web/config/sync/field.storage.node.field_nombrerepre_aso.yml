@@ -1,0 +1,20 @@
+uuid: f8aed22a-596f-47ee-bf50-a7e12998428b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_nombrerepre_aso
+field_name: field_nombrerepre_aso
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 74b73dbe-d737-4361-9763-8881179a644a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.crear_blog
+  module:
+    - text
+id: node.crear_blog.body
+field_name: body
+entity_type: node
+bundle: crear_blog
+label: Descripción
+description: "Crea el blog de un usario, dando la opción de colocarle titulo, descripción y una imagen representativa de dicho blog.\r\n"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

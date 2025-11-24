@@ -1,0 +1,105 @@
+uuid: 5bd3ee9e-9351-4632-a173-a4141c3c7130
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenido_general_portal.body
+    - field.field.node.contenido_general_portal.field_imagen_cgp
+    - field.field.node.contenido_general_portal.field_imgs_cgp
+    - field.field.node.contenido_general_portal.taxonomy_vocabulary_33
+    - field.field.node.contenido_general_portal.upload
+    - node.type.contenido_general_portal
+  module:
+    - file
+    - path
+    - text
+id: node.contenido_general_portal.default
+targetEntityType: node
+bundle: contenido_general_portal
+mode: default
+content:
+  body:
+    weight: -2
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  upload:
+    weight: 1
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_imagen_cgp: true
+  field_imgs_cgp: true
+  taxonomy_vocabulary_33: true

@@ -1,0 +1,20 @@
+uuid: 710c5f73-158c-46ff-b584-c064a77233e2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_servicios_ofrecidos
+field_name: field_servicios_ofrecidos
+entity_type: node
+type: text
+settings:
+  max_length: 500
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

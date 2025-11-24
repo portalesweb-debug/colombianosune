@@ -1,0 +1,23 @@
+uuid: 6bc3146c-0cd8-4435-939f-6478ffbee8a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_banco
+    - node.type.banco_leyes
+  module:
+    - options
+id: node.banco_leyes.field_tipo_banco
+field_name: field_tipo_banco
+entity_type: node
+bundle: banco_leyes
+label: Tipo
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

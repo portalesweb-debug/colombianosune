@@ -1,0 +1,30 @@
+uuid: fda7ac3a-14a9-40a0-8c70-c8e68f6c514e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-quindio-oficina
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_menu_quindio_oficina
+theme: colombianosune
+region: content_navigation
+weight: -47
+provider: null
+plugin: 'system_menu_block:menu-menu-quindio-oficina'
+settings:
+  id: 'system_menu_block:menu-menu-quindio-oficina'
+  label: 'Menu Oficina Risaralda'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-risaralda/*'
+    context_mapping: {  }

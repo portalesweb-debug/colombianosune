@@ -1,0 +1,18 @@
+uuid: e80d20d8-2362-4776-be0e-d206d6ff9b7f
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_para_videos
+id: node.videos_para_videos.title
+field_name: title
+entity_type: node
+bundle: videos_para_videos
+label: 'Videos publicados'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

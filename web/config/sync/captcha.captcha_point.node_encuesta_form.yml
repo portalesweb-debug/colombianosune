@@ -1,0 +1,7 @@
+uuid: 6b52fbfc-e1d0-49f5-bfbe-7da53a4ec84d
+langcode: es
+status: false
+dependencies: {  }
+formId: node_encuesta_form
+captchaType: default
+label: null

@@ -1,0 +1,23 @@
+uuid: 965f6e17-7a93-4119-987b-1d241faf44a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.asociaciones
+id: node.asociaciones.field_estado
+field_name: field_estado
+entity_type: node
+bundle: asociaciones
+label: Estado
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activo
+  off_label: Inactivo
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 5dea612d-1795-421d-b610-88990648bd0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulado
+    - node.type.noticias
+  module:
+    - text
+id: node.noticias.field_consulado
+field_name: field_consulado
+entity_type: node
+bundle: noticias
+label: Consulado
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

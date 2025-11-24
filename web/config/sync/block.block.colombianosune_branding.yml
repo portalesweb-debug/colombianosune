@@ -1,0 +1,25 @@
+uuid: b011eec2-73ec-4c8a-9040-21168e4fcd27
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - colombianosune
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: colombianosune_branding
+theme: colombianosune
+region: top_header
+weight: -40
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

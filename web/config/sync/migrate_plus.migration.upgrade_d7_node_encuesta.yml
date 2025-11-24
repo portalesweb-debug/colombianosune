@@ -1,0 +1,39 @@
+uuid: 8af109fc-8af2-4870-819a-50a51e3b143e
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_node_encuesta
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Nodes (Encuesta)'
+source:
+  plugin: d7_node
+  node_type: encuesta
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_fecha_cierre_enc: field_fecha_cierre_enc
+destination:
+  plugin: 'entity:node'
+  default_bundle: encuesta
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance

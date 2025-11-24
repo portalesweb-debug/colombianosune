@@ -1,0 +1,30 @@
+uuid: ac689cc4-b508-47c4-9597-e9cb5d690a8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.multiplicador-en-caracas
+  module:
+    - system
+  theme:
+    - colombianosune
+id: multiplicadorencaracas
+theme: colombianosune
+region: content_navigation
+weight: -21
+provider: null
+plugin: 'system_menu_block:multiplicador-en-caracas'
+settings:
+  id: 'system_menu_block:multiplicador-en-caracas'
+  label: 'Multiplicador en Caracas'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '/multiplicador-caracas/*'
+    negate: false
+    context_mapping: {  }

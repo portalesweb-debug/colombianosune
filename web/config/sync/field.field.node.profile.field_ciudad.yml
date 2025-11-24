@@ -1,0 +1,24 @@
+uuid: 611a24b0-e808-4efd-b4d7-97292df38e0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_ciudad
+field_name: field_ciudad
+entity_type: node
+bundle: profile
+label: Ciudad
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_ciudad][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

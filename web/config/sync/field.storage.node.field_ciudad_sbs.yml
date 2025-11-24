@@ -1,0 +1,60 @@
+uuid: 9fc16262-47fe-4786-b39a-c47f0fecbd41
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ciudad_sbs
+field_name: field_ciudad_sbs
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Montreal
+      label: Montreal
+    -
+      value: Vancouver
+      label: Vancouver
+    -
+      value: Boston
+      label: Boston
+    -
+      value: Chicago
+      label: Chicago
+    -
+      value: Houston
+      label: Houston
+    -
+      value: Miami
+      label: Miami
+    -
+      value: 'Nueva York'
+      label: 'Nueva York'
+    -
+      value: Newark
+      label: Newark
+    -
+      value: Orlando
+      label: Orlando
+    -
+      value: Washington
+      label: Washington
+    -
+      value: 'San Francisco'
+      label: 'San Francisco'
+    -
+      value: Atlanta
+      label: Atlanta
+    -
+      value: Toronto
+      label: Toronto
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

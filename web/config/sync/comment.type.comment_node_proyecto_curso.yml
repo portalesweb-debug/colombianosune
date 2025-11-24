@@ -1,0 +1,8 @@
+uuid: 3131a3ab-0154-4a53-ac07-9dddb209ce54
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_proyecto_curso
+label: 'comentario de '
+target_entity_type_id: node
+description: null

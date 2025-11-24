@@ -1,0 +1,11 @@
+uuid: 0f39d242-c8d0-4b8d-a29a-3f529c5121d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.patrimonio_bibliografico_colombi
+id: node.patrimonio_bibliografico_colombi
+target_entity_type_id: node
+target_bundle: patrimonio_bibliografico_colombi
+default_langcode: site_default
+language_alterable: false

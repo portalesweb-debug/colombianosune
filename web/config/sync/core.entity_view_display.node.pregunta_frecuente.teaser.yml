@@ -1,0 +1,38 @@
+uuid: a4a46d9d-1433-4465-b1fa-defe96fa5050
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pregunta_frecuente.body
+    - field.field.node.pregunta_frecuente.comment_node_pregunta_frecuente
+    - node.type.pregunta_frecuente
+  module:
+    - text
+    - user
+id: node.pregunta_frecuente.teaser
+targetEntityType: node
+bundle: pregunta_frecuente
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment_node_pregunta_frecuente: true
+  langcode: true

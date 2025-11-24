@@ -1,0 +1,23 @@
+uuid: cc2b774b-05ea-4ef7-b09e-6e82024af0a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.noticias
+  module:
+    - text
+id: node.noticias.body
+field_name: body
+entity_type: node
+bundle: noticias
+label: Detalle
+description: 'Formulario que permite crear una noticia a nivel de portal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

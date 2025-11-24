@@ -1,0 +1,40 @@
+uuid: b9ac7252-395a-4c26-a5a1-50fcdc16815b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.enlacessecundarios_home.body
+    - field.field.node.enlacessecundarios_home.field_enlaces_noune
+    - field.field.node.enlacessecundarios_home.field_imagen_nosune
+    - node.type.enlacessecundarios_home
+  module:
+    - text
+    - user
+id: node.enlacessecundarios_home.teaser
+targetEntityType: node
+bundle: enlacessecundarios_home
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_enlaces_noune: true
+  field_imagen_nosune: true
+  langcode: true

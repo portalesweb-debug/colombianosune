@@ -1,0 +1,73 @@
+uuid: 80b8311f-1d25-44bd-a3cf-1a108b9982a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_html
+    - field.field.node.event.body
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_ciudad_sbs
+    - field.field.node.event.field_evento_ciudad
+    - field.field.node.event.field_fecha_cierre_enc
+    - field.field.node.event.field_fecha_de_finalizacion
+    - field.field.node.event.field_imagen_evento
+    - field.field.node.event.field_imagenes_evento
+    - field.field.node.event.field_pais_evento
+    - field.field.node.event.field_semana_sbs
+    - field.field.node.event.taxonomyextra
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.email_html
+targetEntityType: node
+bundle: event
+mode: email_html
+content:
+  field_ciudad_sbs:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_evento_ciudad:
+    label: inline
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pais_evento:
+    label: inline
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_semana_sbs:
+    label: hidden
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_event: true
+  field_fecha_cierre_enc: true
+  field_fecha_de_finalizacion: true
+  field_imagen_evento: true
+  field_imagenes_evento: true
+  langcode: true
+  taxonomyextra: true

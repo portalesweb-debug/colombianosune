@@ -1,0 +1,23 @@
+uuid: 82655890-6537-45d1-856e-812d4bb13fc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terminos_concurso_navidad
+    - node.type.imagen_concurso_navidad
+id: node.imagen_concurso_navidad.field_terminos_concurso_navidad
+field_name: field_terminos_concurso_navidad
+entity_type: node
+bundle: imagen_concurso_navidad
+label: 'Acepto Términos y condiciones'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

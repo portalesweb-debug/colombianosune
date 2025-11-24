@@ -1,0 +1,24 @@
+uuid: 41be49bb-72fa-4c04-8a05-c9f5420ccf10
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_representante_legal
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_representante_legal
+field_name: field_representante_legal
+entity_type: node
+bundle: profile
+label: 'representante legal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_representante_legal][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

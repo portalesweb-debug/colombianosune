@@ -1,0 +1,24 @@
+uuid: eaa83cd8-601e-45cf-885d-2db559d9ebc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_negocio
+    - node.type.negocio_colombiano
+  module:
+    - text
+id: node.negocio_colombiano.field_ciudad_negocio
+field_name: field_ciudad_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: Ciudad
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_ciudad_negocio][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

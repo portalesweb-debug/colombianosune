@@ -1,0 +1,23 @@
+uuid: 874be2b9-29b5-4190-b25e-24a681b8aa05
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num_empleados
+    - node.type.profile
+id: node.profile.field_num_empleados
+field_name: field_num_empleados
+entity_type: node
+bundle: profile
+label: 'Número de Empleados'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    tids: null
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

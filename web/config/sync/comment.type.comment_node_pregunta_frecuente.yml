@@ -1,0 +1,8 @@
+uuid: 449a821c-0dd4-4882-ac49-269ac16ab5eb
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_pregunta_frecuente
+label: 'comentario de Preguntas Frecuentes CNU'
+target_entity_type_id: node
+description: null

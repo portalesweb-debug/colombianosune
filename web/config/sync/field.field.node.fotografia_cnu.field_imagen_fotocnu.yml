@@ -1,0 +1,38 @@
+uuid: 6e3c8efc-2263-4606-b310-a9e337138144
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_fotocnu
+    - node.type.fotografia_cnu
+  module:
+    - image
+id: node.fotografia_cnu.field_imagen_fotocnu
+field_name: field_imagen_fotocnu
+entity_type: node
+bundle: fotografia_cnu
+label: imagen
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: foto_cnu
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

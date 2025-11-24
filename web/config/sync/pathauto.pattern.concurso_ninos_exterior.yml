@@ -1,0 +1,22 @@
+uuid: a52d5389-dd52-4eff-8027-1bfb4632a00a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: concurso_ninos_exterior
+label: 'Concurso niños exterior'
+type: 'canonical_entities:node'
+pattern: 'concurso-ninos-colombianos-exterior-cnu/[node:title]'
+selection_criteria:
+  51d243dd-7deb-4cbf-af28-97ec37729be7:
+    id: node_type
+    bundles:
+      concurso_ninos_exterior: concurso_ninos_exterior
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 51d243dd-7deb-4cbf-af28-97ec37729be7
+selection_logic: and
+weight: -5
+relationships: {  }

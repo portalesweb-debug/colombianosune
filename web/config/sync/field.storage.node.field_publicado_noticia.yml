@@ -1,0 +1,27 @@
+uuid: 678b2d4c-1bb4-40b4-ad5b-fa424e30e94f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_publicado_noticia
+field_name: field_publicado_noticia
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Si
+      label: Si
+    -
+      value: 'No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: c9948ee9-3501-4a2f-a8a6-f5de5addc519
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria
+id: node.galeria.title
+field_name: title
+entity_type: node
+bundle: galeria
+label: 'Galeria entradas'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

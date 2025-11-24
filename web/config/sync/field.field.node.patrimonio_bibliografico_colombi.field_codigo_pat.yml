@@ -1,0 +1,24 @@
+uuid: 94c87734-08b3-42d0-a99d-989ee9ac528f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_pat
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.field_codigo_pat
+field_name: field_codigo_pat
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: 'Número de consulta'
+description: 'Con este número usted podrá consultar esta obra en las instalaciones de la Biblioteca Nacional de Colombia.'
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_codigo_pat][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

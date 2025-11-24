@@ -1,0 +1,11 @@
+uuid: fec2aa96-f5e8-477c-bfb4-3c42d31bf227
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlacessecundarios_home
+id: node.enlacessecundarios_home
+target_entity_type_id: node
+target_bundle: enlacessecundarios_home
+default_langcode: site_default
+language_alterable: false

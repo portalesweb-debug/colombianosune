@@ -1,0 +1,21 @@
+uuid: be336e14-04da-4036-8345-229dbbdbf4bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_banco_leyes
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_banco_leyes.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_banco_leyes
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

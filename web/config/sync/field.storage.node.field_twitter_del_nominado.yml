@@ -1,0 +1,20 @@
+uuid: 6e775891-e3fa-41fd-b01a-d581fdae83ad
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_twitter_del_nominado
+field_name: field_twitter_del_nominado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

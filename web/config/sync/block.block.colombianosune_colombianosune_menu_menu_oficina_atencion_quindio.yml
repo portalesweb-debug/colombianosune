@@ -1,0 +1,30 @@
+uuid: c339c1c7-940e-4187-9345-88814400e984
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-quindio
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_oficina_atencion_quindio
+theme: colombianosune
+region: content_navigation
+weight: -46
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-quindio'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-quindio'
+  label: 'Menu Oficina Quindio'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-quindio/*'
+    context_mapping: {  }

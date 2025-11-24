@@ -1,0 +1,8 @@
+uuid: 6502032a-a4db-4bd9-a171-5fcc2e19b141
+langcode: es
+status: true
+dependencies: {  }
+name: 'Para que encuentren tu red más fácil'
+vid: vocabulary_18
+description: 'Vocabulario que almacena los tags digitados por los uasuarios a la hora de crear una red'
+weight: 0

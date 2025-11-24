@@ -1,0 +1,20 @@
+uuid: 29e18e3d-b70d-423b-bb75-fb5a63573b30
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_actividad_empresa
+field_name: field_actividad_empresa
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

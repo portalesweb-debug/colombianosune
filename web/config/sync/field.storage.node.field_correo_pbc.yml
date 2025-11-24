@@ -1,0 +1,20 @@
+uuid: ac4bc134-bf53-4912-bb51-39999ee6bcc0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_correo_pbc
+field_name: field_correo_pbc
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

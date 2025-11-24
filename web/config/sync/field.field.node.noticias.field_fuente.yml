@@ -1,0 +1,24 @@
+uuid: 53ff6d83-0ae4-46d3-9a6c-96057021fe41
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fuente
+    - node.type.noticias
+  module:
+    - text
+id: node.noticias.field_fuente
+field_name: field_fuente
+entity_type: node
+bundle: noticias
+label: Fuente
+description: 'Nombre de la fuente que proporcionó la información para la noticia.'
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_fuente][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

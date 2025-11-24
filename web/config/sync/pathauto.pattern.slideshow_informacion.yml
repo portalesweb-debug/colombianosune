@@ -1,0 +1,22 @@
+uuid: 1b507c6b-43a1-446d-9299-da6aeb9c502e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: slideshow_informacion
+label: 'slideshow Información'
+type: 'canonical_entities:node'
+pattern: 'informacion/[node:title]'
+selection_criteria:
+  d3cd7bf6-3e5a-42a1-a447-d61dd1dcf52c:
+    id: node_type
+    bundles:
+      slideshowinformacion: slideshowinformacion
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d3cd7bf6-3e5a-42a1-a447-d61dd1dcf52c
+selection_logic: and
+weight: -5
+relationships: {  }

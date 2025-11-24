@@ -1,0 +1,23 @@
+uuid: 61c1cf17-42c8-4f1c-b672-2a64319bb2d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicar_negocio
+    - node.type.negocio_colombiano
+  module:
+    - options
+id: node.negocio_colombiano.field_publicar_negocio
+field_name: field_publicar_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: publicar
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'No publicar'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

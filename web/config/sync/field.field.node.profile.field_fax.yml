@@ -1,0 +1,26 @@
+uuid: 9324491d-b907-4bdf-b5e1-d2f7c53edb1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fax
+    - node.type.profile
+id: node.profile.field_fax
+field_name: field_fax
+entity_type: node
+bundle: profile
+label: Fax
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_fax][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

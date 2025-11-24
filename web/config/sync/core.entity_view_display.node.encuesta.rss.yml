@@ -1,0 +1,39 @@
+uuid: 5cc13a05-d7d3-4d58-9779-0af58eea78fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.encuesta.comment_node_encuesta
+    - field.field.node.encuesta.field_fecha_cierre_enc
+    - node.type.encuesta
+  module:
+    - datetime
+    - user
+id: node.encuesta.rss
+targetEntityType: node
+bundle: encuesta
+mode: rss
+content:
+  field_fecha_cierre_enc:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment_node_encuesta: true
+  langcode: true

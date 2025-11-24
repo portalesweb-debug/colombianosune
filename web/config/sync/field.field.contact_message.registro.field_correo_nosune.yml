@@ -1,0 +1,19 @@
+uuid: fd9b7fd1-4e28-42fe-a8ce-740ead6a5db8
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.registro
+    - field.storage.contact_message.field_correo_nosune
+id: contact_message.registro.field_correo_nosune
+field_name: field_correo_nosune
+entity_type: contact_message
+bundle: registro
+label: correo_nosune
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

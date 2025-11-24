@@ -1,0 +1,29 @@
+uuid: be1aa3aa-152a-4292-a961-c73cd69f27eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-afrocolombianos
+  module:
+    - system
+  theme:
+    - bartik
+id: colombianosune_menu_menu_afrocolombianos
+theme: bartik
+region: content
+weight: 22
+provider: null
+plugin: 'system_menu_block:menu-afrocolombianos'
+settings:
+  id: 'system_menu_block:menu-afrocolombianos'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/afrocolombianos/*'

@@ -1,0 +1,20 @@
+uuid: d95cfdfa-7dab-40cd-9c75-9fd8e00c2f14
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_twitter_negocio
+field_name: field_twitter_negocio
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

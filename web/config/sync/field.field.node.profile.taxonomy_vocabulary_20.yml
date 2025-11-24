@@ -1,0 +1,21 @@
+uuid: f94c7467-e679-462a-a569-9a24cae959f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_20
+    - node.type.profile
+id: node.profile.taxonomy_vocabulary_20
+field_name: taxonomy_vocabulary_20
+entity_type: node
+bundle: profile
+label: 'Tags de Usuario'
+description: 'Escriba separado por coma sus tags o intereses'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

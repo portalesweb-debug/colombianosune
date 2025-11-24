@@ -1,0 +1,20 @@
+uuid: 044d5433-27a2-4be5-9991-000e383e425e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_fijo_pbc
+field_name: field_fijo_pbc
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

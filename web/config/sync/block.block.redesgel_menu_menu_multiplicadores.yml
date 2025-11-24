@@ -1,0 +1,39 @@
+uuid: e6259b0f-1dbe-4d48-b1a4-846037dee3e8
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-multiplicadores
+  module:
+    - system
+    - user
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_multiplicadores
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-multiplicadores'
+settings:
+  id: 'system_menu_block:menu-multiplicadores'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /multiplicadores
+      /multiplicadores/*

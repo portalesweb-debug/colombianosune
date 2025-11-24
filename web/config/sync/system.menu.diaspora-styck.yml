@@ -1,0 +1,8 @@
+uuid: a3ab8caf-0f98-45a0-858c-6fbfad139c26
+langcode: es
+status: true
+dependencies: {  }
+id: diaspora-styck
+label: 'Diaspora '
+description: ''
+locked: false

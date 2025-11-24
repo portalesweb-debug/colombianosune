@@ -1,0 +1,23 @@
+uuid: 4168a491-024c-414c-b867-efae541686e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datos_aso
+    - node.type.asociaciones
+  module:
+    - options
+id: node.asociaciones.field_datos_aso
+field_name: field_datos_aso
+entity_type: node
+bundle: asociaciones
+label: 'Datos Importantes para Colombia Nos Une'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: list_string

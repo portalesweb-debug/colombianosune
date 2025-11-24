@@ -1,0 +1,11 @@
+uuid: 1ddc625d-c3b9-4e28-927b-88d1d01d4764
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlacesprincipales_home
+id: node.enlacesprincipales_home
+target_entity_type_id: node
+target_bundle: enlacesprincipales_home
+default_langcode: site_default
+language_alterable: false

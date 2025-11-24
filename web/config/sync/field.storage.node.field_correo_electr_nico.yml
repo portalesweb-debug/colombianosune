@@ -1,0 +1,18 @@
+uuid: 024a3c5b-e61b-4e80-a968-9a25f46642df
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_correo_electr_nico
+field_name: field_correo_electr_nico
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

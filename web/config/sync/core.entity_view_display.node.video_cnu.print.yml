@@ -1,0 +1,43 @@
+uuid: 03ce6b30-ac66-4837-93d1-cf539b146742
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.print
+    - field.field.node.video_cnu.body
+    - field.field.node.video_cnu.comment_node_video_cnu
+    - field.field.node.video_cnu.field_pais_cnu
+    - field.field.node.video_cnu.field_validate_videocnu
+    - field.field.node.video_cnu.field_video_cnu
+    - node.type.video_cnu
+  module:
+    - text
+    - user
+id: node.video_cnu.print
+targetEntityType: node
+bundle: video_cnu
+mode: print
+content:
+  field_pais_cnu:
+    label: inline
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_video_cnu: true
+  field_validate_videocnu: true
+  field_video_cnu: true
+  langcode: true

@@ -1,0 +1,24 @@
+uuid: 88076add-b97e-47d7-a8af-e16ebdf5ba00
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombrerepre_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_nombrerepre_aso
+field_name: field_nombrerepre_aso
+entity_type: node
+bundle: asociaciones
+label: 'Nombre '
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_nombrerepre_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

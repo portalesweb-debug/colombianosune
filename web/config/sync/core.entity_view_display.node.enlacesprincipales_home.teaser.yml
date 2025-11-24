@@ -1,0 +1,40 @@
+uuid: 25d26381-9eed-405a-a955-7b2fd9757e03
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.enlacesprincipales_home.body
+    - field.field.node.enlacesprincipales_home.field_enlace
+    - field.field.node.enlacesprincipales_home.field_imagenenlaces
+    - node.type.enlacesprincipales_home
+  module:
+    - text
+    - user
+id: node.enlacesprincipales_home.teaser
+targetEntityType: node
+bundle: enlacesprincipales_home
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_enlace: true
+  field_imagenenlaces: true
+  langcode: true

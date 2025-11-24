@@ -1,0 +1,152 @@
+uuid: b90eb817-8f13-49d6-a5b0-b0cc02187824
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_node_columnista_invitado
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Nodes (columnista invitado)'
+source:
+  plugin: d7_node
+  node_type: columnista_invitado
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  body:
+    plugin: iterator
+    source: body
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  upload:
+    plugin: iterator
+    source: upload
+    process:
+      target_id: fid
+      display: display
+      description: description
+  field_desc_autor_columnista:
+    plugin: iterator
+    source: field_desc_autor_columnista
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_nombre_columnista:
+    plugin: iterator
+    source: field_nombre_columnista
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_img_autor_columnista:
+    plugin: iterator
+    source: field_img_autor_columnista
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_imagen_columinsta:
+    plugin: iterator
+    source: field_imagen_columinsta
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_pais_aso_2:
+    plugin: iterator
+    source: field_pais_aso_2
+    process:
+      target_id: tid
+  field_add_this: field_add_this
+  field_bandera_colombia:
+    plugin: iterator
+    source: field_bandera_colombia
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_bandera_pa_s:
+    plugin: iterator
+    source: field_bandera_pa_s
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+destination:
+  plugin: 'entity:node'
+  default_bundle: columnista_invitado
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d6_filter_format
+    - upgrade_d7_filter_format

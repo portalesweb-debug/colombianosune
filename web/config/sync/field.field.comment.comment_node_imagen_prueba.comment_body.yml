@@ -1,0 +1,21 @@
+uuid: 8a5abca0-758b-4353-be04-da089b22ace6
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_imagen_prueba
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_imagen_prueba.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_imagen_prueba
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

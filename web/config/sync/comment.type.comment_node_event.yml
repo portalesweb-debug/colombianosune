@@ -1,0 +1,8 @@
+uuid: 60d68c3c-27a4-43ba-8855-6053522e7ff0
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_event
+label: 'comentario de Evento'
+target_entity_type_id: node
+description: null

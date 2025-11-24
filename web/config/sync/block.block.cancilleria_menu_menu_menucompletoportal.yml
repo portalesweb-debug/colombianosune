@@ -1,0 +1,25 @@
+uuid: dc1bf21a-812d-4042-98d6-14100af4fa79
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-menucompletoportal
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_menucompletoportal
+theme: Cancilleria
+region: ''
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-menucompletoportal'
+settings:
+  id: 'system_menu_block:menu-menucompletoportal'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

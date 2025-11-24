@@ -1,0 +1,8 @@
+uuid: 1b74f147-6ba5-4b71-99f1-e451dab2c629
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-gestionar-red
+label: 'Gestionar mi red'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: d7a6f91d-d3bf-4f3f-80a2-0eca2a0aa37b
+langcode: es
+status: true
+dependencies: {  }
+id: semana-binacional-de-la-salud
+label: 'Semana Binacional de la Salud'
+description: ''
+locked: false

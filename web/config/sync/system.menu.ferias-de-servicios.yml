@@ -1,0 +1,8 @@
+uuid: 14c793b8-a38a-4470-9394-23bdb6bbb02e
+langcode: es
+status: true
+dependencies: {  }
+id: ferias-de-servicios
+label: 'Ferias de servicios'
+description: ''
+locked: false

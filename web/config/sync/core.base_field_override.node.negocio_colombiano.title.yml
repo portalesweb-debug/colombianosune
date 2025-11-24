@@ -1,0 +1,18 @@
+uuid: 2dda84e8-9e98-46af-a895-7c603242aabd
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.negocio_colombiano
+id: node.negocio_colombiano.title
+field_name: title
+entity_type: node
+bundle: negocio_colombiano
+label: 'Nombre del negocio'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

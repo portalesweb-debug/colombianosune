@@ -1,0 +1,20 @@
+uuid: adac4f9f-aa19-4032-ae8c-6caeedebf8fa
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_serv_migrantes
+field_name: comment_node_serv_migrantes
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_serv_migrantes
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

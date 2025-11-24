@@ -1,0 +1,70 @@
+uuid: 0554551d-d077-4ff7-9907-301e648d449c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.imagen_ninos_exterior.field_autor_ninos
+    - field.field.node.imagen_ninos_exterior.field_img_ninos_exterior
+    - field.field.node.imagen_ninos_exterior.field_pais_ninos
+    - field.field.node.imagen_ninos_exterior.upload
+    - node.type.imagen_ninos_exterior
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.imagen_ninos_exterior.default
+targetEntityType: node
+bundle: imagen_ninos_exterior
+mode: default
+content:
+  comment_node_imagen_ninos_exterior:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_autor_ninos:
+    label: above
+    weight: 27
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img_ninos_exterior:
+    label: hidden
+    weight: 11
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_ninos:
+    label: above
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,268 @@
+uuid: fe9a4d64-1657-4caa-af7b-f1a70e3589b6
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_colombianos_postulados
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Node revisions (colombianos_postulados)'
+source:
+  plugin: d7_node_revision
+  node_type: colombianos_postulados
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  body:
+    plugin: iterator
+    source: body
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_c_dula:
+    plugin: iterator
+    source: field_c_dula
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_pa_s_de_residencia_del_nom:
+    plugin: iterator
+    source: field_pa_s_de_residencia_del_nom
+    process:
+      target_id: tid
+  field_ciudad_de_residencia_del_n:
+    plugin: iterator
+    source: field_ciudad_de_residencia_del_n
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_profesi_n_u_oficio:
+    plugin: iterator
+    source: field_profesi_n_u_oficio
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_e_mail_del_nominado:
+    plugin: iterator
+    source: field_e_mail_del_nominado
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_tel_fono_del_nominado:
+    plugin: iterator
+    source: field_tel_fono_del_nominado
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_facebook_del_nominado:
+    plugin: iterator
+    source: field_facebook_del_nominado
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_twitter_del_nominado:
+    plugin: iterator
+    source: field_twitter_del_nominado
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_linkedin_del_nominado:
+    plugin: iterator
+    source: field_linkedin_del_nominado
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_su_nominado_ha_consentido_: field_su_nominado_ha_consentido_
+  field_adjunte_fotograf_as_del_no:
+    plugin: iterator
+    source: field_adjunte_fotograf_as_del_no
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: colombianos_postulados
+migration_dependencies:
+  required:
+    64: upgrade_d7_node_page
+    65: upgrade_d7_node_noticias
+    66: upgrade_d7_node_forum
+    67: upgrade_d7_node_profile
+    68: upgrade_d7_node_encuesta
+    69: upgrade_d7_node_columnista_invitado
+    70: upgrade_d7_node_event
+    71: upgrade_d7_node_crear_blog
+    72: upgrade_d7_node_blog
+    73: upgrade_d7_node_colombianos_postulados
+    74: upgrade_d7_node_concurso_ninos_exterior
+    75: upgrade_d7_node_webform
+    76: upgrade_d7_node_banco_leyes
+    77: upgrade_d7_node_programas_especiales_promocion
+    78: upgrade_d7_node_patrimonio_bibliografico_colombi
+    79: upgrade_d7_node_contenido_general_portal
+    80: upgrade_d7_node_asociaciones
+    81: upgrade_d7_node_contenido_general_comunidad
+    82: upgrade_d7_node_slideshowinformacion
+    83: upgrade_d7_node_album_cnu
+    84: upgrade_d7_node_video_cnu
+    85: upgrade_d7_node_pregunta_frecuente
+    86: upgrade_d7_node_imagen_ninos_exterior
+    87: upgrade_d7_node_imagen_concurso_navidad
+    88: upgrade_d7_node_negocio_colombiano
+    89: upgrade_d7_node_fotografia_cnu
+    90: upgrade_d7_node_directorio_consulados
+  optional:
+    - upgrade_d6_filter_format
+    - upgrade_d7_filter_format

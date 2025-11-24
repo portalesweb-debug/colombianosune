@@ -1,0 +1,81 @@
+uuid: 63c58a66-ecfd-45f8-a6c0-cf83cc8ac80a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenido_general_portal.body
+    - field.field.node.contenido_general_portal.field_imagen_cgp
+    - field.field.node.contenido_general_portal.field_imgs_cgp
+    - field.field.node.contenido_general_portal.taxonomy_vocabulary_33
+    - field.field.node.contenido_general_portal.upload
+    - node.type.contenido_general_portal
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.contenido_general_portal.default
+targetEntityType: node
+bundle: contenido_general_portal
+mode: default
+content:
+  body:
+    label: hidden
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_contenido_general_portal:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_cgp:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_imgs_cgp:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_33:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

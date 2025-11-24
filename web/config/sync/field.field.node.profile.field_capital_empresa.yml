@@ -1,0 +1,26 @@
+uuid: d5f9e59d-2a23-41c0-92c9-b903937f8bf8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_capital_empresa
+    - node.type.profile
+id: node.profile.field_capital_empresa
+field_name: field_capital_empresa
+entity_type: node
+bundle: profile
+label: Capital
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_capital_empresa][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

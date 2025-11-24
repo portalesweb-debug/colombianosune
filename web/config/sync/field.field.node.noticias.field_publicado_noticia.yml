@@ -1,0 +1,23 @@
+uuid: bf5542ce-587d-44bf-a465-4d0fa4f100f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicado_noticia
+    - node.type.noticias
+  module:
+    - options
+id: node.noticias.field_publicado_noticia
+field_name: field_publicado_noticia
+entity_type: node
+bundle: noticias
+label: 'Publicado en el slide principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

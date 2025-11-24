@@ -1,0 +1,31 @@
+uuid: 13d87ec8-7aba-4f0c-83ed-c88557f54cfd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:759c5baf-1db7-4d24-9160-e93b51ee54ea'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: encabezadomultiplicadores
+theme: colombianosune
+region: content
+weight: -55
+provider: null
+plugin: 'block_content:759c5baf-1db7-4d24-9160-e93b51ee54ea'
+settings:
+  id: 'block_content:759c5baf-1db7-4d24-9160-e93b51ee54ea'
+  label: MULTIPLICADORES
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /ejes/plancomunidad/multiplicadores
+    negate: false
+    context_mapping: {  }

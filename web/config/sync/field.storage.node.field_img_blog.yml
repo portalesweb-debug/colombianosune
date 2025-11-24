@@ -1,0 +1,35 @@
+uuid: cb86a544-e738-4ad0-a0c1-32f7d6d1a723
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_img_blog
+field_name: field_img_blog
+entity_type: node
+type: image
+settings:
+  default_image:
+    filename: persona.jpg
+    filepath: sites/default/files/imagefield_default_images/persona.jpg
+    filemime: image/jpeg
+    source: default_image_upload
+    destination: sites/default/files/imagefield_default_images/persona.jpg
+    filesize: '2492'
+    uid: '1'
+    status: 1
+    timestamp: 1274301357
+    fid: '36303'
+  uri_scheme: public
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 10
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

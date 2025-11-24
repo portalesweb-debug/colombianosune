@@ -1,0 +1,8 @@
+uuid: 1e4f873d-4c6d-47c6-8528-c9de0fae0670
+langcode: es
+status: true
+dependencies: {  }
+id: menu-ejesdetrabajo
+label: 'Ejes de Trabajo'
+description: ''
+locked: false

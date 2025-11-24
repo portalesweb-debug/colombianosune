@@ -1,0 +1,20 @@
+uuid: f8439ed0-018b-44c5-ad54-6b4b02ac26e9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_phone_country
+field_name: field_phone_country
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

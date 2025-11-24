@@ -1,0 +1,31 @@
+uuid: a1270bb9-1c12-4c4a-b602-ed15d8a7fa2a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2118b649-1cb1-4218-a5cc-c7d7cb545c25'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: banneroficinaquindio
+theme: colombianosune
+region: content_navigation
+weight: -49
+provider: null
+plugin: 'block_content:2118b649-1cb1-4218-a5cc-c7d7cb545c25'
+settings:
+  id: 'block_content:2118b649-1cb1-4218-a5cc-c7d7cb545c25'
+  label: 'Banner oficina quindio'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/oficina-quindio/*'
+    negate: false
+    context_mapping: {  }

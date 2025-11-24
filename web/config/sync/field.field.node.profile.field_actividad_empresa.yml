@@ -1,0 +1,23 @@
+uuid: 88ae055b-9463-47bf-91b9-c4adf1c8a0e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actividad_empresa
+    - node.type.profile
+id: node.profile.field_actividad_empresa
+field_name: field_actividad_empresa
+entity_type: node
+bundle: profile
+label: 'Actividad Empresa'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    tids: null
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

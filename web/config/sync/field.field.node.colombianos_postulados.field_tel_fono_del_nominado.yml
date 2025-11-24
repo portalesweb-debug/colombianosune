@@ -1,0 +1,21 @@
+uuid: 0b385f07-d801-44ec-856e-ef6775cf8123
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tel_fono_del_nominado
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_tel_fono_del_nominado
+field_name: field_tel_fono_del_nominado
+entity_type: node
+bundle: colombianos_postulados
+label: 'Teléfono del nominado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

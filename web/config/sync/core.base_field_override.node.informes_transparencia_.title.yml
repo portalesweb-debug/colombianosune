@@ -1,0 +1,18 @@
+uuid: 5069768c-f2c5-4cc7-b9d1-ed951b0d5606
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informes_transparencia_
+id: node.informes_transparencia_.title
+field_name: title
+entity_type: node
+bundle: informes_transparencia_
+label: 'Informes transparencia '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

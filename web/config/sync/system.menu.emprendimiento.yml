@@ -1,0 +1,8 @@
+uuid: 7ff94298-1b84-4f7e-8ce2-50d18d3279e4
+langcode: es
+status: true
+dependencies: {  }
+id: emprendimiento
+label: Emprendimiento
+description: ''
+locked: false

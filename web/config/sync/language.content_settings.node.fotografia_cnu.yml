@@ -1,0 +1,11 @@
+uuid: d68f02a1-f57c-46c5-b279-498d9773bbd9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.fotografia_cnu
+id: node.fotografia_cnu
+target_entity_type_id: node
+target_bundle: fotografia_cnu
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,38 @@
+uuid: d75e57b0-11c1-4a01-8c33-f22cf8cd633c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_evento
+    - node.type.event
+  module:
+    - image
+id: node.event.field_imagen_evento
+field_name: field_imagen_evento
+entity_type: node
+bundle: event
+label: 'Imagen encabezado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 500KB
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

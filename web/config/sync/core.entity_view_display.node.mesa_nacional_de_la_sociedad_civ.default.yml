@@ -1,0 +1,46 @@
+uuid: 8c48c20f-69ea-4afc-8a73-cf74ef408d8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_faq.default
+    - field.field.node.mesa_nacional_de_la_sociedad_civ.body
+    - field.field.node.mesa_nacional_de_la_sociedad_civ.comment_node_faq
+    - node.type.mesa_nacional_de_la_sociedad_civ
+  module:
+    - comment
+    - text
+    - user
+id: node.mesa_nacional_de_la_sociedad_civ.default
+targetEntityType: node
+bundle: mesa_nacional_de_la_sociedad_civ
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_faq:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: 101238c7-c327-44c6-b87d-dd0e3a198eb7
+langcode: es
+status: true
+dependencies: {  }
+name: 'País de Residencia'
+vid: vocabulary_35
+description: ''
+weight: 0

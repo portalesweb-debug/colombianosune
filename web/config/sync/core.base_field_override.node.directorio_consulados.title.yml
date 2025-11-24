@@ -1,0 +1,18 @@
+uuid: 0075311d-b454-4e04-a4bc-2a8819506e84
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.directorio_consulados
+id: node.directorio_consulados.title
+field_name: title
+entity_type: node
+bundle: directorio_consulados
+label: 'Nombre consulado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

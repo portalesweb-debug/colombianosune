@@ -1,0 +1,20 @@
+uuid: b471de67-c506-4e25-85c0-1d26601ceca2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_longitud_clasificado
+field_name: field_longitud_clasificado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: ab42ee63-8536-43f0-9cec-1fa36a8d7a45
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.comunidades
+  module:
+    - text
+id: node.comunidades.body
+field_name: body
+entity_type: node
+bundle: comunidades
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

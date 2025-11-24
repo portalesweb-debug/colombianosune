@@ -1,0 +1,43 @@
+uuid: 6117a175-9734-451a-ae4d-970770391329
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_beca
+    - field.field.comment.comment_node_beca.comment_body
+  module:
+    - text
+id: comment.comment_node_beca.default
+targetEntityType: comment
+bundle: comment_node_beca
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

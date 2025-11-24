@@ -1,0 +1,26 @@
+uuid: ac965aaf-ad2d-4e52-942e-92b0fde5bd1b
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_adjunte_fotograf_as_del_no
+field_name: field_adjunte_fotograf_as_del_no
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

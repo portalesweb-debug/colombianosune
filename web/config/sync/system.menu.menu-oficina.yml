@@ -1,0 +1,8 @@
+uuid: be2d7eb8-45c7-4151-9ff4-5aba04fe2403
+langcode: es
+status: true
+dependencies: {  }
+id: menu-oficina
+label: 'Oficina de atención al migrante'
+description: ''
+locked: false

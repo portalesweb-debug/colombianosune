@@ -1,0 +1,18 @@
+uuid: 692af64b-caf2-4994-ab98-ecbb81ea038b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Contenido general portal'
+type: contenido_general_portal
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

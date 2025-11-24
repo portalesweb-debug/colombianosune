@@ -1,0 +1,33 @@
+uuid: dab3cd15-b0c1-4ee4-aae3-c2a4de0ec256
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_event_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - image
+id: node.contenido_general_comunidad.field_imagen_event_unique
+field_name: field_imagen_event_unique
+entity_type: node
+bundle: contenido_general_comunidad
+label: 'Imagen del evento'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  max_filesize: 8M
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,7 @@
+uuid: 3591a152-95ed-47e4-b83a-9a4c1a74a6d1
+langcode: es
+status: false
+dependencies: {  }
+formId: node_negocio_colombiano_form
+captchaType: default
+label: null

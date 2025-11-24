@@ -1,0 +1,23 @@
+uuid: c358a922-afae-49b3-af47-056a0ac6e3a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.fotografia_cnu
+  module:
+    - options
+id: node.fotografia_cnu.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: fotografia_cnu
+label: Categoria
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Es copa america'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

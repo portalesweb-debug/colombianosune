@@ -1,0 +1,23 @@
+uuid: 7959280c-5a8e-4243-8429-8938603afc75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_value_independencia
+    - node.type.album_cnu
+  module:
+    - options
+id: node.album_cnu.field_value_independencia
+field_name: field_value_independencia
+entity_type: node
+bundle: album_cnu
+label: independencia
+description: 'Este album se realiza en el marco de celebración de la independencia de Colombia'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'No'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

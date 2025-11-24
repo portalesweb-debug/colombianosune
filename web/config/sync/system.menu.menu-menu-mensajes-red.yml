@@ -1,0 +1,8 @@
+uuid: 73cd3d94-3a93-4efd-9333-99420366caa9
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-mensajes-red
+label: 'Mensajes de red'
+description: ''
+locked: false

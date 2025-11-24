@@ -1,0 +1,61 @@
+uuid: 31a7be6f-03ca-4929-bb25-2d8016faf65e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.contenido_general_portal.body
+    - field.field.node.contenido_general_portal.field_imagen_cgp
+    - field.field.node.contenido_general_portal.field_imgs_cgp
+    - field.field.node.contenido_general_portal.taxonomy_vocabulary_33
+    - field.field.node.contenido_general_portal.upload
+    - node.type.contenido_general_portal
+  module:
+    - file
+    - image
+    - user
+id: node.contenido_general_portal.rss
+targetEntityType: node
+bundle: contenido_general_portal
+mode: rss
+content:
+  field_imagen_cgp:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_imgs_cgp:
+    label: above
+    weight: 31
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  langcode: true
+  taxonomy_vocabulary_33: true

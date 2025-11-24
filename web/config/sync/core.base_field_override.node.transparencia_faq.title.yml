@@ -1,0 +1,18 @@
+uuid: 8fb7c9f7-b598-4239-885d-697d8e518c94
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_faq
+id: node.transparencia_faq.title
+field_name: title
+entity_type: node
+bundle: transparencia_faq
+label: Transparencia_FAQ
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

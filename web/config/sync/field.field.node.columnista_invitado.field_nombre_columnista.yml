@@ -1,0 +1,21 @@
+uuid: 23f70f3d-08d2-43ac-a098-69d2b75a298a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_columnista
+    - node.type.columnista_invitado
+  module:
+    - text
+id: node.columnista_invitado.field_nombre_columnista
+field_name: field_nombre_columnista
+entity_type: node
+bundle: columnista_invitado
+label: 'Nombre autor'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

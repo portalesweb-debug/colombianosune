@@ -1,0 +1,91 @@
+uuid: 885093e3-5918-4a6b-b57e-299ced20cb49
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_columnista_invitado.default
+    - field.field.node.columnista_invitado.body
+    - field.field.node.columnista_invitado.comment_node_columnista_invitado
+    - field.field.node.columnista_invitado.field_bandera_colombia
+    - field.field.node.columnista_invitado.field_bandera_pa_s
+    - field.field.node.columnista_invitado.field_desc_autor_columnista
+    - field.field.node.columnista_invitado.field_imagen_columinsta
+    - field.field.node.columnista_invitado.field_img_autor_columnista
+    - field.field.node.columnista_invitado.field_nombre_columnista
+    - field.field.node.columnista_invitado.field_pais_aso_2
+    - field.field.node.columnista_invitado.upload
+    - node.type.columnista_invitado
+  module:
+    - comment
+    - file
+    - image
+    - text
+    - user
+id: node.columnista_invitado.default
+targetEntityType: node
+bundle: columnista_invitado
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_columnista_invitado:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_desc_autor_columnista:
+    label: inline
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img_autor_columnista:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_nombre_columnista:
+    label: inline
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bandera_colombia: true
+  field_bandera_pa_s: true
+  field_imagen_columinsta: true
+  field_pais_aso_2: true
+  langcode: true

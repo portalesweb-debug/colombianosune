@@ -1,0 +1,43 @@
+uuid: 38280040-dec3-4f44-8b33-a531ba5034da
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_html
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_imagenes_page
+    - field.field.node.page.upload
+    - node.type.page
+  module:
+    - image
+    - user
+id: node.page.email_html
+targetEntityType: node
+bundle: page
+mode: email_html
+content:
+  field_imagenes_page:
+    label: hidden
+    weight: -2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_page: true
+  langcode: true
+  upload: true

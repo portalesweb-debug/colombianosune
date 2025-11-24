@@ -1,0 +1,24 @@
+uuid: 20b59365-5629-4373-84ba-05b185283fc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mision_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_mision_aso
+field_name: field_mision_aso
+entity_type: node
+bundle: asociaciones
+label: Misión
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_mision_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

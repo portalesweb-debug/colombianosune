@@ -1,0 +1,8 @@
+uuid: 3cf25298-cc8c-4165-80f9-e14dfdd5545e
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_imagen_prueba
+label: 'comentario de '
+target_entity_type_id: node
+description: null

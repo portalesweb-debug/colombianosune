@@ -1,0 +1,24 @@
+uuid: f095ff9d-43ce-47c1-89f3-27f261479257
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fijo_pbc
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.field_fijo_pbc
+field_name: field_fijo_pbc
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: 'campo fijo'
+description: 'Con este número usted podrá consultar esta obra en las instalaciones de la Biblioteca Nacional de Colombia'
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_fijo_pbc][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

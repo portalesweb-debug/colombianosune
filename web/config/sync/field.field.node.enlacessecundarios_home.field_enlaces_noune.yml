@@ -1,0 +1,23 @@
+uuid: d5c78a8b-3e97-4b74-ac07-5be7af0d0129
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces_noune
+    - node.type.enlacessecundarios_home
+  module:
+    - link
+id: node.enlacessecundarios_home.field_enlaces_noune
+field_name: field_enlaces_noune
+entity_type: node
+bundle: enlacessecundarios_home
+label: Enlaces_noune
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

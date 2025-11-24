@@ -1,0 +1,8 @@
+uuid: ce574a27-fc40-47d7-b27c-79db3d15836a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-multiplicadores
+label: Multiplicadores
+description: ''
+locked: false

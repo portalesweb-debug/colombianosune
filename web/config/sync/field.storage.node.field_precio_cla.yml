@@ -1,0 +1,20 @@
+uuid: 845f3e14-6f8e-4c53-a1cf-cfa545c4cf73
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_precio_cla
+field_name: field_precio_cla
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

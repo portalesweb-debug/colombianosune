@@ -1,0 +1,41 @@
+uuid: 839348a7-9832-4c13-b737-447d1c73aa30
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-valorescolombianos
+  module:
+    - system
+    - user
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_valorescolombianos
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-valorescolombianos'
+settings:
+  id: 'system_menu_block:menu-valorescolombianos'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /valores_colombianos
+      /album/concurso-valores-colombianos
+      /content/alvaran-aguirre-steven
+      /valorescolombianos/*

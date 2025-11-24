@@ -1,0 +1,8 @@
+uuid: be6ab1a7-ea06-4d5f-b8cb-49ee61722700
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_asociaciones
+label: 'comentario de Asociaciones'
+target_entity_type_id: node
+description: null

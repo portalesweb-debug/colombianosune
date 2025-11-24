@@ -1,0 +1,27 @@
+uuid: 1e09242a-fcbc-459c-b767-f24d2818ccff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.banco_leyes
+  module:
+    - file
+id: node.banco_leyes.upload
+field_name: upload
+entity_type: node
+bundle: banco_leyes
+label: 'File attachments'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  max_filesize: '4 MB'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  file_directory: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

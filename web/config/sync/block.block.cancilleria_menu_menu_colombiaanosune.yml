@@ -1,0 +1,38 @@
+uuid: ce2b88ca-fa17-4f9d-8f07-7a0c0172cdfa
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-colombiaanosune
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_colombiaanosune
+theme: Cancilleria
+region: ''
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-colombiaanosune'
+settings:
+  id: 'system_menu_block:menu-colombiaanosune'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /cnu/*
+      /servicios/*
+      /colombianosune
+      /proyectosproductivos
+      /proyectosproductivos/*
+      /premiosarquitecturadiasporacolombiana
+      /noticias-colombia-nos-une-exterior
+      /premiosarquitecturadiasporacolombiana/*
+      /noticias-para-colombianos-cnu

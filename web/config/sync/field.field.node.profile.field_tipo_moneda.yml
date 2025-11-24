@@ -1,0 +1,23 @@
+uuid: bc6eb6b7-a5f1-4138-9801-36cd1dadc037
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_moneda
+    - node.type.profile
+id: node.profile.field_tipo_moneda
+field_name: field_tipo_moneda
+entity_type: node
+bundle: profile
+label: Moneda
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    tids: null
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

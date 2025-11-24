@@ -1,0 +1,23 @@
+uuid: c6faffc6-a9b8-4e3d-bc6d-61daa50bf6fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_su_nominado_ha_consentido_
+    - node.type.colombianos_postulados
+id: node.colombianos_postulados.field_su_nominado_ha_consentido_
+field_name: field_su_nominado_ha_consentido_
+entity_type: node
+bundle: colombianos_postulados
+label: 'Su nominado ha consentido publicar su historia en la campaña #MigrantHeroes'
+description: "<p>- Nota: Los campos marcados con * son obligatorios para poder completar la postulación.</p>\r\n<p>- Para postularse o postular a otro colombiano migrante debe haber iniciado sesión en el portal. </p>\r\n<p>- El diligenciamiento de este formulario no implica la aceptación del nominado para hacer parte de la campaña. </p>\r\n<p>- La postulación será confirmada al ser publicada la información en la pestaña “Colombianos Postulados”.</p>"
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

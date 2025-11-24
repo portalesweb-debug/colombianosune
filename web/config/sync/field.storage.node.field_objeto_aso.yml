@@ -1,0 +1,54 @@
+uuid: e55bb397-1493-4786-aeb7-e11f52827a22
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_objeto_aso
+field_name: field_objeto_aso
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Comercial
+      label: Comercial
+    -
+      value: Cultural
+      label: Cultural
+    -
+      value: Étnico
+      label: Étnico
+    -
+      value: 'Familia Y Niñez'
+      label: 'Familia Y Niñez'
+    -
+      value: Mujer
+      label: Mujer
+    -
+      value: Academia
+      label: Academia
+    -
+      value: 'Profesionales y Ex Alumnos'
+      label: 'Profesionales y Ex Alumnos'
+    -
+      value: 'Atención/Asistencia al Migrante'
+      label: 'Atención/Asistencia al Migrante'
+    -
+      value: Filantropía
+      label: Filantropía
+    -
+      value: Política
+      label: Política
+    -
+      value: Religioso
+      label: Religioso
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

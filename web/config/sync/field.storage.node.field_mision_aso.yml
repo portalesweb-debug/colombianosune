@@ -1,0 +1,19 @@
+uuid: 552525a5-78e7-4993-bf0b-122b0e870104
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_mision_aso
+field_name: field_mision_aso
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

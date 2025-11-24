@@ -1,0 +1,20 @@
+uuid: 9ab7ca4d-1051-4f85-9aaf-0eeddb617c9e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_modena_cla
+field_name: field_modena_cla
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

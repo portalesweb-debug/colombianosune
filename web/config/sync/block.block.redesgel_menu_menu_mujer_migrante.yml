@@ -1,0 +1,29 @@
+uuid: ac200b5c-534a-453a-99d6-e6767e81e079
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-mujer-migrante
+  module:
+    - system
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_mujer_migrante
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-mujer-migrante'
+settings:
+  id: 'system_menu_block:menu-mujer-migrante'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/mujer/migrante/*'

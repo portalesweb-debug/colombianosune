@@ -1,0 +1,79 @@
+uuid: 4c78645a-8327-40bc-8d93-23842ca8c42b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_album_cnu.default
+    - field.field.node.album_cnu.body
+    - field.field.node.album_cnu.comment_node_album_cnu
+    - field.field.node.album_cnu.field_image_cnu_02
+    - field.field.node.album_cnu.field_pais_cnu
+    - field.field.node.album_cnu.field_value_independencia
+    - field.field.node.album_cnu.taxonomy_vocabulary_20
+    - flexslider.optionset.default
+    - node.type.album_cnu
+  module:
+    - comment
+    - flexslider_fields
+    - text
+    - user
+id: node.album_cnu.default
+targetEntityType: node
+bundle: album_cnu
+mode: default
+content:
+  body:
+    label: hidden
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_album_cnu:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_image_cnu_02:
+    type: flexslider
+    weight: 0
+    label: above
+    settings:
+      optionset: default
+      image_style: ''
+      caption: '1'
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_cnu:
+    label: inline
+    weight: 26
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_20:
+    label: above
+    weight: 53
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_value_independencia: true
+  langcode: true

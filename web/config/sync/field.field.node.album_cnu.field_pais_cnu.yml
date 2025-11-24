@@ -1,0 +1,24 @@
+uuid: 6e6ac14d-9314-4f0e-892e-5335adb07ed5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_cnu
+    - node.type.album_cnu
+  module:
+    - text
+id: node.album_cnu.field_pais_cnu
+field_name: field_pais_cnu
+entity_type: node
+bundle: album_cnu
+label: 'País '
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_pais_cnu][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

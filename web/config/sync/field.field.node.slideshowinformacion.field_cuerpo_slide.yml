@@ -1,0 +1,24 @@
+uuid: 605a952c-d085-4495-94f4-001012784d90
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuerpo_slide
+    - node.type.slideshowinformacion
+  module:
+    - text
+id: node.slideshowinformacion.field_cuerpo_slide
+field_name: field_cuerpo_slide
+entity_type: node
+bundle: slideshowinformacion
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_cuerpo_slide][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

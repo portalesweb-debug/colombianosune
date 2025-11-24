@@ -1,0 +1,27 @@
+uuid: 2950802b-f250-414c-b77b-9a5bf0025d3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_videos
+    - node.type.videos_para_videos
+id: node.videos_para_videos.field_contenido_videos
+field_name: field_contenido_videos
+entity_type: node
+bundle: videos_para_videos
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      videos_para_videos: videos_para_videos
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

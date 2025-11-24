@@ -1,0 +1,21 @@
+uuid: 0d8f7464-04c4-4d9c-8737-5ec18de10e5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anuo_aso
+    - node.type.asociaciones
+  module:
+    - datetime
+id: node.asociaciones.field_anuo_aso
+field_name: field_anuo_aso
+entity_type: node
+bundle: asociaciones
+label: 'Año de fundación'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

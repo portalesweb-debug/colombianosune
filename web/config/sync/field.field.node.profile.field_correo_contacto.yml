@@ -1,0 +1,21 @@
+uuid: 733ca950-1cd1-46b2-8277-3f493d489dff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correo_contacto
+    - node.type.profile
+id: node.profile.field_correo_contacto
+field_name: field_correo_contacto
+entity_type: node
+bundle: profile
+label: 'Correo de Contácto'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,8 @@
+uuid: 19b5893e-deb8-4860-8121-0d58359e59df
+langcode: es
+status: true
+dependencies: {  }
+name: tags
+vid: vocabulary_16
+description: 'Vocabulario que almacena los tags ingresados por los Integrantes de una red y el administrador a la hora de crear una noticia'
+weight: 0

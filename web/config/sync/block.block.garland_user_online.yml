@@ -1,0 +1,24 @@
+uuid: 6febfc61-5690-4da4-856b-3e013778933c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - garland
+id: garland_user_online
+theme: garland
+region: content
+weight: -23
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '10'
+visibility: {  }

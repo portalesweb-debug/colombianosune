@@ -1,0 +1,24 @@
+uuid: a550dea2-a8a6-46af-8160-0e9d2a13ac48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apellido
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_apellido
+field_name: field_apellido
+entity_type: node
+bundle: profile
+label: Apellidos
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_apellido][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,20 @@
+uuid: 4ce7f6e6-ff8f-4c03-a0e0-2b414c6b6a0e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_pais_evento
+field_name: field_pais_evento
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

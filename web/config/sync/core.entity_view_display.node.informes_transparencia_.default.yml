@@ -1,0 +1,45 @@
+uuid: c53de1a6-13f7-4dde-b7a4-4042284ad8a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.informes_transparencia_.body
+    - field.field.node.informes_transparencia_.field_img_particpacion
+    - node.type.informes_transparencia_
+  module:
+    - image
+    - text
+    - user
+id: node.informes_transparencia_.default
+targetEntityType: node
+bundle: informes_transparencia_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img_particpacion:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

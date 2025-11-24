@@ -1,0 +1,8 @@
+uuid: cc44c0ff-3c30-40e2-8219-6a0b21563e0a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-redes
+label: menu_redes
+description: ''
+locked: false

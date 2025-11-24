@@ -1,0 +1,33 @@
+uuid: 035b3bb0-2e19-4423-9993-b886c3951365
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo_unique
+field_name: field_tipo_unique
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Evento
+      label: Evento
+    -
+      value: Imagen
+      label: Imagen
+    -
+      value: Video
+      label: Video
+    -
+      value: Clasificado
+      label: Clasificado
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

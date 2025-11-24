@@ -1,0 +1,19 @@
+uuid: 6c39669d-ef6b-4d91-8a13-471f64ba39f7
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_descripcion_organizacion
+field_name: field_descripcion_organizacion
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

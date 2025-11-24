@@ -1,0 +1,11 @@
+uuid: 847f5292-dbe8-49ea-a72e-c0e6a2979d79
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.retorno
+id: node.retorno
+target_entity_type_id: node
+target_bundle: retorno
+default_langcode: site_default
+language_alterable: false

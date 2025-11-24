@@ -1,0 +1,18 @@
+uuid: 08f517f9-edd1-4816-af0d-b1efafff683c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.comunidades
+id: node.comunidades.title
+field_name: title
+entity_type: node
+bundle: comunidades
+label: 'Comunidades transparencia'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

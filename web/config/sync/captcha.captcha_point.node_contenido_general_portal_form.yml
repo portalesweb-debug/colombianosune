@@ -1,0 +1,7 @@
+uuid: 2b9f453b-a882-4e32-9031-c67af9f2c5d3
+langcode: es
+status: false
+dependencies: {  }
+formId: node_contenido_general_portal_form
+captchaType: default
+label: null

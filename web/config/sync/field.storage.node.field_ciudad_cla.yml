@@ -1,0 +1,20 @@
+uuid: 79f27c52-ee7c-4143-b3f6-8267b137b6fd
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_cla
+field_name: field_ciudad_cla
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

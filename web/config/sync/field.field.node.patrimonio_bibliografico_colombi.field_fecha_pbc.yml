@@ -1,0 +1,24 @@
+uuid: 82fe5d28-8927-4ff8-b87a-316a14452bc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_pbc
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.field_fecha_pbc
+field_name: field_fecha_pbc
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_fecha_pbc][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

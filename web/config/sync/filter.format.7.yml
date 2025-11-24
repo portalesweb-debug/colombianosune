@@ -1,0 +1,20 @@
+uuid: 46a8048c-8e5f-480f-9c2e-d9443a927d2c
+langcode: es
+status: true
+dependencies: {  }
+name: Video
+format: '7'
+weight: -6
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -9
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }

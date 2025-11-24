@@ -1,0 +1,22 @@
+uuid: ca00bd61-df78-402a-89a0-e9f610cc4918
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: banco_de_leyes
+label: 'Banco de leyes'
+type: 'canonical_entities:node'
+pattern: 'bancodeleyes/[node:title]'
+selection_criteria:
+  bd6649a7-b57b-43ba-8c9b-e1bd864194eb:
+    id: node_type
+    bundles:
+      banco_leyes: banco_leyes
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bd6649a7-b57b-43ba-8c9b-e1bd864194eb
+selection_logic: and
+weight: -5
+relationships: {  }

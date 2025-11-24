@@ -1,0 +1,12 @@
+uuid: 4a9f70f7-f05b-4411-9342-74cce5f0280c
+langcode: es
+status: true
+dependencies: {  }
+id: foro_andino
+label: 'Foro Andino'
+description: ''
+use_admin_theme: false
+path: /ivforoandino
+access_logic: and
+access_conditions: {  }
+parameters: {  }

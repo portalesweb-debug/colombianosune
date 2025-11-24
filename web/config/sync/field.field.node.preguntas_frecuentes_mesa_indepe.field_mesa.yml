@@ -1,0 +1,21 @@
+uuid: d0be77a3-3e46-47e4-9c54-921208288c12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mesa
+    - node.type.preguntas_frecuentes_mesa_indepe
+id: node.preguntas_frecuentes_mesa_indepe.field_mesa
+field_name: field_mesa
+entity_type: node
+bundle: preguntas_frecuentes_mesa_indepe
+label: Contenido_FAQ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

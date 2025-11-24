@@ -1,0 +1,20 @@
+uuid: 8b87c499-2aa2-442e-aca3-fc460bcebdec
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fec_consulado
+field_name: field_fec_consulado
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

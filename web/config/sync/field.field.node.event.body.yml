@@ -1,0 +1,23 @@
+uuid: b993b7fb-a6c9-42ba-8f3d-bad9cc9c9353
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event
+  module:
+    - text
+id: node.event.body
+field_name: body
+entity_type: node
+bundle: event
+label: Descripción
+description: 'Lo eventos tienen una fecha de inicio y una fecha final opcional, así como un titulo y una descripción.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

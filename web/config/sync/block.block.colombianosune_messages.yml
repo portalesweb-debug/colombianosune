@@ -1,0 +1,22 @@
+uuid: 6187659f-9088-4f5b-8a43-c7c65169c5e3
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - colombianosune
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: colombianosune_messages
+theme: colombianosune
+region: top_header
+weight: -39
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

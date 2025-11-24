@@ -1,0 +1,19 @@
+uuid: 3d70d14a-b41c-480c-9502-dd1958c1d191
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_enlaces_noune
+field_name: field_enlaces_noune
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

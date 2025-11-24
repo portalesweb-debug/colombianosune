@@ -1,0 +1,113 @@
+uuid: fd93d855-707e-434e-b4cb-5ae5d01bdbfe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.directorio_consulados.field_correo_electr_nico
+    - field.field.node.directorio_consulados.field_direccion_consulado
+    - field.field.node.directorio_consulados.field_pa_s_de_residencia_del_nom
+    - field.field.node.directorio_consulados.field_tel_fono_consulado
+    - node.type.directorio_consulados
+  module:
+    - path
+    - text
+id: node.directorio_consulados.default
+targetEntityType: node
+bundle: directorio_consulados
+mode: default
+content:
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_correo_electr_nico:
+    weight: 43
+    type: email_default
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_direccion_consulado:
+    weight: 41
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pa_s_de_residencia_del_nom:
+    weight: 45
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tel_fono_consulado:
+    weight: 42
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden: {  }

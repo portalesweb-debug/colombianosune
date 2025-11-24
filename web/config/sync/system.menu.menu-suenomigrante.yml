@@ -1,0 +1,8 @@
+uuid: 5cbefe85-8571-4ea7-a5fc-b3ba04549f83
+langcode: es
+status: true
+dependencies: {  }
+id: menu-suenomigrante
+label: 'Acción diferida'
+description: "Menú\_de opciones para\_acción\_diferida dfd"
+locked: false

@@ -1,0 +1,10 @@
+uuid: f71db02f-a9e2-460c-86e6-e323dc237cfd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.print
+label: Print
+targetEntityType: node
+cache: true

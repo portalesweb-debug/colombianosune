@@ -1,0 +1,11 @@
+uuid: a5b9996e-8c86-45d5-8b41-505e9ff5b27b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.programas_especiales_promocion
+id: node.programas_especiales_promocion
+target_entity_type_id: node
+target_bundle: programas_especiales_promocion
+default_langcode: site_default
+language_alterable: false

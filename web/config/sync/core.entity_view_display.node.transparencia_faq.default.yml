@@ -1,0 +1,43 @@
+uuid: e7996b67-a3ae-4816-9d2d-b31b62626dd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.transparencia_faq.body
+    - field.field.node.transparencia_faq.field_contenido
+    - node.type.transparencia_faq
+  module:
+    - text
+    - user
+id: node.transparencia_faq.default
+targetEntityType: node
+bundle: transparencia_faq
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_contenido:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

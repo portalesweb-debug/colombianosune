@@ -1,0 +1,22 @@
+uuid: b267358d-1972-4015-9e8c-85de9067d492
+langcode: es
+status: true
+dependencies: {  }
+name: image_content_page
+label: Image_content_Page
+effects:
+  d6e7e81a-7a23-4917-8642-26ccb6cd4b54:
+    uuid: d6e7e81a-7a23-4917-8642-26ccb6cd4b54
+    id: image_scale
+    weight: -9
+    data:
+      width: 770
+      height: 340
+      upscale: false
+  12d3d649-c097-41e1-aab6-08a28d7a7fb6:
+    uuid: 12d3d649-c097-41e1-aab6-08a28d7a7fb6
+    id: image_resize
+    weight: -10
+    data:
+      width: 750
+      height: 320

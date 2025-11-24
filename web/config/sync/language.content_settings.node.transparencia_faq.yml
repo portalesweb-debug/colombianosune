@@ -1,0 +1,11 @@
+uuid: 7716e9c7-1784-415f-acdf-485e517ac850
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.transparencia_faq
+id: node.transparencia_faq
+target_entity_type_id: node
+target_bundle: transparencia_faq
+default_langcode: site_default
+language_alterable: false

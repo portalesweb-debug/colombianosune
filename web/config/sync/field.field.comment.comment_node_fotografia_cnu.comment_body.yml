@@ -1,0 +1,21 @@
+uuid: e33b27cd-47d4-437e-b8f7-a8ee4247369d
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_fotografia_cnu
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_fotografia_cnu.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_fotografia_cnu
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 2bda5f3c-5a87-4300-b63c-1919ded24c08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acepto
+    - node.type.concurso_ninos_exterior
+id: node.concurso_ninos_exterior.field_acepto
+field_name: field_acepto
+entity_type: node
+bundle: concurso_ninos_exterior
+label: 'Acepto Términos y condiciones'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

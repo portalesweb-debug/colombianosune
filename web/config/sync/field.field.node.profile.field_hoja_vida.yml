@@ -1,0 +1,27 @@
+uuid: 0187a5ec-1092-4160-8dce-9024101e2cb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hoja_vida
+    - node.type.profile
+  module:
+    - file
+id: node.profile.field_hoja_vida
+field_name: field_hoja_vida
+entity_type: node
+bundle: profile
+label: 'Hoja de Vida'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: usuario
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

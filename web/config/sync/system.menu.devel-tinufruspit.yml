@@ -1,0 +1,8 @@
+uuid: 02fa2e25-8099-44bb-9dc6-d71ad5cffded
+langcode: es
+status: true
+dependencies: {  }
+id: devel-tinufruspit
+label: Nutra
+description: 'Descripción de Nutra'
+locked: false

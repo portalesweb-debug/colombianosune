@@ -1,0 +1,8 @@
+uuid: 3d2dbeaa-9063-43e5-a83b-08844fa1c47d
+langcode: es
+status: true
+dependencies: {  }
+id: menu-multimedia
+label: Multimedia
+description: 'Permite visualizar los enlaces de la sección de multimedia'
+locked: false

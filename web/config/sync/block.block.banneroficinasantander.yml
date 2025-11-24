@@ -1,0 +1,31 @@
+uuid: 3e19acaf-7b4d-4649-a659-7b5e53bea166
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b8dff740-3e77-4e9f-9218-83fc5321dd1d'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: banneroficinasantander
+theme: colombianosune
+region: content_navigation
+weight: -42
+provider: null
+plugin: 'block_content:b8dff740-3e77-4e9f-9218-83fc5321dd1d'
+settings:
+  id: 'block_content:b8dff740-3e77-4e9f-9218-83fc5321dd1d'
+  label: 'Banner oficina Santander'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/oficina-santander/*'
+    negate: false
+    context_mapping: {  }

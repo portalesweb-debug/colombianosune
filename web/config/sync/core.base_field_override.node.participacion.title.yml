@@ -1,0 +1,18 @@
+uuid: 25c78883-b013-41ac-a684-f9691d4871da
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.participacion
+id: node.participacion.title
+field_name: title
+entity_type: node
+bundle: participacion
+label: 'Participación transparencia'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

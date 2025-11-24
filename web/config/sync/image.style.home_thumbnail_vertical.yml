@@ -1,0 +1,15 @@
+uuid: b7fcab0f-d3c7-4f31-bb47-20d19a98d638
+langcode: es
+status: true
+dependencies: {  }
+name: home_thumbnail_vertical
+label: 'Home Thumbnail Vertical'
+effects:
+  6c6128bb-84af-4418-93ae-e6c572499b98:
+    uuid: 6c6128bb-84af-4418-93ae-e6c572499b98
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 105
+      height: 140
+      anchor: center-center

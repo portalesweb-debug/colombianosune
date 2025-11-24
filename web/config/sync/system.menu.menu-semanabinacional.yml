@@ -1,0 +1,8 @@
+uuid: fdb12aba-b2bc-4791-b18e-16dde5c246fa
+langcode: es
+status: true
+dependencies: {  }
+id: menu-semanabinacional
+label: 'XII Semana Binacional de Salud'
+description: 'opciones para la semana binacional de la salud'
+locked: false

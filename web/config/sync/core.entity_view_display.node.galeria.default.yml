@@ -1,0 +1,43 @@
+uuid: 9aa2aac7-8d94-4e7a-9ea7-f2c64a68a566
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.galeria.body
+    - field.field.node.galeria.field_contentido_galeria
+    - node.type.galeria
+  module:
+    - text
+    - user
+id: node.galeria.default
+targetEntityType: node
+bundle: galeria
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_contentido_galeria:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: baec1b56-9fa7-471f-a30e-ba7bcb653ba4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_pais_pep
+field_name: field_pais_pep
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

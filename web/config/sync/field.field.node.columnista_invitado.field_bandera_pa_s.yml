@@ -1,0 +1,38 @@
+uuid: 2d22661b-770d-410c-920a-8c6951e04d80
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bandera_pa_s
+    - node.type.columnista_invitado
+  module:
+    - image
+id: node.columnista_invitado.field_bandera_pa_s
+field_name: field_bandera_pa_s
+entity_type: node
+bundle: columnista_invitado
+label: 'Bandera País'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

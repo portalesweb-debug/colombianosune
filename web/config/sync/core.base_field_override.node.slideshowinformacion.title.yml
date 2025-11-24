@@ -1,0 +1,18 @@
+uuid: 815f8f12-2714-464f-bc70-605979fefa19
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slideshowinformacion
+id: node.slideshowinformacion.title
+field_name: title
+entity_type: node
+bundle: slideshowinformacion
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: dc30229d-8871-46e3-8ef1-065c7f035ec8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+id: user_remove_role_action.editor
+label: 'Eliminar el rol Editor a los usuarios seleccionados'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor

@@ -1,0 +1,21 @@
+uuid: aef22127-e405-43af-a328-0b8480f2e99d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_concurso_ninos
+    - node.type.concurso_ninos_exterior
+  module:
+    - text
+id: node.concurso_ninos_exterior.field_ciudad_concurso_ninos
+field_name: field_ciudad_concurso_ninos
+entity_type: node
+bundle: concurso_ninos_exterior
+label: Ciudad
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

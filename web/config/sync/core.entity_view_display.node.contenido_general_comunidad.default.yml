@@ -1,0 +1,88 @@
+uuid: a924c5f7-4d2f-4f4f-bcb0-c97b61a165ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.contenido_general_comunidad.body
+    - field.field.node.contenido_general_comunidad.field_ciudad_unique
+    - field.field.node.contenido_general_comunidad.field_fecha_unique
+    - field.field.node.contenido_general_comunidad.field_foto_unique
+    - field.field.node.contenido_general_comunidad.field_imagen_event_unique
+    - field.field.node.contenido_general_comunidad.field_pais_aso_2
+    - field.field.node.contenido_general_comunidad.field_tipo_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - image
+    - text
+    - user
+id: node.contenido_general_comunidad.default
+targetEntityType: node
+bundle: contenido_general_comunidad
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_contenido_general_comunidad:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_unique:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_unique:
+    label: hidden
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_foto_unique:
+    label: inline
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_event_unique:
+    label: hidden
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_unique:
+    label: above
+    weight: 103
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_pais_aso_2: true
+  langcode: true

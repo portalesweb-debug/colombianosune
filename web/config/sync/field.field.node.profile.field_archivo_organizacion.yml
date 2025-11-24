@@ -1,0 +1,27 @@
+uuid: 3703e57b-79d6-42d1-a904-89056e800dc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archivo_organizacion
+    - node.type.profile
+  module:
+    - file
+id: node.profile.field_archivo_organizacion
+field_name: field_archivo_organizacion
+entity_type: node
+bundle: profile
+label: 'Documentación Organización'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: usuario
+  file_extensions: 'txt doc docx pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

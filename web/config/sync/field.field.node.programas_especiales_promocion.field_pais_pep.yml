@@ -1,0 +1,24 @@
+uuid: a2a88c9e-eabc-4c90-8e5a-b044891fe17f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_pep
+    - node.type.programas_especiales_promocion
+  module:
+    - text
+id: node.programas_especiales_promocion.field_pais_pep
+field_name: field_pais_pep
+entity_type: node
+bundle: programas_especiales_promocion
+label: Pais
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_pais_pep][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

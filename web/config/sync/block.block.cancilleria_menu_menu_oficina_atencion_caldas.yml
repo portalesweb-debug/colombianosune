@@ -1,0 +1,29 @@
+uuid: 2abdff21-2990-4eb9-a02a-d3bf8f92d1d1
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-caldas
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_oficina_atencion_caldas
+theme: Cancilleria
+region: ''
+weight: 15
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-caldas'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-caldas'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-caldas/*'

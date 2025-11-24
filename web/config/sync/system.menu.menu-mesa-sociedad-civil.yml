@@ -1,0 +1,8 @@
+uuid: 98f3ac83-c80e-4ea4-b8d0-f9847a556454
+langcode: es
+status: true
+dependencies: {  }
+id: menu-mesa-sociedad-civil
+label: 'Mesa sociedad civil'
+description: "Menu bloque izquierdo mesa sociedad civil\r\n"
+locked: false

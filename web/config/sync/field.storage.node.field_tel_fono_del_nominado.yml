@@ -1,0 +1,20 @@
+uuid: cbc2d226-d5ea-4504-b3b3-d3f0dabd13b8
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_tel_fono_del_nominado
+field_name: field_tel_fono_del_nominado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

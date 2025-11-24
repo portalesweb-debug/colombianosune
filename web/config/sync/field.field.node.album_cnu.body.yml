@@ -1,0 +1,23 @@
+uuid: 61451a91-7caa-4393-bf64-3c12c7a9030e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.album_cnu
+  module:
+    - text
+id: node.album_cnu.body
+field_name: body
+entity_type: node
+bundle: album_cnu
+label: Descripción
+description: 'permite ingresar los albunes de Colombia Nos Une '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

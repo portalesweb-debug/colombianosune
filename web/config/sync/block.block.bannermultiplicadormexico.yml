@@ -1,0 +1,31 @@
+uuid: 4324214c-dac9-4ec2-8bd0-e01ee8cd8902
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a9c465ce-e521-44f8-8d24-de150621f0c2'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannermultiplicadormexico
+theme: colombianosune
+region: content_navigation
+weight: -31
+provider: null
+plugin: 'block_content:a9c465ce-e521-44f8-8d24-de150621f0c2'
+settings:
+  id: 'block_content:a9c465ce-e521-44f8-8d24-de150621f0c2'
+  label: 'Banner Multiplicador México'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/multiplicador-méxico/*'
+    negate: false
+    context_mapping: {  }

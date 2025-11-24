@@ -1,0 +1,15 @@
+uuid: b9024ece-9944-41a3-a43e-d159a252e614
+langcode: es
+status: true
+dependencies: {  }
+name: eventos_20_de_julio
+label: 'eventos 20 de julio'
+effects:
+  180e4b41-c692-4801-af80-1ae9773a6036:
+    uuid: 180e4b41-c692-4801-af80-1ae9773a6036
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 175
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: a051baa8-33a5-4c82-9939-aa9d76c4cfbd
+langcode: es
+status: true
+dependencies: {  }
+name: home_thumbnail_horizontal
+label: 'Home Thumbnail Horizontal'
+effects:
+  6c8076e9-a037-4722-9945-31be31861be5:
+    uuid: 6c8076e9-a037-4722-9945-31be31861be5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 140
+      height: 105
+      anchor: center-center

@@ -1,0 +1,21 @@
+uuid: adfcdca3-c540-4457-a8ef-e3434913163a
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_asociaciones
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_asociaciones.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_asociaciones
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

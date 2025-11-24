@@ -1,0 +1,23 @@
+uuid: 9cb1fd60-005d-46e6-9384-a93ff3cb21c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria_negocio
+    - node.type.negocio_colombiano
+  module:
+    - options
+id: node.negocio_colombiano.field_categoria_negocio
+field_name: field_categoria_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: Catergoria
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: list_string

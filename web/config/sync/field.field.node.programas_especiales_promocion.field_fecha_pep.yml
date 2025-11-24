@@ -1,0 +1,21 @@
+uuid: 872eac3b-b2b7-43b1-9572-e2a36c6e8436
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_pep
+    - node.type.programas_especiales_promocion
+  module:
+    - datetime
+id: node.programas_especiales_promocion.field_fecha_pep
+field_name: field_fecha_pep
+entity_type: node
+bundle: programas_especiales_promocion
+label: Fecha
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

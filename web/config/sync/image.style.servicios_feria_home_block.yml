@@ -1,0 +1,15 @@
+uuid: acd4b4a7-40d9-4966-94de-a3a7d6886eea
+langcode: es
+status: true
+dependencies: {  }
+name: servicios_feria_home_block
+label: 'servicios feria home block'
+effects:
+  af727736-e134-4af2-a64e-32967f7a019e:
+    uuid: af727736-e134-4af2-a64e-32967f7a019e
+    id: image_scale
+    weight: 2
+    data:
+      width: 300
+      height: 115
+      upscale: false

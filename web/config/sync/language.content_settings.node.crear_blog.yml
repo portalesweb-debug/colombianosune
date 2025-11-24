@@ -1,0 +1,11 @@
+uuid: 9c02d126-2aad-45e9-b546-6dda90c804a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.crear_blog
+id: node.crear_blog
+target_entity_type_id: node
+target_bundle: crear_blog
+default_langcode: site_default
+language_alterable: false

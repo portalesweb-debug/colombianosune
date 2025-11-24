@@ -1,0 +1,20 @@
+uuid: f3f8672c-8eda-4c86-964f-bdad68dbef8e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_codigo_area
+field_name: field_codigo_area
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

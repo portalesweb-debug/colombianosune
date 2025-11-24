@@ -1,0 +1,8 @@
+uuid: 5ed927a4-f602-435d-b57e-9086a073d2f7
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-madrid
+label: 'Multiplicador en Madrid'
+description: ''
+locked: false

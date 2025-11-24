@@ -1,0 +1,20 @@
+uuid: f39d5838-d96f-454d-893a-1c2296e2a844
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_nombre_institucion
+field_name: field_nombre_institucion
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

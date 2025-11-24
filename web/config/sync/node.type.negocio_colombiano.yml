@@ -1,0 +1,18 @@
+uuid: 59f2dad1-45ed-4f2c-95c6-79bf57ffce84
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Negocio colombiano'
+type: negocio_colombiano
+description: 'Directorio de negocios colombianos'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

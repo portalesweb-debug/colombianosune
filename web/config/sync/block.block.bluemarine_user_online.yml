@@ -1,0 +1,24 @@
+uuid: a96c27ac-145f-4144-8c57-c09c0cca43d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - bluemarine
+id: bluemarine_user_online
+theme: bluemarine
+region: content
+weight: -25
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '10'
+visibility: {  }

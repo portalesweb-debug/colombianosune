@@ -1,0 +1,22 @@
+uuid: 2b156c38-4de3-4ceb-90d6-394ecd002bfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_para_videos
+id: node.videos_para_videos.sticky
+field_name: sticky
+entity_type: node
+bundle: videos_para_videos
+label: 'Fijo al comienzo de las listas'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

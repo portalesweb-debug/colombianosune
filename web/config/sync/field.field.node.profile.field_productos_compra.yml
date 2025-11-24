@@ -1,0 +1,24 @@
+uuid: 18a416cf-f2f5-4a8d-b500-9042c168db34
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_productos_compra
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_productos_compra
+field_name: field_productos_compra
+entity_type: node
+bundle: profile
+label: 'Productos que compra'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_productos_compra][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

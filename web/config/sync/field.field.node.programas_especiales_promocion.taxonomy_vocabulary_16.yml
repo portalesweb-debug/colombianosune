@@ -1,0 +1,21 @@
+uuid: 086181ca-9f9a-4a01-a99d-b9a5a08678f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_16
+    - node.type.programas_especiales_promocion
+id: node.programas_especiales_promocion.taxonomy_vocabulary_16
+field_name: taxonomy_vocabulary_16
+entity_type: node
+bundle: programas_especiales_promocion
+label: tags
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

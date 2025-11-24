@@ -1,0 +1,8 @@
+uuid: 6bc9fef8-c1e3-4b00-99cf-b50781feac82
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menucompletoportal
+label: 'Menú Completo Portal'
+description: 'permite visualizar las opciones de Menú Principal del Portal.'
+locked: false

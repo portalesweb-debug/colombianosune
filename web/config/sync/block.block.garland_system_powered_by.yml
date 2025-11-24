@@ -1,0 +1,20 @@
+uuid: 9402beb2-ec8c-425e-b033-cda724f2d1c7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - garland
+id: garland_system_powered_by
+theme: garland
+region: content
+weight: -67
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

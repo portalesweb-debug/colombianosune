@@ -1,0 +1,21 @@
+uuid: 93b187c3-3975-4923-8582-10486cc1ef48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_nacimiento
+    - node.type.profile
+  module:
+    - datetime
+id: node.profile.field_fecha_nacimiento
+field_name: field_fecha_nacimiento
+entity_type: node
+bundle: profile
+label: 'Fecha de nacimiento '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

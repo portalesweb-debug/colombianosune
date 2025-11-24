@@ -1,0 +1,19 @@
+uuid: af9ccbe3-2271-4a16-ae49-e2c60e614602
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_enlace_cla
+field_name: field_enlace_cla
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 9c1d7238-128b-4a44-b5de-ff6814b0240b
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_albun_concurso
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_albun_concurso.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_albun_concurso
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

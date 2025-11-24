@@ -1,0 +1,21 @@
+uuid: 708de61c-6ceb-4ca8-ae87-7dc4adb07519
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_encuesta
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_encuesta.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_encuesta
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

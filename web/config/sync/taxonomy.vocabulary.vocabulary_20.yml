@@ -1,0 +1,8 @@
+uuid: b2056a9e-309e-4b32-b64c-994a43985c9c
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tags de Usuario'
+vid: vocabulary_20
+description: ''
+weight: 0

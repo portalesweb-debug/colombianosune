@@ -1,0 +1,21 @@
+uuid: 9858ac64-835e-43cb-b03c-c4715bfa7722
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin_del_nominado
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_linkedin_del_nominado
+field_name: field_linkedin_del_nominado
+entity_type: node
+bundle: colombianos_postulados
+label: 'Linkedin del nominado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

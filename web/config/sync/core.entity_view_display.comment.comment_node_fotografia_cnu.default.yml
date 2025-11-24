@@ -1,0 +1,28 @@
+uuid: 5f8f20a7-3748-41ad-ac49-9c04d3dcdfe0
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_fotografia_cnu
+    - field.field.comment.comment_node_fotografia_cnu.comment_body
+  module:
+    - text
+id: comment.comment_node_fotografia_cnu.default
+targetEntityType: comment
+bundle: comment_node_fotografia_cnu
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: c47ba91d-1e37-482e-ba9d-f1a7a9305fd2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direccion_consulado
+    - node.type.directorio_consulados
+  module:
+    - text
+id: node.directorio_consulados.field_direccion_consulado
+field_name: field_direccion_consulado
+entity_type: node
+bundle: directorio_consulados
+label: Direccion
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

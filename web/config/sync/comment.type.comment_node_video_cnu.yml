@@ -1,0 +1,8 @@
+uuid: 1196ec64-002e-4bb0-a033-378ef438654e
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_video_cnu
+label: 'comentario de Vídeo Colombia Nos Une'
+target_entity_type_id: node
+description: null

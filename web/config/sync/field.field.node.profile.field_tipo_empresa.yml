@@ -1,0 +1,23 @@
+uuid: 3490121a-8444-4015-a415-6be3c31aff08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_empresa
+    - node.type.profile
+id: node.profile.field_tipo_empresa
+field_name: field_tipo_empresa
+entity_type: node
+bundle: profile
+label: 'Tipo de Empresa'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    tids: null
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 8369f63a-3765-4639-b695-f042eb4be4d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_de_finalizacion
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_fecha_de_finalizacion
+field_name: field_fecha_de_finalizacion
+entity_type: node
+bundle: event
+label: 'Fecha de finalizacion'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

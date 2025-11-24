@@ -1,0 +1,24 @@
+uuid: 47629b41-0d69-4b72-86e6-b90c1961f1a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_nombre
+field_name: field_nombre
+entity_type: node
+bundle: profile
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_nombre][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,24 @@
+uuid: 1bbb289c-29c4-4606-a843-511f877e9ab8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actividades_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_actividades_aso
+field_name: field_actividades_aso
+entity_type: node
+bundle: asociaciones
+label: Actividades
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_actividades_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: a8be60b0-a4d5-4541-91de-9359ff0a8ff8
+langcode: es
+status: true
+dependencies: {  }
+id: menu-oficina-atencion-atlantico
+label: 'Oficina de atencion al migrante Atlantico'
+description: ''
+locked: false

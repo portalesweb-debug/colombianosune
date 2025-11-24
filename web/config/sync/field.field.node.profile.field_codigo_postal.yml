@@ -1,0 +1,26 @@
+uuid: 5bf96233-f197-4563-9cea-7d994adaf5ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_postal
+    - node.type.profile
+id: node.profile.field_codigo_postal
+field_name: field_codigo_postal
+entity_type: node
+bundle: profile
+label: 'Código Postal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_codigo_postal][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

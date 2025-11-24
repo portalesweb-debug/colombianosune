@@ -1,0 +1,11 @@
+uuid: da7fde31-ec5e-422e-8ca4-2ffd8a7aa5f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.asociaciones
+id: node.asociaciones
+target_entity_type_id: node
+target_bundle: asociaciones
+default_langcode: site_default
+language_alterable: false

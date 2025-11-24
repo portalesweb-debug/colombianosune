@@ -1,0 +1,21 @@
+uuid: 36cadd2d-dbb9-462d-9c85-193d31a76205
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_27
+    - node.type.blog
+id: node.blog.taxonomy_vocabulary_27
+field_name: taxonomy_vocabulary_27
+entity_type: node
+bundle: blog
+label: 'Tags entrada'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

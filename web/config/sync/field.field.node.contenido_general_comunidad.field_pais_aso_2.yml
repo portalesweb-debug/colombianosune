@@ -1,0 +1,21 @@
+uuid: 03462936-80a2-4797-be88-72ca41432a92
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_aso_2
+    - node.type.contenido_general_comunidad
+id: node.contenido_general_comunidad.field_pais_aso_2
+field_name: field_pais_aso_2
+entity_type: node
+bundle: contenido_general_comunidad
+label: Donde
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: 82b9185b-4e8c-45e5-a8c2-0f5cd381cd3a
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-terminoscondiciones
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_terminoscondiciones
+theme: colombianosune
+region: footer
+weight: -23
+provider: null
+plugin: 'system_menu_block:menu-terminoscondiciones'
+settings:
+  id: 'system_menu_block:menu-terminoscondiciones'
+  label: 'Pie de página'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

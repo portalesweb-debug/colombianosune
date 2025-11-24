@@ -1,0 +1,20 @@
+uuid: 43dbb543-45f3-421b-ad45-1a7c6bd1175c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_titulo_obtenido
+field_name: field_titulo_obtenido
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

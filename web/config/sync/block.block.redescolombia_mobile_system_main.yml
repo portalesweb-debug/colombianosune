@@ -1,0 +1,20 @@
+uuid: ce274697-8a46-4003-9ec2-c9c49e153fc9
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - redescolombia_mobile
+id: redescolombia_mobile_system_main
+theme: redescolombia_mobile
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

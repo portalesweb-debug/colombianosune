@@ -1,0 +1,31 @@
+uuid: 7eb097fc-269d-4f60-b9c7-82b87c878b00
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c026ba6d-14fd-47ec-9718-97c2574a597e'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: banneroficinavalledelcauca
+theme: colombianosune
+region: content_navigation
+weight: -24
+provider: null
+plugin: 'block_content:c026ba6d-14fd-47ec-9718-97c2574a597e'
+settings:
+  id: 'block_content:c026ba6d-14fd-47ec-9718-97c2574a597e'
+  label: 'Banner oficina valle del cauca'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/oficina-cauca/*'
+    negate: false
+    context_mapping: {  }

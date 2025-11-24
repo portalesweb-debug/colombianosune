@@ -1,0 +1,38 @@
+uuid: c218ed9b-9832-4052-a66f-330436c125b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes_page
+    - node.type.page
+  module:
+    - image
+id: node.page.field_imagenes_page
+field_name: field_imagenes_page
+entity_type: node
+bundle: page
+label: Imagenes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,89 @@
+uuid: 4a74b550-0e04-46ae-baf1-b327a62b0421
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.print
+    - field.field.node.patrimonio_bibliografico_colombi.body
+    - field.field.node.patrimonio_bibliografico_colombi.field_autor_pat
+    - field.field.node.patrimonio_bibliografico_colombi.field_ciudad_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_codigo_pat
+    - field.field.node.patrimonio_bibliografico_colombi.field_correo_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_fecha_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_fijo_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_palabras_claves
+    - field.field.node.patrimonio_bibliografico_colombi.field_publicado_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.taxonomy_vocabulary_32
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+    - user
+id: node.patrimonio_bibliografico_colombi.print
+targetEntityType: node
+bundle: patrimonio_bibliografico_colombi
+mode: print
+content:
+  field_autor_pat:
+    label: inline
+    weight: 20
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_pbc:
+    label: inline
+    weight: 22
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_correo_pbc:
+    label: inline
+    weight: 21
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_pbc:
+    label: inline
+    weight: 23
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fijo_pbc:
+    label: hidden
+    weight: 27
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_palabras_claves:
+    label: inline
+    weight: 25
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publicado_pbc:
+    label: inline
+    weight: 24
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_codigo_pat: true
+  langcode: true
+  taxonomy_vocabulary_32: true

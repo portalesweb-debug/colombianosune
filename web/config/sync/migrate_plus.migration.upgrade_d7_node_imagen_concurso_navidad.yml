@@ -1,0 +1,99 @@
+uuid: 192ccea0-4b7b-4294-9c1b-34964aede8ef
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_node_imagen_concurso_navidad
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Nodes (Imagen lo que me une a Colombia navidad concurso)'
+source:
+  plugin: d7_node
+  node_type: imagen_concurso_navidad
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  upload:
+    plugin: iterator
+    source: upload
+    process:
+      target_id: fid
+      display: display
+      description: description
+  field_autor_concurso_navidad:
+    plugin: iterator
+    source: field_autor_concurso_navidad
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_terminos_concurso_navidad: field_terminos_concurso_navidad
+  field_ciudad_concurso_navidad:
+    plugin: iterator
+    source: field_ciudad_concurso_navidad
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_img_concurso_navidad:
+    plugin: iterator
+    source: field_img_concurso_navidad
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+destination:
+  plugin: 'entity:node'
+  default_bundle: imagen_concurso_navidad
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d6_filter_format
+    - upgrade_d7_filter_format

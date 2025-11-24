@@ -1,0 +1,24 @@
+uuid: 59e1ad50-55ed-42b8-b9fc-6778474f9915
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vision_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_vision_aso
+field_name: field_vision_aso
+entity_type: node
+bundle: asociaciones
+label: Visión
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_vision_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

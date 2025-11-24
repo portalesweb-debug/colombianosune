@@ -1,0 +1,18 @@
+uuid: 75b68d5f-004d-452c-9f9f-e8f7a32f7c51
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.concurso_ninos_exterior
+id: node.concurso_ninos_exterior.title
+field_name: title
+entity_type: node
+bundle: concurso_ninos_exterior
+label: 'Nombre del dibujo o del video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 76f899d3-939d-493c-b5e1-203c5f97d91a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_consulado
+field_name: field_consulado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

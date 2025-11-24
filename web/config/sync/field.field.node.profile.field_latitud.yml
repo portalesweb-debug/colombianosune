@@ -1,0 +1,24 @@
+uuid: d2f10a87-4c72-4feb-bee7-f7554517792e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latitud
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_latitud
+field_name: field_latitud
+entity_type: node
+bundle: profile
+label: Latitud
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_latitud][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

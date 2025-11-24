@@ -1,0 +1,18 @@
+uuid: 3d17bfc1-e37b-4bf7-85ad-4f1d1bfb88b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.crear_blog
+id: node.crear_blog.title
+field_name: title
+entity_type: node
+bundle: crear_blog
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

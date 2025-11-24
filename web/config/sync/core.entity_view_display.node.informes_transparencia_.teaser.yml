@@ -1,0 +1,38 @@
+uuid: 7dbfb28c-ec60-48b3-af8a-35f3783c5af2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.informes_transparencia_.body
+    - field.field.node.informes_transparencia_.field_img_particpacion
+    - node.type.informes_transparencia_
+  module:
+    - text
+    - user
+id: node.informes_transparencia_.teaser
+targetEntityType: node
+bundle: informes_transparencia_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_img_particpacion: true
+  langcode: true

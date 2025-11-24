@@ -1,0 +1,20 @@
+uuid: 59cf8fce-7d95-443e-af17-52226e7429dc
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_codigo_pat
+field_name: field_codigo_pat
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

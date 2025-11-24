@@ -1,0 +1,35 @@
+uuid: eff2198d-34fb-46d3-a970-fb11488f050a
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_imagen
+field_name: field_imagen
+entity_type: node
+type: image
+settings:
+  default_image:
+    filename: noticias-default.jpg
+    filepath: sites/default/files/imagefield_default_images/noticias-default.jpg
+    filemime: image/jpeg
+    source: default_image_upload
+    destination: sites/default/files/imagefield_default_images/noticias-default.jpg
+    filesize: 14493
+    uid: '1'
+    status: 1
+    timestamp: 1373560153
+    fid: '36282'
+  uri_scheme: public
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: 9d557160-0e2e-4b92-b071-23f613aace94
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-menu-ipiales-oficina
+  module:
+    - system
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_menu_ipiales_oficina
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-menu-ipiales-oficina'
+settings:
+  id: 'system_menu_block:menu-menu-ipiales-oficina'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /oficina-ipiales/*
+      /eje4/*

@@ -1,0 +1,454 @@
+uuid: 89fac9c6-10f8-416e-a9b1-c3e679d6fd2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.profile.comment_node_profile
+    - field.field.node.profile.field_actividad_empresa
+    - field.field.node.profile.field_actividades_principales
+    - field.field.node.profile.field_apellido
+    - field.field.node.profile.field_archivo_organizacion
+    - field.field.node.profile.field_boletin_redescolombia
+    - field.field.node.profile.field_capital_empresa
+    - field.field.node.profile.field_ciudad
+    - field.field.node.profile.field_ciudad_nacimiento
+    - field.field.node.profile.field_codigo_area
+    - field.field.node.profile.field_codigo_postal
+    - field.field.node.profile.field_correo_contacto
+    - field.field.node.profile.field_creacion
+    - field.field.node.profile.field_descripcion_organizacion
+    - field.field.node.profile.field_direccion
+    - field.field.node.profile.field_estado_civil
+    - field.field.node.profile.field_fax
+    - field.field.node.profile.field_fecha_nacimiento
+    - field.field.node.profile.field_hoja_vida
+    - field.field.node.profile.field_id_representante
+    - field.field.node.profile.field_latitud
+    - field.field.node.profile.field_libros_fav
+    - field.field.node.profile.field_longitud
+    - field.field.node.profile.field_lugar_nacimiento
+    - field.field.node.profile.field_mas_perfil
+    - field.field.node.profile.field_mus_fav
+    - field.field.node.profile.field_nivel_educativo
+    - field.field.node.profile.field_nombre
+    - field.field.node.profile.field_num_empleados
+    - field.field.node.profile.field_numero_celular
+    - field.field.node.profile.field_ocupacion
+    - field.field.node.profile.field_organizaciones_pertenezco
+    - field.field.node.profile.field_otro_tipo_org
+    - field.field.node.profile.field_pagina_web
+    - field.field.node.profile.field_perfil
+    - field.field.node.profile.field_pertenece_redes_colombia
+    - field.field.node.profile.field_phone_country
+    - field.field.node.profile.field_productos_compra
+    - field.field.node.profile.field_representante_legal
+    - field.field.node.profile.field_servicios_ofrecidos
+    - field.field.node.profile.field_sexo
+    - field.field.node.profile.field_telefono
+    - field.field.node.profile.field_tip_org
+    - field.field.node.profile.field_tipo_empresa
+    - field.field.node.profile.field_tipo_moneda
+    - field.field.node.profile.field_ubicacion
+    - field.field.node.profile.taxonomy_vocabulary_20
+    - field.field.node.profile.taxonomyextra
+    - node.type.profile
+  module:
+    - datetime
+    - file
+    - link
+    - path
+    - text
+id: node.profile.default
+targetEntityType: node
+bundle: profile
+mode: default
+content:
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actividad_empresa:
+    weight: 11
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actividades_principales:
+    weight: 7
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_apellido:
+    weight: 4
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_archivo_organizacion:
+    weight: 16
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_boletin_redescolombia:
+    weight: 27
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_capital_empresa:
+    weight: 18
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_ciudad:
+    weight: 24
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_ciudad_nacimiento:
+    weight: 22
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_codigo_area:
+    weight: 9
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_codigo_postal:
+    weight: 13
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_correo_contacto:
+    weight: 15
+    type: email_default
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_creacion:
+    weight: 4
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_descripcion_organizacion:
+    weight: 9
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_direccion:
+    weight: 7
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_estado_civil:
+    weight: 18
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    weight: 12
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_fecha_nacimiento:
+    weight: 19
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hoja_vida:
+    weight: 25
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_id_representante:
+    weight: 16
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_latitud:
+    weight: 5
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_libros_fav:
+    weight: 1
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_longitud:
+    weight: 6
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_lugar_nacimiento:
+    weight: 21
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mas_perfil:
+    weight: 3
+    type: text_textfield
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_mus_fav:
+    weight: 2
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_nivel_educativo:
+    weight: 20
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_nombre:
+    weight: 3
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_numero_celular:
+    weight: 11
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_ocupacion:
+    weight: -5
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_organizaciones_pertenezco:
+    weight: 0
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  field_otro_tipo_org:
+    weight: 6
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_pagina_web:
+    weight: 14
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_perfil:
+    weight: 26
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pertenece_redes_colombia:
+    weight: 17
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_phone_country:
+    weight: 8
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_productos_compra:
+    weight: 13
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_representante_legal:
+    weight: 15
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_servicios_ofrecidos:
+    weight: 8
+    type: text_textfield
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_sexo:
+    weight: 17
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_telefono:
+    weight: 10
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tip_org:
+    weight: 5
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tipo_empresa:
+    weight: 10
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tipo_moneda:
+    weight: 14
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ubicacion:
+    weight: 23
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_profile: true
+  field_num_empleados: true
+  taxonomy_vocabulary_20: true
+  taxonomyextra: true

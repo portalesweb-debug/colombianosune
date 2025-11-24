@@ -1,0 +1,24 @@
+uuid: e859155e-5622-424b-a531-1567ea83a887
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_pat
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.field_autor_pat
+field_name: field_autor_pat
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: Autor
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_autor_pat][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

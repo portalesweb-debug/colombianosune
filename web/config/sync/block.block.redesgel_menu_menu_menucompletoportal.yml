@@ -1,0 +1,25 @@
+uuid: a48afe50-0998-44ab-8c9f-ee3ae6ffc685
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-menucompletoportal
+  module:
+    - system
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_menucompletoportal
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-menucompletoportal'
+settings:
+  id: 'system_menu_block:menu-menucompletoportal'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

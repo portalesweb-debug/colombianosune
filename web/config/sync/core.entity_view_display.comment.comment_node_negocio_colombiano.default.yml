@@ -1,0 +1,28 @@
+uuid: 068b0db3-e7d6-454f-a591-4f912cf529ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_negocio_colombiano
+    - field.field.comment.comment_node_negocio_colombiano.comment_body
+  module:
+    - text
+id: comment.comment_node_negocio_colombiano.default
+targetEntityType: comment
+bundle: comment_node_negocio_colombiano
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

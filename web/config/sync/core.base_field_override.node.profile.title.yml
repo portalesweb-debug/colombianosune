@@ -1,0 +1,18 @@
+uuid: ce34d03b-65a2-4914-bdc6-b51a104d4037
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.profile
+id: node.profile.title
+field_name: title
+entity_type: node
+bundle: profile
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

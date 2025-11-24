@@ -1,0 +1,18 @@
+uuid: 9b8db61a-a479-4b13-af23-9e397ccd744d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.programas_especiales_promocion
+id: node.programas_especiales_promocion.title
+field_name: title
+entity_type: node
+bundle: programas_especiales_promocion
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

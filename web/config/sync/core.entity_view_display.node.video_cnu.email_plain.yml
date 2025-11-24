@@ -1,0 +1,43 @@
+uuid: af93a600-2644-4296-aecd-c25f71c60754
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.video_cnu.body
+    - field.field.node.video_cnu.comment_node_video_cnu
+    - field.field.node.video_cnu.field_pais_cnu
+    - field.field.node.video_cnu.field_validate_videocnu
+    - field.field.node.video_cnu.field_video_cnu
+    - node.type.video_cnu
+  module:
+    - text
+    - user
+id: node.video_cnu.email_plain
+targetEntityType: node
+bundle: video_cnu
+mode: email_plain
+content:
+  field_pais_cnu:
+    label: inline
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_video_cnu: true
+  field_validate_videocnu: true
+  field_video_cnu: true
+  langcode: true

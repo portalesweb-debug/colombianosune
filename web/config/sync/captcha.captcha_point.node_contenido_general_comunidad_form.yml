@@ -1,0 +1,7 @@
+uuid: 7400812d-6713-419f-be58-751dad430485
+langcode: es
+status: false
+dependencies: {  }
+formId: node_contenido_general_comunidad_form
+captchaType: default
+label: null

@@ -1,0 +1,11 @@
+uuid: f4fb854a-c44a-4270-9f89-d1aea71c324d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_ninos_exterior
+id: node.imagen_ninos_exterior
+target_entity_type_id: node
+target_bundle: imagen_ninos_exterior
+default_langcode: site_default
+language_alterable: false

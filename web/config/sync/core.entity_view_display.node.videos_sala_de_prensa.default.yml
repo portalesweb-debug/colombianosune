@@ -1,0 +1,34 @@
+uuid: e3c73843-21a1-45a4-a5d7-f54af26a7619
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.videos_sala_de_prensa.body
+    - node.type.videos_sala_de_prensa
+  module:
+    - text
+    - user
+id: node.videos_sala_de_prensa.default
+targetEntityType: node
+bundle: videos_sala_de_prensa
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

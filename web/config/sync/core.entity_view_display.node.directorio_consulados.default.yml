@@ -1,0 +1,66 @@
+uuid: e9b8721b-e18e-4101-b710-79a6cffeeeac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.directorio_consulados.field_correo_electr_nico
+    - field.field.node.directorio_consulados.field_direccion_consulado
+    - field.field.node.directorio_consulados.field_pa_s_de_residencia_del_nom
+    - field.field.node.directorio_consulados.field_tel_fono_consulado
+    - node.type.directorio_consulados
+  module:
+    - text
+    - user
+id: node.directorio_consulados.default
+targetEntityType: node
+bundle: directorio_consulados
+mode: default
+content:
+  comment_node_directorio_consulados:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_correo_electr_nico:
+    label: above
+    weight: 2
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_direccion_consulado:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pa_s_de_residencia_del_nom:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tel_fono_consulado:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

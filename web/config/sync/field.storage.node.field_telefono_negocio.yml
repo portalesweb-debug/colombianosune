@@ -1,0 +1,20 @@
+uuid: b6b57aac-3364-47e8-b1e0-c8a7e164db9c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_telefono_negocio
+field_name: field_telefono_negocio
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

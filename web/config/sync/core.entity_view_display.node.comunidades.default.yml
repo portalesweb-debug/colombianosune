@@ -1,0 +1,45 @@
+uuid: ffa16440-3a2a-4810-853c-44548aa7f72d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.comunidades.body
+    - field.field.node.comunidades.field_img
+    - node.type.comunidades
+  module:
+    - image
+    - text
+    - user
+id: node.comunidades.default
+targetEntityType: node
+bundle: comunidades
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

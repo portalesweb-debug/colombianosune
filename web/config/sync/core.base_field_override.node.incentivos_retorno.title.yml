@@ -1,0 +1,18 @@
+uuid: bac0da6e-5523-4699-a1f5-8b73ff085c73
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.incentivos_retorno
+id: node.incentivos_retorno.title
+field_name: title
+entity_type: node
+bundle: incentivos_retorno
+label: tipos_retorno
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

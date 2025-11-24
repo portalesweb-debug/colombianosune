@@ -1,0 +1,15 @@
+uuid: 0227dc16-50a9-4b38-8539-3df76e843ad4
+langcode: es
+status: true
+dependencies: {  }
+name: foros_vista
+label: foros_vista
+effects:
+  0bdb7c5f-2476-4f6e-8a1c-3c81e20159e1:
+    uuid: 0bdb7c5f-2476-4f6e-8a1c-3c81e20159e1
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 160
+      height: 120
+      anchor: center-center

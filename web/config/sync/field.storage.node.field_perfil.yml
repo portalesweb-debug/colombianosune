@@ -1,0 +1,27 @@
+uuid: 5bf6fdcf-6d62-4760-9e25-113ecd182b2c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_perfil
+field_name: field_perfil
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Publico
+      label: Publico
+    -
+      value: Privado
+      label: Privado
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

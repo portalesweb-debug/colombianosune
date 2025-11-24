@@ -1,0 +1,24 @@
+uuid: 6689562f-3945-4b0f-bfc8-95c9bb6b5463
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numero_celular
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_numero_celular
+field_name: field_numero_celular
+entity_type: node
+bundle: profile
+label: 'Número de celular'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_numero_celular][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

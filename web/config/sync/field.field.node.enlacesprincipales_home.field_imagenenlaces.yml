@@ -1,0 +1,38 @@
+uuid: 9db1ea6f-63df-4b7b-b63e-e73ca6ecf12b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenenlaces
+    - node.type.enlacesprincipales_home
+  module:
+    - image
+id: node.enlacesprincipales_home.field_imagenenlaces
+field_name: field_imagenenlaces
+entity_type: node
+bundle: enlacesprincipales_home
+label: imagenenlaces
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: Enlacescolombianosune
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: 124ca382-a283-4c88-be0c-5e64369fcafe
+    alt: imagenprueba
+    title: imagenprueba
+    width: 250
+    height: 180
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

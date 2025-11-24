@@ -1,0 +1,11 @@
+uuid: 91be2e3c-11c0-4498-8394-377c224f2850
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.enlaces_detacados
+id: node.enlaces_detacados
+target_entity_type_id: node
+target_bundle: enlaces_detacados
+default_langcode: site_default
+language_alterable: false

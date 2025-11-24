@@ -1,0 +1,14 @@
+uuid: c118f655-18e0-48d4-b0f5-db3cc0eb0f07
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuarioadminnoticias
+  module:
+    - user
+id: user_add_role_action.usuarioadminnoticias
+label: 'Agregar el rol UsuarioAdminNoticias a los usuarios seleccionados'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: usuarioadminnoticias

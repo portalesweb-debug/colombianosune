@@ -1,0 +1,78 @@
+uuid: 64595a00-202f-4426-9a4b-08c39a5c41e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.concurso_ninos_exterior.field_acepto
+    - field.field.node.concurso_ninos_exterior.field_ciudad_concurso_ninos
+    - field.field.node.concurso_ninos_exterior.field_e_mail
+    - field.field.node.concurso_ninos_exterior.field_imagen_concurso
+    - field.field.node.concurso_ninos_exterior.field_nombre_del_ni_o
+    - field.field.node.concurso_ninos_exterior.field_nombre_del_padre
+    - field.field.node.concurso_ninos_exterior.field_pa_s_concurso
+    - field.field.node.concurso_ninos_exterior.field_video
+    - field.field.node.concurso_ninos_exterior.field_video_url_youtube
+    - node.type.concurso_ninos_exterior
+  module:
+    - image
+    - text
+    - user
+id: node.concurso_ninos_exterior.default
+targetEntityType: node
+bundle: concurso_ninos_exterior
+mode: default
+content:
+  comment_node_concurso_ninos_exterior:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_concurso_ninos:
+    label: inline
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_concurso:
+    label: hidden
+    weight: 3
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_nombre_del_ni_o:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pa_s_concurso:
+    label: inline
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_acepto: true
+  field_e_mail: true
+  field_nombre_del_padre: true
+  field_video: true
+  field_video_url_youtube: true
+  langcode: true

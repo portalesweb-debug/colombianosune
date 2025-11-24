@@ -1,0 +1,43 @@
+uuid: 0dc185a5-b1fe-4887-b3eb-b5e23be02e5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.videos_para_videos.body
+    - field.field.node.videos_para_videos.field_contenido_videos
+    - node.type.videos_para_videos
+  module:
+    - text
+    - user
+id: node.videos_para_videos.default
+targetEntityType: node
+bundle: videos_para_videos
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_contenido_videos:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

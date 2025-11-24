@@ -1,0 +1,18 @@
+uuid: 2df0c678-5510-4de6-805f-bae7053b8277
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'columnista invitado'
+type: columnista_invitado
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,22 @@
+uuid: 64051e61-b7c1-4607-9323-8546c35422fe
+langcode: es
+status: false
+dependencies:
+  theme:
+    - colombianosune
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: colombianosune_local_tasks
+theme: colombianosune
+region: content
+weight: -36
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

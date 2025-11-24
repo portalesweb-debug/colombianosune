@@ -1,0 +1,30 @@
+uuid: 60a4eae3-a52a-40ae-8bc0-455e707c7efa
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_categoria_negocio
+field_name: field_categoria_negocio
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Empresa
+      label: Empresa
+    -
+      value: Servicio
+      label: Servicio
+    -
+      value: Producto
+      label: Producto
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

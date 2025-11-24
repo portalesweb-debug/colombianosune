@@ -1,0 +1,30 @@
+uuid: 9442aa36-087b-40fb-867e-73cc6f33334d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.enlaces_detacados
+  module:
+    - system
+    - views
+  theme:
+    - colombianosune
+id: views_block__enlaces_detacados_block_1
+theme: colombianosune
+region: destacados
+weight: 0
+provider: null
+plugin: 'views_block:enlaces_detacados-block_1'
+settings:
+  id: 'views_block:enlaces_detacados-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

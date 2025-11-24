@@ -1,0 +1,8 @@
+uuid: 53aeb66d-e8a6-4093-9cac-2173da03ca12
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-sevilla
+label: 'Multiplicador en Sevilla'
+description: ''
+locked: false

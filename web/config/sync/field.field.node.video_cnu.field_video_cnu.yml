@@ -1,0 +1,30 @@
+uuid: 409e8327-f018-4509-91be-d9b52fe2a67d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_cnu
+    - node.type.video_cnu
+  module:
+    - file
+id: node.video_cnu.field_video_cnu
+field_name: field_video_cnu
+entity_type: node
+bundle: video_cnu
+label: Video
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    embed: ''
+    value: ''
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: avi
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

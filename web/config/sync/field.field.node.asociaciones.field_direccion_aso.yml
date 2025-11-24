@@ -1,0 +1,24 @@
+uuid: 0f57ffd6-de91-4466-88b6-6e04f4f784bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_direccion_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_direccion_aso
+field_name: field_direccion_aso
+entity_type: node
+bundle: asociaciones
+label: Dirección
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_direccion_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

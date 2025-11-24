@@ -1,0 +1,23 @@
+uuid: b698417f-0d8d-4cd9-a115-1a3ee3649890
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_validate_videocnu
+    - node.type.video_cnu
+  module:
+    - options
+id: node.video_cnu.field_validate_videocnu
+field_name: field_validate_videocnu
+entity_type: node
+bundle: video_cnu
+label: 'mostrar en el album'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: Si
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: e1ee868a-aee6-40c6-ba9f-0394ff92d4bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sexo
+    - node.type.profile
+  module:
+    - options
+id: node.profile.field_sexo
+field_name: field_sexo
+entity_type: node
+bundle: profile
+label: sexo
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

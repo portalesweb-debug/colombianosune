@@ -1,0 +1,21 @@
+uuid: 2e7e43aa-c74e-44b3-9c19-398540d8f064
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tel_fono_consulado
+    - node.type.directorio_consulados
+  module:
+    - text
+id: node.directorio_consulados.field_tel_fono_consulado
+field_name: field_tel_fono_consulado
+entity_type: node
+bundle: directorio_consulados
+label: Teléfono_consulado
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

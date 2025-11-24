@@ -1,0 +1,222 @@
+uuid: eeb9fb46-feec-4a34-a4b1-78e9cf0d89d1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.noticias.body
+    - field.field.node.noticias.comment_node_noticias
+    - field.field.node.noticias.field_archivo_organizacion
+    - field.field.node.noticias.field_consulado
+    - field.field.node.noticias.field_enlace_not
+    - field.field.node.noticias.field_fec_consulado
+    - field.field.node.noticias.field_fecha_publicacion
+    - field.field.node.noticias.field_fuente
+    - field.field.node.noticias.field_imagen
+    - field.field.node.noticias.field_imagen2_not
+    - field.field.node.noticias.field_nota_noticia
+    - field.field.node.noticias.field_noticias
+    - field.field.node.noticias.field_pais_n
+    - field.field.node.noticias.field_publicado_noticia
+    - field.field.node.noticias.taxonomy_vocabulary_16
+    - field.field.node.noticias.taxonomyextra
+    - image.style.thumbnail
+    - node.type.noticias
+  module:
+    - datetime
+    - file
+    - image
+    - link
+    - path
+    - text
+id: node.noticias.default
+targetEntityType: node
+bundle: noticias
+mode: default
+content:
+  body:
+    weight: 5
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_archivo_organizacion:
+    weight: 123
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_consulado:
+    weight: 11
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_enlace_not:
+    weight: 9
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_fec_consulado:
+    weight: 13
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_publicacion:
+    weight: 4
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fuente:
+    weight: 7
+    type: text_textfield
+    settings:
+      size: 70
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_imagen:
+    type: image_image
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_imagen2_not:
+    weight: 8
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_nota_noticia:
+    weight: 2
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_noticias:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_pais_n:
+    weight: 10
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_publicado_noticia:
+    weight: 14
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 17
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 18
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_16:
+    weight: 15
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  taxonomyextra:
+    weight: 16
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_noticias: true

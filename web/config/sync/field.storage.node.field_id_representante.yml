@@ -1,0 +1,20 @@
+uuid: 664a53ec-d76b-416c-b924-31d2757c24c1
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_id_representante
+field_name: field_id_representante
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

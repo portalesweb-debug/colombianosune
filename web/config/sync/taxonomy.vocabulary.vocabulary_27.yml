@@ -1,0 +1,8 @@
+uuid: 4de8bbf2-5202-4734-bdca-3fbeb5127a7d
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tags entrada'
+vid: vocabulary_27
+description: 'Estos son los tags para las entradas de los blogs'
+weight: 0

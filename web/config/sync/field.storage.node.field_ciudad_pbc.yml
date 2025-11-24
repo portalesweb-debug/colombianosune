@@ -1,0 +1,20 @@
+uuid: 7d32a810-cd78-4225-b8ca-60dfb8bb41a2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_pbc
+field_name: field_ciudad_pbc
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

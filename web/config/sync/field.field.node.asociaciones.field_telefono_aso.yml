@@ -1,0 +1,24 @@
+uuid: a74cd223-aaec-4646-a572-c21d7d2e60b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_telefono_aso
+field_name: field_telefono_aso
+entity_type: node
+bundle: asociaciones
+label: 'Nº Telefónico '
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_telefono_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

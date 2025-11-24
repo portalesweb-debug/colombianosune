@@ -1,0 +1,20 @@
+uuid: f6158a48-ff94-4885-aa42-9fc3f43f850b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_de_residencia_del_n
+field_name: field_ciudad_de_residencia_del_n
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

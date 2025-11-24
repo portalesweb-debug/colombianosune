@@ -1,0 +1,28 @@
+uuid: 2f4e51f6-19f4-4b83-a98c-d26b7da2c1cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_negocio
+    - node.type.negocio_colombiano
+    - taxonomy.vocabulary.vocabulary_35
+id: node.negocio_colombiano.field_pais_negocio
+field_name: field_pais_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: País
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_35: vocabulary_35
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

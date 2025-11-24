@@ -1,0 +1,32 @@
+uuid: 1b4ef3fd-6842-4cea-888e-ebf0d746b060
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: colombianosune_user_login
+theme: bartik
+region: content
+weight: 2
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/node/add/*'

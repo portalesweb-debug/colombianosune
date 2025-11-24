@@ -1,0 +1,38 @@
+uuid: 17cade8e-374a-4a3e-8e1a-48d92eee3878
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.retorno.body
+    - field.field.node.retorno.field__img
+    - node.type.retorno
+  module:
+    - text
+    - user
+id: node.retorno.teaser
+targetEntityType: node
+bundle: retorno
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field__img: true
+  langcode: true

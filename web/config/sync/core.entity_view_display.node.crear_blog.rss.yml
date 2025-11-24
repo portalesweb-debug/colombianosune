@@ -1,0 +1,43 @@
+uuid: 109c88ec-a637-4e53-a72a-5a7f18813739
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.crear_blog.body
+    - field.field.node.crear_blog.comment_node_crear_blog
+    - field.field.node.crear_blog.field_img_blog
+    - field.field.node.crear_blog.taxonomy_vocabulary_27
+    - node.type.crear_blog
+  module:
+    - image
+    - user
+id: node.crear_blog.rss
+targetEntityType: node
+bundle: crear_blog
+mode: rss
+content:
+  field_img_blog:
+    label: hidden
+    weight: 14
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_crear_blog: true
+  langcode: true
+  taxonomy_vocabulary_27: true

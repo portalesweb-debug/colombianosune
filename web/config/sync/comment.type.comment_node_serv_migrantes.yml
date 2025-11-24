@@ -1,0 +1,8 @@
+uuid: 09a57ac2-2e75-4abd-a3ca-364ea1c51c72
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_serv_migrantes
+label: 'comentario de '
+target_entity_type_id: node
+description: null

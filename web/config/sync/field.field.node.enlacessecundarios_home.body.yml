@@ -1,0 +1,23 @@
+uuid: 2c33f162-c709-4cb5-b4c6-aede12ae7c1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.enlacessecundarios_home
+  module:
+    - text
+id: node.enlacessecundarios_home.body
+field_name: body
+entity_type: node
+bundle: enlacessecundarios_home
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

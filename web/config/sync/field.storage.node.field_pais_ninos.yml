@@ -1,0 +1,20 @@
+uuid: 8cca9076-1733-4bdd-b29f-9819dba62bc5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_pais_ninos
+field_name: field_pais_ninos
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

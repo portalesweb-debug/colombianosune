@@ -1,0 +1,84 @@
+uuid: 016f06f2-1306-4cc5-a994-f7254906e041
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.programas_especiales_promocion.body
+    - field.field.node.programas_especiales_promocion.field_consulado_pep
+    - field.field.node.programas_especiales_promocion.field_fecha_pep
+    - field.field.node.programas_especiales_promocion.field_imagen_pep
+    - field.field.node.programas_especiales_promocion.field_pais_pep
+    - field.field.node.programas_especiales_promocion.field_titulo_prog_pep
+    - field.field.node.programas_especiales_promocion.taxonomy_vocabulary_16
+    - field.field.node.programas_especiales_promocion.upload
+    - node.type.programas_especiales_promocion
+  module:
+    - datetime
+    - text
+    - user
+id: node.programas_especiales_promocion.teaser
+targetEntityType: node
+bundle: programas_especiales_promocion
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_consulado_pep:
+    label: inline
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_pep:
+    label: inline
+    weight: 5
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_pep:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_titulo_prog_pep:
+    label: hidden
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_16:
+    label: above
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_imagen_pep: true
+  langcode: true
+  upload: true

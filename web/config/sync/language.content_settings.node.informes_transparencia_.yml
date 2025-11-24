@@ -1,0 +1,11 @@
+uuid: 98c0ec4f-9cd1-423e-92c2-2bfe95f0f95d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.informes_transparencia_
+id: node.informes_transparencia_
+target_entity_type_id: node
+target_bundle: informes_transparencia_
+default_langcode: site_default
+language_alterable: false

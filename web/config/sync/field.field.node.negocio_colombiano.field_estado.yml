@@ -1,0 +1,23 @@
+uuid: 824660ce-20a0-4a16-8535-db037fdb1ad0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.negocio_colombiano
+id: node.negocio_colombiano.field_estado
+field_name: field_estado
+entity_type: node
+bundle: negocio_colombiano
+label: Estado
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activo
+  off_label: Inactivo
+field_type: boolean

@@ -1,0 +1,29 @@
+uuid: 9b21652a-dc4d-45ba-ae0a-d1a73f6d17e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.registro
+    - field.field.contact_message.registro.field_correo_nosune
+id: contact_message.registro.default
+targetEntityType: contact_message
+bundle: registro
+mode: default
+content:
+  field_correo_nosune:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

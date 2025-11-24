@@ -1,0 +1,8 @@
+uuid: 86bd4789-8c07-4206-9907-257ca7d63ed0
+langcode: es
+status: true
+dependencies: {  }
+name: 'Sub Categoría'
+vid: vocabulary_15
+description: 'Vocabulario que almacena la sub categoría para los clasificados'
+weight: -8

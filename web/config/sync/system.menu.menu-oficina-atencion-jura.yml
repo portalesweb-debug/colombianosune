@@ -1,0 +1,8 @@
+uuid: c7c5d311-847f-48eb-9160-8e3263358520
+langcode: es
+status: true
+dependencies: {  }
+id: menu-oficina-atencion-jura
+label: Jurado
+description: ''
+locked: false

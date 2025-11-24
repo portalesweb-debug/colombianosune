@@ -1,0 +1,8 @@
+uuid: 3f6eb019-35f3-4166-8e13-ba0ff9a69634
+langcode: es
+status: true
+dependencies: {  }
+name: 'banco de leyes'
+vid: vocabulary_36
+description: ''
+weight: 0

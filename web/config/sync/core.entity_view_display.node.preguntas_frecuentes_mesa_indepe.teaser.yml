@@ -1,0 +1,38 @@
+uuid: 0f302d5b-65ef-4048-b1ea-52da522046b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.preguntas_frecuentes_mesa_indepe.body
+    - field.field.node.preguntas_frecuentes_mesa_indepe.field_mesa
+    - node.type.preguntas_frecuentes_mesa_indepe
+  module:
+    - text
+    - user
+id: node.preguntas_frecuentes_mesa_indepe.teaser
+targetEntityType: node
+bundle: preguntas_frecuentes_mesa_indepe
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mesa: true
+  langcode: true

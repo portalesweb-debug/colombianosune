@@ -1,0 +1,42 @@
+uuid: 43a3b134-8b7f-4732-b684-e2b41e9f00af
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_recursos_aso
+field_name: field_recursos_aso
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Sector público'
+      label: 'Sector público'
+    -
+      value: 'Sector Privado'
+      label: 'Sector Privado'
+    -
+      value: 'Sector Mixto'
+      label: 'Sector Mixto'
+    -
+      value: Autosostenible
+      label: Autosostenible
+    -
+      value: Asociados
+      label: Asociados
+    -
+      value: 'No cuenta con recursos'
+      label: 'No cuenta con recursos'
+    -
+      value: Donaciones
+      label: Donaciones
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: ca478177-efb2-45fa-8827-b9201c675cc5
+langcode: es
+status: true
+dependencies: {  }
+id: menu-crearasociacion
+label: 'Crear Asociación'
+description: ''
+locked: false

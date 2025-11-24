@@ -1,0 +1,24 @@
+uuid: 4b03c28f-152f-4399-9099-50c1a1d6477d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nota_noticia
+    - node.type.noticias
+  module:
+    - text
+id: node.noticias.field_nota_noticia
+field_name: field_nota_noticia
+entity_type: node
+bundle: noticias
+label: Nota
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_nota_noticia][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

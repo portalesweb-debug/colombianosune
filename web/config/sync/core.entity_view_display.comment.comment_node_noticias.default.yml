@@ -1,0 +1,28 @@
+uuid: 7232efad-b351-46f6-857f-6244b0bceb07
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_noticias
+    - field.field.comment.comment_node_noticias.comment_body
+  module:
+    - text
+id: comment.comment_node_noticias.default
+targetEntityType: comment
+bundle: comment_node_noticias
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

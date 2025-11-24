@@ -1,0 +1,17 @@
+uuid: 0a39aa50-3dfc-48c7-af12-1e943a151bea
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Videos para videos'
+type: videos_para_videos
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

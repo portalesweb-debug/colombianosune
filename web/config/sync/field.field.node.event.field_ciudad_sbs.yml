@@ -1,0 +1,23 @@
+uuid: d9ddf053-7206-4381-9b81-4e68d5a1a8d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_sbs
+    - node.type.event
+  module:
+    - options
+id: node.event.field_ciudad_sbs
+field_name: field_ciudad_sbs
+entity_type: node
+bundle: event
+label: Ciudad
+description: "Ingrese este campo\_únicamente\_si la ciudad corresponde a la semana binacional de la salud.\_"
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

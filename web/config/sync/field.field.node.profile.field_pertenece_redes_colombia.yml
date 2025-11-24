@@ -1,0 +1,23 @@
+uuid: be2697d0-80df-4757-a1dc-3297e523d929
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pertenece_redes_colombia
+    - node.type.profile
+id: node.profile.field_pertenece_redes_colombia
+field_name: field_pertenece_redes_colombia
+entity_type: node
+bundle: profile
+label: 'Pertenece a RedEsColombia'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

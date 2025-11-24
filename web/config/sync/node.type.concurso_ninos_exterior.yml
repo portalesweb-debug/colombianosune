@@ -1,0 +1,18 @@
+uuid: 228d8d87-bc99-43be-9581-aee8f2ec667a
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Concurso niños exterior'
+type: concurso_ninos_exterior
+description: 'Este es el tipo de contenido para el concurso de niños colombianos 2015'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

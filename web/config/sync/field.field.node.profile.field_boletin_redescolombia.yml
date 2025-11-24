@@ -1,0 +1,23 @@
+uuid: 4bbf6895-3b1a-444a-9a15-7e7ea8c4abca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boletin_redescolombia
+    - node.type.profile
+  module:
+    - options
+id: node.profile.field_boletin_redescolombia
+field_name: field_boletin_redescolombia
+entity_type: node
+bundle: profile
+label: 'Boletín RedEsColombia'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Recibir
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,8 @@
+uuid: f1f5e810-9e67-471d-a3e7-4092f1292b17
+langcode: es
+status: true
+dependencies: {  }
+id: oficinas-regionales
+label: 'Oficinas regionales'
+description: ''
+locked: false

@@ -1,0 +1,31 @@
+uuid: 84faded8-24ea-42c9-8026-81de583af84b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d1d9e459-daea-4302-b50d-8bbda299a00a'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannermultiplicadorguadalajara
+theme: colombianosune
+region: content_navigation
+weight: -34
+provider: null
+plugin: 'block_content:d1d9e459-daea-4302-b50d-8bbda299a00a'
+settings:
+  id: 'block_content:d1d9e459-daea-4302-b50d-8bbda299a00a'
+  label: 'Banner Multiplicador Guadalajara'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/multiplicador-guadalajara/*'
+    negate: false
+    context_mapping: {  }

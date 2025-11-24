@@ -1,0 +1,23 @@
+uuid: 37b6138f-4adc-4a44-b374-b3c1c4c9ebff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.galeria_transparencia
+  module:
+    - text
+id: node.galeria_transparencia.body
+field_name: body
+entity_type: node
+bundle: galeria_transparencia
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

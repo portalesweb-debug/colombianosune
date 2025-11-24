@@ -1,0 +1,24 @@
+uuid: 884991a9-734d-4d08-ba89-114bbc1edce7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_evento
+    - node.type.event
+  module:
+    - text
+id: node.event.field_pais_evento
+field_name: field_pais_evento
+entity_type: node
+bundle: event
+label: País
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_pais_evento][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

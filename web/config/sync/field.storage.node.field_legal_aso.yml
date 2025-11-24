@@ -1,0 +1,33 @@
+uuid: bb498f08-0c28-4df7-b3cc-53b4eaffdd0f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_legal_aso
+field_name: field_legal_aso
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Si
+      label: Si
+    -
+      value: 'No'
+      label: 'No'
+    -
+      value: Otro
+      label: Otro
+    -
+      value: 'En tramite'
+      label: 'En tramite'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

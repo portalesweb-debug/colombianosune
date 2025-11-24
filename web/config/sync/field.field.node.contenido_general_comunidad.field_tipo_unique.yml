@@ -1,0 +1,23 @@
+uuid: cd151cc8-e2eb-4099-b5ff-5a04a5000e09
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - options
+id: node.contenido_general_comunidad.field_tipo_unique
+field_name: field_tipo_unique
+entity_type: node
+bundle: contenido_general_comunidad
+label: 'Que deseas compartir'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

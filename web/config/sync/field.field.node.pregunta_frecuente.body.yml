@@ -1,0 +1,23 @@
+uuid: ff550571-2339-4252-98d5-433d558d84e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pregunta_frecuente
+  module:
+    - text
+id: node.pregunta_frecuente.body
+field_name: body
+entity_type: node
+bundle: pregunta_frecuente
+label: Respuesta
+description: 'permite ingresar las preguntas frecuentes'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

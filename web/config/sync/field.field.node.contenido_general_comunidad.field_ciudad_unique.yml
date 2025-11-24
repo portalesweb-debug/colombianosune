@@ -1,0 +1,24 @@
+uuid: 50be8a50-1a35-4eca-b6e1-b7c433c6a5f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - text
+id: node.contenido_general_comunidad.field_ciudad_unique
+field_name: field_ciudad_unique
+entity_type: node
+bundle: contenido_general_comunidad
+label: Ciudad
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_ciudad_unique][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

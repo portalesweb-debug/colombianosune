@@ -1,0 +1,93 @@
+uuid: 626070e6-4e57-4927-9941-9344a5a6fe81
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_fotografia_cnu.default
+    - field.field.node.fotografia_cnu.body
+    - field.field.node.fotografia_cnu.comment_node_fotografia_cnu
+    - field.field.node.fotografia_cnu.field_categoria
+    - field.field.node.fotografia_cnu.field_ciudad_fotocnu
+    - field.field.node.fotografia_cnu.field_imagen_fotocnu
+    - field.field.node.fotografia_cnu.field_pais_aso_2
+    - field.field.node.fotografia_cnu.upload
+    - node.type.fotografia_cnu
+  module:
+    - comment
+    - file
+    - image
+    - options
+    - text
+    - user
+id: node.fotografia_cnu.default
+targetEntityType: node
+bundle: fotografia_cnu
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_fotografia_cnu:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_categoria:
+    label: above
+    weight: 6
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_fotocnu:
+    label: above
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_fotocnu:
+    label: hidden
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_aso_2:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

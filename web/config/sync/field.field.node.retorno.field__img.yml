@@ -1,0 +1,38 @@
+uuid: 2500f5ae-4132-4708-84eb-390e5db5714a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__img
+    - node.type.retorno
+  module:
+    - image
+id: node.retorno.field__img
+field_name: field__img
+entity_type: node
+bundle: retorno
+label: img
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

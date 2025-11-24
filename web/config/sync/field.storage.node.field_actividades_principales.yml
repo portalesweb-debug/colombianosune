@@ -1,0 +1,19 @@
+uuid: 00d2e7e6-05d2-40b6-84c5-8447968d15c6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_actividades_principales
+field_name: field_actividades_principales
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

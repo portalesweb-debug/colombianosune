@@ -1,0 +1,25 @@
+uuid: 96f48851-85f2-4a1b-8558-79038352a181
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a45380e4-c5ec-4209-9831-8b1f587081a6'
+  module:
+    - block_content
+  theme:
+    - colombianosune
+id: secciongovco_img
+theme: colombianosune
+region: header_top
+weight: -60
+provider: null
+plugin: 'block_content:a45380e4-c5ec-4209-9831-8b1f587081a6'
+settings:
+  id: 'block_content:a45380e4-c5ec-4209-9831-8b1f587081a6'
+  label: secciongovco_img
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

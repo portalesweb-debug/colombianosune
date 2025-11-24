@@ -1,0 +1,10 @@
+uuid: 030cd731-3b77-49f0-b9a2-e3e6799528d8
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: Tools
+description: 'El menú de navegación es proporcionado por Drupal y es el principal menú interactivo para cualquier sitio. Normalmente es el único menú que contiene enlaces personalizados para usuarios autenticados y a menudo no es visible para usuarios anónimos.'
+locked: true

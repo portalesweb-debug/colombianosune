@@ -1,0 +1,21 @@
+uuid: a093d5e2-2afb-4a93-8f63-b452fcd1ef0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_banco
+    - node.type.banco_leyes
+  module:
+    - datetime
+id: node.banco_leyes.field_fecha_banco
+field_name: field_fecha_banco
+entity_type: node
+bundle: banco_leyes
+label: Fecha
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

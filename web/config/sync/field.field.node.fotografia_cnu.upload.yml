@@ -1,0 +1,27 @@
+uuid: 3e670ed8-a679-4666-984b-39f8b276ab03
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.fotografia_cnu
+  module:
+    - file
+id: node.fotografia_cnu.upload
+field_name: upload
+entity_type: node
+bundle: fotografia_cnu
+label: 'File attachments'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  max_filesize: '4 MB'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  file_directory: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

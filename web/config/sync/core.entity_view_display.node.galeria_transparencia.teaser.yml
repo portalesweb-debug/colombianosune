@@ -1,0 +1,36 @@
+uuid: 702a92ed-6c37-488d-93fd-7eecfeb07ccc
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galeria_transparencia.body
+    - node.type.galeria_transparencia
+  module:
+    - text
+    - user
+id: node.galeria_transparencia.teaser
+targetEntityType: node
+bundle: galeria_transparencia
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,24 @@
+uuid: caa5c24e-50ea-49c3-bc81-b8c9ae2c4194
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evento_ciudad
+    - node.type.event
+  module:
+    - text
+id: node.event.field_evento_ciudad
+field_name: field_evento_ciudad
+entity_type: node
+bundle: event
+label: 'Ciudad del evento'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_evento_ciudad][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

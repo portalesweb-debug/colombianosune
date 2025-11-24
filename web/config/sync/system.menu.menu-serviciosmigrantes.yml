@@ -1,0 +1,8 @@
+uuid: ead10dba-0f1d-47e8-a969-216c129ab242
+langcode: es
+status: true
+dependencies: {  }
+id: menu-serviciosmigrantes
+label: 'Servicios para Migrantes'
+description: "Información\_de los servicios del Programa Colombia Nos Une"
+locked: false

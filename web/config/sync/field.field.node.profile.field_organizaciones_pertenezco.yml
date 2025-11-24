@@ -1,0 +1,21 @@
+uuid: 68101e90-9673-41bb-85f8-3c1a2870d49a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizaciones_pertenezco
+    - node.type.profile
+id: node.profile.field_organizaciones_pertenezco
+field_name: field_organizaciones_pertenezco
+entity_type: node
+bundle: profile
+label: 'Organizaciones a las que pertenece'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

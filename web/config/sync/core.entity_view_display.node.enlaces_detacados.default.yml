@@ -1,0 +1,34 @@
+uuid: 18e61123-f01e-4f62-82a8-f0b9b4aa67dc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.enlaces_detacados.body
+    - node.type.enlaces_detacados
+  module:
+    - text
+    - user
+id: node.enlaces_detacados.default
+targetEntityType: node
+bundle: enlaces_detacados
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

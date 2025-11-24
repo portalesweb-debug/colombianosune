@@ -1,0 +1,28 @@
+uuid: cadcc7a6-dd03-4f28-a03e-c362dc6daab2
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_banco_leyes
+    - field.field.comment.comment_node_banco_leyes.comment_body
+  module:
+    - text
+id: comment.comment_node_banco_leyes.default
+targetEntityType: comment
+bundle: comment_node_banco_leyes
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

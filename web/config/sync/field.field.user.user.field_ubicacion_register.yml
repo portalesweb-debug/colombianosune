@@ -1,0 +1,29 @@
+uuid: a34af9ea-0582-48fc-a031-4d87001ee1d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ubicacion_register
+    - taxonomy.vocabulary.vocabulary_2
+  module:
+    - user
+id: user.user.field_ubicacion_register
+field_name: field_ubicacion_register
+entity_type: user
+bundle: user
+label: Ubicacion
+description: 'Seleccione su ubicación escojiendo primero el Continente luego país y ciudad'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_2: vocabulary_2
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

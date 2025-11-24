@@ -1,0 +1,14 @@
+uuid: 7519a001-de33-4248-8852-bfcbc0e19665
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.editor_contenidos
+  module:
+    - user
+id: user_add_role_action.editor_contenidos
+label: 'Agregar el rol Editor contenidos a los usuarios seleccionados'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor_contenidos

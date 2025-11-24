@@ -1,0 +1,19 @@
+uuid: dae6ba44-563e-4786-bdfd-4e019b8653a5
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_enlace_slide
+field_name: field_enlace_slide
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

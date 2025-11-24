@@ -1,0 +1,12 @@
+uuid: 44cede08-5533-4cd4-8256-7440ff9ec8f7
+langcode: es
+status: true
+dependencies: {  }
+id: registro
+label: Registro
+recipients:
+  - diego.penuela@advantage.com.co
+reply: 'Pronto te esteremos enviando mas información'
+weight: 0
+message: 'Su registro ha sido completado'
+redirect: ''

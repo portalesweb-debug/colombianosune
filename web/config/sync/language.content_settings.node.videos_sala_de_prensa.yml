@@ -1,0 +1,11 @@
+uuid: 7e13fe9f-847f-4930-b23f-8fbfb7513670
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.videos_sala_de_prensa
+id: node.videos_sala_de_prensa
+target_entity_type_id: node
+target_bundle: videos_sala_de_prensa
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 350924fe-07c1-4718-8d28-8c6db6b86693
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.video_cnu
+  module:
+    - text
+id: node.video_cnu.body
+field_name: body
+entity_type: node
+bundle: video_cnu
+label: Descripcion
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

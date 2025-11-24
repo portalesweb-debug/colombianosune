@@ -1,0 +1,20 @@
+uuid: 22a8e584-5a6e-4f12-8c53-307814e4761a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_tel_fono_consulado
+field_name: field_tel_fono_consulado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

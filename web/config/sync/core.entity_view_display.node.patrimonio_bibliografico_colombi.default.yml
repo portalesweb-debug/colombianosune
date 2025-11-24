@@ -1,0 +1,120 @@
+uuid: d08d4556-7cc2-4c9f-89e7-96bd64314a73
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.patrimonio_bibliografico_colombi.body
+    - field.field.node.patrimonio_bibliografico_colombi.field_autor_pat
+    - field.field.node.patrimonio_bibliografico_colombi.field_ciudad_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_codigo_pat
+    - field.field.node.patrimonio_bibliografico_colombi.field_correo_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_fecha_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_fijo_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.field_palabras_claves
+    - field.field.node.patrimonio_bibliografico_colombi.field_publicado_pbc
+    - field.field.node.patrimonio_bibliografico_colombi.taxonomy_vocabulary_32
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+    - user
+id: node.patrimonio_bibliografico_colombi.default
+targetEntityType: node
+bundle: patrimonio_bibliografico_colombi
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 19
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_patrimonio_bibliografico_colombi:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_autor_pat:
+    label: inline
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_pbc:
+    label: above
+    weight: 9
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_codigo_pat:
+    label: inline
+    weight: 26
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_correo_pbc:
+    label: above
+    weight: 104
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_fecha_pbc:
+    label: inline
+    weight: 23
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fijo_pbc:
+    label: inline
+    weight: 18
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_palabras_claves:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publicado_pbc:
+    label: above
+    weight: 12
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  taxonomy_vocabulary_32:
+    weight: 10
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    label: above
+    region: content
+hidden:
+  langcode: true

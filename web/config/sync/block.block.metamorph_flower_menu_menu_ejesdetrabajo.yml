@@ -1,0 +1,54 @@
+uuid: b78ae6a9-ba89-44d6-ab3c-a87c45a2062e
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-ejesdetrabajo
+  module:
+    - system
+  theme:
+    - metamorph_flower
+id: metamorph_flower_menu_menu_ejesdetrabajo
+theme: metamorph_flower
+region: ''
+weight: -126
+provider: null
+plugin: 'system_menu_block:menu-ejesdetrabajo'
+settings:
+  id: 'system_menu_block:menu-ejesdetrabajo'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /ejes/*
+      /iniciativas/feriadeserviciosparacolombianosenelexterior
+      /iniciativas/feriadeserviciosparacolombianosenelexterior/*
+      /feriadeserviciosontario
+      /feriadeserviciosontario/*
+      /retornoproductivoespaña
+      /retornoproductivoespaña/*
+      /feria-servicios-miami
+      /feria-servicios-miami/*
+      /ferianewjersey
+      /ferianewjersey/*
+      /feriaserviciosmontreal
+      /feriaserviciosmontreal/*
+      /FeriaFlorida2014
+      /FeriaFlorida2014/*
+      /feriaquito2015
+      /feriaquito2015/*
+      /FeriaNewYork2015
+      /FeriaNewYork2015/*
+      /noticias-colombianos-destacados-en-el-exterior-cnu
+      /prevision-exequial
+      /FeriaFlorida2015
+      /Special-Olympics
+      /feria-inmobiliaria-newjersey
+      /hombres/migrante/destacados

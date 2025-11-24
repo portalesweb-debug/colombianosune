@@ -1,0 +1,8 @@
+uuid: c2ec54df-62a4-4858-ad4a-550c25dd525c
+langcode: es
+status: true
+dependencies: {  }
+id: menu-informacion-de-inetres
+label: 'Información de Interés'
+description: ''
+locked: false

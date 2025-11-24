@@ -1,0 +1,79 @@
+uuid: ea29a7b3-e51e-4039-94c0-fabfd5076bbd
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.print
+    - field.field.node.programas_especiales_promocion.body
+    - field.field.node.programas_especiales_promocion.field_consulado_pep
+    - field.field.node.programas_especiales_promocion.field_fecha_pep
+    - field.field.node.programas_especiales_promocion.field_imagen_pep
+    - field.field.node.programas_especiales_promocion.field_pais_pep
+    - field.field.node.programas_especiales_promocion.field_titulo_prog_pep
+    - field.field.node.programas_especiales_promocion.taxonomy_vocabulary_16
+    - field.field.node.programas_especiales_promocion.upload
+    - node.type.programas_especiales_promocion
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.programas_especiales_promocion.print
+targetEntityType: node
+bundle: programas_especiales_promocion
+mode: print
+content:
+  field_consulado_pep:
+    label: inline
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_pep:
+    label: inline
+    weight: 5
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_imagen_pep:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_pep:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_titulo_prog_pep:
+    label: hidden
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  taxonomy_vocabulary_16: true
+  upload: true

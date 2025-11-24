@@ -1,0 +1,37 @@
+uuid: 4750abc7-a19a-493d-8052-5992076b32f4
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-informacioninteres
+  module:
+    - system
+    - user
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_informacioninteres
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-informacioninteres'
+settings:
+  id: 'system_menu_block:menu-informacioninteres'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/informaciondeinteres/*'

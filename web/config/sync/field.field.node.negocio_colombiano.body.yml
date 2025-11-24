@@ -1,0 +1,23 @@
+uuid: 19f3138a-0903-45be-a7d5-1d48300e5c1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.negocio_colombiano
+  module:
+    - text
+id: node.negocio_colombiano.body
+field_name: body
+entity_type: node
+bundle: negocio_colombiano
+label: 'Descripcion del negocio'
+description: 'Directorio de negocios colombianos'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

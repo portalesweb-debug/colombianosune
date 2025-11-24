@@ -1,0 +1,8 @@
+uuid: 1f4b0f79-75a5-4a93-a705-4e8a0c980c07
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_page
+label: 'comentario de Página'
+target_entity_type_id: node
+description: null

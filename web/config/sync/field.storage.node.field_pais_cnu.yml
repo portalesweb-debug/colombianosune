@@ -1,0 +1,20 @@
+uuid: a94d0e08-d3ec-4cba-98c7-642a36421ead
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_pais_cnu
+field_name: field_pais_cnu
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

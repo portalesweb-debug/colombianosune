@@ -1,0 +1,28 @@
+uuid: fe6ff2f1-86a7-4dcd-a17e-cf8dc88d0420
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_albun_concurso
+    - field.field.comment.comment_node_albun_concurso.comment_body
+  module:
+    - text
+id: comment.comment_node_albun_concurso.default
+targetEntityType: comment
+bundle: comment_node_albun_concurso
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

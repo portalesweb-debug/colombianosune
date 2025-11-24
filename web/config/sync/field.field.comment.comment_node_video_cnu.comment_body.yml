@@ -1,0 +1,21 @@
+uuid: ceb4ba3e-3ecb-4001-aa06-d97a65f3abc9
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_video_cnu
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_video_cnu.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_video_cnu
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

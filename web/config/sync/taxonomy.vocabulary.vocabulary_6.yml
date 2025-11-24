@@ -1,0 +1,8 @@
+uuid: bdc36c47-ad3b-4f0b-9c0c-374aa05d415a
+langcode: es
+status: true
+dependencies: {  }
+name: 'Número de Empleados'
+vid: vocabulary_6
+description: 'Vocabulario que guarda el rango de empleados que hay en una empresa.'
+weight: -7

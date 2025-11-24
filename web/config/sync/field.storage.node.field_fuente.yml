@@ -1,0 +1,20 @@
+uuid: fe499bf9-8e14-4ac3-b326-ccf4a40cb844
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_fuente
+field_name: field_fuente
+entity_type: node
+type: text
+settings:
+  max_length: 100
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

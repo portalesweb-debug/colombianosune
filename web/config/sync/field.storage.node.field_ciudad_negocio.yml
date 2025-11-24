@@ -1,0 +1,20 @@
+uuid: ea33b8b5-491f-4c93-8be4-b721bcce057f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_negocio
+field_name: field_ciudad_negocio
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

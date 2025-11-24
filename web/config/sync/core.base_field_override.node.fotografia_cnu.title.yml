@@ -1,0 +1,18 @@
+uuid: 1369b838-9c30-41f7-87dc-668e42b67292
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.fotografia_cnu
+id: node.fotografia_cnu.title
+field_name: title
+entity_type: node
+bundle: fotografia_cnu
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

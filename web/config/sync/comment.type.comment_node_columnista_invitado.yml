@@ -1,0 +1,8 @@
+uuid: 43e39cc9-8269-4f05-8b93-ebd7b81c63be
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_columnista_invitado
+label: 'comentario de columnista invitado'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,23 @@
+uuid: 5be8f1d3-e8a9-421e-9916-9ad989b08437
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objeto_aso
+    - node.type.asociaciones
+  module:
+    - options
+id: node.asociaciones.field_objeto_aso
+field_name: field_objeto_aso
+entity_type: node
+bundle: asociaciones
+label: 'Seleccione el (los) Objeto (s) social (es) de la Asociación'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

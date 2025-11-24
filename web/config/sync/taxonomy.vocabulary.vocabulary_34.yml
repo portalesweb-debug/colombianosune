@@ -1,0 +1,8 @@
+uuid: 45c3f5f9-483f-45f7-b641-ea29bdc1c99d
+langcode: es
+status: true
+dependencies: {  }
+name: 'Semana binacional de la salud'
+vid: vocabulary_34
+description: ''
+weight: 0

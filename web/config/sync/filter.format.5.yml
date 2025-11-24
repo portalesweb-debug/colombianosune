@@ -1,0 +1,36 @@
+uuid: abbda984-daef-4f8a-9aa6-7586bdd3396c
+langcode: es
+status: true
+dependencies: {  }
+name: 'Messaging plain text'
+format: '5'
+weight: -8
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -1
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: 10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 10
+    settings:
+      filter_url_length: 72

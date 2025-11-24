@@ -1,0 +1,27 @@
+uuid: e7c60050-9836-45f5-8a1e-4aeb67b31b4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texto
+    - node.type.flexslider_example_banner
+id: node.flexslider_example_banner.field_texto
+field_name: field_texto
+entity_type: node
+bundle: flexslider_example_banner
+label: TEXTO
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      flexslider_example_banner: flexslider_example_banner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

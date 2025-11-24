@@ -1,0 +1,19 @@
+uuid: bf0be0a9-faf9-424d-a796-4d5a285e932a
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_pagina_web
+field_name: field_pagina_web
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

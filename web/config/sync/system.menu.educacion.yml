@@ -1,0 +1,8 @@
+uuid: aa2bee41-5663-4ab3-b8f5-42167ad5d7bd
+langcode: es
+status: true
+dependencies: {  }
+id: educacion
+label: Educación
+description: ''
+locked: false

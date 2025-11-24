@@ -1,0 +1,22 @@
+uuid: 05289f9a-670d-4c05-9b06-0d5a0ff73e2d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: imagen_ninos_exterior
+label: 'Imagen Niños Exterior'
+type: 'canonical_entities:node'
+pattern: 'loquemeunacolombia/[node:title]'
+selection_criteria:
+  96266a6d-54bf-46c9-8254-5c765e147d6c:
+    id: node_type
+    bundles:
+      imagen_ninos_exterior: imagen_ninos_exterior
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 96266a6d-54bf-46c9-8254-5c765e147d6c
+selection_logic: and
+weight: -5
+relationships: {  }

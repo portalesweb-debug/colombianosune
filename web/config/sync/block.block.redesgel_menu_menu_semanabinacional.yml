@@ -1,0 +1,39 @@
+uuid: c0f1b422-d398-4f0f-86ab-07ee552a2614
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-semanabinacional
+  module:
+    - system
+    - user
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_semanabinacional
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-semanabinacional'
+settings:
+  id: 'system_menu_block:menu-semanabinacional'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /semanabinacionaldelasalud
+      /semanabinacionaldelasalud/*

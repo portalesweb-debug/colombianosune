@@ -1,0 +1,22 @@
+uuid: 2477fc5b-b4cf-402d-a640-0b9a6cac2594
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: programas_especiales_de_promocion
+label: 'Programas especiales de promoción'
+type: 'canonical_entities:node'
+pattern: 'ejes/plancomunidad/programas/[current-page:title]'
+selection_criteria:
+  c4060acf-22c8-4fed-90fe-2fadf9602dfa:
+    id: node_type
+    bundles:
+      programas_especiales_promocion: programas_especiales_promocion
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c4060acf-22c8-4fed-90fe-2fadf9602dfa
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 38a962c9-a709-4ddf-90e0-23c7dbd91ff6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_telefono_aso
+field_name: field_telefono_aso
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

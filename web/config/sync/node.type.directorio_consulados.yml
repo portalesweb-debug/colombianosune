@@ -1,0 +1,18 @@
+uuid: 7d62fd97-de86-49ff-989f-96cad10df6a5
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Directorio Consulados'
+type: directorio_consulados
+description: 'Información de ubicacion del consulado de cada pais'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

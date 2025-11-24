@@ -1,0 +1,11 @@
+uuid: a08c6d60-a953-4210-89ce-a448e11ef54c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.profile
+id: node.profile
+target_entity_type_id: node
+target_bundle: profile
+default_langcode: site_default
+language_alterable: false

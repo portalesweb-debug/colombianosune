@@ -1,0 +1,8 @@
+uuid: 526828f0-81e6-408c-a144-561cab698c19
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-santiago-d
+label: 'Multiplicador en Santiago de Chile'
+description: ''
+locked: false

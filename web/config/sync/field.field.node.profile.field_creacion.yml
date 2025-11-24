@@ -1,0 +1,26 @@
+uuid: 2bf5b532-a011-429a-8828-9e339df2cb0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creacion
+    - node.type.profile
+id: node.profile.field_creacion
+field_name: field_creacion
+entity_type: node
+bundle: profile
+label: 'Año de Creación'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_creacion][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

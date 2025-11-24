@@ -1,0 +1,23 @@
+uuid: afec553f-1648-4016-9121-bd35bcdb6496
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_aso
+    - node.type.asociaciones
+  module:
+    - options
+id: node.asociaciones.field_legal_aso
+field_name: field_legal_aso
+entity_type: node
+bundle: asociaciones
+label: 'La asociación esta  legalmente constituida?'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

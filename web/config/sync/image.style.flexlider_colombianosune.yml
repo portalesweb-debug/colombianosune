@@ -1,0 +1,15 @@
+uuid: d6f448ac-8086-4f27-a367-5e0adb926a19
+langcode: es
+status: true
+dependencies: {  }
+name: flexlider_colombianosune
+label: flexlider_colombianosune
+effects:
+  0ff91d9d-bb96-4769-8c70-3556cfd64b03:
+    uuid: 0ff91d9d-bb96-4769-8c70-3556cfd64b03
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1200
+      height: 460
+      anchor: center-center

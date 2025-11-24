@@ -1,0 +1,29 @@
+uuid: 3f4c43eb-b01a-4160-bdce-b2481adf4b4c
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-santander
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_oficina_atencion_santander
+theme: Cancilleria
+region: ''
+weight: 17
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-santander'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-santander'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-santander/*'

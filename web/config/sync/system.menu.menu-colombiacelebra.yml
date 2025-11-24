@@ -1,0 +1,8 @@
+uuid: 76383fe3-57f2-412d-803c-6de614282a13
+langcode: es
+status: true
+dependencies: {  }
+id: menu-colombiacelebra
+label: 'Colombia Celebra'
+description: 'Menú que lista las paginas del concurso de Colombia Celebra su 20 de julio'
+locked: false

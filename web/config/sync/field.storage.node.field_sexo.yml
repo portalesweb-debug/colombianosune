@@ -1,0 +1,21 @@
+uuid: d298fcb9-6b48-40b3-b43e-4f2ed9cd3fdd
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sexo
+field_name: field_sexo
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: cck_allowed_values_php
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

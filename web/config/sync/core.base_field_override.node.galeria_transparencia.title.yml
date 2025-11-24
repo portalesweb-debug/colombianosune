@@ -1,0 +1,18 @@
+uuid: 74ede580-09fd-48d7-a8a7-c006dadae3fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_transparencia
+id: node.galeria_transparencia.title
+field_name: title
+entity_type: node
+bundle: galeria_transparencia
+label: 'Galeria transparencia'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

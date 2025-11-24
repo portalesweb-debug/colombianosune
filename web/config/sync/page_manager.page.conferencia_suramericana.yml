@@ -1,0 +1,12 @@
+uuid: b7287bd9-cea8-4021-985c-8931cb0e2475
+langcode: es
+status: true
+dependencies: {  }
+id: conferencia_suramericana
+label: 'Conferencia Suramericana'
+description: ''
+use_admin_theme: false
+path: /xiiiconferencia
+access_logic: and
+access_conditions: {  }
+parameters: {  }

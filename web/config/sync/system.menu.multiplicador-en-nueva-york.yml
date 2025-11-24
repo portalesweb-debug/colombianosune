@@ -1,0 +1,8 @@
+uuid: b51c5b92-6109-46a8-971a-1364b1a88038
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-nueva-york
+label: 'Multiplicador en Nueva York'
+description: ''
+locked: false

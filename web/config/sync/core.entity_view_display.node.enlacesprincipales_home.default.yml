@@ -1,0 +1,59 @@
+uuid: 80fc0a86-dd93-4796-b97d-1d35a23e687e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.enlacesprincipales_home.body
+    - field.field.node.enlacesprincipales_home.field_enlace
+    - field.field.node.enlacesprincipales_home.field_imagenenlaces
+    - node.type.enlacesprincipales_home
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.enlacesprincipales_home.default
+targetEntityType: node
+bundle: enlacesprincipales_home
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_enlace:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_imagenenlaces:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,31 @@
+uuid: c5f64564-4067-4ae7-8281-dce1e3d124f7
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2a8168ba-88b0-435d-af8b-e15d5eba0efc'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannermultiplicadormiami
+theme: colombianosune
+region: content_navigation
+weight: -32
+provider: null
+plugin: 'block_content:2a8168ba-88b0-435d-af8b-e15d5eba0efc'
+settings:
+  id: 'block_content:2a8168ba-88b0-435d-af8b-e15d5eba0efc'
+  label: 'Banner Multiplicador Miami'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/multiplicador-miami/*'
+    negate: false
+    context_mapping: {  }

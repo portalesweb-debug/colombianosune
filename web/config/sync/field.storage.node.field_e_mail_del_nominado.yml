@@ -1,0 +1,20 @@
+uuid: 390111a7-0f6e-4ae6-96ac-130569930347
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_e_mail_del_nominado
+field_name: field_e_mail_del_nominado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

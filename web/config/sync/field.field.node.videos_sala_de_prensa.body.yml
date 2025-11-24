@@ -1,0 +1,23 @@
+uuid: 6e0b5514-06f9-4461-9e9d-fc1b5f58a95a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.videos_sala_de_prensa
+  module:
+    - text
+id: node.videos_sala_de_prensa.body
+field_name: body
+entity_type: node
+bundle: videos_sala_de_prensa
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

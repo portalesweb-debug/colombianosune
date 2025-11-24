@@ -1,0 +1,8 @@
+uuid: f3323241-f76b-4d26-976c-a84a0e3c5ad2
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-quindio-oficina
+label: 'Oficina atención al migrante risaralda'
+description: ''
+locked: false

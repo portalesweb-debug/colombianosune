@@ -1,0 +1,8 @@
+uuid: edccf70a-0936-4ca7-8dfd-b4dd2b8961ec
+langcode: es
+status: true
+dependencies: {  }
+name: 'Actividad Empresa'
+vid: vocabulary_4
+description: 'Vocabulario que almacena las actividades de la empresa para cuando se crea una organización. '
+weight: -10

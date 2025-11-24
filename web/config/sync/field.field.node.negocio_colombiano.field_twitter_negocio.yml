@@ -1,0 +1,24 @@
+uuid: ece91899-db25-433d-8473-53835a9a8d24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_negocio
+    - node.type.negocio_colombiano
+  module:
+    - text
+id: node.negocio_colombiano.field_twitter_negocio
+field_name: field_twitter_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: twitter
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_twitter_negocio][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

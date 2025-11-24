@@ -1,0 +1,20 @@
+uuid: 21219ee8-95dc-4688-a55c-92f2b9e774ef
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_proyecto_curso
+field_name: comment_node_proyecto_curso
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_proyecto_curso
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

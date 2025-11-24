@@ -1,0 +1,23 @@
+uuid: 32794a62-f744-49b2-b8de-a77580363e31
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.programas_especiales_promocion
+  module:
+    - text
+id: node.programas_especiales_promocion.body
+field_name: body
+entity_type: node
+bundle: programas_especiales_promocion
+label: Cuerpo
+description: 'Crea contenido para los programas especiales de promoción'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: 30a5d144-c782-485d-ad21-4c649c55c801
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.asociaciones
+id: node.asociaciones.title
+field_name: title
+entity_type: node
+bundle: asociaciones
+label: 'Nombre de la Asociación'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

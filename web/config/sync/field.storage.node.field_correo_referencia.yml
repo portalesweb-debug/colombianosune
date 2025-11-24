@@ -1,0 +1,18 @@
+uuid: 05b866fd-ec6a-40c3-9cfe-58c8d6484cb8
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_correo_referencia
+field_name: field_correo_referencia
+entity_type: node
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

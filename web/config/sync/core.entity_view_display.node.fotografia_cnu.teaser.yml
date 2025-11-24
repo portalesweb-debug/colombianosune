@@ -1,0 +1,70 @@
+uuid: dfb134fd-a404-45cb-accc-957ac2c8c6fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fotografia_cnu.body
+    - field.field.node.fotografia_cnu.comment_node_fotografia_cnu
+    - field.field.node.fotografia_cnu.field_categoria
+    - field.field.node.fotografia_cnu.field_ciudad_fotocnu
+    - field.field.node.fotografia_cnu.field_imagen_fotocnu
+    - field.field.node.fotografia_cnu.field_pais_aso_2
+    - field.field.node.fotografia_cnu.upload
+    - node.type.fotografia_cnu
+  module:
+    - image
+    - text
+    - user
+id: node.fotografia_cnu.teaser
+targetEntityType: node
+bundle: fotografia_cnu
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 2
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_ciudad_fotocnu:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_fotocnu:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_pais_aso_2:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment_node_fotografia_cnu: true
+  field_categoria: true
+  langcode: true
+  upload: true

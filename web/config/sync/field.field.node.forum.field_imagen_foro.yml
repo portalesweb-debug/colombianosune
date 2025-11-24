@@ -1,0 +1,33 @@
+uuid: b18bea87-a640-43ba-931d-9c422137bb72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_foro
+    - node.type.forum
+  module:
+    - image
+id: node.forum.field_imagen_foro
+field_name: field_imagen_foro
+entity_type: node
+bundle: forum
+label: 'Foto del foro'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: img_foros
+  max_filesize: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

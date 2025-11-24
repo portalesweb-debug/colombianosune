@@ -1,0 +1,20 @@
+uuid: a369fba7-9561-4fb7-9790-93cb4bb0a7b8
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_nombre_columnista
+field_name: field_nombre_columnista
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

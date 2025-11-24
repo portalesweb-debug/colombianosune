@@ -1,0 +1,18 @@
+uuid: 4a95acfd-9181-4606-89c9-cc1c262044f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.banco_leyes
+id: node.banco_leyes.title
+field_name: title
+entity_type: node
+bundle: banco_leyes
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

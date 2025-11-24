@@ -1,0 +1,11 @@
+uuid: ffaf66b5-ed3d-42fe-8445-577726638459
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.participacion
+id: node.participacion
+target_entity_type_id: node
+target_bundle: participacion
+default_langcode: site_default
+language_alterable: false

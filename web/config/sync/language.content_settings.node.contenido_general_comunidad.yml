@@ -1,0 +1,16 @@
+uuid: 45121eba-7a8f-418a-9b5b-c697d0958535
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_general_comunidad
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.contenido_general_comunidad
+target_entity_type_id: node
+target_bundle: contenido_general_comunidad
+default_langcode: current_interface
+language_alterable: true

@@ -1,0 +1,17 @@
+uuid: d78acd4a-cf9c-4480-aead-d6514631647f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Preguntas Frecuentes Mesa Independiente'
+type: preguntas_frecuentes_mesa_indepe
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

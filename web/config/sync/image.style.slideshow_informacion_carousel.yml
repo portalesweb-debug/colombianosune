@@ -1,0 +1,15 @@
+uuid: e6249d11-3ca8-44f6-bf59-bc5c09fa1a2f
+langcode: es
+status: true
+dependencies: {  }
+name: slideshow_informacion_carousel
+label: 'Slideshow Informacion Carousel'
+effects:
+  bfb6427c-c007-4e07-998a-8685cd9992c3:
+    uuid: bfb6427c-c007-4e07-998a-8685cd9992c3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 180
+      anchor: center-center

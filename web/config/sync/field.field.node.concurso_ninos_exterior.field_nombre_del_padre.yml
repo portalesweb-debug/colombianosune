@@ -1,0 +1,21 @@
+uuid: 3a5b5962-8ade-4a48-b4b7-995d34be4ea2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_del_padre
+    - node.type.concurso_ninos_exterior
+  module:
+    - text
+id: node.concurso_ninos_exterior.field_nombre_del_padre
+field_name: field_nombre_del_padre
+entity_type: node
+bundle: concurso_ninos_exterior
+label: 'Nombre del Padre de contacto'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

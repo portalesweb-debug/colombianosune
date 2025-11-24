@@ -1,0 +1,26 @@
+uuid: 0063ae77-6bf4-4c6f-9c51-3ca34ec4377f
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_img_concurso_navidad
+field_name: field_img_concurso_navidad
+entity_type: node
+type: image
+settings:
+  default_image:
+    uuid: ''
+  uri_scheme: public
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

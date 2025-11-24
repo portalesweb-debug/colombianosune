@@ -1,0 +1,27 @@
+uuid: 3d9d0f32-a869-4093-938e-db1c56b36e63
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_categoria
+field_name: field_categoria
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Es copa america'
+      label: 'Es copa america'
+    -
+      value: 'No es copa'
+      label: 'No es copa'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

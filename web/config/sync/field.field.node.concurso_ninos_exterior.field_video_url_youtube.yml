@@ -1,0 +1,21 @@
+uuid: e9976d0a-c22e-4bf8-9174-93ed7d7449f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_url_youtube
+    - node.type.concurso_ninos_exterior
+  module:
+    - text
+id: node.concurso_ninos_exterior.field_video_url_youtube
+field_name: field_video_url_youtube
+entity_type: node
+bundle: concurso_ninos_exterior
+label: 'Video url Youtube'
+description: 'Ingrese la url donde esta publicado el video'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,29 @@
+uuid: 4bddbd5d-ae07-4656-a7e7-b076639b0261
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-santander
+  module:
+    - system
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_oficina_atencion_santander
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-santander'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-santander'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-santander/*'

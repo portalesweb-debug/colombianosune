@@ -1,0 +1,23 @@
+uuid: 1369e5d8-a15d-4a7c-bf49-9d9ad4c89e85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.banco_leyes
+  module:
+    - text
+id: node.banco_leyes.body
+field_name: body
+entity_type: node
+bundle: banco_leyes
+label: Cuerpo
+description: 'permite crear contenido para el banco de leyes para migrantes'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,72 @@
+uuid: 04cc5bcf-8ba0-431e-8ba5-d13b3a34ca52
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.imagen_concurso_navidad.field_autor_concurso_navidad
+    - field.field.node.imagen_concurso_navidad.field_ciudad_concurso_navidad
+    - field.field.node.imagen_concurso_navidad.field_img_concurso_navidad
+    - field.field.node.imagen_concurso_navidad.field_terminos_concurso_navidad
+    - field.field.node.imagen_concurso_navidad.upload
+    - node.type.imagen_concurso_navidad
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.imagen_concurso_navidad.default
+targetEntityType: node
+bundle: imagen_concurso_navidad
+mode: default
+content:
+  comment_node_imagen_concurso_navidad:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_autor_concurso_navidad:
+    label: inline
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_concurso_navidad:
+    label: inline
+    weight: 27
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_img_concurso_navidad:
+    label: hidden
+    weight: 31
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  upload:
+    label: hidden
+    weight: 0
+    type: file_table
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_terminos_concurso_navidad: true
+  langcode: true

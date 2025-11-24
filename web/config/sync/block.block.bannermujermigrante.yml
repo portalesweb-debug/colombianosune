@@ -1,0 +1,31 @@
+uuid: 8973ddc9-a22d-4e3a-8fc9-ba7e3c2202f2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c2bee9fe-a07b-4820-8930-c0a55d714a1f'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannermujermigrante
+theme: colombianosune
+region: content_navigation
+weight: -56
+provider: null
+plugin: 'block_content:c2bee9fe-a07b-4820-8930-c0a55d714a1f'
+settings:
+  id: 'block_content:c2bee9fe-a07b-4820-8930-c0a55d714a1f'
+  label: 'banner mujer migrante'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/mujer/migrante/*'
+    negate: false
+    context_mapping: {  }

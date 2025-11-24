@@ -1,0 +1,21 @@
+uuid: e0f18b74-e916-4bd6-98f4-f54326b279ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_columnista_invitado
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_columnista_invitado.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_columnista_invitado
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

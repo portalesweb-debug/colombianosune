@@ -1,0 +1,31 @@
+uuid: f86d9ea8-42a5-4442-af94-504c273ee537
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1c5b2fd9-1e66-4bd0-8568-c08aeb1d9777'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannermultiplicadorsantiagodechile
+theme: colombianosune
+region: content_navigation
+weight: -30
+provider: null
+plugin: 'block_content:1c5b2fd9-1e66-4bd0-8568-c08aeb1d9777'
+settings:
+  id: 'block_content:1c5b2fd9-1e66-4bd0-8568-c08aeb1d9777'
+  label: 'Banner Multiplicador Santiago de Chile'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/multiplicador-santiago-chile/*'
+    negate: false
+    context_mapping: {  }

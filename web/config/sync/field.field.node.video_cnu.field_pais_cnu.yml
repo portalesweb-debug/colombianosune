@@ -1,0 +1,24 @@
+uuid: 42d19add-c1e2-4149-ad18-587a83b4e650
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_cnu
+    - node.type.video_cnu
+  module:
+    - text
+id: node.video_cnu.field_pais_cnu
+field_name: field_pais_cnu
+entity_type: node
+bundle: video_cnu
+label: 'País '
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_pais_cnu][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

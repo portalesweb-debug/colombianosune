@@ -1,0 +1,45 @@
+uuid: d3bc149f-3e5d-4ae7-9a01-418824e30a1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_html
+    - field.field.node.contenido_general_portal.body
+    - field.field.node.contenido_general_portal.field_imagen_cgp
+    - field.field.node.contenido_general_portal.field_imgs_cgp
+    - field.field.node.contenido_general_portal.taxonomy_vocabulary_33
+    - field.field.node.contenido_general_portal.upload
+    - node.type.contenido_general_portal
+  module:
+    - image
+    - user
+id: node.contenido_general_portal.email_html
+targetEntityType: node
+bundle: contenido_general_portal
+mode: email_html
+content:
+  field_imagen_cgp:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_imgs_cgp: true
+  langcode: true
+  taxonomy_vocabulary_33: true
+  upload: true

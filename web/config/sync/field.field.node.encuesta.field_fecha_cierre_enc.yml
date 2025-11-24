@@ -1,0 +1,21 @@
+uuid: 21b2a2ca-6f72-4d03-bb91-e7a7d9669bf4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_cierre_enc
+    - node.type.encuesta
+  module:
+    - datetime
+id: node.encuesta.field_fecha_cierre_enc
+field_name: field_fecha_cierre_enc
+entity_type: node
+bundle: encuesta
+label: 'Fecha de Cierre'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

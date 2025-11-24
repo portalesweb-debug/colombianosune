@@ -1,0 +1,20 @@
+uuid: 350f3ff5-61fd-41ce-be0e-349d0c0eff72
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_longitud
+field_name: field_longitud
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

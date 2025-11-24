@@ -1,0 +1,15 @@
+uuid: 2c70bfee-402d-4e98-9a7a-9b8f96467444
+langcode: es
+status: true
+dependencies: {  }
+name: noticias_enfoque_dif
+label: Noticias_enfoque_dif
+effects:
+  773a92f5-3f2f-4c0b-9a2c-7a71c7a9de72:
+    uuid: 773a92f5-3f2f-4c0b-9a2c-7a71c7a9de72
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 160
+      anchor: center-center

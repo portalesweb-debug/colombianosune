@@ -1,0 +1,8 @@
+uuid: 9d1882e2-4e67-42b6-bbcb-2cf0929c8bc0
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-newark
+label: 'Multiplicador en Newark'
+description: ''
+locked: false

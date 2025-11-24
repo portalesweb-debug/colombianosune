@@ -1,0 +1,14 @@
+uuid: cadf6652-2b29-4d81-afc5-10166bab1393
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.pre_registrado
+  module:
+    - user
+id: user_add_role_action.pre_registrado
+label: 'Agregar el rol pre-registrado a los usuarios seleccionados'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pre_registrado

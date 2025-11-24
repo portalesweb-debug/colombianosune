@@ -1,0 +1,43 @@
+uuid: 4c9bf5fb-c255-4443-b04d-3e47d53f2ac2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.blog.body
+    - field.field.node.blog.comment_node_blog
+    - field.field.node.blog.field_imgentrada_blog
+    - field.field.node.blog.taxonomy_vocabulary_27
+    - node.type.blog
+  module:
+    - image
+    - user
+id: node.blog.rss
+targetEntityType: node
+bundle: blog
+mode: rss
+content:
+  field_imgentrada_blog:
+    label: hidden
+    weight: 101
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_blog: true
+  langcode: true
+  taxonomy_vocabulary_27: true

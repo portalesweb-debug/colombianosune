@@ -1,0 +1,11 @@
+uuid: f74e381c-edb6-4a98-8909-768f14e817ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.comunidades
+id: node.comunidades
+target_entity_type_id: node
+target_bundle: comunidades
+default_langcode: site_default
+language_alterable: false

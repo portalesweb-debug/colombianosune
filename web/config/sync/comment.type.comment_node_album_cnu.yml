@@ -1,0 +1,8 @@
+uuid: 736b6bb5-2c89-4981-8d09-27e589f18794
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_album_cnu
+label: 'comentario de Album Colombia Nos Une'
+target_entity_type_id: node
+description: null

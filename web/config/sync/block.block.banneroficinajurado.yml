@@ -1,0 +1,31 @@
+uuid: 22797030-bf41-4bac-a7bd-69d6c09e49f1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9cc36077-88b2-4361-b966-71bd53ab5336'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: banneroficinajurado
+theme: colombianosune
+region: content_navigation
+weight: -41
+provider: null
+plugin: 'block_content:9cc36077-88b2-4361-b966-71bd53ab5336'
+settings:
+  id: 'block_content:9cc36077-88b2-4361-b966-71bd53ab5336'
+  label: 'Banner oficina Jurado'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/oficina-jurado/*'
+    negate: false
+    context_mapping: {  }

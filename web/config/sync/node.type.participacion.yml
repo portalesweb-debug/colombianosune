@@ -1,0 +1,17 @@
+uuid: 30d83397-2c28-469e-8a4e-8bed20a3b2e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Participación
+type: participacion
+description: 'Participación transparencia'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,24 @@
+uuid: 715df429-de49-4ef2-b84d-821e47967de0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_negocio
+    - node.type.negocio_colombiano
+  module:
+    - text
+id: node.negocio_colombiano.field_web_negocio
+field_name: field_web_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: 'Pagina web'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_web_negocio][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

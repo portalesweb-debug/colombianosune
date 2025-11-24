@@ -1,0 +1,26 @@
+uuid: 7f98bc3f-fd73-4d08-baa0-94a039d7b165
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace_banco
+    - node.type.banco_leyes
+  module:
+    - link
+id: node.banco_leyes.field_enlace_banco
+field_name: field_enlace_banco
+entity_type: node
+bundle: banco_leyes
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    title: ''
+    url: ''
+default_value_callback: ''
+settings:
+  title: null
+  link_type: 17
+field_type: link

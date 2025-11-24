@@ -1,0 +1,8 @@
+uuid: 6e784324-a44c-489d-be3d-9712fc3dd8bd
+langcode: es
+status: true
+dependencies: {  }
+id: menu-crearcontenidoscnu
+label: 'Crear contenido CNU'
+description: 'permite crear contenido de PBC y BL'
+locked: false

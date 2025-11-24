@@ -1,0 +1,24 @@
+uuid: dbd81a06-804e-4a26-8a19-8f5646f7b083
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_pbc
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.field_ciudad_pbc
+field_name: field_ciudad_pbc
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: 'Ciudad y País de publicación'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_ciudad_pbc][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

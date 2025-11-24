@@ -1,0 +1,23 @@
+uuid: 2b8ceafe-6b91-48f2-bf37-c7952ba22f5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_perfil
+    - node.type.profile
+  module:
+    - options
+id: node.profile.field_perfil
+field_name: field_perfil
+entity_type: node
+bundle: profile
+label: Perfil
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,8 @@
+uuid: daa763d6-b907-456a-9271-01a764cddc7b
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Empresa'
+vid: vocabulary_3
+description: 'Vocabulario que almacena los tipos de empresa que pueden existir en una organización.'
+weight: -6

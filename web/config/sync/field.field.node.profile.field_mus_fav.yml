@@ -1,0 +1,24 @@
+uuid: f02337f7-0bf2-48e1-95df-139d77218e89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mus_fav
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_mus_fav
+field_name: field_mus_fav
+entity_type: node
+bundle: profile
+label: 'Música Favorita'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_mus_fav][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

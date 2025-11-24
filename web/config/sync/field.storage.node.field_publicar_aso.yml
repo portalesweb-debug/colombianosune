@@ -1,0 +1,27 @@
+uuid: f70a7459-f33b-4614-bb3b-b235f7ebd54d
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_publicar_aso
+field_name: field_publicar_aso
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Publicar este contenido'
+      label: 'Publicar este contenido'
+    -
+      value: 'No publicar'
+      label: 'No publicar'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

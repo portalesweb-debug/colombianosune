@@ -1,0 +1,42 @@
+uuid: 585f791b-0922-4cb0-b680-d3e6a9fc6ef4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo_banco
+field_name: field_tipo_banco
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Ley
+    -
+      value: '2'
+      label: Decreto
+    -
+      value: '3'
+      label: 'Documento Conpes'
+    -
+      value: '4'
+      label: Circular
+    -
+      value: '5'
+      label: 'Normas Internacionales'
+    -
+      value: '6'
+      label: 'Normas Regionales'
+    -
+      value: '7'
+      label: Resolución
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

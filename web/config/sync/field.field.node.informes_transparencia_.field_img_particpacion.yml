@@ -1,0 +1,38 @@
+uuid: d8678655-381a-45b8-800a-47802286efe6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_img_particpacion
+    - node.type.informes_transparencia_
+  module:
+    - image
+id: node.informes_transparencia_.field_img_particpacion
+field_name: field_img_particpacion
+entity_type: node
+bundle: informes_transparencia_
+label: Img_particpacion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

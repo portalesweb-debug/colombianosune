@@ -1,0 +1,47 @@
+uuid: 6f759951-9029-443e-a890-cf16a602a4c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.print
+    - field.field.node.forum.body
+    - field.field.node.forum.comment_forum
+    - field.field.node.forum.comment_node_forum
+    - field.field.node.forum.field_imagen_foro
+    - field.field.node.forum.taxonomy_forums
+    - field.field.node.forum.taxonomy_vocabulary_19
+    - node.type.forum
+  module:
+    - image
+    - user
+id: node.forum.print
+targetEntityType: node
+bundle: forum
+mode: print
+content:
+  field_imagen_foro:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_forum: true
+  comment_node_forum: true
+  langcode: true
+  taxonomy_forums: true
+  taxonomy_vocabulary_19: true

@@ -1,0 +1,7 @@
+uuid: 0ad79062-41b7-4f3b-91e7-fef1d18aec89
+langcode: es
+status: false
+dependencies: {  }
+formId: node_album_cnu_form
+captchaType: default
+label: null

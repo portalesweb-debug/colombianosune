@@ -1,0 +1,20 @@
+uuid: a4810201-f9e1-49f0-9880-b1ed3e7a4ff5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_email_negocio
+field_name: field_email_negocio
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

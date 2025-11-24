@@ -1,0 +1,8 @@
+uuid: c8238c91-d709-46b1-a40b-c55a9b8f6268
+langcode: es
+status: true
+dependencies: {  }
+id: of
+label: 'Oficina de Atención al Migrante Valle del Cauca'
+description: ''
+locked: false

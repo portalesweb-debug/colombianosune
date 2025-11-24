@@ -1,0 +1,135 @@
+uuid: c37ac645-c0e9-40e4-99bb-95fe432a1663
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.album_cnu.body
+    - field.field.node.album_cnu.comment_node_album_cnu
+    - field.field.node.album_cnu.field_image_cnu_02
+    - field.field.node.album_cnu.field_pais_cnu
+    - field.field.node.album_cnu.field_value_independencia
+    - field.field.node.album_cnu.taxonomy_vocabulary_20
+    - image.style.thumbnail
+    - node.type.album_cnu
+  module:
+    - image
+    - path
+    - text
+id: node.album_cnu.default
+targetEntityType: node
+bundle: album_cnu
+mode: default
+content:
+  body:
+    weight: -2
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_cnu_02:
+    weight: 0
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_pais_cnu:
+    weight: 1
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_value_independencia:
+    weight: 31
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_20:
+    weight: 42
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_album_cnu: true

@@ -1,0 +1,36 @@
+uuid: 77e810ea-5878-467c-ae44-4ae22d079570
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.enlaces_detacados.body
+    - node.type.enlaces_detacados
+  module:
+    - text
+    - user
+id: node.enlaces_detacados.teaser
+targetEntityType: node
+bundle: enlaces_detacados
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

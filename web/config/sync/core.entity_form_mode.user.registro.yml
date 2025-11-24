@@ -1,0 +1,10 @@
+uuid: ae98272f-8944-4999-ab9e-14c7b1865f07
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.registro
+label: REGISTRO
+targetEntityType: user
+cache: true

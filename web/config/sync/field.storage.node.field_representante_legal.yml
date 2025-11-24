@@ -1,0 +1,20 @@
+uuid: 0ebf4773-ad07-48ca-9779-1cba588a13e6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_representante_legal
+field_name: field_representante_legal
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

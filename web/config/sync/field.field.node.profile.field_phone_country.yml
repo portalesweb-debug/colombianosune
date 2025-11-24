@@ -1,0 +1,26 @@
+uuid: 53e6312e-210d-46c5-9115-094d326a94a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_country
+    - node.type.profile
+id: node.profile.field_phone_country
+field_name: field_phone_country
+entity_type: node
+bundle: profile
+label: 'Código de país'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_phone_country][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

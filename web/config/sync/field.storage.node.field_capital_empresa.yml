@@ -1,0 +1,20 @@
+uuid: 90320d26-d82a-4aa7-af0c-298ba9fd954e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_capital_empresa
+field_name: field_capital_empresa
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

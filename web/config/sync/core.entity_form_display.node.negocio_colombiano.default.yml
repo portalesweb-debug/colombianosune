@@ -1,0 +1,198 @@
+uuid: 16ea4108-1e9e-4baf-9e69-241ee4cac440
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.negocio_colombiano.body
+    - field.field.node.negocio_colombiano.comment_node_negocio_colombiano
+    - field.field.node.negocio_colombiano.field_categoria_negocio
+    - field.field.node.negocio_colombiano.field_ciudad_negocio
+    - field.field.node.negocio_colombiano.field_direccion_negocio
+    - field.field.node.negocio_colombiano.field_email_negocio
+    - field.field.node.negocio_colombiano.field_estado
+    - field.field.node.negocio_colombiano.field_facebook_negocio
+    - field.field.node.negocio_colombiano.field_logo_negocio
+    - field.field.node.negocio_colombiano.field_pais_negocio
+    - field.field.node.negocio_colombiano.field_publicar_negocio
+    - field.field.node.negocio_colombiano.field_telefono_negocio
+    - field.field.node.negocio_colombiano.field_twitter_negocio
+    - field.field.node.negocio_colombiano.field_web_negocio
+    - image.style.thumbnail
+    - node.type.negocio_colombiano
+  module:
+    - image
+    - path
+    - text
+id: node.negocio_colombiano.default
+targetEntityType: node
+bundle: negocio_colombiano
+mode: default
+content:
+  body:
+    weight: 8
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categoria_negocio:
+    weight: 9
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ciudad_negocio:
+    weight: 11
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_direccion_negocio:
+    weight: 12
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_email_negocio:
+    weight: 14
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_estado:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_facebook_negocio:
+    weight: 17
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_logo_negocio:
+    weight: 7
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_pais_negocio:
+    weight: 10
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  field_publicar_negocio:
+    weight: 19
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_telefono_negocio:
+    weight: 13
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_twitter_negocio:
+    weight: 18
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_web_negocio:
+    weight: 16
+    type: text_textfield
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_negocio_colombiano: true

@@ -1,0 +1,19 @@
+uuid: 362d66d1-1c8b-46a1-81dd-2e6b692d024f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_libros_fav
+field_name: field_libros_fav
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

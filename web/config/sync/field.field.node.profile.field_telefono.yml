@@ -1,0 +1,26 @@
+uuid: b391e8fc-ab04-40ec-800a-721390c8a064
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono
+    - node.type.profile
+id: node.profile.field_telefono
+field_name: field_telefono
+entity_type: node
+bundle: profile
+label: Teléfono
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+    _error_element: 'default_value_widget][field_telefono][0][value'
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

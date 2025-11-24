@@ -1,0 +1,20 @@
+uuid: e23c21cc-f211-46eb-a8f8-fdb83ed82c67
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_concurso_navidad
+field_name: field_ciudad_concurso_navidad
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

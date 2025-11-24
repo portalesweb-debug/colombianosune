@@ -1,0 +1,30 @@
+uuid: 99bb69f4-0f92-490f-9f50-0893c2bb5032
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-afrocolombianos
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_afrocolombianos
+theme: colombianosune
+region: content_navigation
+weight: -57
+provider: null
+plugin: 'system_menu_block:menu-afrocolombianos'
+settings:
+  id: 'system_menu_block:menu-afrocolombianos'
+  label: 'Menu Afrocolombianos'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/afrocolombianos/*'
+    context_mapping: {  }

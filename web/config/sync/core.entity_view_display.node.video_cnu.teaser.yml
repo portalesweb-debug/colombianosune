@@ -1,0 +1,57 @@
+uuid: 06d0e6db-be47-4b27-818d-bf0d9e9cc69b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.video_cnu.body
+    - field.field.node.video_cnu.comment_node_video_cnu
+    - field.field.node.video_cnu.field_pais_cnu
+    - field.field.node.video_cnu.field_validate_videocnu
+    - field.field.node.video_cnu.field_video_cnu
+    - node.type.video_cnu
+  module:
+    - options
+    - text
+    - user
+id: node.video_cnu.teaser
+targetEntityType: node
+bundle: video_cnu
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: -4
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_pais_cnu:
+    label: inline
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_validate_videocnu:
+    label: above
+    weight: 9
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment_node_video_cnu: true
+  field_video_cnu: true
+  langcode: true

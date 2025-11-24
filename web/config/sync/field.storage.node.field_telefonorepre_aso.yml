@@ -1,0 +1,20 @@
+uuid: 03560bc7-1de5-470c-95dc-ccc419270fc7
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_telefonorepre_aso
+field_name: field_telefonorepre_aso
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 75e4b1f2-c68a-4535-9a4f-2dbb7647e1d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contentido_galeria
+    - node.type.galeria
+id: node.galeria.field_contentido_galeria
+field_name: field_contentido_galeria
+entity_type: node
+bundle: galeria
+label: COntentido_galeria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

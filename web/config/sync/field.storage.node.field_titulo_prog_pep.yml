@@ -1,0 +1,20 @@
+uuid: b7136411-ce54-4878-bda9-b8c196069187
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_titulo_prog_pep
+field_name: field_titulo_prog_pep
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

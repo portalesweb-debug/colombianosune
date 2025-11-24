@@ -1,0 +1,7 @@
+uuid: e1dd9280-af89-4e58-ba2b-8e29bc2efd91
+langcode: es
+status: false
+dependencies: {  }
+formId: node_patrimonio_bibliografico_colombi_form
+captchaType: default
+label: null

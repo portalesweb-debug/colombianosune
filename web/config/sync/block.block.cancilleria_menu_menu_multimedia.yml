@@ -1,0 +1,32 @@
+uuid: c80cca22-6dcf-496f-8107-88e4191dcc1b
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-multimedia
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_multimedia
+theme: Cancilleria
+region: ''
+weight: 3
+provider: null
+plugin: 'system_menu_block:menu-multimedia'
+settings:
+  id: 'system_menu_block:menu-multimedia'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /noticias/portal
+      /albumcnu/*
+      /videocnu/*

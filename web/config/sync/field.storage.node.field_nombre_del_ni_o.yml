@@ -1,0 +1,20 @@
+uuid: 3ca744af-1b4d-410c-aaa1-eee609e9fee9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_nombre_del_ni_o
+field_name: field_nombre_del_ni_o
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: b116a919-4c4d-48fc-b48a-12e75b502a35
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_faq
+label: 'comentario de '
+target_entity_type_id: node
+description: null

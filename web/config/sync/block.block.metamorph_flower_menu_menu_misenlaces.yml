@@ -1,0 +1,37 @@
+uuid: 8a69348f-fbb4-4ce8-91d0-54d575a0ccad
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-misenlaces
+  module:
+    - system
+    - user
+  theme:
+    - metamorph_flower
+id: metamorph_flower_menu_menu_misenlaces
+theme: metamorph_flower
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-misenlaces'
+settings:
+  id: 'system_menu_block:menu-misenlaces'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,21 @@
+uuid: 178c0c58-ed73-4b89-9a1c-7966577d3e19
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_del_nominado
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_twitter_del_nominado
+field_name: field_twitter_del_nominado
+entity_type: node
+bundle: colombianos_postulados
+label: 'Twitter del nominado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

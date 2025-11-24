@@ -1,0 +1,109 @@
+uuid: c4f36569-a324-4fca-be02-f2040c44b638
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mobile
+    - field.field.node.noticias.body
+    - field.field.node.noticias.comment_node_noticias
+    - field.field.node.noticias.field_archivo_organizacion
+    - field.field.node.noticias.field_consulado
+    - field.field.node.noticias.field_enlace_not
+    - field.field.node.noticias.field_fec_consulado
+    - field.field.node.noticias.field_fecha_publicacion
+    - field.field.node.noticias.field_fuente
+    - field.field.node.noticias.field_imagen
+    - field.field.node.noticias.field_imagen2_not
+    - field.field.node.noticias.field_nota_noticia
+    - field.field.node.noticias.field_noticias
+    - field.field.node.noticias.field_pais_n
+    - field.field.node.noticias.field_publicado_noticia
+    - field.field.node.noticias.taxonomy_vocabulary_16
+    - field.field.node.noticias.taxonomyextra
+    - node.type.noticias
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.noticias.mobile
+targetEntityType: node
+bundle: noticias
+mode: mobile
+content:
+  field_fec_consulado:
+    label: inline
+    weight: 11
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_fecha_publicacion:
+    label: inline
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_fuente:
+    label: inline
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen2_not:
+    label: hidden
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_nota_noticia:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pais_n:
+    label: hidden
+    weight: 10
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publicado_noticia:
+    label: above
+    weight: 12
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_noticias: true
+  field_archivo_organizacion: true
+  field_consulado: true
+  field_enlace_not: true
+  field_imagen: true
+  field_noticias: true
+  langcode: true
+  taxonomy_vocabulary_16: true
+  taxonomyextra: true

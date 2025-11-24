@@ -1,0 +1,43 @@
+uuid: e3b8ae93-d2e0-4a05-b0bd-6e0482366a7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mobile
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_imagenes_page
+    - field.field.node.page.upload
+    - node.type.page
+  module:
+    - image
+    - user
+id: node.page.mobile
+targetEntityType: node
+bundle: page
+mode: mobile
+content:
+  field_imagenes_page:
+    label: hidden
+    weight: -2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_page: true
+  langcode: true
+  upload: true

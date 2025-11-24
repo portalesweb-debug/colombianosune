@@ -1,0 +1,24 @@
+uuid: 7c064bd3-fe8a-4fd9-83b6-083ff56be373
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_longitud
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_longitud
+field_name: field_longitud
+entity_type: node
+bundle: profile
+label: Longitud
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_longitud][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

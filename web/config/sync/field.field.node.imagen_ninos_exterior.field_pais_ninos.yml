@@ -1,0 +1,24 @@
+uuid: b0c58601-542d-4301-bfe2-53be47860b66
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_ninos
+    - node.type.imagen_ninos_exterior
+  module:
+    - text
+id: node.imagen_ninos_exterior.field_pais_ninos
+field_name: field_pais_ninos
+entity_type: node
+bundle: imagen_ninos_exterior
+label: Ciudad
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_pais_ninos][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

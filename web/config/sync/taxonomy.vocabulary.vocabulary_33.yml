@@ -1,0 +1,8 @@
+uuid: 53020437-1663-4bf3-8f0a-db8faee6ecaa
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoria Redes'
+vid: vocabulary_33
+description: ''
+weight: 0

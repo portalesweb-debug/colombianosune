@@ -1,0 +1,42 @@
+uuid: 587d66e5-da6c-46a6-9e1b-2385d58c3af1
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina
+  module:
+    - system
+    - user
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_oficina
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-oficina'
+settings:
+  id: 'system_menu_block:menu-oficina'
+  label: 'Oficina de atención al migrante'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /eje1
+      /eje2
+      /eje3
+      /eje4
+      /eje5

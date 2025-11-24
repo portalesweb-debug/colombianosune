@@ -1,0 +1,27 @@
+uuid: 547f0dfd-2c2e-4f7a-93ba-50f0514fabf2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ley_banco
+    - node.type.banco_leyes
+  module:
+    - file
+id: node.banco_leyes.field_ley_banco
+field_name: field_ley_banco
+entity_type: node
+bundle: banco_leyes
+label: Normativa
+description: '<a target="_blank"> </a>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: pdf
+  max_filesize: '0'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

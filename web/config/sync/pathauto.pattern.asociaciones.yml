@@ -1,0 +1,22 @@
+uuid: 66eeec74-cba2-4f46-a55d-ef2c9d441a9f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: asociaciones
+label: Asociaciones
+type: 'canonical_entities:node'
+pattern: 'ejes/plancomunidad/asociaciones/[node:title]'
+selection_criteria:
+  a66c6bdd-e7fb-4f5d-a450-f3d38083aa77:
+    id: node_type
+    bundles:
+      asociaciones: asociaciones
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a66c6bdd-e7fb-4f5d-a450-f3d38083aa77
+selection_logic: and
+weight: -5
+relationships: {  }

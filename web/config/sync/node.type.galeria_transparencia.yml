@@ -1,0 +1,17 @@
+uuid: 1a4fd6c3-de62-4c65-9a6c-2a2c42a904dd
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Galeria transparencia'
+type: galeria_transparencia
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

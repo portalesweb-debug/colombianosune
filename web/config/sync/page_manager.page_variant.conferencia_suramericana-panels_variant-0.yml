@@ -1,0 +1,43 @@
+uuid: 64d42397-a6c6-40e5-8330-cd0443b0ba9b
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.conferencia_suramericana
+  content:
+    - 'block_content:basic:8c3d0992-5fba-4f2c-9e46-8cd0987dc9d2'
+  module:
+    - block_content
+    - panels
+id: conferencia_suramericana-panels_variant-0
+label: 'Pagina XIII Conferencia'
+variant: panels_variant
+variant_settings:
+  blocks:
+    8e4870e1-8093-4dd2-8109-822eab6a997a:
+      id: 'block_content:8c3d0992-5fba-4f2c-9e46-8cd0987dc9d2'
+      label: 'XIII Suramericana'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 0
+      uuid: 8e4870e1-8093-4dd2-8109-822eab6a997a
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 156af80c-8f4b-4e1d-8763-28d7acec7abc
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: 'XIII Conferencia Sudamericana sobre migraciones'
+  storage_type: page_manager
+  storage_id: conferencia_suramericana-panels_variant-0
+  builder: ipe
+page: conferencia_suramericana
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

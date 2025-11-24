@@ -1,0 +1,18 @@
+uuid: bc6e6dc2-bfc6-4d54-ba07-a2af0333c165
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.preguntas_frecuentes_mesa_indepe
+id: node.preguntas_frecuentes_mesa_indepe.title
+field_name: title
+entity_type: node
+bundle: preguntas_frecuentes_mesa_indepe
+label: 'Preguntas Frecuentes Mesa Independiente'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

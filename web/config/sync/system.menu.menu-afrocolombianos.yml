@@ -1,0 +1,8 @@
+uuid: 7798e1f5-54bb-416d-9701-e98d9e3967f7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-afrocolombianos
+label: afrocolombianos
+description: ''
+locked: false

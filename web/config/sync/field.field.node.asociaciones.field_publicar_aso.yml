@@ -1,0 +1,23 @@
+uuid: 6f5afa8f-e615-44c1-9a11-a10f80222d35
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicar_aso
+    - node.type.asociaciones
+  module:
+    - options
+id: node.asociaciones.field_publicar_aso
+field_name: field_publicar_aso
+entity_type: node
+bundle: asociaciones
+label: publicar
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'No publicar'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

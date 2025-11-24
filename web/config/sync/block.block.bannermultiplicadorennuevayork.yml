@@ -1,0 +1,31 @@
+uuid: 71033d20-f7fc-4480-a4ea-147378b14f2a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fad71104-f5d8-42cc-a8a0-65b28d580108'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: bannermultiplicadorennuevayork
+theme: colombianosune
+region: content_navigation
+weight: -27
+provider: null
+plugin: 'block_content:fad71104-f5d8-42cc-a8a0-65b28d580108'
+settings:
+  id: 'block_content:fad71104-f5d8-42cc-a8a0-65b28d580108'
+  label: 'Banner Multiplicador en Nueva York'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/multiplicador-nueva-york/*'
+    negate: false
+    context_mapping: {  }

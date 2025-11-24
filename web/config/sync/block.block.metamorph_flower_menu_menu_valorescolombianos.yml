@@ -1,0 +1,41 @@
+uuid: 81520952-0203-4084-bbeb-acf2ff8ccafe
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-valorescolombianos
+  module:
+    - system
+    - user
+  theme:
+    - metamorph_flower
+id: metamorph_flower_menu_menu_valorescolombianos
+theme: metamorph_flower
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-valorescolombianos'
+settings:
+  id: 'system_menu_block:menu-valorescolombianos'
+  label: 'Muestra de dibujo: Valores Colombianos 20 de Julio'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /valores_colombianos
+      /album/concurso-valores-colombianos
+      /content/alvaran-aguirre-steven
+      /valorescolombianos/*

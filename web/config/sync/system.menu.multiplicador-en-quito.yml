@@ -1,0 +1,8 @@
+uuid: bb66e7b6-8285-4fdf-90d9-a3760896cd4b
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-quito
+label: 'Multiplicador en Quito'
+description: ''
+locked: false

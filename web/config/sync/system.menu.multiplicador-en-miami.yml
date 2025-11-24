@@ -1,0 +1,8 @@
+uuid: fa3ef2ef-f2b9-4620-af99-6137ea047a8e
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-miami
+label: 'Multiplicador en Miami'
+description: ''
+locked: false

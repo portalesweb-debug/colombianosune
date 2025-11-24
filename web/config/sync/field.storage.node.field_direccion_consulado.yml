@@ -1,0 +1,20 @@
+uuid: 3d355cd5-5182-4c37-ab41-94bb574d5b64
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_direccion_consulado
+field_name: field_direccion_consulado
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

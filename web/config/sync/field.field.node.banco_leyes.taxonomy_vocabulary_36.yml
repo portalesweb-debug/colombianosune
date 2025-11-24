@@ -1,0 +1,21 @@
+uuid: 3f753d7d-5c39-474b-a47b-73bfb9d260be
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_36
+    - node.type.banco_leyes
+id: node.banco_leyes.taxonomy_vocabulary_36
+field_name: taxonomy_vocabulary_36
+entity_type: node
+bundle: banco_leyes
+label: 'banco de leyes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

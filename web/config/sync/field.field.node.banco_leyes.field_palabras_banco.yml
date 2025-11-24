@@ -1,0 +1,24 @@
+uuid: 2472a04b-aedc-422a-92b4-fc0ecf2ede7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_palabras_banco
+    - node.type.banco_leyes
+  module:
+    - text
+id: node.banco_leyes.field_palabras_banco
+field_name: field_palabras_banco
+entity_type: node
+bundle: banco_leyes
+label: 'Palabras Claves'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_palabras_banco][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

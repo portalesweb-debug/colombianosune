@@ -1,0 +1,24 @@
+uuid: 1d2bcec4-c7bf-4857-bd40-0dde49b3f568
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pais_n
+    - node.type.noticias
+  module:
+    - text
+id: node.noticias.field_pais_n
+field_name: field_pais_n
+entity_type: node
+bundle: noticias
+label: Pais
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_pais_n][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

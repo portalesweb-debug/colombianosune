@@ -1,0 +1,20 @@
+uuid: 7e8c5bdd-a5ce-46ef-94fa-9536e9c4c0de
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_direccion_negocio
+field_name: field_direccion_negocio
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

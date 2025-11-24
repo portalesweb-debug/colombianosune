@@ -1,0 +1,20 @@
+uuid: ea6678f7-070f-4e67-9a74-7659d9487c10
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_unique
+field_name: field_ciudad_unique
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

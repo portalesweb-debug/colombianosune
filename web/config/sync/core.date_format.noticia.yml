@@ -1,0 +1,8 @@
+uuid: 6d35105b-a413-4464-b146-2bc85dbfa515
+langcode: es
+status: true
+dependencies: {  }
+id: noticia
+label: Noticia
+locked: false
+pattern: 'j F Y'

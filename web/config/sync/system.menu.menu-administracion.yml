@@ -1,0 +1,8 @@
+uuid: 0fbb1fec-bf18-4e7e-98a6-c397471e66b2
+langcode: es
+status: true
+dependencies: {  }
+id: menu-administracion
+label: Administracion
+description: ''
+locked: false

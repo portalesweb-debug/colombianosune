@@ -1,0 +1,21 @@
+uuid: df3dadee-059f-4d3d-afed-7f1961314858
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook_del_nominado
+    - node.type.colombianos_postulados
+  module:
+    - text
+id: node.colombianos_postulados.field_facebook_del_nominado
+field_name: field_facebook_del_nominado
+entity_type: node
+bundle: colombianos_postulados
+label: 'Facebook del nominado'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

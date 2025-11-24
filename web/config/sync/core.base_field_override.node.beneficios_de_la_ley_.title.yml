@@ -1,0 +1,18 @@
+uuid: 8737ed07-c131-4a12-9967-14e5496e9931
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.beneficios_de_la_ley_
+id: node.beneficios_de_la_ley_.title
+field_name: title
+entity_type: node
+bundle: beneficios_de_la_ley_
+label: 'beneficios de la ley '
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

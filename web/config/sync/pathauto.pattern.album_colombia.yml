@@ -1,0 +1,22 @@
+uuid: 2213e732-5429-4e34-9a73-f00f3c23814a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: album_colombia
+label: 'Album Colombia Nos Une'
+type: 'canonical_entities:node'
+pattern: 'albumcnu/[node:title]'
+selection_criteria:
+  b8061a4d-e1d8-4b96-b5e9-098f49049df8:
+    id: node_type
+    bundles:
+      album_cnu: album_cnu
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b8061a4d-e1d8-4b96-b5e9-098f49049df8
+selection_logic: and
+weight: -5
+relationships: {  }

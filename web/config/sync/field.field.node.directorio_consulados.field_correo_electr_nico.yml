@@ -1,0 +1,19 @@
+uuid: 0c134d5f-8dc2-4165-bbc7-61044e99183e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_correo_electr_nico
+    - node.type.directorio_consulados
+id: node.directorio_consulados.field_correo_electr_nico
+field_name: field_correo_electr_nico
+entity_type: node
+bundle: directorio_consulados
+label: 'Correo Electrónico'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

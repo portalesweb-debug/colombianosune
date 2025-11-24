@@ -1,0 +1,30 @@
+uuid: dccc7ecd-5c02-400a-ad30-20475f777419
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-santander
+  module:
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_colombianosune_menu_menu_oficina_atencion_santander
+theme: colombianosune
+region: content_navigation
+weight: -39
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-santander'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-santander'
+  label: 'Menu Oficina Santander'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-santander/*'
+    context_mapping: {  }

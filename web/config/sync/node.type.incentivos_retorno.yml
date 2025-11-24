@@ -1,0 +1,17 @@
+uuid: 03fda027-902a-4cd8-8a7e-7793e1d2efd4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Tipos de retorno'
+type: incentivos_retorno
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

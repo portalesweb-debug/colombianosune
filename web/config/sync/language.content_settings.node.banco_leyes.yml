@@ -1,0 +1,11 @@
+uuid: 9d2a3e2a-cc92-40f1-a856-6fe9b5776764
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.banco_leyes
+id: node.banco_leyes
+target_entity_type_id: node
+target_bundle: banco_leyes
+default_langcode: site_default
+language_alterable: false

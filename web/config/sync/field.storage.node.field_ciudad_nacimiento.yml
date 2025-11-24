@@ -1,0 +1,20 @@
+uuid: 2bc0359d-58b2-4986-9164-65a1a182105d
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ciudad_nacimiento
+field_name: field_ciudad_nacimiento
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

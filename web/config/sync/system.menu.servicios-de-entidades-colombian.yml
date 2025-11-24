@@ -1,0 +1,8 @@
+uuid: 26dc33c5-17e0-4b3c-9d5b-e960d8963aa5
+langcode: es
+status: true
+dependencies: {  }
+id: servicios-de-entidades-colombian
+label: 'Servicios de entidades colombianas'
+description: ''
+locked: false

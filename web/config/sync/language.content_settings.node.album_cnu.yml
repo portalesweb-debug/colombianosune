@@ -1,0 +1,16 @@
+uuid: 9c2de084-e90c-45d9-b7af-b0844f85d8ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.album_cnu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.album_cnu
+target_entity_type_id: node
+target_bundle: album_cnu
+default_langcode: current_interface
+language_alterable: true

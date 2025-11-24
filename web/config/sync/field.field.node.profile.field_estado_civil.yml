@@ -1,0 +1,23 @@
+uuid: 9e27591d-2d64-4eca-af37-613d375930d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado_civil
+    - node.type.profile
+  module:
+    - options
+id: node.profile.field_estado_civil
+field_name: field_estado_civil
+entity_type: node
+bundle: profile
+label: 'Estado Civil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,8 @@
+uuid: 0d5e6814-2634-4726-9797-af2d9c42ca74
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-administrador-noticias
+label: 'Menu Administrador Noticias'
+description: 'Acceso para crear noticias en el portal.'
+locked: false

@@ -1,0 +1,8 @@
+uuid: eba3365f-05ba-41cf-b1a8-8e1fd77dbdee
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-barcelona
+label: 'Multiplicador en Barcelona'
+description: ''
+locked: false

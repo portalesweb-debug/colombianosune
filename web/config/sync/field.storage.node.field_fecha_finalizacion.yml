@@ -1,0 +1,20 @@
+uuid: 22217617-aeb9-4fe7-b177-6d7a41e41b60
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_fecha_finalizacion
+field_name: field_fecha_finalizacion
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

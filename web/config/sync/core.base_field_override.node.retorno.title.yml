@@ -1,0 +1,18 @@
+uuid: 8dc712a0-adeb-474f-af62-b851f2d10fa4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.retorno
+id: node.retorno.title
+field_name: title
+entity_type: node
+bundle: retorno
+label: Retorno
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

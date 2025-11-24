@@ -1,0 +1,29 @@
+uuid: dbf98ad3-5009-4352-b5e9-a0ca43efb3c8
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-mujer-migrante
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_mujer_migrante
+theme: Cancilleria
+region: ''
+weight: 12
+provider: null
+plugin: 'system_menu_block:menu-mujer-migrante'
+settings:
+  id: 'system_menu_block:menu-mujer-migrante'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/mujer/migrante/*'

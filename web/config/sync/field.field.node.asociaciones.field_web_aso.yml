@@ -1,0 +1,24 @@
+uuid: 7ff42d42-041c-4ba5-85e9-5fb235b52d6c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_aso
+    - node.type.asociaciones
+  module:
+    - text
+id: node.asociaciones.field_web_aso
+field_name: field_web_aso
+entity_type: node
+bundle: asociaciones
+label: 'Pagina web'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_web_aso][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

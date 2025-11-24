@@ -1,0 +1,20 @@
+uuid: 4cce6a71-6e8b-478d-8847-db1eaa778f26
+langcode: es
+status: false
+dependencies:
+  theme:
+    - colombianosune
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: colombianosune_local_actions
+theme: colombianosune
+region: content
+weight: -38
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones primarias de administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 42ab3254-14d5-423c-9b19-5457fa20802a
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_evento_ciudad
+field_name: field_evento_ciudad
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

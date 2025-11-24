@@ -1,0 +1,8 @@
+uuid: c2337872-eada-4247-88f3-4df99c53dc77
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Moneda'
+vid: vocabulary_5
+description: 'Vocabulario que almacena los tipos de moneda del mundo, utilizado en clasificados y en organizaciones. '
+weight: -5

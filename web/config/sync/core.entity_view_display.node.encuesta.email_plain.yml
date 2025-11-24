@@ -1,0 +1,39 @@
+uuid: 1174beaa-e312-4e6e-8f52-758509a66c16
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.email_plain
+    - field.field.node.encuesta.comment_node_encuesta
+    - field.field.node.encuesta.field_fecha_cierre_enc
+    - node.type.encuesta
+  module:
+    - datetime
+    - user
+id: node.encuesta.email_plain
+targetEntityType: node
+bundle: encuesta
+mode: email_plain
+content:
+  field_fecha_cierre_enc:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment_node_encuesta: true
+  langcode: true

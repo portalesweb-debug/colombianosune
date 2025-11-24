@@ -1,0 +1,11 @@
+uuid: cf684d54-6295-4345-b45e-4aeedc067a5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.flexslider_example_banner
+id: node.flexslider_example_banner
+target_entity_type_id: node
+target_bundle: flexslider_example_banner
+default_langcode: site_default
+language_alterable: false

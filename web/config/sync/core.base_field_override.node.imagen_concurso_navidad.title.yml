@@ -1,0 +1,18 @@
+uuid: dc35c5ad-49a9-4c33-bac8-42e5d78276cf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.imagen_concurso_navidad
+id: node.imagen_concurso_navidad.title
+field_name: title
+entity_type: node
+bundle: imagen_concurso_navidad
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

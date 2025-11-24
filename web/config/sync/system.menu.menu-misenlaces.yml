@@ -1,0 +1,8 @@
+uuid: 1181e15d-8e78-4b1a-bddc-c923a0a8ff79
+langcode: es
+status: true
+dependencies: {  }
+id: menu-misenlaces
+label: 'Mis Enlaces'
+description: 'Permite visualizar los contenidos creados por cada usuario'
+locked: false

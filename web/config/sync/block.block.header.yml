@@ -1,0 +1,34 @@
+uuid: 6437fbb5-0e64-4044-9d4b-3803278ee8b5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a098e1df-46f5-475c-9097-467e4c5542ed'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - colombianosune
+id: header
+theme: colombianosune
+region: content_navigation
+weight: -59
+provider: null
+plugin: 'block_content:a098e1df-46f5-475c-9097-467e4c5542ed'
+settings:
+  id: 'block_content:a098e1df-46f5-475c-9097-467e4c5542ed'
+  label: header
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      album_cnu: album_cnu
+      banco_leyes: banco_leyes
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

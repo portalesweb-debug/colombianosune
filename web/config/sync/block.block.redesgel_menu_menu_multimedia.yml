@@ -1,0 +1,32 @@
+uuid: bff61f9e-376e-42c3-894d-c1bb92f2aac6
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-multimedia
+  module:
+    - system
+  theme:
+    - RedEsGEL
+id: redesgel_menu_menu_multimedia
+theme: RedEsGEL
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-multimedia'
+settings:
+  id: 'system_menu_block:menu-multimedia'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /noticias/portal
+      /albumcnu/*
+      /videocnu/*

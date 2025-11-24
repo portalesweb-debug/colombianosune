@@ -1,0 +1,8 @@
+uuid: d0a2fce8-9fe9-4262-985a-da5cad46bd6b
+langcode: es
+status: true
+dependencies: {  }
+id: oficina-de-atencion-al-migr
+label: 'Oficina de Atencion al Migrante Antioquia'
+description: ''
+locked: false

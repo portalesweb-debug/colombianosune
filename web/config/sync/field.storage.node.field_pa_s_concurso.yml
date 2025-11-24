@@ -1,0 +1,20 @@
+uuid: 507d3250-66fc-4195-b8d2-fa574f3292b6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_pa_s_concurso
+field_name: field_pa_s_concurso
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

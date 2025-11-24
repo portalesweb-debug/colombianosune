@@ -1,0 +1,33 @@
+uuid: d89f34f2-94d8-4aa2-91b8-297a24216ef8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_pais_usuario
+    - taxonomy.vocabulary.vocabulary_35
+  content:
+    - 'taxonomy_term:vocabulary_35:664409d3-f7a6-4cf7-9592-22901ac2ab8a'
+  module:
+    - user
+id: user.user.field_pais_usuario
+field_name: field_pais_usuario
+entity_type: user
+bundle: user
+label: País
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 664409d3-f7a6-4cf7-9592-22901ac2ab8a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vocabulary_35: vocabulary_35
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

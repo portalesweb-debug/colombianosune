@@ -1,0 +1,21 @@
+uuid: ea86b229-0365-4fa8-9e77-90e97bf9da45
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pa_s_de_residencia_del_nom
+    - node.type.colombianos_postulados
+id: node.colombianos_postulados.field_pa_s_de_residencia_del_nom
+field_name: field_pa_s_de_residencia_del_nom
+entity_type: node
+bundle: colombianos_postulados
+label: 'País de residencia del nominado'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: 7972091f-4264-47e5-8c2d-ded37ff7e434
+langcode: es
+status: true
+dependencies: {  }
+name: home_thumbnail_squared
+label: 'Home Thumbnail Squared'
+effects:
+  61337986-b284-4185-8267-894d90424324:
+    uuid: 61337986-b284-4185-8267-894d90424324
+    id: image_scale
+    weight: 3
+    data:
+      width: 105
+      height: 105
+      upscale: true

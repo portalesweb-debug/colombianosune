@@ -1,0 +1,24 @@
+uuid: c036fd4e-0eaf-486d-9970-81b6c90d800d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_consulado_pep
+    - node.type.programas_especiales_promocion
+  module:
+    - text
+id: node.programas_especiales_promocion.field_consulado_pep
+field_name: field_consulado_pep
+entity_type: node
+bundle: programas_especiales_promocion
+label: Consulado
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_consulado_pep][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

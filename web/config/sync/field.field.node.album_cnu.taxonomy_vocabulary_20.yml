@@ -1,0 +1,21 @@
+uuid: 1ecf799e-f413-4117-a66f-10ac4275d3db
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_20
+    - node.type.album_cnu
+id: node.album_cnu.taxonomy_vocabulary_20
+field_name: taxonomy_vocabulary_20
+entity_type: node
+bundle: album_cnu
+label: 'Tags de Usuario'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

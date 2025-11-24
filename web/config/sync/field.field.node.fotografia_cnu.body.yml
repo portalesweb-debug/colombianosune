@@ -1,0 +1,23 @@
+uuid: 420d6687-4d71-445f-872a-4e5e6e1c5fe1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.fotografia_cnu
+  module:
+    - text
+id: node.fotografia_cnu.body
+field_name: body
+entity_type: node
+bundle: fotografia_cnu
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

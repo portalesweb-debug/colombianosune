@@ -1,0 +1,29 @@
+uuid: ece095c9-8482-4ec1-b7c9-8bc79e4b4fac
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-jura
+  module:
+    - system
+  theme:
+    - Cancilleria
+id: cancilleria_menu_menu_oficina_atencion_jura
+theme: Cancilleria
+region: ''
+weight: 2
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-jura'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-jura'
+  label: '<none>'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/oficina-jurado/*'

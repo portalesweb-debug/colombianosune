@@ -1,0 +1,39 @@
+uuid: a314ce7f-80dd-46fe-bef1-54d8854cb768
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-multiplicadores
+  module:
+    - system
+    - user
+  theme:
+    - metamorph_flower
+id: metamorph_flower_menu_menu_multiplicadores
+theme: metamorph_flower
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-multiplicadores'
+settings:
+  id: 'system_menu_block:menu-multiplicadores'
+  label: Multiplicadores
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /multiplicadores
+      /multiplicadores/*

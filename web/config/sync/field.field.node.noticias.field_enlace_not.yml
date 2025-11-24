@@ -1,0 +1,26 @@
+uuid: f3aa99b4-b0cc-45d3-a540-505c8beb1920
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace_not
+    - node.type.noticias
+  module:
+    - link
+id: node.noticias.field_enlace_not
+field_name: field_enlace_not
+entity_type: node
+bundle: noticias
+label: Enlace
+description: 'URL relacionada con la noticia.'
+required: false
+translatable: true
+default_value:
+  -
+    title: ''
+    url: ''
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

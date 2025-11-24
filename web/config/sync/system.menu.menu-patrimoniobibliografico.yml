@@ -1,0 +1,8 @@
+uuid: 18a5beb5-ca05-4b50-bcd7-c1ca039ccf40
+langcode: es
+status: true
+dependencies: {  }
+id: menu-patrimoniobibliografico
+label: 'Patrimonio Bibliografico Colombiano'
+description: 'Menu de Caracteristicas de Patrimonio Bibliografico Colombiano'
+locked: false

@@ -1,0 +1,8 @@
+uuid: 5700911a-93e4-4a05-8875-3e6d02a7bf6d
+langcode: es
+status: true
+dependencies: {  }
+name: Foros
+vid: vocabulary_17
+description: ''
+weight: -10

@@ -1,0 +1,63 @@
+uuid: 43fb59d1-f00a-4484-8b8a-bff76d8d5480
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contenido_general_comunidad.body
+    - field.field.node.contenido_general_comunidad.field_ciudad_unique
+    - field.field.node.contenido_general_comunidad.field_fecha_unique
+    - field.field.node.contenido_general_comunidad.field_foto_unique
+    - field.field.node.contenido_general_comunidad.field_imagen_event_unique
+    - field.field.node.contenido_general_comunidad.field_pais_aso_2
+    - field.field.node.contenido_general_comunidad.field_tipo_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - datetime
+    - text
+    - user
+id: node.contenido_general_comunidad.teaser
+targetEntityType: node
+bundle: contenido_general_comunidad
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 6
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_ciudad_unique:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_unique:
+    label: inline
+    weight: 4
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_foto_unique: true
+  field_imagen_event_unique: true
+  field_pais_aso_2: true
+  field_tipo_unique: true
+  langcode: true

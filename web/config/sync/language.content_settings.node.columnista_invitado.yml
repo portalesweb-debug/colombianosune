@@ -1,0 +1,11 @@
+uuid: 13df0b43-01d9-44a3-a2c1-1bdeef33296a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.columnista_invitado
+id: node.columnista_invitado
+target_entity_type_id: node
+target_bundle: columnista_invitado
+default_langcode: site_default
+language_alterable: false

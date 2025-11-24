@@ -1,0 +1,20 @@
+uuid: 2dd6525e-d2b6-4583-9b49-f0914a34c5e4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_ubicacion_red
+field_name: field_ubicacion_red
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

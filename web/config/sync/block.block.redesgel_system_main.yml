@@ -1,0 +1,20 @@
+uuid: 1f8b7f04-cb54-4acf-a210-8e81955e9033
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - RedEsGEL
+id: redesgel_system_main
+theme: RedEsGEL
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

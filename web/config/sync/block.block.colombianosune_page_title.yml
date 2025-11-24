@@ -1,0 +1,20 @@
+uuid: ca9f96af-2ec9-495a-a547-35b5d3749645
+langcode: es
+status: false
+dependencies:
+  theme:
+    - colombianosune
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: colombianosune_page_title
+theme: colombianosune
+region: content
+weight: -35
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de página'
+  provider: core
+  label_display: '0'
+visibility: {  }

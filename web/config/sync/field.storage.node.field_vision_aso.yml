@@ -1,0 +1,19 @@
+uuid: b12e4c5a-428e-4a3b-aeb5-b951621d4180
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_vision_aso
+field_name: field_vision_aso
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

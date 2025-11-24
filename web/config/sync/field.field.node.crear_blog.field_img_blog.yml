@@ -1,0 +1,33 @@
+uuid: f589c3dc-cdad-4f88-a48b-95fad7c4ebbf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_img_blog
+    - node.type.crear_blog
+  module:
+    - image
+id: node.crear_blog.field_img_blog
+field_name: field_img_blog
+entity_type: node
+bundle: crear_blog
+label: Imagen
+description: 'Imagen representativa del blog'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: blogs
+  max_filesize: 4M
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

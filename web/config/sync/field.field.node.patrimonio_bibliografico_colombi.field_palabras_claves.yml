@@ -1,0 +1,24 @@
+uuid: a91df956-003c-49d9-b93f-809058731ff2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_palabras_claves
+    - node.type.patrimonio_bibliografico_colombi
+  module:
+    - text
+id: node.patrimonio_bibliografico_colombi.field_palabras_claves
+field_name: field_palabras_claves
+entity_type: node
+bundle: patrimonio_bibliografico_colombi
+label: 'Palabras claves'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_palabras_claves][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

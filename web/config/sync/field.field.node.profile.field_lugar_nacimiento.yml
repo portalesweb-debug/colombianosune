@@ -1,0 +1,23 @@
+uuid: 44f38ccc-c293-4f64-81a5-a773a397d831
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lugar_nacimiento
+    - node.type.profile
+id: node.profile.field_lugar_nacimiento
+field_name: field_lugar_nacimiento
+entity_type: node
+bundle: profile
+label: 'Lugar de Nacimiento'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    tids: null
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

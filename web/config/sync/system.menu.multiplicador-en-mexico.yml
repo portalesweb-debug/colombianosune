@@ -1,0 +1,8 @@
+uuid: a8916efd-aad1-4f33-ac1f-40d1fe63e156
+langcode: es
+status: true
+dependencies: {  }
+id: multiplicador-en-mexico
+label: 'Multiplicador en México'
+description: ''
+locked: false

@@ -1,0 +1,24 @@
+uuid: 9ed65bb9-1cf2-4edb-9d7f-290b674c56b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_concurso_navidad
+    - node.type.imagen_concurso_navidad
+  module:
+    - text
+id: node.imagen_concurso_navidad.field_autor_concurso_navidad
+field_name: field_autor_concurso_navidad
+entity_type: node
+bundle: imagen_concurso_navidad
+label: autor
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_autor_concurso_navidad][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

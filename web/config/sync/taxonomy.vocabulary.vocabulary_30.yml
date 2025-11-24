@@ -1,0 +1,8 @@
+uuid: f083ef31-b1a4-4ccb-b072-5d9db3d86edf
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tags del Evento'
+vid: vocabulary_30
+description: 'Este vocabulario almacena los tags de los eventos'
+weight: 0

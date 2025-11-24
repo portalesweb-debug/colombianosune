@@ -1,0 +1,30 @@
+uuid: e623275b-a3e8-430f-814e-8c99eb4389b2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_datos_aso
+field_name: field_datos_aso
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'La Asociación publica boletines informativos.'
+      label: 'La Asociación publica boletines informativos.'
+    -
+      value: 'La Asociación conoce el Programa Colombia Nos Une.'
+      label: 'La Asociación conoce el Programa Colombia Nos Une.'
+    -
+      value: 'La Asociación tiene un perfil (cuenta) en http://www.colombianosune.org'
+      label: 'La Asociación tiene un perfil (cuenta) en http://www.colombianosune.org'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

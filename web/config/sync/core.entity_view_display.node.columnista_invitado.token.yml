@@ -1,0 +1,76 @@
+uuid: bcbc0bca-d7e8-47d9-b90a-f837d4ea1626
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.columnista_invitado.body
+    - field.field.node.columnista_invitado.comment_node_columnista_invitado
+    - field.field.node.columnista_invitado.field_bandera_colombia
+    - field.field.node.columnista_invitado.field_bandera_pa_s
+    - field.field.node.columnista_invitado.field_desc_autor_columnista
+    - field.field.node.columnista_invitado.field_imagen_columinsta
+    - field.field.node.columnista_invitado.field_img_autor_columnista
+    - field.field.node.columnista_invitado.field_nombre_columnista
+    - field.field.node.columnista_invitado.field_pais_aso_2
+    - field.field.node.columnista_invitado.upload
+    - node.type.columnista_invitado
+  module:
+    - image
+    - text
+    - user
+id: node.columnista_invitado.token
+targetEntityType: node
+bundle: columnista_invitado
+mode: token
+content:
+  field_desc_autor_columnista:
+    label: hidden
+    weight: 8
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_columinsta:
+    label: hidden
+    weight: 11
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_img_autor_columnista:
+    label: hidden
+    weight: 5
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_nombre_columnista:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_columnista_invitado: true
+  field_bandera_colombia: true
+  field_bandera_pa_s: true
+  field_pais_aso_2: true
+  langcode: true
+  upload: true

@@ -1,0 +1,8 @@
+uuid: 993216dd-d91e-4149-8229-a6bf86522f81
+langcode: es
+status: true
+dependencies: {  }
+name: Pleno
+format: '8'
+weight: -5
+filters: {  }

@@ -1,0 +1,28 @@
+uuid: 47d536a7-3793-4d02-a510-f2edf6730b90
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_serv_migrantes
+    - field.field.comment.comment_node_serv_migrantes.comment_body
+  module:
+    - text
+id: comment.comment_node_serv_migrantes.default
+targetEntityType: comment
+bundle: comment_node_serv_migrantes
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: e3fc98be-9b35-4c2f-86e4-a72c7bf17801
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.informes_transparencia_
+  module:
+    - text
+id: node.informes_transparencia_.body
+field_name: body
+entity_type: node
+bundle: informes_transparencia_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

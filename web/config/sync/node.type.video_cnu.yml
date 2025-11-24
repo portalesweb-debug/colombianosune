@@ -1,0 +1,18 @@
+uuid: 848a36bd-0cfe-4ba6-b321-d722df95639f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Vídeo Colombia Nos Une'
+type: video_cnu
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

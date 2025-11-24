@@ -1,0 +1,79 @@
+uuid: 8a12c298-afcd-4590-9b4c-9dce691288f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.contenido_general_comunidad.body
+    - field.field.node.contenido_general_comunidad.field_ciudad_unique
+    - field.field.node.contenido_general_comunidad.field_fecha_unique
+    - field.field.node.contenido_general_comunidad.field_foto_unique
+    - field.field.node.contenido_general_comunidad.field_imagen_event_unique
+    - field.field.node.contenido_general_comunidad.field_pais_aso_2
+    - field.field.node.contenido_general_comunidad.field_tipo_unique
+    - node.type.contenido_general_comunidad
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.contenido_general_comunidad.rss
+targetEntityType: node
+bundle: contenido_general_comunidad
+mode: rss
+content:
+  field_ciudad_unique:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_unique:
+    label: inline
+    weight: 4
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_foto_unique:
+    label: hidden
+    weight: -1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_imagen_event_unique:
+    label: hidden
+    weight: -2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_tipo_unique:
+    label: hidden
+    weight: -4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_pais_aso_2: true
+  langcode: true

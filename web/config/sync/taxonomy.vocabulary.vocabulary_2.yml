@@ -1,0 +1,8 @@
+uuid: 252801ed-67b2-4f38-b452-a31bd66fc5de
+langcode: es
+status: true
+dependencies: {  }
+name: 'Ubicación Geográfica'
+vid: vocabulary_2
+description: 'Vocabulario que almacena los continentes, paises y Departamentos/provincias del mundo.  Ciudades de Colombia.'
+weight: -3

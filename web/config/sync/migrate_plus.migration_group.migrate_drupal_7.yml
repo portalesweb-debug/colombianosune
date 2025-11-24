@@ -1,0 +1,20 @@
+uuid: d537e839-99f4-4fa2-8877-54c16dca628f
+langcode: es
+status: true
+dependencies: {  }
+id: migrate_drupal_7
+label: 'Import from Drupal 7'
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: drupal_7
+    database:
+      driver: mysql
+      username: drupal
+      password: colombia
+      host: 127.0.0.1
+      port: ''
+      database: redescol_website_last
+      prefix: null

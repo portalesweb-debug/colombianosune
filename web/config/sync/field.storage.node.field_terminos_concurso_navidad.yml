@@ -1,0 +1,18 @@
+uuid: 3819933f-a8d9-4b75-a6e0-5d0d6178ff84
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_terminos_concurso_navidad
+field_name: field_terminos_concurso_navidad
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 22e085eb-626a-4e1c-91f5-3200253c0901
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_otro_tipo_org
+field_name: field_otro_tipo_org
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

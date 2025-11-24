@@ -1,0 +1,41 @@
+uuid: 2d04b67d-6b41-48bf-84aa-e74b1be8e425
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-colombiacelebra
+  module:
+    - system
+    - user
+  theme:
+    - metamorph_flower
+id: metamorph_flower_menu_menu_colombiacelebra
+theme: metamorph_flower
+region: ''
+weight: -128
+provider: null
+plugin: 'system_menu_block:menu-colombiacelebra'
+settings:
+  id: 'system_menu_block:menu-colombiacelebra'
+  label: 'Colombia Celebra'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false
+  request_path:
+    id: request_path
+    negate: false
+    pages: |-
+      /juradoscc
+      /basescolombiacelebra
+      /node/add/imagen20julio
+      /premioscc

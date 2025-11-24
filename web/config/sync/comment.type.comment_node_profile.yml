@@ -1,0 +1,8 @@
+uuid: ee73d57a-6a19-49e8-a828-4de1d12788f6
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_profile
+label: 'comentario de Perfil'
+target_entity_type_id: node
+description: null

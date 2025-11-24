@@ -1,0 +1,17 @@
+uuid: f9ddc079-c1e8-488a-980e-1dc4069a6b80
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Podcast
+type: podcast
+description: 'Podcast para sala de prensa'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,24 @@
+uuid: daf3e96e-9d86-4653-9903-c122d950b689
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ciudad_fotocnu
+    - node.type.fotografia_cnu
+  module:
+    - text
+id: node.fotografia_cnu.field_ciudad_fotocnu
+field_name: field_ciudad_fotocnu
+entity_type: node
+bundle: fotografia_cnu
+label: Ciudad
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_ciudad_fotocnu][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,86 @@
+uuid: 1f0798ab-d13e-496f-a5a1-91b4be36e083
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mobile
+    - field.field.node.banco_leyes.body
+    - field.field.node.banco_leyes.comment_node_banco_leyes
+    - field.field.node.banco_leyes.field_enlace_banco
+    - field.field.node.banco_leyes.field_fecha_banco
+    - field.field.node.banco_leyes.field_ley_banco
+    - field.field.node.banco_leyes.field_palabras_banco
+    - field.field.node.banco_leyes.field_tipo_banco
+    - field.field.node.banco_leyes.taxonomy_vocabulary_36
+    - field.field.node.banco_leyes.upload
+    - node.type.banco_leyes
+  module:
+    - datetime
+    - file
+    - link
+    - text
+    - user
+id: node.banco_leyes.mobile
+targetEntityType: node
+bundle: banco_leyes
+mode: mobile
+content:
+  field_enlace_banco:
+    label: inline
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_fecha_banco:
+    label: inline
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_ley_banco:
+    label: inline
+    weight: 4
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_palabras_banco:
+    label: inline
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tipo_banco:
+    label: inline
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment_node_banco_leyes: true
+  langcode: true
+  taxonomy_vocabulary_36: true
+  upload: true

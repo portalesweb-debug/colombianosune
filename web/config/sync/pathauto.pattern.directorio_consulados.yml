@@ -1,0 +1,22 @@
+uuid: 6c7c8ccc-2eb5-4ad3-abff-3934c5bc23be
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: directorio_consulados
+label: 'Directorio Consulados'
+type: 'canonical_entities:node'
+pattern: 'directorio-consulado/[node:title]'
+selection_criteria:
+  ab368404-67ec-490e-858a-58e3199f299e:
+    id: node_type
+    bundles:
+      directorio_consulados: directorio_consulados
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ab368404-67ec-490e-858a-58e3199f299e
+selection_logic: and
+weight: -5
+relationships: {  }

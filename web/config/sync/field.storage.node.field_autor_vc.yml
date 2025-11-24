@@ -1,0 +1,20 @@
+uuid: 551033f1-00bf-4395-abbe-08d1f9c874c4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_autor_vc
+field_name: field_autor_vc
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

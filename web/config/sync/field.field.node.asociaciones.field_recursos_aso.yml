@@ -1,0 +1,23 @@
+uuid: 2d4c007e-3e67-43e7-bd5a-2fee8a041643
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recursos_aso
+    - node.type.asociaciones
+  module:
+    - options
+id: node.asociaciones.field_recursos_aso
+field_name: field_recursos_aso
+entity_type: node
+bundle: asociaciones
+label: 'Seleccione la(s) opción(es) de donde proviene(n) los recursos(financiación) de la Asociación '
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: list_string

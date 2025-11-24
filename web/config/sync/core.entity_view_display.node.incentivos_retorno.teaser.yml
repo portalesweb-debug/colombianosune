@@ -1,0 +1,38 @@
+uuid: b8823975-2a8c-49a8-beaa-7a3578e73f02
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.incentivos_retorno.body
+    - field.field.node.incentivos_retorno.field_retorno
+    - node.type.incentivos_retorno
+  module:
+    - text
+    - user
+id: node.incentivos_retorno.teaser
+targetEntityType: node
+bundle: incentivos_retorno
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_retorno: true
+  langcode: true

@@ -1,0 +1,15 @@
+uuid: 7dff0d5d-65c7-4429-8446-acd45f33fa22
+langcode: es
+status: true
+dependencies: {  }
+name: galeriascamposthumbnail
+label: GaleriasCamposThumbnail
+effects:
+  7300c183-7f7e-493e-92a3-d2318f1d6cbb:
+    uuid: 7300c183-7f7e-493e-92a3-d2318f1d6cbb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 90
+      anchor: center-center

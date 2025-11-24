@@ -1,0 +1,30 @@
+uuid: 47988846-c927-47ec-b4af-bb6dad57770c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.semana-binacional-de-la-salud
+  module:
+    - system
+  theme:
+    - colombianosune
+id: semanabinacionaldelasalud
+theme: colombianosune
+region: sidebar_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:semana-binacional-de-la-salud'
+settings:
+  id: 'system_menu_block:semana-binacional-de-la-salud'
+  label: 'Semana Binacional de la Salud'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /ejes/semana-binacional-de-la-salud
+    negate: false
+    context_mapping: {  }

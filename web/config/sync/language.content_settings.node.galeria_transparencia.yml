@@ -1,0 +1,11 @@
+uuid: 972a4ce7-b763-4254-a98f-cf961571d3e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria_transparencia
+id: node.galeria_transparencia
+target_entity_type_id: node
+target_bundle: galeria_transparencia
+default_langcode: site_default
+language_alterable: false

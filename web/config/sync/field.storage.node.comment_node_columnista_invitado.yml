@@ -1,0 +1,20 @@
+uuid: c0bb43be-1ab1-4068-97f3-a629c3f91b88
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_columnista_invitado
+field_name: comment_node_columnista_invitado
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_columnista_invitado
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

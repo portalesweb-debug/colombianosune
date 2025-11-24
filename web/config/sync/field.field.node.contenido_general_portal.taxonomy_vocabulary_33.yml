@@ -1,0 +1,21 @@
+uuid: 8f634a07-e383-4e50-b49d-102ad8f8b920
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_33
+    - node.type.contenido_general_portal
+id: node.contenido_general_portal.taxonomy_vocabulary_33
+field_name: taxonomy_vocabulary_33
+entity_type: node
+bundle: contenido_general_portal
+label: 'Categoria Redes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

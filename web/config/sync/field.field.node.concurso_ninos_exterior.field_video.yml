@@ -1,0 +1,27 @@
+uuid: 827b927c-5f8c-4aae-96ce-fbf8a2c61387
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.concurso_ninos_exterior
+  module:
+    - file
+id: node.concurso_ninos_exterior.field_video
+field_name: field_video
+entity_type: node
+bundle: concurso_ninos_exterior
+label: Video
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

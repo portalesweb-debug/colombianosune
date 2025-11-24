@@ -1,0 +1,28 @@
+uuid: 53b381ce-ea66-4c5b-9510-d0e6d4453bec
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_imagen_prueba
+    - field.field.comment.comment_node_imagen_prueba.comment_body
+  module:
+    - text
+id: comment.comment_node_imagen_prueba.default
+targetEntityType: comment
+bundle: comment_node_imagen_prueba
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

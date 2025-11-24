@@ -1,0 +1,18 @@
+uuid: 48219c87-b1aa-4d57-a472-3c9367e84e46
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.video_cnu
+id: node.video_cnu.title
+field_name: title
+entity_type: node
+bundle: video_cnu
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: f06de624-1424-4b7c-970e-9abd0870bda6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.incentivos_retorno
+  module:
+    - text
+id: node.incentivos_retorno.body
+field_name: body
+entity_type: node
+bundle: incentivos_retorno
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

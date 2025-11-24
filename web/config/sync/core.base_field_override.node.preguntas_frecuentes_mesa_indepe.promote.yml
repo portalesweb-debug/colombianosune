@@ -1,0 +1,22 @@
+uuid: 84b159b6-7f2a-4778-8734-e2becd480c9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.preguntas_frecuentes_mesa_indepe
+id: node.preguntas_frecuentes_mesa_indepe.promote
+field_name: promote
+entity_type: node
+bundle: preguntas_frecuentes_mesa_indepe
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

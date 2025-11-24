@@ -1,0 +1,15 @@
+uuid: c4833008-e85d-457d-b8f6-9dd7d3675ea3
+langcode: es
+status: true
+dependencies: {  }
+name: photo_home_thumbnail
+label: 'Photo Home Thumbnail'
+effects:
+  c66ec461-b8cc-4219-8341-47be16013989:
+    uuid: c66ec461-b8cc-4219-8341-47be16013989
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 210
+      anchor: center-center

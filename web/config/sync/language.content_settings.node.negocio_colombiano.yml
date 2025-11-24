@@ -1,0 +1,11 @@
+uuid: 5b543ad8-3fe6-4dc8-9745-98c7e928bd38
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.negocio_colombiano
+id: node.negocio_colombiano
+target_entity_type_id: node
+target_bundle: negocio_colombiano
+default_langcode: site_default
+language_alterable: false

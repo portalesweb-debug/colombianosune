@@ -1,0 +1,8 @@
+uuid: 9b812db3-0051-4af4-bcd1-5fb2f4a292d7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-integrantes
+label: 'Integrantes de red'
+description: ''
+locked: false

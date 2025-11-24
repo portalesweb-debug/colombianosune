@@ -1,0 +1,21 @@
+uuid: 47686b42-d55d-48f4-ba1f-454ce37c2429
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_pregunta_frecuente
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_pregunta_frecuente.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_pregunta_frecuente
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

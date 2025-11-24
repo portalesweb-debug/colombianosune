@@ -1,0 +1,8 @@
+uuid: 1cf271e6-af9b-4e4b-90a0-b3b6e08c2d73
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_forum
+label: 'comentario de Foro'
+target_entity_type_id: node
+description: null

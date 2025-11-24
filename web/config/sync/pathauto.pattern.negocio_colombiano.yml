@@ -1,0 +1,22 @@
+uuid: de9cb7ca-c7db-43c0-b74d-7c2e9becc969
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: negocio_colombiano
+label: 'Negocio colombiano'
+type: 'canonical_entities:node'
+pattern: 'negocio-colombiano-exterior/[node:title]'
+selection_criteria:
+  361997e6-527e-497c-8a0a-793151667d29:
+    id: node_type
+    bundles:
+      negocio_colombiano: negocio_colombiano
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 361997e6-527e-497c-8a0a-793151667d29
+selection_logic: and
+weight: -5
+relationships: {  }

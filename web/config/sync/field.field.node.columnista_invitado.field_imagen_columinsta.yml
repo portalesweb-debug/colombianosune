@@ -1,0 +1,33 @@
+uuid: a20d311d-020e-4319-8b55-845a932f4002
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_columinsta
+    - node.type.columnista_invitado
+  module:
+    - image
+id: node.columnista_invitado.field_imagen_columinsta
+field_name: field_imagen_columinsta
+entity_type: node
+bundle: columnista_invitado
+label: imagen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: columnista-invitado
+  max_filesize: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_resolution: '0'
+  min_resolution: '0'
+  alt_field: false
+  title_field: false
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,60 @@
+uuid: c3d8361f-6491-42e1-9dd2-7b19c52694a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshowinformacion.field_cuerpo_slide
+    - field.field.node.slideshowinformacion.field_enlace_slide
+    - field.field.node.slideshowinformacion.field_imagen_slide
+    - node.type.slideshowinformacion
+  module:
+    - image
+    - text
+    - user
+id: node.slideshowinformacion.default
+targetEntityType: node
+bundle: slideshowinformacion
+mode: default
+content:
+  comment_node_slideshowinformacion:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cuerpo_slide:
+    label: hidden
+    weight: 49
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_enlace_slide:
+    label: above
+    weight: 108
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen_slide:
+    label: hidden
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sharethis:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

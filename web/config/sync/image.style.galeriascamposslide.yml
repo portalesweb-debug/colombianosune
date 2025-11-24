@@ -1,0 +1,15 @@
+uuid: 17281df9-b6e7-4503-b5af-acc1fc752909
+langcode: es
+status: true
+dependencies: {  }
+name: galeriascamposslide
+label: GaleriasCamposSlide
+effects:
+  822cce93-40fc-48bf-add8-a615679e80f8:
+    uuid: 822cce93-40fc-48bf-add8-a615679e80f8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 180
+      anchor: center-center

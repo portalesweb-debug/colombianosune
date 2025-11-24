@@ -1,0 +1,18 @@
+uuid: b9c6683a-11a3-4ddb-9b97-1e69b3dd2a5b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_general_portal
+id: node.contenido_general_portal.title
+field_name: title
+entity_type: node
+bundle: contenido_general_portal
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

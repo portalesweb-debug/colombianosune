@@ -1,0 +1,21 @@
+uuid: 37c4f567-789a-4c4e-9b2b-e75ed84e2041
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_cierre_enc
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_fecha_cierre_enc
+field_name: field_fecha_cierre_enc
+entity_type: node
+bundle: event
+label: 'Fecha del evento'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

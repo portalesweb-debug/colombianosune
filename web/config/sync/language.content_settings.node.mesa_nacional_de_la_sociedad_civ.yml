@@ -1,0 +1,11 @@
+uuid: 1eea682f-5bfc-4bc1-8cb5-43be2a6ddf34
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.mesa_nacional_de_la_sociedad_civ
+id: node.mesa_nacional_de_la_sociedad_civ
+target_entity_type_id: node
+target_bundle: mesa_nacional_de_la_sociedad_civ
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+uuid: 4e8e4296-b64c-4f5b-9c3b-ce50ab514d74
+langcode: es
+status: true
+dependencies: {  }
+name: tags
+vid: vocabulary_19
+description: 'Este vocabulario guardara todos los tags ingresados por los usuarios para la herramienta de Foros.'
+weight: 0

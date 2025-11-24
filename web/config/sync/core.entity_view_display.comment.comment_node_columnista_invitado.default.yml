@@ -1,0 +1,28 @@
+uuid: 728dc728-ed9b-48fc-a6c5-e2e126d7877f
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_columnista_invitado
+    - field.field.comment.comment_node_columnista_invitado.comment_body
+  module:
+    - text
+id: comment.comment_node_columnista_invitado.default
+targetEntityType: comment
+bundle: comment_node_columnista_invitado
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

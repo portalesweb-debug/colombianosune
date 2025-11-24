@@ -1,0 +1,24 @@
+uuid: 8b1df0d1-75f9-401b-bcee-d6a369e3406e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono_negocio
+    - node.type.negocio_colombiano
+  module:
+    - text
+id: node.negocio_colombiano.field_telefono_negocio
+field_name: field_telefono_negocio
+entity_type: node
+bundle: negocio_colombiano
+label: Teléfono
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+    _error_element: 'default_value_widget][field_telefono_negocio][0][value'
+default_value_callback: ''
+settings: {  }
+field_type: text

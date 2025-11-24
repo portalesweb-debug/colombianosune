@@ -1,0 +1,20 @@
+uuid: 14fbcd24-04f9-4a3b-840a-268e84bed92b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_nombre_del_padre
+field_name: field_nombre_del_padre
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
