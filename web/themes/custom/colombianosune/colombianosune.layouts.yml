@@ -1,0 +1,36 @@
+pagina_inicio:
+  label: Pagina de Inicio
+  category: ColombiaNosUne
+  template: layouts/pagina_inicio
+  regions:
+    superior_izq:
+      label: Superior Izquierda - 2/3
+    superior_der:
+      label: Superior Derecha - 1/3
+    medio_izq:
+      label: Medio Izquierda - 1/3
+    medio_centro:
+      label: Medio Centro - 1/3
+    medio_der:
+      label: Medio Derecha - 1/3
+    inferior:
+      label: Inferior - 1/1
+# other layouts
+2_col_66_33:
+  label: 2 Columnas 66-33
+  category: Otros
+  template: layouts/2_col_66_33
+  regions:
+    izquierda:
+      label: Izquierda - 2/3
+    derecha:
+      label: Derecha - 1/3
+2_col_33_66:
+  label: 2 Columnas 33-66
+  category: Otros
+  template: layouts/2_col_33_66
+  regions:
+    izquierda:
+      label: Izquierda - 1/3
+    derecha:
+      label: Derecha - 2/3

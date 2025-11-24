@@ -1,0 +1,160 @@
+// Insert your styling here.
+@import 'overrides.less';
+#header{background-color: #CED6D9;}
+.header-top {
+    .container{
+    background-color: #F5F5F5;
+    border-bottom:1px solid #eeeeee;
+      ul {
+        .btn-instagram{
+         img{width: 100%; }
+        }
+        list-style-type: none;
+        li:first-child {border-left: none;padding-left: 0;}
+        li {float: left;font-size: 13px;line-height: 16px;font-weight: 400;
+          img {width:65%;}
+        }
+      }
+      .col-md-8{
+       @media @wide {
+           float: none;
+        }
+        @media @tablet {
+            float: left;
+        }
+        @media @normal {
+            float: left;
+        }
+      }
+    }
+}
+#user-login-form {
+  width: 100%;
+  position: relative;
+  top: 0;
+  float: none;
+  right: 0;
+  .form-item {  margin:3px;
+        @media @wide {width: 100%;float: left;}
+        @media @tablet {width: 100%;float: none;}
+        @media @normal {width: 40%; float: left;}
+    }
+    input {
+        @media @wide {float: none;}
+        @media @tablet {float: none;}
+        @media @normal {float: left;}
+    }
+  .btn{
+  	@media @wide {float: none; margin:0;}
+    @media @tablet {float: none; margin:0;}
+    @media @normal {float: left;margin-top: 28px; margin-bottom: 3px;}
+  }
+}
+.header-main{
+	.container {
+	    background-color: #2C139A; padding-top: 1%; padding-left:0px;
+	    .logo{
+        .col-md-7{padding-left:0px;}
+	    	@media @wide {padding-bottom: 0;}
+		  	@media @tablet {padding-bottom: 26%;}
+			  @media @normal { padding-bottom: 9%;}
+	    }
+		.logo-cnu {margin-bottom: 5px;
+    img{border-radius:0px 20px 20px 0px;}
+    }
+		.user{
+			@media @wide {width:100%;}
+			@media @tablet {width:100%;}
+			@media @normal { width:100%;}
+
+		}
+    #ceet-google-search-noticia-page-form{
+      .form-type-textfield {display: inline-block;width: 78%;}
+      .form-actions{ display: inline-block;}
+    }
+    .logo{
+      a{color:#fff; font-weight:bold;font-size: 19px;}
+    }
+    .login_m {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+	}
+}
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+ul.nav li.dropdown ul.dropdown-menu {
+  margin-top: 0;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu li.expanded ul.dropdown-menu {display:none;}
+ul.nav li.dropdown:hover ul.dropdown-menu li.expanded:hover ul.dropdown-menu {display:block;}
+.dropdown-menu:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown-menu{
+  li{
+    a{
+    padding: 3px;
+    }
+  }
+}
+.navbar-inverse{
+  border: none;
+  background-color: #2C139A;
+    margin-bottom: 0px;
+    min-height: 20px;
+    .navbar-toggle {background-color: gray;}
+    .navbar-collapse{overflow: visible;padding: 0; border: none;}
+  .navbar-nav{
+    min-height: 20px;
+    li:last-child {border-right: none;}
+    li{
+        border-right: 1px solid #666769;
+        a{
+          &:hover {
+              color: #337ab7;
+          }
+          @media @wide {padding: 1px;}
+          @media @tablet {padding: 1px;}
+          @media @normal { padding: 5px 30px;color:#ffffff;}
+        }
+        ul{
+          li{
+            a{
+              @media @wide {padding: 1px;}
+              @media @tablet {padding: 1px;}
+              @media @normal { padding: 5px 5px;}
+            }
+          }
+        }
+    }
+    .active{
+        a {background-color: #2C139A; font-weight: bold;
+          &:hover {
+          background-color: #67627B;
+          }
+        }
+    }
+    .dropdown-menu{
+        @media @normal {
+            background-color: #2C139A;
+        }
+        .dropdown-menu {  left: 100%;  top: 0;}
+    }
+    }
+}
+
+.nav li:hover ul,
+    .nav li:focus ul,
+    ul.show-menu {
+      display:block;
+    }
+
+.main-menu{
+  .menu.nav{
+    .caret{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// Insert your styling here.
+#footer{
+	background-color: #CED6D9;
+	.footer-menu{
+		.container{background-color:#f5f5f5;}
+		.menu{
+		    margin-bottom: 4%;
+		    margin-top: 2%;
+		    position: relative;
+		    @media @wide {left: 0;}  
+		    @media @tablet {padding-left: 23%;}
+		    @media @normal {padding-left: 23%;}
+		    li{
+		    border-right: 1px solid #888;
+		    padding: 0;
+		    	@media @wide {float: none;}  
+		        @media @tablet {float: none;}
+		        @media @normal {float: left;}
+		    }
+		    a{
+		    	color:#333;
+		    	font-size: 12px;
+		    	padding: 5px;
+		    	&:hover{color:#2C139A;}
+				
+			}
+		}
+		
+	}
+	.copy{
+		.container{
+		background-color:#2B1399;color:#fff;
+		padding: 39px;
+		@media @wide {padding: 0;}  
+		@media @tablet {padding: 0;}
+	    @media @normal {padding: 39px;}
+		}
+	}
+}
