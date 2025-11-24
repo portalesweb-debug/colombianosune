@@ -21,24 +21,23 @@ bundle: album_cnu
 mode: default
 content:
   body:
-    label: hidden
-    weight: -2
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: -2
     region: content
   comment_node_album_cnu:
-    label: hidden
     type: comment_default
-    weight: 20
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
+    weight: 20
     region: content
   field_image_cnu_02:
     type: flexslider
-    weight: 0
     label: above
     settings:
       optionset: default
@@ -46,31 +45,32 @@ content:
       caption: '1'
       image_link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   field_pais_cnu:
-    label: inline
-    weight: 26
     type: text_default
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 26
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   sharethis:
-    weight: -10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: -10
+    region: content
   taxonomy_vocabulary_20:
-    label: above
-    weight: 53
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 53
     region: content
 hidden:
   field_value_independencia: true

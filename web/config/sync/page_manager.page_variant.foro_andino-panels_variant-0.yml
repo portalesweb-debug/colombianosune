@@ -12,45 +12,45 @@ dependencies:
     - panels
 id: foro_andino-panels_variant-0
 label: 'Paneles Foro Andino'
+weight: 0
 variant: panels_variant
 variant_settings:
+  id: panels_variant
+  label: null
+  weight: 0
+  uuid: 523994d7-7de2-438f-98d6-ad6aaa6395bc
   blocks:
     55242272-5e8a-4be0-ace8-5548b25e06a6:
       id: 'block_content:ccb03243-66ac-4098-8783-ffc70fa14884'
       label: 'Inicio Foro Andino'
-      provider: block_content
       label_display: '0'
+      provider: block_content
+      context_mapping: {  }
       status: true
       info: ''
       view_mode: full
       region: izquierda
       weight: 0
       uuid: 55242272-5e8a-4be0-ace8-5548b25e06a6
-      context_mapping: {  }
     585f9b82-1c1e-4cd3-b189-1867eea53db2:
       id: 'block_content:dd3c0593-d1f7-42f4-ab1d-913ceab36cf3'
       label: 'Menu Foro Andino'
-      provider: block_content
       label_display: '0'
+      provider: block_content
+      context_mapping: {  }
       status: true
       info: ''
       view_mode: full
       region: derecha
       weight: 0
       uuid: 585f9b82-1c1e-4cd3-b189-1867eea53db2
-      context_mapping: {  }
-  id: panels_variant
-  uuid: 523994d7-7de2-438f-98d6-ad6aaa6395bc
-  label: null
-  weight: 0
+  page_title: 'IV foro Andino de MIgraciones'
   layout: 2_col_66_33
   layout_settings: {  }
-  page_title: 'IV foro Andino de MIgraciones'
+  builder: ipe
   storage_type: page_manager
   storage_id: foro_andino-panels_variant-0
-  builder: ipe
 page: foro_andino
-weight: 0
 selection_criteria: {  }
 selection_logic: and
 static_context: {  }

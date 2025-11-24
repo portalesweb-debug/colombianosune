@@ -1,8 +1,0 @@
-uuid: d18c9564-b193-4da8-8328-cabe20ec472d
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_boletin
-label: 'comentario de '
-target_entity_type_id: node
-description: null

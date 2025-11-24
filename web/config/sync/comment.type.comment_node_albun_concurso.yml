@@ -1,8 +1,0 @@
-uuid: 49b98361-1b81-44e0-a378-71519f43c9ed
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_albun_concurso
-label: 'comentario de '
-target_entity_type_id: node
-description: null

@@ -1,8 +1,0 @@
-uuid: e5eb5a55-e677-44fb-a7cc-7180eb3bfbe1
-langcode: es
-status: true
-dependencies: {  }
-id: comment_node_pruebaimagenoticia
-label: 'comentario de '
-target_entity_type_id: node
-description: null
