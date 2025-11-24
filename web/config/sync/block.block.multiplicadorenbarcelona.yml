@@ -17,10 +17,10 @@ plugin: 'system_menu_block:multiplicador-en-barcelona'
 settings:
   id: 'system_menu_block:multiplicador-en-barcelona'
   label: 'Multiplicador en Barcelona'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
-  depth: 0
+  depth: null
   expand_all_items: false
 visibility:
   request_path:

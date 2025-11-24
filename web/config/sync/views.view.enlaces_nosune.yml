@@ -7,8 +7,6 @@ dependencies:
     - image.style.flexslider_thumbnail
     - node.type.enlacessecundarios_home
   module:
-    - flexslider_fields
-    - flexslider_views
     - image
     - node
 id: enlaces_nosune

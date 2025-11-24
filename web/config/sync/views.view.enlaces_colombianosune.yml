@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_imagenenlaces
     - node.type.enlacesprincipales_home
   module:
-    - flexslider_fields
     - image
     - link
     - node

@@ -17,9 +17,9 @@ plugin: 'system_menu_block:menu-terminoscondiciones'
 settings:
   id: 'system_menu_block:menu-terminoscondiciones'
   label: 'Pie de página'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
-  depth: 0
+  depth: null
   expand_all_items: false
 visibility: {  }

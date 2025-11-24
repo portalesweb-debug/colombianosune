@@ -9,12 +9,8 @@ module:
   backup_migrate: 0
   block: 0
   block_content: 0
-  blocktabs: null
   breakpoint: 0
   captcha: 0
-  ckeditor: null
-  ckeditor_font: null
-  color: null
   comment: 0
   config: 0
   config_translation: 0
@@ -26,7 +22,6 @@ module:
   ctools_views: 0
   datetime: 0
   dblog: 0
-  devel_generate: null
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -34,14 +29,9 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  flexslider: null
-  flexslider_example: null
-  flexslider_fields: null
-  flexslider_views: null
   git_deploy: 0
   google_analytics: 0
   google_cse: 0
-  gss: null
   gtranslate: 0
   help: 0
   history: 0
@@ -52,7 +42,6 @@ module:
   jquery_ui_draggable: 0
   jquery_ui_droppable: 0
   jquery_ui_tabs: 0
-  key: null
   language: 0
   layout_discovery: 0
   libraries: 0
@@ -62,9 +51,7 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_drupal: 0
-  migrate_plus: null
   migrate_tools: 0
-  migrate_upgrade: null
   node: 0
   options: 0
   page_cache: 0
@@ -74,8 +61,6 @@ module:
   panels_ipe: 0
   path: 0
   path_alias: 0
-  php: null
-  quickedit: null
   rdf: 0
   recaptcha: 0
   rest: 0

@@ -10,11 +10,9 @@ dependencies:
     - field.field.node.album_cnu.field_pais_cnu
     - field.field.node.album_cnu.field_value_independencia
     - field.field.node.album_cnu.taxonomy_vocabulary_20
-    - flexslider.optionset.default
     - node.type.album_cnu
   module:
     - comment
-    - flexslider_fields
     - text
     - user
 id: node.album_cnu.default

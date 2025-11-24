@@ -59,6 +59,7 @@
         "drupal/views_accordion": "^2.0",
         "drupal/views_bootstrap": "^5.4",
         "drupal/views_data_export": "^1.8",
+        "drupal/views_slideshow": "^5.0",
         "drupal/xmlsitemap": "^2.0",
         "drupal/youtube": "^3.0@beta",
         "drush/drush": "^13.6"

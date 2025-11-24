@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_imagen
     - node.type.noticias
   module:
-    - flexslider_fields
-    - flexslider_views
     - image
     - node
     - user
