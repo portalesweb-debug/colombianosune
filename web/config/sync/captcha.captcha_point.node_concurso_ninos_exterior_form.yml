@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_concurso_ninos_exterior_form
 captchaType: default
-label: null
+label: node_concurso_ninos_exterior_form

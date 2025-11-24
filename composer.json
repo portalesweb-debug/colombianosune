@@ -31,6 +31,7 @@
         "drupal/ctools": "^4.1",
         "drupal/field_defaults": "^2.1",
         "drupal/forum": "^1.0",
+        "drupal/gin": "^5.0",
         "drupal/git_deploy": "^2.6",
         "drupal/google_analytics": "^4.0",
         "drupal/google_cse": "^5.0",

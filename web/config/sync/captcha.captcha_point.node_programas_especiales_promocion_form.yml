@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_programas_especiales_promocion_form
 captchaType: default
-label: null
+label: node_programas_especiales_promocion_form

@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'albumcnu/[node:title]'
 selection_criteria:
   b8061a4d-e1d8-4b96-b5e9-098f49049df8:
-    id: node_type
-    bundles:
-      album_cnu: album_cnu
+    id: 'entity_bundle:node'
     negate: false
+    uuid: b8061a4d-e1d8-4b96-b5e9-098f49049df8
     context_mapping:
       node: node
-    uuid: b8061a4d-e1d8-4b96-b5e9-098f49049df8
+    bundles:
+      album_cnu: album_cnu
 selection_logic: and
 weight: -5
 relationships: {  }

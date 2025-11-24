@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_negocio_colombiano_form
 captchaType: default
-label: null
+label: node_negocio_colombiano_form

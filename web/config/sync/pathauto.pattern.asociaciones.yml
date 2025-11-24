@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'ejes/plancomunidad/asociaciones/[node:title]'
 selection_criteria:
   a66c6bdd-e7fb-4f5d-a450-f3d38083aa77:
-    id: node_type
-    bundles:
-      asociaciones: asociaciones
+    id: 'entity_bundle:node'
     negate: false
+    uuid: a66c6bdd-e7fb-4f5d-a450-f3d38083aa77
     context_mapping:
       node: node
-    uuid: a66c6bdd-e7fb-4f5d-a450-f3d38083aa77
+    bundles:
+      asociaciones: asociaciones
 selection_logic: and
 weight: -5
 relationships: {  }

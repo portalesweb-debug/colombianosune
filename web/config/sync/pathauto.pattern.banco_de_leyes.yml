@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'bancodeleyes/[node:title]'
 selection_criteria:
   bd6649a7-b57b-43ba-8c9b-e1bd864194eb:
-    id: node_type
-    bundles:
-      banco_leyes: banco_leyes
+    id: 'entity_bundle:node'
     negate: false
+    uuid: bd6649a7-b57b-43ba-8c9b-e1bd864194eb
     context_mapping:
       node: node
-    uuid: bd6649a7-b57b-43ba-8c9b-e1bd864194eb
+    bundles:
+      banco_leyes: banco_leyes
 selection_logic: and
 weight: -5
 relationships: {  }

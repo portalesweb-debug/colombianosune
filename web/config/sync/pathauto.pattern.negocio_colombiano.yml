@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'negocio-colombiano-exterior/[node:title]'
 selection_criteria:
   361997e6-527e-497c-8a0a-793151667d29:
-    id: node_type
-    bundles:
-      negocio_colombiano: negocio_colombiano
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 361997e6-527e-497c-8a0a-793151667d29
     context_mapping:
       node: node
-    uuid: 361997e6-527e-497c-8a0a-793151667d29
+    bundles:
+      negocio_colombiano: negocio_colombiano
 selection_logic: and
 weight: -5
 relationships: {  }

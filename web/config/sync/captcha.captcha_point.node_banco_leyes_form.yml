@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_banco_leyes_form
 captchaType: default
-label: null
+label: node_banco_leyes_form

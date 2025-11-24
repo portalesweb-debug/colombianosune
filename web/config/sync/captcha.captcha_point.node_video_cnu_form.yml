@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_video_cnu_form
 captchaType: default
-label: null
+label: node_video_cnu_form
