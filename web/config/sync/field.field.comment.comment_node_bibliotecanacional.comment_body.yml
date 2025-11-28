@@ -1,0 +1,21 @@
+uuid: 722826e5-4785-427e-b7d5-7d1bd3e23695
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_bibliotecanacional
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_bibliotecanacional.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_bibliotecanacional
+label: Comentario
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,28 @@
+uuid: b7d705a4-5169-43da-8562-b7e39f0d1b89
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_book
+    - field.field.comment.comment_node_book.comment_body
+  module:
+    - text
+id: comment.comment_node_book.default
+targetEntityType: comment
+bundle: comment_node_book
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

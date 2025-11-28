@@ -1,0 +1,8 @@
+uuid: e8b41fd0-7614-47b7-b4ce-865cec7c8cc6
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_beca
+label: 'comentario de '
+target_entity_type_id: node
+description: null

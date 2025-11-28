@@ -1,0 +1,43 @@
+uuid: 0f5a1c68-96b6-4d81-87ae-248e205f06f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_book
+    - field.field.comment.comment_node_book.comment_body
+  module:
+    - text
+id: comment.comment_node_book.default
+targetEntityType: comment
+bundle: comment_node_book
+mode: default
+content:
+  author:
+    weight: -2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

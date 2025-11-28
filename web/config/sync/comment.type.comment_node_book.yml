@@ -1,0 +1,8 @@
+uuid: ac6113ba-86d4-4e89-b940-77996bbad8ce
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_book
+label: 'comentario de '
+target_entity_type_id: node
+description: null

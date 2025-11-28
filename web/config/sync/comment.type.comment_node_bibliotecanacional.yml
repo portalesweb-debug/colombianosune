@@ -1,0 +1,8 @@
+uuid: 24566507-8f00-4eef-9d4d-01e1505a9ab9
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_bibliotecanacional
+label: 'comentario de '
+target_entity_type_id: node
+description: null
