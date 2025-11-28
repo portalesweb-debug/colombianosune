@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_imagen
     - node.type.noticias
   module:
-    - views_slideshow
+    - views_bootstrap
     - image
     - node
     - user
@@ -55,13 +55,13 @@ display:
           items_per_page: 5
           offset: 0
       style:
-        type: flexslider
+        type: views_bootstrap_carousel
         options:
           grouping: {  }
-          flexslider: null
-          optionset: bannerprincipal_
-          captionfield: ''
-          id: ''
+          interval: 5000
+          pause: hover
+          wrap: true
+          keyboard: true
       row:
         type: fields
       fields:
@@ -177,9 +177,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: flexslider
+          type: image
           settings:
-            image_style: ''
+            image_style: large
             image_link: content
           group_column: ''
           group_columns: {  }

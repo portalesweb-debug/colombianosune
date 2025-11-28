@@ -70,7 +70,6 @@ permissions:
   - 'administer files'
   - 'administer filters'
   - 'administer flags'
-  - 'administer flexslider'
   - 'administer forums'
   - 'administer galleria'
   - 'administer geofield_gmap'

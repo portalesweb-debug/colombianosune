@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_imagen_nosune
-    - image.style.flexslider_thumbnail
+    - image.style.home_thumbnail_horizontal
     - node.type.enlacessecundarios_home
   module:
-    - views_slideshow
+    - views_bootstrap
     - image
     - node
 id: enlaces_nosune
@@ -70,13 +70,13 @@ display:
             last: 'Último »'
           quantity: 9
       style:
-        type: flexslider
+        type: views_bootstrap_carousel
         options:
           grouping: {  }
-          flexslider: null
-          optionset: flexslider_carousel_with_min_and_max_ranges
-          captionfield: ''
-          id: ''
+          interval: 5000
+          pause: hover
+          wrap: true
+          keyboard: true
       row:
         type: fields
         options:
@@ -134,9 +134,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: flexslider
+          type: image
           settings:
-            image_style: flexslider_thumbnail
+            image_style: home_thumbnail_horizontal
             image_link: ''
           group_column: ''
           group_columns: {  }
