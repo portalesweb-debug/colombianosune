@@ -18,14 +18,14 @@ plugin: 'block_content:9cc36077-88b2-4361-b966-71bd53ab5336'
 settings:
   id: 'block_content:9cc36077-88b2-4361-b966-71bd53ab5336'
   label: 'Banner oficina Jurado'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-jurado/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-jurado/*'

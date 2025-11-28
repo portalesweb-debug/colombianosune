@@ -16,16 +16,16 @@ plugin: user_login_block
 settings:
   id: user_login_block
   label: ''
-  provider: user
   label_display: '0'
+  provider: user
 visibility:
   user_role:
     id: user_role
-    roles:
-      '': null
+    negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-    negate: false
+    roles:
+      '': null
   request_path:
     id: request_path
     negate: false

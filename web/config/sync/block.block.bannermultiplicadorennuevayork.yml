@@ -18,14 +18,14 @@ plugin: 'block_content:fad71104-f5d8-42cc-a8a0-65b28d580108'
 settings:
   id: 'block_content:fad71104-f5d8-42cc-a8a0-65b28d580108'
   label: 'Banner Multiplicador en Nueva York'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-nueva-york/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-nueva-york/*'

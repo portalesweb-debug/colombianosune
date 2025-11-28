@@ -18,19 +18,19 @@ plugin: 'system_menu_block:menu-informacioninteres'
 settings:
   id: 'system_menu_block:menu-informacioninteres'
   label: ''
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   user_role:
     id: user_role
-    roles:
-      '': null
+    negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-    negate: false
+    roles:
+      '': null
   request_path:
     id: request_path
     negate: false

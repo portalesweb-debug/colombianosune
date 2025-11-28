@@ -18,14 +18,14 @@ plugin: 'block_content:b61c8f60-3983-45f9-a030-367c05f0e88f'
 settings:
   id: 'block_content:b61c8f60-3983-45f9-a030-367c05f0e88f'
   label: 'Banner Multiplicador Caracas'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-caracas/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-caracas/*'

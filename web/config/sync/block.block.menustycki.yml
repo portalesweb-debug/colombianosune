@@ -17,8 +17,8 @@ plugin: 'block_content:8f2241ab-ede8-41c4-8164-39e22b9f07fa'
 settings:
   id: 'block_content:8f2241ab-ede8-41c4-8164-39e22b9f07fa'
   label: 'Menu stycki'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

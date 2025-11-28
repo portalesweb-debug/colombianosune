@@ -17,14 +17,14 @@ plugin: 'system_menu_block:sistema-de-servicios'
 settings:
   id: 'system_menu_block:sistema-de-servicios'
   label: 'Multiplicadores Colombia '
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: /ejes/plancomunidad/multiplicadores
     negate: false
     context_mapping: {  }
+    pages: /ejes/plancomunidad/multiplicadores

@@ -18,14 +18,14 @@ plugin: 'block_content:0390bcb0-357a-4a01-8ea4-2a8b4429ba73'
 settings:
   id: 'block_content:0390bcb0-357a-4a01-8ea4-2a8b4429ba73'
   label: 'noticias para colombianos'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /noticias-para-colombianos-cnu
     negate: false
     context_mapping: {  }
+    pages: /noticias-para-colombianos-cnu

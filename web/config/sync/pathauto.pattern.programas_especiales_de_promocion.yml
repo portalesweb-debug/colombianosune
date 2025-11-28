@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'ejes/plancomunidad/programas/[current-page:title]'
 selection_criteria:
   c4060acf-22c8-4fed-90fe-2fadf9602dfa:
-    id: entity_bundle:node
-    bundles:
-      programas_especiales_promocion: programas_especiales_promocion
+    id: 'entity_bundle:node'
     negate: false
+    uuid: c4060acf-22c8-4fed-90fe-2fadf9602dfa
     context_mapping:
       node: node
-    uuid: c4060acf-22c8-4fed-90fe-2fadf9602dfa
+    bundles:
+      programas_especiales_promocion: programas_especiales_promocion
 selection_logic: and
 weight: -5
 relationships: {  }

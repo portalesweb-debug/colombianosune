@@ -18,14 +18,14 @@ plugin: 'block_content:1c5b2fd9-1e66-4bd0-8568-c08aeb1d9777'
 settings:
   id: 'block_content:1c5b2fd9-1e66-4bd0-8568-c08aeb1d9777'
   label: 'Banner Multiplicador Santiago de Chile'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-santiago-chile/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-santiago-chile/*'

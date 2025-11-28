@@ -18,14 +18,14 @@ plugin: 'block_content:8454f182-4096-4868-8858-fc8fb92473a7'
 settings:
   id: 'block_content:8454f182-4096-4868-8858-fc8fb92473a7'
   label: 'Banner Multiplicador Toronto'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-toronto/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-toronto/*'

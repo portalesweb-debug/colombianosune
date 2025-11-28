@@ -6,7 +6,7 @@ dependencies:
     - 'block_content:basic:a098e1df-46f5-475c-9097-467e4c5542ed'
   module:
     - block_content
-    - ctools
+    - node
   theme:
     - colombianosune
 id: header
@@ -18,17 +18,17 @@ plugin: 'block_content:a098e1df-46f5-475c-9097-467e4c5542ed'
 settings:
   id: 'block_content:a098e1df-46f5-475c-9097-467e4c5542ed'
   label: header
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
-    bundles:
-      album_cnu: album_cnu
-      banco_leyes: banco_leyes
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      album_cnu: album_cnu
+      banco_leyes: banco_leyes

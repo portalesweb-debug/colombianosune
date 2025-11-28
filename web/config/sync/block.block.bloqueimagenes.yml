@@ -18,14 +18,14 @@ plugin: 'block_content:3d13e569-55f6-4555-b6bc-4dbe17231fe7'
 settings:
   id: 'block_content:3d13e569-55f6-4555-b6bc-4dbe17231fe7'
   label: 'Información de interés'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

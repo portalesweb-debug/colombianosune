@@ -18,14 +18,14 @@ plugin: 'block_content:d1d9e459-daea-4302-b50d-8bbda299a00a'
 settings:
   id: 'block_content:d1d9e459-daea-4302-b50d-8bbda299a00a'
   label: 'Banner Multiplicador Guadalajara'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-guadalajara/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-guadalajara/*'

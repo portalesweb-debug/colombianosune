@@ -18,14 +18,14 @@ plugin: 'block_content:1214d8a5-b338-4a74-9e92-bfb48cdab68f'
 settings:
   id: 'block_content:1214d8a5-b338-4a74-9e92-bfb48cdab68f'
   label: 'Banner Multiplicador Newark'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-newark/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-newark/*'

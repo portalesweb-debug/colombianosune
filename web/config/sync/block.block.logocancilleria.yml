@@ -17,8 +17,8 @@ plugin: 'block_content:a634d388-3c54-453c-86ee-8ad163c6ecc3'
 settings:
   id: 'block_content:a634d388-3c54-453c-86ee-8ad163c6ecc3'
   label: 'LOGO CANCILLERIA'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

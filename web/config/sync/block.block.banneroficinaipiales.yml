@@ -18,14 +18,14 @@ plugin: 'block_content:83bc9d80-5401-4a86-8c30-99de19f54c38'
 settings:
   id: 'block_content:83bc9d80-5401-4a86-8c30-99de19f54c38'
   label: 'Banner oficina ipiales'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/oficina-ipiales/*\r\n/eje4/*"
     negate: false
     context_mapping: {  }
+    pages: "/oficina-ipiales/*\r\n/eje4/*"

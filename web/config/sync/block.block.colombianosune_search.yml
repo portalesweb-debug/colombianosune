@@ -17,7 +17,7 @@ plugin: search_form_block
 settings:
   id: search_form_block
   label: Buscador
+  label_display: '0'
   provider: search
-  label_display: visible
-  page_id: ''
+  page_id: null
 visibility: {  }

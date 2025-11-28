@@ -17,14 +17,14 @@ plugin: 'system_menu_block:multiplicador-en-nueva-york'
 settings:
   id: 'system_menu_block:multiplicador-en-nueva-york'
   label: 'Multiplicador en Nueva York'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-nueva-york/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-nueva-york/*'

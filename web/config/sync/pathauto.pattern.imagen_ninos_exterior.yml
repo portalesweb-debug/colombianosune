@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'loquemeunacolombia/[node:title]'
 selection_criteria:
   96266a6d-54bf-46c9-8254-5c765e147d6c:
-    id: entity_bundle:node
-    bundles:
-      imagen_ninos_exterior: imagen_ninos_exterior
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 96266a6d-54bf-46c9-8254-5c765e147d6c
     context_mapping:
       node: node
-    uuid: 96266a6d-54bf-46c9-8254-5c765e147d6c
+    bundles:
+      imagen_ninos_exterior: imagen_ninos_exterior
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -18,14 +18,14 @@ plugin: 'block_content:b92b9417-b1a8-4356-9710-0f0a3fc5d713'
 settings:
   id: 'block_content:b92b9417-b1a8-4356-9710-0f0a3fc5d713'
   label: 'Banner oficina Caldas'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-caldas/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-caldas/*'

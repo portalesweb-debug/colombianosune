@@ -18,14 +18,14 @@ plugin: 'block_content:c99fd344-bc54-4253-bcda-70bbb8553cac'
 settings:
   id: 'block_content:c99fd344-bc54-4253-bcda-70bbb8553cac'
   label: 'Banner Multiplicador  Quito'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-quito/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-quito/*'

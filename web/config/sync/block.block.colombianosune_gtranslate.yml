@@ -1,4 +1,4 @@
-uuid: ed395867-cdf4-4da9-b93e-55fd5f0f693e
+uuid: 668cd2ab-cfef-41bd-83ba-50ab3f79dfe3
 langcode: es
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - gtranslate
   theme:
     - colombianosune
-id: gtranslate
+id: colombianosune_gtranslate
 theme: colombianosune
 region: header_top
-weight: -59
+weight: -46
 provider: null
 plugin: gtranslate_block
 settings:
   id: gtranslate_block
   label: GTranslate
-  provider: gtranslate
   label_display: '0'
+  provider: gtranslate
 visibility: {  }
