@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'concurso-ninos-colombianos-exterior-cnu/[node:title]'
 selection_criteria:
   51d243dd-7deb-4cbf-af28-97ec37729be7:
-    id: 'entity_bundle:node'
-    negate: false
-    uuid: 51d243dd-7deb-4cbf-af28-97ec37729be7
-    context_mapping:
-      node: node
+    id: entity_bundle:node
     bundles:
       concurso_ninos_exterior: concurso_ninos_exterior
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 51d243dd-7deb-4cbf-af28-97ec37729be7
 selection_logic: and
 weight: -5
 relationships: {  }

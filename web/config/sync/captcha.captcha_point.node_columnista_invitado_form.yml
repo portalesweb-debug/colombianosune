@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_columnista_invitado_form
 captchaType: default
-label: node_columnista_invitado_form
+label: null

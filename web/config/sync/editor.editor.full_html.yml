@@ -1,4 +1,4 @@
-uuid: e9017e44-527b-4ce8-8357-4795115d367c
+uuid: 504bcb95-8879-424b-a0ed-39d2d27404aa
 langcode: es
 status: true
 dependencies:
@@ -6,56 +6,35 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor5
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
 editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Strike
-            - Superscript
-            - Subscript
-            - '-'
-            - RemoveFormat
-            - Font
-            - FontSize
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - Table
-            - HorizontalRule
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-            - Styles
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
-  plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
+    items:
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - '|'
+      - removeFormat
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - insertTable
+      - horizontalLine
+      - '|'
+      - heading
+      - style
+      - '|'
+      - sourceEditing
 image_upload:
   status: true
   scheme: public

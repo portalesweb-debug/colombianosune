@@ -11,33 +11,33 @@ dependencies:
     - panels
 id: conferencia_suramericana-panels_variant-0
 label: 'Pagina XIII Conferencia'
-weight: 0
 variant: panels_variant
 variant_settings:
-  id: panels_variant
-  label: null
-  weight: 0
-  uuid: 156af80c-8f4b-4e1d-8763-28d7acec7abc
   blocks:
     8e4870e1-8093-4dd2-8109-822eab6a997a:
       id: 'block_content:8c3d0992-5fba-4f2c-9e46-8cd0987dc9d2'
       label: 'XIII Suramericana'
-      label_display: '0'
       provider: block_content
-      context_mapping: {  }
+      label_display: '0'
       status: true
       info: ''
       view_mode: full
       region: content
       weight: 0
       uuid: 8e4870e1-8093-4dd2-8109-822eab6a997a
-  page_title: 'XIII Conferencia Sudamericana sobre migraciones'
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 156af80c-8f4b-4e1d-8763-28d7acec7abc
+  label: null
+  weight: 0
   layout: layout_onecol
   layout_settings: {  }
-  builder: ipe
+  page_title: 'XIII Conferencia Sudamericana sobre migraciones'
   storage_type: page_manager
   storage_id: conferencia_suramericana-panels_variant-0
+  builder: ipe
 page: conferencia_suramericana
+weight: 0
 selection_criteria: {  }
 selection_logic: and
 static_context: {  }

@@ -17,10 +17,10 @@ plugin: 'system_menu_block:multiplicador-en-mexico'
 settings:
   id: 'system_menu_block:multiplicador-en-mexico'
   label: 'Multiplicador en México'
-  label_display: '0'
   provider: system
+  label_display: '0'
   level: 1
-  depth: null
+  depth: 0
   expand_all_items: false
 visibility:
   request_path:

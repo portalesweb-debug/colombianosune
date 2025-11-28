@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_pregunta_frecuente_form
 captchaType: default
-label: node_pregunta_frecuente_form
+label: null

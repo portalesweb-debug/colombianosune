@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_webform_form
 captchaType: default
-label: node_webform_form
+label: null

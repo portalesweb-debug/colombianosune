@@ -17,10 +17,10 @@ plugin: 'system_menu_block:menu-menu-ipiales-oficina'
 settings:
   id: 'system_menu_block:menu-menu-ipiales-oficina'
   label: '<none>'
-  label_display: visible
   provider: system
+  label_display: visible
   level: 1
-  depth: null
+  depth: 0
   expand_all_items: false
 visibility:
   request_path:

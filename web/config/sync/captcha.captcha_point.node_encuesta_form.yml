@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_encuesta_form
 captchaType: default
-label: node_encuesta_form
+label: null

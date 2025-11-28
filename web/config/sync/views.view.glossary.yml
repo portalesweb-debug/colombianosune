@@ -298,7 +298,6 @@ display:
           order: asc
           summary: ''
           empty_table: false
-          class: ''
       row:
         type: fields
         options:

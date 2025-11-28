@@ -18,11 +18,10 @@ plugin: 'views_block:banner_principal-block_1'
 settings:
   id: 'views_block:banner_principal-block_1'
   label: ''
-  label_display: '0'
   provider: views
+  label_display: '0'
   views_label: ''
-  items_per_page: null
-  exposed: {  }
+  items_per_page: none
 visibility:
   request_path:
     id: request_path

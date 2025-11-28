@@ -18,11 +18,10 @@ plugin: 'views_block:mas_noticias_portal-block_1'
 settings:
   id: 'views_block:mas_noticias_portal-block_1'
   label: 'Más Noticias'
-  label_display: visible
   provider: views
+  label_display: visible
   views_label: 'Más Noticias'
-  items_per_page: null
-  exposed: {  }
+  items_per_page: none
 visibility:
   request_path:
     id: request_path

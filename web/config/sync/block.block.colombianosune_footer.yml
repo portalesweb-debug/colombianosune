@@ -19,9 +19,9 @@ plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
   label: 'Menú al pie'
-  label_display: '0'
   provider: system
+  label_display: '0'
   level: 1
-  depth: null
+  depth: 0
   expand_all_items: false
 visibility: {  }

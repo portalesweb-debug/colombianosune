@@ -26,13 +26,6 @@ settings:
   info: ''
   view_mode: full
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      transparencia_faq: transparencia_faq
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:

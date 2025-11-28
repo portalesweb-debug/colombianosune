@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_forum_form
 captchaType: default
-label: node_forum_form
+label: null

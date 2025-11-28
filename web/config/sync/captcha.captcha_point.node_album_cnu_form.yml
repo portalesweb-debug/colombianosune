@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_album_cnu_form
 captchaType: default
-label: node_album_cnu_form
+label: null

@@ -1,453 +1,343 @@
-_core:
-  default_config_hash: yUNkiSB-fp4pyUb6B2L9HiiCdISBDvK7r1v9_XkGUaQ
-langcode: es
 page_title: Sitemap
-path: sitemap
 message:
   value: ''
   format: restricted_html
+_core:
+  default_config_hash: yUNkiSB-fp4pyUb6B2L9HiiCdISBDvK7r1v9_XkGUaQ
+langcode: es
+include_css: true
 plugins:
   frontpage:
-    base_plugin: frontpage
     enabled: true
     weight: -50
     settings:
       title: 'Front page'
       rss: /rss.xml
   'menu:account':
-    base_plugin: menu
     enabled: true
     weight: -11
     settings:
       title: 'User account menu'
       show_disabled: false
-      menu_depth: 9
   'menu:devel':
-    base_plugin: menu
     enabled: true
     weight: -45
     settings:
       title: Desarrollo
       show_disabled: false
-      menu_depth: 9
   'menu:footer':
-    base_plugin: menu
     enabled: true
     weight: -44
     settings:
       title: 'Pie de página'
       show_disabled: false
-      menu_depth: 9
   'menu:main':
-    base_plugin: menu
     enabled: true
     weight: -43
     settings:
       title: 'Main navigation'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-afrocolombianos':
-    base_plugin: menu
     enabled: true
     weight: -41
     settings:
       title: afrocolombianos
       show_disabled: false
-      menu_depth: 9
   'menu:menu-colombiaanosune':
-    base_plugin: menu
     enabled: true
     weight: -49
     settings:
       title: 'Colombia Nos Une'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-colombianosunes':
-    base_plugin: menu
     enabled: true
     weight: -47
     settings:
       title: 'De interes'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-ejesdetrabajo':
-    base_plugin: menu
     enabled: true
     weight: -48
     settings:
       title: 'Ejes de Trabajo'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-informacion-de-inetres':
-    base_plugin: menu
     enabled: true
     weight: -14
     settings:
       title: 'Información de Interés'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-ipiales-oficina':
-    base_plugin: menu
     enabled: true
     weight: -23
     settings:
       title: 'Oficinas de atencion al migrante ipiales'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-quindio-oficina':
-    base_plugin: menu
     enabled: true
     weight: -28
     settings:
       title: 'Oficina atención al migrante risaralda'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menucompletoportal':
-    base_plugin: menu
     enabled: true
     weight: -26
     settings:
       title: 'Menú Completo Portal'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-mesa-sociedad-civil':
-    base_plugin: menu
     enabled: true
     weight: -25
     settings:
       title: 'Mesa sociedad civil'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-mujer-migrante':
-    base_plugin: menu
     enabled: true
     weight: -19
     settings:
       title: 'Mujer migrante'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-multimedia':
-    base_plugin: menu
     enabled: true
     weight: -38
     settings:
       title: Multimedia
       show_disabled: false
-      menu_depth: 9
   'menu:menu-oficina':
-    base_plugin: menu
     enabled: true
     weight: -20
     settings:
       title: 'Oficina de atención al migrante'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-oficina-atencion-atlantico':
-    base_plugin: menu
     enabled: true
     weight: -18
     settings:
       title: 'Oficina de atencion al migrante Atlantico'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-oficina-atencion-caldas':
-    base_plugin: menu
     enabled: true
     weight: -17
     settings:
       title: 'Oficina de atencion al migrante Caldas'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-oficina-atencion-jura':
-    base_plugin: menu
     enabled: true
     weight: -16
     settings:
       title: Jurado
       show_disabled: false
-      menu_depth: 9
   'menu:menu-oficina-atencion-quindio':
-    base_plugin: menu
     enabled: true
     weight: -15
     settings:
       title: Quindio
       show_disabled: false
-      menu_depth: 9
   'menu:menu-oficina-atencion-santander':
-    base_plugin: menu
     enabled: true
     weight: -12
     settings:
       title: 'Oficinas de atencion al migrante santander'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-patrimoniobibliografico':
-    base_plugin: menu
     enabled: true
     weight: 14
     settings:
       title: 'Patrimonio Bibliografico Colombiano'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-semanabinacional':
-    base_plugin: menu
     enabled: true
     weight: 17
     settings:
       title: 'XII Semana Binacional de Salud'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-servicios-migrantes':
-    base_plugin: menu
     enabled: true
     weight: -6
     settings:
       title: 'Servicios '
       show_disabled: false
-      menu_depth: 9
   'menu:menu-serviciosmigrantes':
-    base_plugin: menu
     enabled: true
     weight: -5
     settings:
       title: 'Servicios para Migrantes'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-terminoscondiciones':
-    base_plugin: menu
     enabled: true
     weight: -3
     settings:
       title: 'Terminos y Condiciones '
       show_disabled: false
-      menu_depth: 9
   'menu:menu-xiiiconfsobremigracion':
-    base_plugin: menu
     enabled: true
     weight: -1
     settings:
       title: 'XIII Conferencia Suramericana sobre Migraciones'
       show_disabled: false
-      menu_depth: 9
   'menu:of':
-    base_plugin: menu
     enabled: true
     weight: -9
     settings:
       title: 'Oficina de Atención al Migrante Valle del Cauca'
       show_disabled: false
-      menu_depth: 9
   'menu:oficina-atencion-al-migrant':
-    base_plugin: menu
     enabled: true
     weight: 10
     settings:
       title: 'Oficina de Atención al Migrante Bogotá'
       show_disabled: false
-      menu_depth: 9
   'menu:oficina-de-atencion-al-migr':
-    base_plugin: menu
     enabled: true
     weight: -7
     settings:
       title: 'Oficina de Atencion al Migrante Antioquia'
       show_disabled: false
-      menu_depth: 9
   'menu:admin':
-    base_plugin: menu
     enabled: false
     weight: -46
     settings:
       title: Management
       show_disabled: false
-      menu_depth: 9
   'menu:menu-administracion':
-    base_plugin: menu
     enabled: false
     weight: -42
     settings:
       title: Administracion
       show_disabled: false
-      menu_depth: 9
   'menu:menu-colombiacelebra':
-    base_plugin: menu
     enabled: false
     weight: -32
     settings:
       title: 'Colombia Celebra'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-como-migrar':
-    base_plugin: menu
     enabled: false
     weight: -10
     settings:
       title: '¿Cómo Migrar?'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-concurso-seleccion-colombia':
-    base_plugin: menu
     enabled: false
     weight: -37
     settings:
       title: Menu
       show_disabled: false
-      menu_depth: 9
   'menu:menu-crearasociacion':
-    base_plugin: menu
     enabled: false
     weight: -36
     settings:
       title: 'Crear Asociación'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-crearcontenidoscnu':
-    base_plugin: menu
     enabled: false
     weight: -35
     settings:
       title: 'Crear contenido CNU'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-eventos20dejulio':
-    base_plugin: menu
     enabled: false
     weight: -34
     settings:
       title: 'Eventos 20 de julio'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-herramientas':
-    base_plugin: menu
     enabled: false
     weight: -33
     settings:
       title: menu_mi_pagina
       show_disabled: false
-      menu_depth: 9
   'menu:menu-informacioninteres':
-    base_plugin: menu
     enabled: false
     weight: -13
     settings:
       title: 'Información de interés'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-administrador-noticias':
-    base_plugin: menu
     enabled: false
     weight: -31
     settings:
       title: 'Menu Administrador Noticias'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-gestionar-red':
-    base_plugin: menu
     enabled: false
     weight: -40
     settings:
       title: 'Gestionar mi red'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-integrantes':
-    base_plugin: menu
     enabled: false
     weight: -24
     settings:
       title: 'Integrantes de red'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-mensajes-red':
-    base_plugin: menu
     enabled: false
     weight: -22
     settings:
       title: 'Mensajes de red'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-micrositio-ninos':
-    base_plugin: menu
     enabled: false
     weight: -21
     settings:
       title: 'menu micrositio niños'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-menu-redes':
-    base_plugin: menu
     enabled: false
     weight: -27
     settings:
       title: menu_redes
       show_disabled: false
-      menu_depth: 9
   'menu:menu-misenlaces':
-    base_plugin: menu
     enabled: false
     weight: -30
     settings:
       title: 'Mis Enlaces'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-multiplicadores':
-    base_plugin: menu
     enabled: false
     weight: -39
     settings:
       title: Multiplicadores
       show_disabled: false
-      menu_depth: 9
   'menu:menu-novedades':
-    base_plugin: menu
     enabled: false
     weight: -29
     settings:
       title: '¿Que Hay de Nuevo?'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-redes-amigas':
-    base_plugin: menu
     enabled: false
     weight: 12
     settings:
       title: 'Redes Amigas'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-suenomigrante':
-    base_plugin: menu
     enabled: false
     weight: -4
     settings:
       title: 'Acción diferida'
       show_disabled: false
-      menu_depth: 9
   'menu:menu-valorescolombianos':
-    base_plugin: menu
     enabled: false
     weight: -2
     settings:
       title: 'Muestra de dibujo: Valores Colombianos 20 de Julio'
       show_disabled: false
-      menu_depth: 9
   'menu:secondary-menu':
-    base_plugin: menu
     enabled: false
     weight: 3
     settings:
       title: 'Secondary menu'
       show_disabled: false
-      menu_depth: 9
   'menu:tools':
-    base_plugin: menu
     enabled: false
     weight: 4
     settings:
       title: Tools
       show_disabled: false
-      menu_depth: 9
   'vocabulary:forums':
-    base_plugin: vocabulary
     enabled: false
     weight: 5
     settings:
@@ -463,7 +353,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:tags':
-    base_plugin: vocabulary
     enabled: false
     weight: 6
     settings:
@@ -479,7 +368,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_1':
-    base_plugin: vocabulary
     enabled: false
     weight: 7
     settings:
@@ -495,7 +383,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_15':
-    base_plugin: vocabulary
     enabled: false
     weight: 8
     settings:
@@ -511,7 +398,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_16':
-    base_plugin: vocabulary
     enabled: false
     weight: 9
     settings:
@@ -527,7 +413,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_17':
-    base_plugin: vocabulary
     enabled: false
     weight: 16
     settings:
@@ -543,7 +428,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_18':
-    base_plugin: vocabulary
     enabled: false
     weight: 2
     settings:
@@ -559,7 +443,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_19':
-    base_plugin: vocabulary
     enabled: false
     weight: 15
     settings:
@@ -575,7 +458,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_2':
-    base_plugin: vocabulary
     enabled: false
     weight: -8
     settings:
@@ -591,7 +473,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_20':
-    base_plugin: vocabulary
     enabled: false
     weight: 18
     settings:
@@ -607,7 +488,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_23':
-    base_plugin: vocabulary
     enabled: false
     weight: 19
     settings:
@@ -623,7 +503,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_24':
-    base_plugin: vocabulary
     enabled: false
     weight: 20
     settings:
@@ -639,7 +518,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_25':
-    base_plugin: vocabulary
     enabled: false
     weight: 13
     settings:
@@ -655,7 +533,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_27':
-    base_plugin: vocabulary
     enabled: false
     weight: 23
     settings:
@@ -671,7 +548,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_28':
-    base_plugin: vocabulary
     enabled: false
     weight: 11
     settings:
@@ -687,7 +563,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_29':
-    base_plugin: vocabulary
     enabled: false
     weight: 0
     settings:
@@ -703,7 +578,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_3':
-    base_plugin: vocabulary
     enabled: false
     weight: 21
     settings:
@@ -719,7 +593,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_30':
-    base_plugin: vocabulary
     enabled: false
     weight: 27
     settings:
@@ -735,7 +608,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_31':
-    base_plugin: vocabulary
     enabled: false
     weight: 1
     settings:
@@ -751,7 +623,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_32':
-    base_plugin: vocabulary
     enabled: false
     weight: 28
     settings:
@@ -767,7 +638,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_33':
-    base_plugin: vocabulary
     enabled: false
     weight: 29
     settings:
@@ -783,7 +653,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_34':
-    base_plugin: vocabulary
     enabled: false
     weight: 30
     settings:
@@ -799,7 +668,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_35':
-    base_plugin: vocabulary
     enabled: false
     weight: 22
     settings:
@@ -815,7 +683,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_36':
-    base_plugin: vocabulary
     enabled: false
     weight: 24
     settings:
@@ -831,7 +698,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_4':
-    base_plugin: vocabulary
     enabled: false
     weight: 25
     settings:
@@ -847,7 +713,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_5':
-    base_plugin: vocabulary
     enabled: false
     weight: 26
     settings:
@@ -863,7 +728,6 @@ plugins:
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
   'vocabulary:vocabulary_6':
-    base_plugin: vocabulary
     enabled: false
     weight: 31
     settings:
@@ -878,4 +742,3 @@ plugins:
       enable_rss: true
       rss_link: view.taxonomy_term.feed_1|arg_0
       rss_depth: 9
-include_css: true

@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_crear_blog_form
 captchaType: default
-label: node_crear_blog_form
+label: null

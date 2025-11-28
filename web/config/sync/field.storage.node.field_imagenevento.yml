@@ -11,16 +11,16 @@ field_name: field_imagenevento
 entity_type: node
 type: image
 settings:
+  default_image:
+    uuid: ''
+  uri_scheme: public
   target_type: file
   display_field: false
   display_default: false
-  uri_scheme: public
-  default_image:
-    uuid: ''
 module: image
 locked: false
 cardinality: 1
 translatable: false
 indexes: {  }
-persist_with_no_fields: true
+persist_with_no_fields: false
 custom_storage: false

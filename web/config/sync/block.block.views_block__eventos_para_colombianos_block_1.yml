@@ -18,11 +18,10 @@ plugin: 'views_block:eventos_para_colombianos-block_1'
 settings:
   id: 'views_block:eventos_para_colombianos-block_1'
   label: 'Más eventos'
-  label_display: visible
   provider: views
+  label_display: visible
   views_label: 'Más eventos'
-  items_per_page: null
-  exposed: {  }
+  items_per_page: none
 visibility:
   request_path:
     id: request_path

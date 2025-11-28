@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'foro/[node:title]'
 selection_criteria:
   aadc0576-5fae-4cf4-998a-56961429e4a0:
-    id: 'entity_bundle:node'
-    negate: false
-    uuid: aadc0576-5fae-4cf4-998a-56961429e4a0
-    context_mapping:
-      node: node
+    id: entity_bundle:node
     bundles:
       forum: forum
+    negate: false
+    context_mapping:
+      node: node
+    uuid: aadc0576-5fae-4cf4-998a-56961429e4a0
 selection_logic: and
 weight: -5
 relationships: {  }

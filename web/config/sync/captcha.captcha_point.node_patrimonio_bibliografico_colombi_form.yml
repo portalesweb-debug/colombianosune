@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_patrimonio_bibliografico_colombi_form
 captchaType: default
-label: node_patrimonio_bibliografico_colombi_form
+label: null

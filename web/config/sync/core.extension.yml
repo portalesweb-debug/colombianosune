@@ -34,7 +34,6 @@ module:
   google_analytics: 0
   google_cse: 0
   gtranslate: 0
-  help: 0
   history: 0
   image: 0
   imce: 0

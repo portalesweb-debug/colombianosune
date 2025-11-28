@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'servicios/[node:title]'
 selection_criteria:
   cb85cf26-64e1-4eb3-a43b-2b43f950b467:
-    id: 'entity_bundle:node'
-    negate: false
-    uuid: cb85cf26-64e1-4eb3-a43b-2b43f950b467
-    context_mapping:
-      node: node
+    id: entity_bundle:node
     bundles:
       contenido_general_portal: contenido_general_portal
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cb85cf26-64e1-4eb3-a43b-2b43f950b467
 selection_logic: and
 weight: -5
 relationships: {  }

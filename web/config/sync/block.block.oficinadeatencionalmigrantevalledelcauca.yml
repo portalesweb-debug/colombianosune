@@ -17,10 +17,10 @@ plugin: 'system_menu_block:of'
 settings:
   id: 'system_menu_block:of'
   label: 'Oficina de Atención al Migrante Valle del Cauca'
-  label_display: '0'
   provider: system
+  label_display: '0'
   level: 1
-  depth: null
+  depth: 0
   expand_all_items: false
 visibility:
   request_path:

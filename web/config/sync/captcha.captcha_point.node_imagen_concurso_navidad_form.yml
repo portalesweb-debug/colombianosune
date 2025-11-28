@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_imagen_concurso_navidad_form
 captchaType: default
-label: node_imagen_concurso_navidad_form
+label: null

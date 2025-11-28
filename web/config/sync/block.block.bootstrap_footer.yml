@@ -1,6 +1,6 @@
 uuid: 3b5b3fc2-341a-46dc-98ac-6af6d90a5374
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -12,16 +12,16 @@ _core:
   default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
 id: bootstrap_footer
 theme: bootstrap
-region: top_header
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
   label: 'Footer menu'
-  label_display: '0'
   provider: system
+  label_display: '0'
   level: 1
-  depth: null
+  depth: 0
   expand_all_items: false
 visibility: {  }

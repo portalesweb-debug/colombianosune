@@ -84,7 +84,6 @@ display:
           summary: ''
           description: ''
           empty_table: false
-          class: ''
       row:
         type: 'entity:node'
         options:

@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_contenido_general_portal_form
 captchaType: default
-label: node_contenido_general_portal_form
+label: null
