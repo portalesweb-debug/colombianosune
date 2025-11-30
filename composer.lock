@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "729bb96534c611b3242b96a7c0851f4e",
+    "content-hash": "e87fcfee6c7ab7e7a4abedddfcce1fb3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2713,6 +2713,72 @@
             }
         },
         {
+            "name": "drupal/icons",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/icons.git",
+                "reference": "2.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/icons-2.2.1.zip",
+                "reference": "2.2.1",
+                "shasum": "e9ead541ef95ad68d06eadada89420301bf5ba82"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.1",
+                    "datestamp": "1748415711",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Bertoen (jefuri)",
+                    "homepage": "https://www.drupal.org/u/jefuri",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "krilo_89",
+                    "homepage": "https://www.drupal.org/user/3005277"
+                },
+                {
+                    "name": "nitebreed",
+                    "homepage": "https://www.drupal.org/user/419423"
+                },
+                {
+                    "name": "sebastian.wegerer",
+                    "homepage": "https://www.drupal.org/user/3768762"
+                },
+                {
+                    "name": "sjerdo",
+                    "homepage": "https://www.drupal.org/user/3495403"
+                },
+                {
+                    "name": "steven buteneers",
+                    "homepage": "https://www.drupal.org/user/3301055"
+                }
+            ],
+            "description": "Icons is a base API module for managing icons and rendering them.",
+            "homepage": "https://drupal.org/project/icons",
+            "support": {
+                "source": "http://cgit.drupalcode.org/icons",
+                "issues": "https://drupal.org/project/issues/icons"
+            }
+        },
+        {
             "name": "drupal/imce",
             "version": "3.1.4",
             "source": {
@@ -3207,6 +3273,78 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_breadcrumb",
                 "issues": "https://www.drupal.org/project/issues/menu_breadcrumb"
+            }
+        },
+        {
+            "name": "drupal/micon",
+            "version": "2.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/micon.git",
+                "reference": "2.1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/micon-2.1.8.zip",
+                "reference": "2.1.8",
+                "shasum": "b9051bb0aa4fd700abe4eec232eecb542020c7ba"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "require-dev": {
+                "drupal/link_attributes": "^2",
+                "drupal/linkit": "^7",
+                "drupal/linkit_attributes": "*",
+                "drupal/micon_link": "*",
+                "drupal/paragraphs": "^1"
+            },
+            "suggest": {
+                "drupal/link_attributes": "Needed for micon_linkit_attributes.",
+                "drupal/linkit": "Needed for micon_linkit and micon_linkit_attributes.",
+                "drupal/paragraphs": "Needed for micon_paragraphs."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.8",
+                    "datestamp": "1753353687",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
+                },
+                {
+                    "name": "jacerider",
+                    "homepage": "https://www.drupal.org/user/81495"
+                },
+                {
+                    "name": "jacobbell84",
+                    "homepage": "https://www.drupal.org/user/3408772"
+                }
+            ],
+            "description": "An IcoMoon-based icon manager for Drupal.",
+            "homepage": "https://www.drupal.org/project/micon",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/micon",
+                "issues": "https://www.drupal.org/project/issues/micon"
             }
         },
         {
@@ -9533,7 +9671,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
