@@ -1,0 +1,31 @@
+uuid: 23917d14-b6cd-48d3-b3ce-ce2b4c1bcf32
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:87b3f9c1-617a-4b0e-9498-6bb88ceed8b7'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_banneroficinaantioquia
+theme: colombianosune_d11
+region: none
+weight: 7
+provider: null
+plugin: 'block_content:87b3f9c1-617a-4b0e-9498-6bb88ceed8b7'
+settings:
+  id: 'block_content:87b3f9c1-617a-4b0e-9498-6bb88ceed8b7'
+  label: 'Banner oficina antioquia'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-antioquia/*'

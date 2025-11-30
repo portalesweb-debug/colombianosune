@@ -1,0 +1,25 @@
+uuid: a1c36496-874d-4f0b-9040-f7fba1ad158a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menucompletoportal
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_menucompletoportal
+theme: colombianosune_d11
+region: primary_menu
+weight: -47
+provider: null
+plugin: 'system_menu_block:menu-menucompletoportal'
+settings:
+  id: 'system_menu_block:menu-menucompletoportal'
+  label: 'Menu completo portal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

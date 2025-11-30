@@ -1,0 +1,30 @@
+uuid: c0a70158-28d2-4701-8c42-58616f0e70c1
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-multimedia
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_multimedia
+theme: colombianosune_d11
+region: none
+weight: 31
+provider: null
+plugin: 'system_menu_block:menu-multimedia'
+settings:
+  id: 'system_menu_block:menu-multimedia'
+  label: 'Menu Mulrimedia'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/noticias/portal\r\n/albumcnu/*\r\n/videocnu/*"

@@ -1,0 +1,31 @@
+uuid: 301dc74c-2c14-4bcb-b33d-6cdfdf915845
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1214d8a5-b338-4a74-9e92-bfb48cdab68f'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_bannermultiplicadornewark
+theme: colombianosune_d11
+region: content
+weight: -59
+provider: null
+plugin: 'block_content:1214d8a5-b338-4a74-9e92-bfb48cdab68f'
+settings:
+  id: 'block_content:1214d8a5-b338-4a74-9e92-bfb48cdab68f'
+  label: 'Banner Multiplicador Newark'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-newark/*'

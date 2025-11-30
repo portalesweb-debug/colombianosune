@@ -26,6 +26,12 @@ body {
   min-height: 60vh;
 }
 
+/* Ocultar el enlace "Pasar al contenido principal" */
+a[href="#main-content"],
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  display: none !important;
+}
+
 /* Botón hamburguesa personalizado */
 .navbar-toggler {
   border: none;

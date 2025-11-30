@@ -1,0 +1,25 @@
+uuid: ce900c65-5bbb-4bf2-b94f-c2b2a29e10d3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:987943b9-413b-4b8f-9256-bb2e2df9a4a0'
+  module:
+    - block_content
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_logoimg
+theme: colombianosune_d11
+region: header
+weight: -47
+provider: null
+plugin: 'block_content:987943b9-413b-4b8f-9256-bb2e2df9a4a0'
+settings:
+  id: 'block_content:987943b9-413b-4b8f-9256-bb2e2df9a4a0'
+  label: 'LOGO CNU'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

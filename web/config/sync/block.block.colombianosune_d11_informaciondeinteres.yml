@@ -1,0 +1,30 @@
+uuid: 480f80d5-4edd-4c3f-ba3a-ba6cda1c7fdf
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-informacioninteres
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_informaciondeinteres
+theme: colombianosune_d11
+region: none
+weight: 24
+provider: null
+plugin: 'system_menu_block:menu-informacioninteres'
+settings:
+  id: 'system_menu_block:menu-informacioninteres'
+  label: 'Información de interés'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/informaciondeinteres/*'

@@ -1,0 +1,31 @@
+uuid: 3bd608c0-f674-4fe8-91a9-7700ea988a77
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:74a3b653-6ae6-459e-9176-7fce57c8dc14'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_banneroficinarisaralda
+theme: colombianosune_d11
+region: none
+weight: -28
+provider: null
+plugin: 'block_content:74a3b653-6ae6-459e-9176-7fce57c8dc14'
+settings:
+  id: 'block_content:74a3b653-6ae6-459e-9176-7fce57c8dc14'
+  label: 'Banner oficina risaralda'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-risaralda/*'

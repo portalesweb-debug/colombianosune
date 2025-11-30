@@ -1,0 +1,31 @@
+uuid: 1fd8b442-d022-4786-9696-e0791e668653
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e1426bec-cd38-4f64-8b44-8ff79ed5313f'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_banneremprendimiento
+theme: colombianosune_d11
+region: none
+weight: -9
+provider: null
+plugin: 'block_content:e1426bec-cd38-4f64-8b44-8ff79ed5313f'
+settings:
+  id: 'block_content:e1426bec-cd38-4f64-8b44-8ff79ed5313f'
+  label: 'Banner Emprendimiento'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/emprendimiento/*'

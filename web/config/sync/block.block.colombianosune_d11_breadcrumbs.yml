@@ -1,0 +1,20 @@
+uuid: 501df596-5ed1-467c-bf0d-682a666548b6
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_breadcrumbs
+theme: colombianosune_d11
+region: none
+weight: -47
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: visible
+  provider: system
+visibility: {  }

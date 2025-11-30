@@ -1,9 +1,52 @@
-/* Franja azul superior */
-.govco-header__brand {
-  background-color: #3367CC;
-  /* ajusta al azul GOV.CO */
-  padding: 0.75rem 0;
+/* Franja superior GOV.CO */
+.govco-header__bar {
+  background-color: #3367CC; /* azul institucional */
+  padding: 8px 0;
+  width: 100%;
 }
+
+/* Contenedor interior: logo izquierda, idioma derecha */
+.govco-header__bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo */
+.govco-header__logo img {
+  max-height: 42px;
+  height: auto;
+  display: block;
+}
+
+/* Botón de idioma EN */
+.govco-header__lang {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.govco-header__lang a {
+  background: #ffffff;
+  color: #2F6BD8;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.govco-header__lang a:hover {
+  background: #f2f2f2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.20);
+}
+
+.govco-header__lang a:active {
+  transform: scale(0.97);
+}
+
 
 /* Logos */
 .govco-header__brand img,
@@ -20,12 +63,6 @@
 
 .govco-header__search form {
   margin: 0;
-}
-
-/* Idioma EN/ES */
-.govco-header__lang {
-  font-weight: 600;
-  font-size: 0.875rem;
 }
 
 /* Franja blanca del menú */
@@ -64,3 +101,5 @@
   margin: 0;
   padding: 0;
 }
+
+

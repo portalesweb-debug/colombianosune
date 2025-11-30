@@ -1,0 +1,37 @@
+uuid: d94d6f57-7a10-40bf-998e-8835c1afeab8
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-informacioninteres
+  module:
+    - system
+    - user
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_informacioninteres
+theme: colombianosune_d11
+region: content
+weight: -32
+provider: null
+plugin: 'system_menu_block:menu-informacioninteres'
+settings:
+  id: 'system_menu_block:menu-informacioninteres'
+  label: ''
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      '': null
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/informaciondeinteres/*'

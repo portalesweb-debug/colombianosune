@@ -1,0 +1,30 @@
+uuid: afd4391b-d54d-42f2-a429-65d7ff406350
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.oficinas-regionales
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_oficinasregionales
+theme: colombianosune_d11
+region: none
+weight: 21
+provider: null
+plugin: 'system_menu_block:oficinas-regionales'
+settings:
+  id: 'system_menu_block:oficinas-regionales'
+  label: 'Oficinas regionales'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/ejes/retorno/oficinas-de-atencion-al-migrante\r\n/ejes/acompañamiento-al-retorno/rur\r\n/retorno"

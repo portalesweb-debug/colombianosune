@@ -83,8 +83,24 @@
           {# Izquierda: GOV.CO + Colombia Nos Une (top_header) #}
           <div class="col-6 col-md-3 d-flex align-items-center">
             {% if page.top_header %}
-              <div class="govco-header__brand">
-                {{ page.top_header }}
+              {# Franja azul superior completa #}
+              <div class="govco-header__bar">
+                <div class="container-fluid">
+                  <div class="govco-header__bar-inner d-flex justify-content-between align-items-center">
+                    {# Logo GOV.CO (izquierda) #}
+                    <div class="govco-header__logo">
+                      {% if page.top_header %}
+                        {{ page.top_header }}
+                      {% endif %}
+                    </div>
+                    {# Botón idioma EN/ES (derecha) #}
+                    <div class="govco-header__lang">
+                      {% if page.top_header_form %}
+                        {{ page.top_header_form }}
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
               </div>
             {% endif %}
           </div>

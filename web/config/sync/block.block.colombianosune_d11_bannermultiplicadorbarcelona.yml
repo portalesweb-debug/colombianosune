@@ -1,0 +1,31 @@
+uuid: b378c7a0-fc9f-44f9-b9e1-bf2e533e463c
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d10a0336-1ba5-4611-b6d0-b2a68f455f65'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_bannermultiplicadorbarcelona
+theme: colombianosune_d11
+region: none
+weight: -5
+provider: null
+plugin: 'block_content:d10a0336-1ba5-4611-b6d0-b2a68f455f65'
+settings:
+  id: 'block_content:d10a0336-1ba5-4611-b6d0-b2a68f455f65'
+  label: 'Banner Multiplicador Barcelona'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-barcelona/*'

@@ -1,0 +1,31 @@
+uuid: 68da3b30-fdf8-4f1d-9125-6a8ce34a7f64
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:0d178e39-1489-4466-a003-baafb15d19f9'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_banneroficinaatlantico
+theme: colombianosune_d11
+region: none
+weight: -31
+provider: null
+plugin: 'block_content:0d178e39-1489-4466-a003-baafb15d19f9'
+settings:
+  id: 'block_content:0d178e39-1489-4466-a003-baafb15d19f9'
+  label: 'Banner oficina atlantico'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-atlantico/*'

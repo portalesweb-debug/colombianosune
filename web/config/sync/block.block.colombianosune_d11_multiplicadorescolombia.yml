@@ -1,0 +1,30 @@
+uuid: 9131e5ac-21a2-4828-91be-6ee4440c9494
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.sistema-de-servicios
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_multiplicadorescolombia
+theme: colombianosune_d11
+region: none
+weight: 22
+provider: null
+plugin: 'system_menu_block:sistema-de-servicios'
+settings:
+  id: 'system_menu_block:sistema-de-servicios'
+  label: 'Multiplicadores Colombia '
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /ejes/plancomunidad/multiplicadores

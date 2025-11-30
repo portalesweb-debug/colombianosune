@@ -1,0 +1,31 @@
+uuid: 1eb5829b-4b9c-4645-977e-fdb69743df5c
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:71bd2383-c795-4f11-9ef6-4d3684b2a885'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_afrocolombianostitulo
+theme: colombianosune_d11
+region: none
+weight: -40
+provider: null
+plugin: 'block_content:71bd2383-c795-4f11-9ef6-4d3684b2a885'
+settings:
+  id: 'block_content:71bd2383-c795-4f11-9ef6-4d3684b2a885'
+  label: 'Afrocolombianos titulo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/afrocolombianos/*'

@@ -1,0 +1,30 @@
+uuid: a0b055e4-d31c-45c0-9b79-35c7aaf3321c
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.oficina-atencion-al-migrant
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_oficinadeatencionalmigrantebogota
+theme: colombianosune_d11
+region: none
+weight: 29
+provider: null
+plugin: 'system_menu_block:oficina-atencion-al-migrant'
+settings:
+  id: 'system_menu_block:oficina-atencion-al-migrant'
+  label: 'Oficina de Atención al Migrante Bogotá'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-bogota/*'

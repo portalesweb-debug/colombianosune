@@ -1,0 +1,30 @@
+uuid: 79f19409-9f10-4611-8cdb-6b67440578c8
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-jura
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_oficina_atencion_jura
+theme: colombianosune_d11
+region: none
+weight: -12
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-jura'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-jura'
+  label: 'Menu Oficina Jurado'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/oficina-jurado/*\r\n/oficina-juradó/*\r\n"

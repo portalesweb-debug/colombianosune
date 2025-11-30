@@ -1,0 +1,30 @@
+uuid: 1e58a35d-b172-4ebc-ad02-3b0b64cdc568
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.emprendimiento
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_emprendimiento
+theme: colombianosune_d11
+region: none
+weight: 9
+provider: null
+plugin: 'system_menu_block:emprendimiento'
+settings:
+  id: 'system_menu_block:emprendimiento'
+  label: Emprendimiento
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/emprendimiento/*'

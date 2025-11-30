@@ -1,0 +1,20 @@
+uuid: 35fd3992-219c-465c-af8a-defe512ffb7a
+langcode: es
+status: true
+dependencies:
+  module:
+    - gtranslate
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_gtranslate
+theme: colombianosune_d11
+region: top_header
+weight: -46
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  label_display: '0'
+  provider: gtranslate
+visibility: {  }

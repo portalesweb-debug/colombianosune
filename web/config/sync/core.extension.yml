@@ -47,8 +47,13 @@ module:
   libraries: 0
   link: 0
   locale: 0
+  media: 0
+  media_library: 0
   menu_breadcrumb: 0
   menu_ui: 0
+  micon: 0
+  micon_link: 0
+  micon_menu: 0
   migrate: 0
   migrate_drupal: 0
   migrate_tools: 0
@@ -76,6 +81,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_accordion: 0
@@ -102,4 +108,5 @@ theme:
   colombianosune: 0
   claro: 0
   gin: 0
+  colombianosune_d11: 0
 profile: standard
