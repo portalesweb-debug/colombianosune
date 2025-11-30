@@ -1,0 +1,66 @@
+/* Franja azul superior */
+.govco-header__brand {
+  background-color: #3367CC;
+  /* ajusta al azul GOV.CO */
+  padding: 0.75rem 0;
+}
+
+/* Logos */
+.govco-header__brand img,
+.govco-header__entity-logo img {
+  max-height: 48px;
+  height: auto;
+}
+
+/* Buscador centrado y ancho controlado */
+.govco-header__search {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.govco-header__search form {
+  margin: 0;
+}
+
+/* Idioma EN/ES */
+.govco-header__lang {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Franja blanca del menú */
+.govco-header__nav {
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+/* Menú horizontal sin viñetas */
+.govco-header__nav-inner ul.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.govco-header__nav-inner ul.menu>li {
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.govco-header__nav-inner ul.menu>li>a {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* Quita márgenes raros de bloques del header */
+.region-top-header,
+.region-header,
+.region-top-header-form,
+.region-header-form {
+  margin: 0;
+  padding: 0;
+}

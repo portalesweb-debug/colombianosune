@@ -1,0 +1,45 @@
+/**
+ * Estilos principales para el tema Colombianos UNE D11
+ */
+
+/* Importaciones de componentes */
+@import url('components/header.css');
+@import url('components/navigation.css');
+@import url('components/footer.css');
+@import url('components/cards.css');
+
+/* Estilos generales del sitio */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color, #333333);
+}
+
+/* Contenedor principal */
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Estilos para el contenido principal */
+#main {
+  min-height: 60vh;
+}
+
+/* Botón hamburguesa personalizado */
+.navbar-toggler {
+  border: none;
+  padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Responsividad mejorada */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
