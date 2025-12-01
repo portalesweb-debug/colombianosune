@@ -11,7 +11,7 @@ dependencies:
 id: multiplicadorenguadalajara
 theme: colombianosune
 region: content_navigation
-weight: -20
+weight: -14
 provider: null
 plugin: 'system_menu_block:multiplicador-en-guadalajar'
 settings:

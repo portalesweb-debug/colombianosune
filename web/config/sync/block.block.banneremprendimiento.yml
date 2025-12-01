@@ -12,7 +12,7 @@ dependencies:
 id: banneremprendimiento
 theme: colombianosune
 region: content_navigation
-weight: -38
+weight: -30
 provider: null
 plugin: 'block_content:e1426bec-cd38-4f64-8b44-8ff79ed5313f'
 settings:

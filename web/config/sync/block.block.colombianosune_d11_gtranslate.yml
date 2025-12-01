@@ -8,8 +8,8 @@ dependencies:
     - colombianosune_d11
 id: colombianosune_d11_gtranslate
 theme: colombianosune_d11
-region: top_header
-weight: -46
+region: top_header_form
+weight: -47
 provider: null
 plugin: gtranslate_block
 settings:

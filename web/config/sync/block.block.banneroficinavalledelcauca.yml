@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinavalledelcauca
 theme: colombianosune
 region: content_navigation
-weight: -24
+weight: -17
 provider: null
 plugin: 'block_content:c026ba6d-14fd-47ec-9718-97c2574a597e'
 settings:

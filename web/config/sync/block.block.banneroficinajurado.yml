@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinajurado
 theme: colombianosune
 region: content_navigation
-weight: -41
+weight: -32
 provider: null
 plugin: 'block_content:9cc36077-88b2-4361-b966-71bd53ab5336'
 settings:

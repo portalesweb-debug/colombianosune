@@ -10,7 +10,7 @@ dependencies:
 id: colombianosune_colombianosune_user_login
 theme: colombianosune
 region: content
-weight: -30
+weight: -33
 provider: null
 plugin: user_login_block
 settings:

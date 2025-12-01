@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinarisaralda
 theme: colombianosune
 region: content_navigation
-weight: -48
+weight: -37
 provider: null
 plugin: 'block_content:74a3b653-6ae6-459e-9176-7fce57c8dc14'
 settings:

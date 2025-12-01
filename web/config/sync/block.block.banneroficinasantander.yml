@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinasantander
 theme: colombianosune
 region: content_navigation
-weight: -42
+weight: -33
 provider: null
 plugin: 'block_content:b8dff740-3e77-4e9f-9218-83fc5321dd1d'
 settings:

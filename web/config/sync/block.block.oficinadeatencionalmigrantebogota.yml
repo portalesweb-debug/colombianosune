@@ -11,7 +11,7 @@ dependencies:
 id: oficinadeatencionalmigrantebogota
 theme: colombianosune
 region: content_navigation
-weight: -11
+weight: -5
 provider: null
 plugin: 'system_menu_block:oficina-atencion-al-migrant'
 settings:

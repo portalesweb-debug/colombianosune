@@ -11,7 +11,7 @@ dependencies:
 id: colombianosune_colombianosune_menu_menu_menu_ipiales_oficina
 theme: colombianosune
 region: content_navigation
-weight: -43
+weight: -9
 provider: null
 plugin: 'system_menu_block:menu-menu-ipiales-oficina'
 settings:

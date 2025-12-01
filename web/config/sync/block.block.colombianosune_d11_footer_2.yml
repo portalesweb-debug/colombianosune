@@ -1,0 +1,25 @@
+uuid: 4097e4b1-1d54-463e-9c20-094947cd63ba
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:08bf8ae1-6162-46b4-a888-8066081fa5f8'
+  module:
+    - block_content
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_footer_2
+theme: colombianosune_d11
+region: featured_bottom_third
+weight: -47
+provider: null
+plugin: 'block_content:08bf8ae1-6162-46b4-a888-8066081fa5f8'
+settings:
+  id: 'block_content:08bf8ae1-6162-46b4-a888-8066081fa5f8'
+  label: footer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

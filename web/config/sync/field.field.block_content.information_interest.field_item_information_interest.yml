@@ -1,0 +1,31 @@
+uuid: b2ced559-7635-4b98-9186-3bb6c6c3d3c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.information_interest
+    - field.storage.block_content.field_item_information_interest
+    - paragraphs.paragraphs_type.information_interest
+  module:
+    - entity_reference_revisions
+id: block_content.information_interest.field_item_information_interest
+field_name: field_item_information_interest
+entity_type: block_content
+bundle: information_interest
+label: item_information_interest
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      information_interest: information_interest
+    negate: 0
+    target_bundles_drag_drop:
+      information_interest:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

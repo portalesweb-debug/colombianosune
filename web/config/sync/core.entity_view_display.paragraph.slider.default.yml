@@ -1,0 +1,32 @@
+uuid: 5fadf3af-0fb2-45ad-b9a4-43e65c487b6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_desc_slider
+    - field.field.paragraph.slider.field_img_slider
+    - paragraphs.paragraphs_type.slider
+  module:
+    - text
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_desc_slider:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_img_slider:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

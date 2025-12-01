@@ -12,7 +12,7 @@ dependencies:
 id: afrocolombianostitulo
 theme: colombianosune
 region: content_navigation
-weight: -58
+weight: -47
 provider: null
 plugin: 'block_content:71bd2383-c795-4f11-9ef6-4d3684b2a885'
 settings:

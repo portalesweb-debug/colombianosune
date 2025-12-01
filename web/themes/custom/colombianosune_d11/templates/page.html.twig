@@ -73,92 +73,39 @@
 {% set sidebar_second_exists = page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
 
 {% block head %}
+  <!-- HEADER GOVCO -->
   <header class="govco-header">
-
-    {# --- Franja azul superior --- #}
+    <!-- 1) FRANJA AZUL SUPERIOR -->
     <div class="govco-header__top">
-      <div class="container">
-        <div class="row align-items-center">
-
-          {# Izquierda: GOV.CO + Colombia Nos Une (top_header) #}
-          <div class="col-6 col-md-3 d-flex align-items-center">
-            {% if page.top_header %}
-              {# Franja azul superior completa #}
-              <div class="govco-header__bar">
-                <div class="container-fluid">
-                  <div class="govco-header__bar-inner d-flex justify-content-between align-items-center">
-                    {# Logo GOV.CO (izquierda) #}
-                    <div class="govco-header__logo">
-                      {% if page.top_header %}
-                        {{ page.top_header }}
-                      {% endif %}
-                    </div>
-                    {# Botón idioma EN/ES (derecha) #}
-                    <div class="govco-header__lang">
-                      {% if page.top_header_form %}
-                        {{ page.top_header_form }}
-                      {% endif %}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {% endif %}
-          </div>
-
-          {# Centro: buscador (header_form) #}
-          <div class="col-12 col-md-6 d-flex justify-content-center mt-2 mt-md-0">
-            {% if page.header_form %}
-              <div class="govco-header__search w-100">
-                {{ page.header_form }}
-              </div>
-            {% endif %}
-          </div>
-
-          {# Derecha: EN / ES (top_header_form) + Cancillería (header) #}
-          <div class="col-6 col-md-3 d-flex justify-content-end align-items-center">
-            {% if page.top_header_form %}
-              <div class="govco-header__lang mr-2">
-                {{ page.top_header_form }}
-              </div>
-            {% endif %}
-            {% if page.header %}
-              <div class="govco-header__entity-logo ml-2">
-                {{ page.header }}
-              </div>
-            {% endif %}
-          </div>
-
+      <div class="govco-header__top-inner">
+        <!-- Izquierda: GOV.CO / Colombia Nos Une -->
+        <div class="govco-header__top-left">
+          {% if page.top_header %}
+            {{ page.top_header }}
+          {% endif %}
+        </div>
+        <!-- Derecha: selector idioma EN -->
+        <div class="govco-header__top-right">
+          {% if page.top_header_form %}
+            {{ page.top_header_form }}
+          {% endif %}
         </div>
       </div>
     </div>
-
-    {# --- Franja blanca inferior con el menú --- #}
-    {% if page.primary_menu %}
-      <nav class="govco-header__nav">
-        <div class="container">
-
-          <button class="navbar-toggler d-md-none my-2"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#GovcoMainMenu"
-                  aria-controls="GovcoMainMenu"
-                  aria-expanded="false"
-                  aria-label="{{ 'Toggle navigation'|t }}">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse govco-header__nav-inner" id="GovcoMainMenu">
-            {{ page.primary_menu }}
-          </div>
-
-        </div>
-      </nav>
-    {% endif %}
-
+    <!-- 2) FRANJA BLANCA MEDIA -->
+    <div class="govco-header__middle">
+      <div class="govco-header__middle-inner">
+        {% if page.header %}
+          {{ page.header }}
+        {% endif %}
+      </div>
+    </div>
+    <!-- 3) FRANJA GRIS MENÚ -->
+    <nav class="govco-header__nav">
+        {{ page.primary_menu }}
+    </nav>
   </header>
 {% endblock %}
-
-
 
 {% block content %}
         <div id="main" class="{{ container }}">
@@ -193,9 +140,6 @@
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
             <div class="site-footer__top clearfix">
               {{ page.footer_first }}
-              {{ page.footer_second }}
-              {{ page.footer_third }}
-              {{ page.footer_fourth }}
             </div>
           {% endif %}
           {% if page.footer_fifth %}
@@ -203,5 +147,8 @@
               {{ page.footer_fifth }}
             </div>
           {% endif %}
+
+           <img src="https://colombianosune.ddev.site:33003/sites/default/files/2025-12/92ef2ab74d15d88c8093da683f668f2093e9dfeb.png" alt="GOV.CO" style="max-width: 100%;">
         </div>
+
 {% endblock %}

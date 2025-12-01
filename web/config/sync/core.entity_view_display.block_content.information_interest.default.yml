@@ -1,0 +1,25 @@
+uuid: b8daa1c9-48e5-424f-ae83-f54a1e6b90e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.information_interest
+    - field.field.block_content.information_interest.field_item_information_interest
+  module:
+    - entity_reference_revisions
+id: block_content.information_interest.default
+targetEntityType: block_content
+bundle: information_interest
+mode: default
+content:
+  field_item_information_interest:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -10,8 +10,8 @@ dependencies:
     - colombianosune_d11
 id: colombianosune_d11_footer_pie
 theme: colombianosune_d11
-region: none
-weight: -14
+region: featured_bottom_third
+weight: -48
 provider: null
 plugin: 'block_content:984382c3-2d87-48b3-ab7c-9f22b180bc9b'
 settings:

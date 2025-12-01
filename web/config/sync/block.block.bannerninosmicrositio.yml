@@ -12,7 +12,7 @@ dependencies:
 id: bannerninosmicrositio
 theme: colombianosune
 region: content_navigation
-weight: -55
+weight: -44
 provider: null
 plugin: 'block_content:c5f85f78-e980-47ba-bf15-aaf4479b9e4f'
 settings:

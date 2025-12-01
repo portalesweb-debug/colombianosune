@@ -1,0 +1,37 @@
+uuid: 3ee2d003-ea86-4736-8b42-afbfef94d316
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.information_interest.field_button
+    - field.field.paragraph.information_interest.field_image_button
+    - paragraphs.paragraphs_type.information_interest
+  module:
+    - link
+id: paragraph.information_interest.default
+targetEntityType: paragraph
+bundle: information_interest
+mode: default
+content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_button:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

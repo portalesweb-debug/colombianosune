@@ -12,7 +12,7 @@ dependencies:
 id: encabezadomultiplicadores
 theme: colombianosune
 region: content
-weight: -55
+weight: -42
 provider: null
 plugin: 'block_content:759c5baf-1db7-4d24-9160-e93b51ee54ea'
 settings:

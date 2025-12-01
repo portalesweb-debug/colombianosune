@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadorquito
 theme: colombianosune
 region: content_navigation
-weight: -37
+weight: -29
 provider: null
 plugin: 'block_content:c99fd344-bc54-4253-bcda-70bbb8553cac'
 settings:

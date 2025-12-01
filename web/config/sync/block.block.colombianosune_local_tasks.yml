@@ -9,7 +9,7 @@ _core:
 id: colombianosune_local_tasks
 theme: colombianosune
 region: content
-weight: -36
+weight: -39
 provider: null
 plugin: local_tasks_block
 settings:

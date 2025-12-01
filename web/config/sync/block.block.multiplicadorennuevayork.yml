@@ -11,7 +11,7 @@ dependencies:
 id: multiplicadorennuevayork
 theme: colombianosune
 region: content_navigation
-weight: -16
+weight: -12
 provider: null
 plugin: 'system_menu_block:multiplicador-en-nueva-york'
 settings:

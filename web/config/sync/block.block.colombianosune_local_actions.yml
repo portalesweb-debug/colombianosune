@@ -9,7 +9,7 @@ _core:
 id: colombianosune_local_actions
 theme: colombianosune
 region: content
-weight: -38
+weight: -40
 provider: null
 plugin: local_actions_block
 settings:

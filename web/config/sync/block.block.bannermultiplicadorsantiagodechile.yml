@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadorsantiagodechile
 theme: colombianosune
 region: content_navigation
-weight: -30
+weight: -22
 provider: null
 plugin: 'block_content:1c5b2fd9-1e66-4bd0-8568-c08aeb1d9777'
 settings:

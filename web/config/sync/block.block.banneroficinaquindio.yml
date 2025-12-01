@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinaquindio
 theme: colombianosune
 region: content_navigation
-weight: -49
+weight: -38
 provider: null
 plugin: 'block_content:2118b649-1cb1-4218-a5cc-c7d7cb545c25'
 settings:

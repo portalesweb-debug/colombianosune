@@ -30,7 +30,6 @@ custom_domains_config: ''
 custom_css: ''
 languages:
   en: en
-  es: es
   ar: 0
   bg: 0
   zh-CN: 0
@@ -52,6 +51,7 @@ languages:
   pt: 0
   ro: 0
   ru: 0
+  es: 0
   sv: 0
   ca: 0
   tl: 0

@@ -11,7 +11,7 @@ dependencies:
 id: oficinadeatencionalmigranteantioquia
 theme: colombianosune
 region: content_navigation
-weight: -12
+weight: -6
 provider: null
 plugin: 'system_menu_block:oficina-de-atencion-al-migr'
 settings:

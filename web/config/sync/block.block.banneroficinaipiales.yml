@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinaipiales
 theme: colombianosune
 region: content_navigation
-weight: -50
+weight: -39
 provider: null
 plugin: 'block_content:83bc9d80-5401-4a86-8c30-99de19f54c38'
 settings:

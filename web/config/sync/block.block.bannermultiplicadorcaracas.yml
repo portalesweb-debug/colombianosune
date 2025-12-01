@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadorcaracas
 theme: colombianosune
 region: content_navigation
-weight: -35
+weight: -27
 provider: null
 plugin: 'block_content:b61c8f60-3983-45f9-a030-367c05f0e88f'
 settings:

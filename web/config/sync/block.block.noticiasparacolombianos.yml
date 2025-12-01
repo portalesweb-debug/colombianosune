@@ -12,7 +12,7 @@ dependencies:
 id: noticiasparacolombianos
 theme: colombianosune
 region: content
-weight: -56
+weight: -43
 provider: null
 plugin: 'block_content:0390bcb0-357a-4a01-8ea4-2a8b4429ba73'
 settings:

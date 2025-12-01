@@ -11,7 +11,7 @@ dependencies:
 id: colombianosune_colombianosune_menu_menu_afrocolombianos
 theme: colombianosune
 region: content_navigation
-weight: -57
+weight: -46
 provider: null
 plugin: 'system_menu_block:menu-afrocolombianos'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: banneroficinaatlantico
 theme: colombianosune
 region: content_navigation
-weight: -51
+weight: -40
 provider: null
 plugin: 'block_content:0d178e39-1489-4466-a003-baafb15d19f9'
 settings:

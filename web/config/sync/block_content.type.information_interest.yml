@@ -1,0 +1,8 @@
+uuid: 0e00513b-6ac1-4a94-ad8f-6a220b3c0585
+langcode: es
+status: true
+dependencies: {  }
+id: information_interest
+label: 'Información de interés'
+revision: false
+description: 'Bloque Información de interés'

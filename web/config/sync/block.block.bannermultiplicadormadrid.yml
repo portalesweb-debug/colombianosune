@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadormadrid
 theme: colombianosune
 region: content_navigation
-weight: -33
+weight: -25
 provider: null
 plugin: 'block_content:7b801503-b0e4-4d4d-b56d-b217a87b1df3'
 settings:

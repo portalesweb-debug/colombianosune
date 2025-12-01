@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadormiami
 theme: colombianosune
 region: content_navigation
-weight: -32
+weight: -24
 provider: null
 plugin: 'block_content:2a8168ba-88b0-435d-af8b-e15d5eba0efc'
 settings:

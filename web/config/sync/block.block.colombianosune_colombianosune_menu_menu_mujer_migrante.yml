@@ -11,7 +11,7 @@ dependencies:
 id: colombianosune_colombianosune_menu_menu_mujer_migrante
 theme: colombianosune
 region: content_navigation
-weight: -53
+weight: -42
 provider: null
 plugin: 'system_menu_block:menu-mujer-migrante'
 settings:

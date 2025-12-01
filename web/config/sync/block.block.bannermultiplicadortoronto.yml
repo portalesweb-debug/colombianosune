@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadortoronto
 theme: colombianosune
 region: content_navigation
-weight: -28
+weight: -21
 provider: null
 plugin: 'block_content:8454f182-4096-4868-8858-fc8fb92473a7'
 settings:

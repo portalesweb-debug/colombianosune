@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3.6",
         "drupal/backup_migrate": "^5.1",
         "drupal/bartik": "^1.1",
@@ -33,6 +34,7 @@
         "drupal/field_defaults": "^2.1",
         "drupal/forum": "^1.0",
         "drupal/gin": "^5.0",
+        "drupal/gin_toolbar": "^3.0",
         "drupal/git_deploy": "^2.6",
         "drupal/google_analytics": "^4.0",
         "drupal/google_cse": "^5.0",
@@ -50,12 +52,14 @@
         "drupal/migrate_tools": "^6.1",
         "drupal/page_manager": "^4.0@RC",
         "drupal/panels": "^4.9",
+        "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.14",
         "drupal/rdf": "^3.0@beta",
         "drupal/recaptcha": "^3.4",
         "drupal/seven": "^2.0@beta",
         "drupal/sharethis": "^3.1",
         "drupal/sitemap": "^2.5",
+        "drupal/slick": "^3.0",
         "drupal/stable": "^2.1",
         "drupal/token": "^1.16",
         "drupal/tour": "^2.0",
@@ -82,7 +86,8 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true,
-            "php-tuf/composer-integration": true
+            "php-tuf/composer-integration": true,
+            "cweagans/composer-patches": false
         },
         "sort-packages": true
     },

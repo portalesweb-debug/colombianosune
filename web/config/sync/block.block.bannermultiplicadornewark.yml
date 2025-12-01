@@ -12,7 +12,7 @@ dependencies:
 id: bannermultiplicadornewark
 theme: colombianosune
 region: content
-weight: -59
+weight: -45
 provider: null
 plugin: 'block_content:1214d8a5-b338-4a74-9e92-bfb48cdab68f'
 settings:

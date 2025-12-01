@@ -11,7 +11,7 @@ dependencies:
 id: colombianosune_colombianosune_menu_menu_oficina_atencion_jura
 theme: colombianosune
 region: content_navigation
-weight: -40
+weight: -31
 provider: null
 plugin: 'system_menu_block:menu-oficina-atencion-jura'
 settings:
