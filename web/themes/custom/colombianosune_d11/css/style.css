@@ -213,3 +213,70 @@ text-align: center;
 .gov-bar img {
   max-width: 160px;
 }
+
+
+.subtitle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.subtitle-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00446b;
+  /* azul Uniandes */
+  margin: 0;
+  white-space: nowrap;
+}
+
+.subtitle-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.subtitle-line .line {
+  height: 4px;
+  border-radius: 2px;
+}
+
+.subtitle-line .yellow {
+  width: 120px;
+  background-color: #FFC400;
+}
+
+.subtitle-line .blue {
+  width: 60px;
+  background-color: #003764;
+}
+
+.subtitle-line .red {
+  width: 50px;
+  background-color: #E60026;
+}
+
+/* Ajusta para pantallas pequeñas */
+@media (max-width: 600px) {
+  .subtitle-wrapper {
+    gap: 15px;
+  }
+
+  .subtitle-line .yellow {
+    width: 60px;
+  }
+
+  .subtitle-line .blue {
+    width: 30px;
+  }
+
+  .subtitle-line .red {
+    width: 20px;
+  }
+
+  .subtitle-title {
+    font-size: 22px;
+  }
+}
