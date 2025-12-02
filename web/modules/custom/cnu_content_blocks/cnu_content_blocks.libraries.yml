@@ -1,0 +1,4 @@
+cnu_content_blocks:
+  css:
+    theme:
+      css/cnu-content-blocks.css: {}
