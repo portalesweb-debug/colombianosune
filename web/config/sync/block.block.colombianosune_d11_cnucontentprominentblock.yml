@@ -1,0 +1,31 @@
+uuid: 87ebd775-b859-4fe8-b470-d1cdd6ce7e21
+langcode: es
+status: true
+dependencies:
+  module:
+    - cnu_content_blocks
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_cnucontentprominentblock
+theme: colombianosune_d11
+region: content
+weight: -40
+provider: null
+plugin: cnu_content_prominent_block
+settings:
+  id: cnu_content_prominent_block
+  label: 'Colombianos en el exterior'
+  label_display: visible
+  provider: cnu_content_blocks
+  content_type: noticias
+  block_title: 'Colombianos en el exterior'
+  limit: '3'
+  content_item_1: '126329'
+  content_item_2: '51856'
+  content_item_3: '51847'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

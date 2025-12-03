@@ -1,0 +1,8 @@
+uuid: 2b862189-de1b-48f3-b446-e8582125c628
+langcode: es
+status: true
+dependencies: {  }
+id: subtitle
+label: subtitulo
+revision: false
+description: null

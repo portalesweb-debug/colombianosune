@@ -1,0 +1,13 @@
+uuid: 06dd6f04-a7d5-4142-a10a-7d379197007e
+langcode: es
+status: true
+dependencies: {  }
+id: slick_image
+label: 'Slick image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

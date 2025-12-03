@@ -1,0 +1,11 @@
+uuid: 50877229-9043-4906-81ee-fb069148722b
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.slick_image
+id: media.slick_image
+target_entity_type_id: media
+target_bundle: slick_image
+default_langcode: site_default
+language_alterable: false
