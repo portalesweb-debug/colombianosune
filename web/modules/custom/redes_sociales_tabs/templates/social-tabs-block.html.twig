@@ -1,0 +1,66 @@
+<div{{ attributes.addClass('social-tabs-block') }}>
+
+  {# NAV DE PESTAÑAS #}
+  <ul class="social-tabs-nav">
+    <li class="active" data-tab="tab-facebook">Facebook</li>
+    <li data-tab="tab-instagram">Instagram</li>
+    <li data-tab="tab-x">X</li>
+  </ul>
+
+  <div class="social-tabs-content">
+
+    {# FACEBOOK #}
+    <div id="tab-facebook" class="social-tab-pane active">
+      {# SDK de Facebook #}
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v21.0"
+        nonce="abcd1234"></script>
+
+      <div class="fb-page"
+           data-href="https://www.facebook.com/colombiaNosUneMRE"  {# TU PÁGINA #}
+           data-tabs="timeline"
+           data-width="400"
+           data-height="600"
+           data-small-header="false"
+           data-adapt-container-width="true"
+           data-hide-cover="false"
+           data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/colombiaNosUneMRE"
+                    class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/colombiaNosUneMRE">Cancillería Colombia</a>
+        </blockquote>
+      </div>
+    </div>
+
+    {# INSTAGRAM #}
+    <div id="tab-instagram" class="social-tab-pane">
+      <blockquote class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/colombianosune/"
+        data-instgrm-version="14"
+        style="background:#FFF; border:0; margin: 0 auto; max-width:540px; width:100%;">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+
+    {# X (TWITTER) #}
+    <div id="tab-x" class="social-tab-pane">
+      {# Embed de X usando iframe #}
+      <div class="x-embed-container">
+        <iframe
+          src="https://x.com/ColombiaNosUne"
+          width="400"
+          height="600"
+          style="border: none; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media">
+        </iframe>
+      </div>
+
+      <a class="twitter-timeline" href="https://twitter.com/ColombiaNosUne?ref_src=twsrc%5Etfw">Tweets by ColombiaNosUne</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+  </div>
+</div>

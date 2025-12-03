@@ -2,42 +2,53 @@
  * Estilos principales para el tema Colombianos UNE D11
  */
 
+/* Variables CSS para colores principales */
+:root {
+  --primary-blue: #0B4FA8;
+  --secondary-blue: #173E73;
+  --dark-blue: #004B87;
+  --light-blue: #326CC0;
+  --accent-yellow: #FFC400;
+  --text-color: #333333;
+  --background-light: #F3F5F7;
+  --background-gray: #f5f5f5;
+  --white: #ffffff;
+}
+
 /* Importaciones de componentes */
 @import url('components/header.css');
 @import url('components/navigation.css');
 @import url('components/footer.css');
 @import url('components/cards.css');
 
-/* Estilos generales del sitio */
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color, #333333);
-}
-
+/* Reset y estilos base */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* Contenedor principal */
-.container-fluid {
-  padding-left: 15px;
-  padding-right: 15px;
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
-/* Estilos para el contenido principal */
+/* Layout principal */
+.container-fluid {
+  padding: 0 15px;
+}
+
 #main {
   min-height: 60vh;
 }
 
-/* Ocultar el enlace "Pasar al contenido principal" */
+/* Accesibilidad */
 a[href="#main-content"],
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   display: none !important;
 }
 
-/* Botón hamburguesa personalizado */
+/* Navegación */
 .navbar-toggler {
   border: none;
   padding: 4px 8px;
@@ -56,9 +67,9 @@ a[href="#main-content"],
 }
 
 
-/* Fondo del bloque y título */
+/* Bloque información de interés */
 .block-info-interes {
-  background-color: #F3F5F7;
+  background-color: var(--background-light);
   padding: 3rem 1.5rem 3.5rem;
   text-align: center;
 }
@@ -66,24 +77,18 @@ a[href="#main-content"],
 .block-info-interes h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #0B4FA8;
+  color: var(--primary-blue);
   margin-bottom: 2.5rem;
 }
 
-/* === AQUÍ está la clave: contenedor de los párrafos === */
 .block-info-interes .info-interes__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
-  /* separación entre ítems */
   justify-content: center;
-  /* centra horizontalmente la fila */
   align-items: flex-start;
-  /* alinea cada tarjeta por arriba */
   max-width: 1200px;
   margin: 0 auto;
-  /* opcional: evita que heredados apliquen display:block */
-  align-content: flex-start;
 }
 
 .block-info-interes .info-interes__grid .field__items {
@@ -94,26 +99,12 @@ a[href="#main-content"],
   align-items: flex-start;
 }
 
-/* asegúrate que los field__item no rompan layout */
-.block-info-interes .info-interes__grid .field__item {
-  display: contents;
-  /* hace que el .field__item no introduzca caja extra */
-}
-
-/* o si display:contents no es opción por compatibilidad: */
 .block-info-interes .info-interes__grid .field__item {
   display: block;
   margin: 0;
 }
 
-
-
-
-
-
-
-
-/* Cada párrafo = tarjeta (icono arriba, botón abajo) */
+/* Tarjetas de párrafo */
 .block-info-interes .paragraph {
   width: 230px;
   display: flex;
@@ -121,7 +112,6 @@ a[href="#main-content"],
   align-items: center;
 }
 
-/* Icono grande */
 .block-info-interes .paragraph img,
 .block-info-interes .paragraph svg {
   max-width: 110px;
@@ -130,33 +120,59 @@ a[href="#main-content"],
   margin-bottom: 1.5rem;
 }
 
-/* Botón azul (si tu link ya viene como <a>) */
 .block-info-interes .paragraph a {
   display: inline-block;
-  background-color: #173E73;
-  color: #FFC800;
+  background-color: var(--secondary-blue);
+  color: var(--accent-yellow);
   text-decoration: none;
   padding: 0.8rem 1.8rem;
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.95rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    background-color 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .block-info-interes .paragraph a:hover,
 .block-info-interes .paragraph a:focus {
-  background-color: #0B4FA8;
+  background-color: var(--primary-blue);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.30);
   transform: translateY(-2px);
 }
 
-/* Responsive: 2 columnas en tablets */
-@media (max-width: 960px) {
-  .block-info-interes .content {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+
+/* Enlaces destacados */
+.block-views-blockenlaces-detacados-block-1 {
+  text-align: center;
+}
+
+.block-views-blockenlaces-detacados-block-1 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 2.5rem;
+}
+
+/* Footer */
+.cnu-footer-box {
+  background: var(--white);
+  border-radius: 16px;
+  border: 2px solid var(--light-blue);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cnu-footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.cnu-footer li {
+  list-style: none;
+  margin-bottom: 0.45rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
 }
 
 /* Responsive: 1 columna en móvil */
@@ -166,51 +182,10 @@ a[href="#main-content"],
   }
 }
 
-
-
-.block-views-blockenlaces-detacados-block-1 h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #0B4FA8;
-  margin-bottom: 2.5rem;
-}
-
-.block-views-blockenlaces-detacados-block-1 {
-text-align: center;
-}
-
-
-
-
-/* CONTENEDOR PRINCIPAL */
-.cnu-footer-box {
-  background: #ffffff;
-  border-radius: 16px;
-  border: 2px solid #2C69D1;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* LISTAS DE MINISTERIOS */
-.cnu-footer ul {
-  padding-left: 0;
-  margin: 0;
-}
-
-.cnu-footer li {
-  list-style: none;
-  /* Quitamos bullets */
-  margin-bottom: 0.45rem;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-/* REHACER LAS COLUMNAS PARA QUE NO SE VAYAN A UNA SOLA */
-.cnu-footer .row>div {
+.cnu-footer .row > div {
   margin-bottom: 1rem;
 }
 
-/* ENLACES */
 .cnu-footer a {
   color: #0A4C80;
   text-decoration: none;
@@ -220,7 +195,6 @@ text-align: center;
   text-decoration: underline;
 }
 
-/* REDES - ALINEACIÓN */
 .cnu-footer .social-links {
   display: flex;
   justify-content: center;
@@ -228,26 +202,23 @@ text-align: center;
   flex-wrap: wrap;
 }
 
-/* SELLITOS */
 .cnu-footer .cert-logos img {
   max-width: 110px;
   margin: 0 10px;
 }
 
-/* BARRA AZUL */
 .cnu-footer .separator-bar {
-  background: #326CC0;
+  background: var(--light-blue);
   height: 40px;
   border-radius: 6px;
   margin: 2rem 0;
 }
 
-/* FOOTER GOVCO */
 .gov-bar img {
   max-width: 160px;
 }
 
-
+/* Subtítulos con líneas decorativas */
 .subtitle-wrapper {
   display: flex;
   justify-content: center;
@@ -260,7 +231,6 @@ text-align: center;
   font-size: 32px;
   font-weight: 700;
   color: #00446b;
-  /* azul Uniandes */
   margin: 0;
   white-space: nowrap;
 }
@@ -278,7 +248,7 @@ text-align: center;
 
 .subtitle-line .yellow {
   width: 120px;
-  background-color: #FFC400;
+  background-color: var(--accent-yellow);
 }
 
 .subtitle-line .blue {
@@ -314,6 +284,7 @@ text-align: center;
   }
 }
 
+/* Slider */
 .slider-item-wrapper {
   width: 100%;
 }
@@ -323,7 +294,6 @@ text-align: center;
   flex-direction: row;
   width: 100%;
   min-height: 420px;
-  /* Ajusta según diseño */
 }
 
 .slider-left {
@@ -339,25 +309,114 @@ text-align: center;
 
 .slider-right {
   width: 50%;
-  background-color: #004B87;
-  /* Azul branding */
+  background-color: var(--dark-blue);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
-  color: white;
+  color: var(--white);
 }
 
 .slider-right-content {
   max-width: 500px;
   text-align: left;
   font-size: 1.2rem;
-  line-height: 1.6rem;
+  line-height: 1.6;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #ffffff;
-  /* azul Uniandes */
+  color: var(--white);
   font-size: 40px;
+}
+
+/* Página de inicio - región destacada */
+.path-frontpage .region-featured-top {
+  padding: 24px;
+  margin: 24px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: var(--background-gray);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.path-frontpage #block-colombianosune-d11-videos,
+.path-frontpage #block-colombianosune-d11-redessocialesfacebookinstagramx {
+  flex: 0 0 calc(50% - 12px);
+  max-width: calc(50% - 12px);
+  width: calc(50% - 12px);
+  float: none;
+  box-sizing: border-box;
+}
+
+.path-frontpage .region-featured-top>.clearfix {
+  display: none;
+}
+
+.path-frontpage .region-featured-top .block iframe,
+.path-frontpage .region-featured-top .block .social-tabs-block {
+  width: 100%;
+}
+
+.path-frontpage .region-featured-top .block h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0055A5;
+  margin: 0 0 16px 0;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 960px) {
+  .block-info-interes .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móviles y tablets pequeñas */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .path-frontpage .region-featured-top {
+    flex-direction: column;
+  }
+
+  .path-frontpage .region-featured-top > .block {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 600px) {
+  .block-info-interes .content {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitle-wrapper {
+    gap: 15px;
+  }
+
+  .subtitle-line .yellow {
+    width: 60px;
+  }
+
+  .subtitle-line .blue {
+    width: 30px;
+  }
+
+  .subtitle-line .red {
+    width: 20px;
+  }
+
+  .subtitle-title {
+    font-size: 22px;
+  }
 }
