@@ -1,0 +1,31 @@
+uuid: 480ad4ff-31ca-4786-8e26-23c2ad7021c1
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7b801503-b0e4-4d4d-b56d-b217a87b1df3'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_bannermultiplicadormadrid
+theme: colombianosune_d11
+region: none
+weight: 0
+provider: null
+plugin: 'block_content:7b801503-b0e4-4d4d-b56d-b217a87b1df3'
+settings:
+  id: 'block_content:7b801503-b0e4-4d4d-b56d-b217a87b1df3'
+  label: 'Banner Multiplicador Madrid'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-madrid/*'

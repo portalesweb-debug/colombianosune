@@ -1,0 +1,34 @@
+uuid: 105c53fa-fe61-4d47-962a-092faecfc643
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a098e1df-46f5-475c-9097-467e4c5542ed'
+  module:
+    - block_content
+    - node
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_header
+theme: colombianosune_d11
+region: none
+weight: -41
+provider: null
+plugin: 'block_content:a098e1df-46f5-475c-9097-467e4c5542ed'
+settings:
+  id: 'block_content:a098e1df-46f5-475c-9097-467e4c5542ed'
+  label: header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      album_cnu: album_cnu
+      banco_leyes: banco_leyes

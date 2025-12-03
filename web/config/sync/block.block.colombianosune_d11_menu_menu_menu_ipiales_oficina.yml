@@ -1,0 +1,30 @@
+uuid: b72cc959-fcfe-4d93-a33b-14437821f7e1
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-menu-ipiales-oficina
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_menu_ipiales_oficina
+theme: colombianosune_d11
+region: none
+weight: -19
+provider: null
+plugin: 'system_menu_block:menu-menu-ipiales-oficina'
+settings:
+  id: 'system_menu_block:menu-menu-ipiales-oficina'
+  label: 'Menu Oficina Ipiales'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/oficina-ipiales/*\r\n/eje4/*"

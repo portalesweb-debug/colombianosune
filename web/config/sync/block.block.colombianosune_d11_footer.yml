@@ -1,0 +1,27 @@
+uuid: a82c4196-7b21-4e35-8151-72a50691947c
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+_core:
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: colombianosune_d11_footer
+theme: colombianosune_d11
+region: none
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Menú al pie'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

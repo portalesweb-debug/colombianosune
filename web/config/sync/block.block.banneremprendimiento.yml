@@ -12,20 +12,20 @@ dependencies:
 id: banneremprendimiento
 theme: colombianosune
 region: content_navigation
-weight: -38
+weight: -30
 provider: null
 plugin: 'block_content:e1426bec-cd38-4f64-8b44-8ff79ed5313f'
 settings:
   id: 'block_content:e1426bec-cd38-4f64-8b44-8ff79ed5313f'
   label: 'Banner Emprendimiento'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/emprendimiento/*'
     negate: false
     context_mapping: {  }
+    pages: '/emprendimiento/*'

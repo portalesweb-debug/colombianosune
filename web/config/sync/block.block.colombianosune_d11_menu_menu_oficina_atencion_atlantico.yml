@@ -1,0 +1,30 @@
+uuid: 93a90ca7-6461-480a-a132-c0e417e2e75e
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-oficina-atencion-atlantico
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_oficina_atencion_atlantico
+theme: colombianosune_d11
+region: none
+weight: -23
+provider: null
+plugin: 'system_menu_block:menu-oficina-atencion-atlantico'
+settings:
+  id: 'system_menu_block:menu-oficina-atencion-atlantico'
+  label: 'Menu Oficina Atlantico'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-atlantico/*'

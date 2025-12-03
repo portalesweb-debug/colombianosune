@@ -1,0 +1,18 @@
+uuid: df7d4ae5-e553-4846-b57e-ebc41a36b955
+langcode: es
+status: false
+dependencies:
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_location_navigation
+theme: colombianosune_d11
+region: none
+weight: -2
+provider: null
+plugin: 'system_menu_block:location_navigation'
+settings:
+  id: broken
+  label: ''
+  label_display: '0'
+  provider: core
+visibility: {  }

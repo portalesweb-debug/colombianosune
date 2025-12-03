@@ -68,7 +68,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Ignore build artifacts from themes
-web/themes/custom/*/css/
 web/themes/custom/*/js/build/
 web/themes/custom/*/dist/
 

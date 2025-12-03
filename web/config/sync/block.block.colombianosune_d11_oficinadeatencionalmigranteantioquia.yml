@@ -1,0 +1,30 @@
+uuid: 875d7bbe-81bc-4673-b04e-ef573f01260b
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.oficina-de-atencion-al-migr
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_oficinadeatencionalmigranteantioquia
+theme: colombianosune_d11
+region: none
+weight: 30
+provider: null
+plugin: 'system_menu_block:oficina-de-atencion-al-migr'
+settings:
+  id: 'system_menu_block:oficina-de-atencion-al-migr'
+  label: 'Oficina de Atencion al Migrante Antioquia'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-antioquia/*'

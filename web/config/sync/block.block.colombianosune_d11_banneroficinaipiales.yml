@@ -1,0 +1,31 @@
+uuid: 74d81095-ba72-4ef5-a0f5-6b9d806b5c9b
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:83bc9d80-5401-4a86-8c30-99de19f54c38'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_banneroficinaipiales
+theme: colombianosune_d11
+region: none
+weight: -30
+provider: null
+plugin: 'block_content:83bc9d80-5401-4a86-8c30-99de19f54c38'
+settings:
+  id: 'block_content:83bc9d80-5401-4a86-8c30-99de19f54c38'
+  label: 'Banner oficina ipiales'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/oficina-ipiales/*\r\n/eje4/*"

@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'directorio-consulado/[node:title]'
 selection_criteria:
   ab368404-67ec-490e-858a-58e3199f299e:
-    id: entity_bundle:node
-    bundles:
-      directorio_consulados: directorio_consulados
+    id: 'entity_bundle:node'
     negate: false
+    uuid: ab368404-67ec-490e-858a-58e3199f299e
     context_mapping:
       node: node
-    uuid: ab368404-67ec-490e-858a-58e3199f299e
+    bundles:
+      directorio_consulados: directorio_consulados
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -1,0 +1,8 @@
+uuid: 0dd86b3e-4286-42bf-8799-90de8df62469
+langcode: es
+status: true
+dependencies: {  }
+id: slider
+label: slider
+revision: false
+description: 'banner del portal '

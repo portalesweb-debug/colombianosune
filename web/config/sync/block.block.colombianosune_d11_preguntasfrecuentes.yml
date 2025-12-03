@@ -1,0 +1,31 @@
+uuid: b6af1fa9-364b-4b8a-bf97-27bd2a377f00
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:204894d1-0287-4886-8d62-d76ba0bd2342'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_preguntasfrecuentes
+theme: colombianosune_d11
+region: content
+weight: -43
+provider: null
+plugin: 'block_content:204894d1-0287-4886-8d62-d76ba0bd2342'
+settings:
+  id: 'block_content:204894d1-0287-4886-8d62-d76ba0bd2342'
+  label: 'PREGUNTAS FRECUENTES'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /faqcnu

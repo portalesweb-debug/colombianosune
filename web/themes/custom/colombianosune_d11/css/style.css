@@ -1,0 +1,363 @@
+/**
+ * Estilos principales para el tema Colombianos UNE D11
+ */
+
+/* Importaciones de componentes */
+@import url('components/header.css');
+@import url('components/navigation.css');
+@import url('components/footer.css');
+@import url('components/cards.css');
+
+/* Estilos generales del sitio */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color, #333333);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Estilos para el contenido principal */
+#main {
+  min-height: 60vh;
+}
+
+/* Ocultar el enlace "Pasar al contenido principal" */
+a[href="#main-content"],
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  display: none !important;
+}
+
+/* Botón hamburguesa personalizado */
+.navbar-toggler {
+  border: none;
+  padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Responsividad mejorada */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+/* Fondo del bloque y título */
+.block-info-interes {
+  background-color: #F3F5F7;
+  padding: 3rem 1.5rem 3.5rem;
+  text-align: center;
+}
+
+.block-info-interes h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0B4FA8;
+  margin-bottom: 2.5rem;
+}
+
+/* === AQUÍ está la clave: contenedor de los párrafos === */
+.block-info-interes .info-interes__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  /* separación entre ítems */
+  justify-content: center;
+  /* centra horizontalmente la fila */
+  align-items: flex-start;
+  /* alinea cada tarjeta por arriba */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* opcional: evita que heredados apliquen display:block */
+  align-content: flex-start;
+}
+
+.block-info-interes .info-interes__grid .field__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* asegúrate que los field__item no rompan layout */
+.block-info-interes .info-interes__grid .field__item {
+  display: contents;
+  /* hace que el .field__item no introduzca caja extra */
+}
+
+/* o si display:contents no es opción por compatibilidad: */
+.block-info-interes .info-interes__grid .field__item {
+  display: block;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/* Cada párrafo = tarjeta (icono arriba, botón abajo) */
+.block-info-interes .paragraph {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icono grande */
+.block-info-interes .paragraph img,
+.block-info-interes .paragraph svg {
+  max-width: 110px;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón azul (si tu link ya viene como <a>) */
+.block-info-interes .paragraph a {
+  display: inline-block;
+  background-color: #173E73;
+  color: #FFC800;
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.block-info-interes .paragraph a:hover,
+.block-info-interes .paragraph a:focus {
+  background-color: #0B4FA8;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.30);
+  transform: translateY(-2px);
+}
+
+/* Responsive: 2 columnas en tablets */
+@media (max-width: 960px) {
+  .block-info-interes .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 columna en móvil */
+@media (max-width: 600px) {
+  .block-info-interes .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.block-views-blockenlaces-detacados-block-1 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0B4FA8;
+  margin-bottom: 2.5rem;
+}
+
+.block-views-blockenlaces-detacados-block-1 {
+text-align: center;
+}
+
+
+
+
+/* CONTENEDOR PRINCIPAL */
+.cnu-footer-box {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #2C69D1;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* LISTAS DE MINISTERIOS */
+.cnu-footer ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.cnu-footer li {
+  list-style: none;
+  /* Quitamos bullets */
+  margin-bottom: 0.45rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* REHACER LAS COLUMNAS PARA QUE NO SE VAYAN A UNA SOLA */
+.cnu-footer .row>div {
+  margin-bottom: 1rem;
+}
+
+/* ENLACES */
+.cnu-footer a {
+  color: #0A4C80;
+  text-decoration: none;
+}
+
+.cnu-footer a:hover {
+  text-decoration: underline;
+}
+
+/* REDES - ALINEACIÓN */
+.cnu-footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* SELLITOS */
+.cnu-footer .cert-logos img {
+  max-width: 110px;
+  margin: 0 10px;
+}
+
+/* BARRA AZUL */
+.cnu-footer .separator-bar {
+  background: #326CC0;
+  height: 40px;
+  border-radius: 6px;
+  margin: 2rem 0;
+}
+
+/* FOOTER GOVCO */
+.gov-bar img {
+  max-width: 160px;
+}
+
+
+.subtitle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.subtitle-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00446b;
+  /* azul Uniandes */
+  margin: 0;
+  white-space: nowrap;
+}
+
+.subtitle-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.subtitle-line .line {
+  height: 4px;
+  border-radius: 2px;
+}
+
+.subtitle-line .yellow {
+  width: 120px;
+  background-color: #FFC400;
+}
+
+.subtitle-line .blue {
+  width: 60px;
+  background-color: #003764;
+}
+
+.subtitle-line .red {
+  width: 50px;
+  background-color: #E60026;
+}
+
+/* Ajusta para pantallas pequeñas */
+@media (max-width: 600px) {
+  .subtitle-wrapper {
+    gap: 15px;
+  }
+
+  .subtitle-line .yellow {
+    width: 60px;
+  }
+
+  .subtitle-line .blue {
+    width: 30px;
+  }
+
+  .subtitle-line .red {
+    width: 20px;
+  }
+
+  .subtitle-title {
+    font-size: 22px;
+  }
+}
+
+.slider-item-wrapper {
+  width: 100%;
+}
+
+.slider-item-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 420px;
+  /* Ajusta según diseño */
+}
+
+.slider-left {
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-right {
+  width: 50%;
+  background-color: #004B87;
+  /* Azul branding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.slider-right-content {
+  max-width: 500px;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ffffff;
+  /* azul Uniandes */
+  font-size: 40px;
+}

@@ -12,20 +12,20 @@ dependencies:
 id: banneroficinavalledelcauca
 theme: colombianosune
 region: content_navigation
-weight: -24
+weight: -17
 provider: null
 plugin: 'block_content:c026ba6d-14fd-47ec-9718-97c2574a597e'
 settings:
   id: 'block_content:c026ba6d-14fd-47ec-9718-97c2574a597e'
   label: 'Banner oficina valle del cauca'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-cauca/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-cauca/*'

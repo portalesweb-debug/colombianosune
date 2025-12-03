@@ -1,0 +1,32 @@
+uuid: 0b061851-3d42-4d52-a0b7-79fb209444bd
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_user_login
+theme: colombianosune_d11
+region: content
+weight: -31
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      '': null
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/node/add/*'

@@ -1,0 +1,30 @@
+uuid: b326d9e3-e624-47cf-93b4-1f80e27f9952
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.ferias-de-servicios
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_feriasdeservicios
+theme: colombianosune_d11
+region: none
+weight: 25
+provider: null
+plugin: 'system_menu_block:ferias-de-servicios'
+settings:
+  id: 'system_menu_block:ferias-de-servicios'
+  label: 'Ferias de servicios'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /ejes/sistema-de-servicios-para-colombianos/ferias-colombianos

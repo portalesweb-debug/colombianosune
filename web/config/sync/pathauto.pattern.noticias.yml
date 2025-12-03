@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'noticia/[node:title]'
 selection_criteria:
   d97cc83f-43ba-4505-8e35-b238a9e9b6d5:
-    id: entity_bundle:node
-    bundles:
-      noticias: noticias
+    id: 'entity_bundle:node'
     negate: false
+    uuid: d97cc83f-43ba-4505-8e35-b238a9e9b6d5
     context_mapping:
       node: node
-    uuid: d97cc83f-43ba-4505-8e35-b238a9e9b6d5
+    bundles:
+      noticias: noticias
 selection_logic: and
 weight: -5
 relationships: {  }

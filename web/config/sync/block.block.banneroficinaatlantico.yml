@@ -12,20 +12,20 @@ dependencies:
 id: banneroficinaatlantico
 theme: colombianosune
 region: content_navigation
-weight: -51
+weight: -40
 provider: null
 plugin: 'block_content:0d178e39-1489-4466-a003-baafb15d19f9'
 settings:
   id: 'block_content:0d178e39-1489-4466-a003-baafb15d19f9'
   label: 'Banner oficina atlantico'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-atlantico/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-atlantico/*'

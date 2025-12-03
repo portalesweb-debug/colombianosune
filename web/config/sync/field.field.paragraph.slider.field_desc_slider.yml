@@ -1,0 +1,22 @@
+uuid: 71ef7c18-22d9-43dc-84d1-177d3cb21b88
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_desc_slider
+    - paragraphs.paragraphs_type.slider
+  module:
+    - text
+id: paragraph.slider.field_desc_slider
+field_name: field_desc_slider
+entity_type: paragraph
+bundle: slider
+label: 'Descripcion '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

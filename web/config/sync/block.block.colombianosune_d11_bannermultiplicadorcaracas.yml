@@ -1,0 +1,31 @@
+uuid: 41457861-1a8a-4be5-bf90-7a1f65618658
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b61c8f60-3983-45f9-a030-367c05f0e88f'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_bannermultiplicadorcaracas
+theme: colombianosune_d11
+region: none
+weight: -3
+provider: null
+plugin: 'block_content:b61c8f60-3983-45f9-a030-367c05f0e88f'
+settings:
+  id: 'block_content:b61c8f60-3983-45f9-a030-367c05f0e88f'
+  label: 'Banner Multiplicador Caracas'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-caracas/*'

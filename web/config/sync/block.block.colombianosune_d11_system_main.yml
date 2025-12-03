@@ -1,0 +1,22 @@
+uuid: bc286135-07f8-4d0c-b02f-fee07a0e96d0
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: colombianosune_d11_system_main
+theme: colombianosune_d11
+region: content
+weight: -34
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

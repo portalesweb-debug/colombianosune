@@ -1,0 +1,30 @@
+uuid: 9bdc92f4-ba4e-4bf5-bef0-ad885c1e24bd
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.menu-ejesdetrabajo
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_menu_menu_ejesdetrabajo
+theme: colombianosune_d11
+region: none
+weight: 17
+provider: null
+plugin: 'system_menu_block:menu-ejesdetrabajo'
+settings:
+  id: 'system_menu_block:menu-ejesdetrabajo'
+  label: 'Ejes de Trabajo'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/ejes/*\r\n/iniciativas/feriadeserviciosparacolombianosenelexterior\r\n/iniciativas/feriadeserviciosparacolombianosenelexterior/*\r\n/feriadeserviciosontario\r\n/feriadeserviciosontario/*\r\n/retornoproductivoespaña\r\n/retornoproductivoespaña/*\r\n/feria-servicios-miami\r\n/feria-servicios-miami/*\r\n/ferianewjersey\r\n/ferianewjersey/*\r\n/feriaserviciosmontreal\r\n/feriaserviciosmontreal/*\r\n/FeriaFlorida2014\r\n/FeriaFlorida2014/*\r\n/feriaquito2015\r\n/feriaquito2015/*\r\n/FeriaNewYork2015\r\n/FeriaNewYork2015/*\r\n/noticias-colombianos-destacados-en-el-exterior-cnu\r\n/prevision-exequial\r\n/FeriaFlorida2015\r\n/Special-Olympics\r\n/feria-inmobiliaria-newjersey\r\n/hombres/migrante/destacados"

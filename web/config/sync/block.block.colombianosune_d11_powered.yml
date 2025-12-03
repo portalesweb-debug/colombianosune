@@ -1,0 +1,22 @@
+uuid: f8789d93-ebe9-404d-bf92-adb2b9e00af0
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: colombianosune_d11_powered
+theme: colombianosune_d11
+region: none
+weight: -17
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

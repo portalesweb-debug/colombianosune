@@ -11,12 +11,12 @@ _core:
 id: colombianosune_colombianosune_system_main
 theme: colombianosune
 region: content
-weight: -33
+weight: -36
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
   label: ''
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

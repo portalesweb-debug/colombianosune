@@ -17,6 +17,14 @@ settings:
       - link
     language:
       language_list: un
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
 image_upload:
   status: true
   scheme: public

@@ -12,20 +12,20 @@ dependencies:
 id: afrocolombianostitulo
 theme: colombianosune
 region: content_navigation
-weight: -58
+weight: -47
 provider: null
 plugin: 'block_content:71bd2383-c795-4f11-9ef6-4d3684b2a885'
 settings:
   id: 'block_content:71bd2383-c795-4f11-9ef6-4d3684b2a885'
   label: 'Afrocolombianos titulo'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/afrocolombianos/*'
     negate: false
     context_mapping: {  }
+    pages: '/afrocolombianos/*'

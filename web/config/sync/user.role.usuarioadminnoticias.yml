@@ -1,64 +1,35 @@
 uuid: b4ac481f-cdad-41a7-91d9-24c738652b6c
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.1
+    - filter.format.2
+    - node.type.asociaciones
+    - node.type.event
+    - node.type.noticias
+    - node.type.profile
+  module:
+    - comment
+    - filter
+    - media
+    - node
+    - system
 id: usuarioadminnoticias
 label: UsuarioAdminNoticias
 weight: 0
 is_admin: null
 permissions:
-  - 'access LocGeograficoNC'
   - 'access comments'
   - 'access content'
-  - 'access og username helper'
   - 'access user profiles'
-  - 'add members'
-  - 'administer notifications'
-  - 'approve membership request'
-  - 'broadcast to group'
-  - 'configure member roles'
   - 'create asociaciones content'
   - 'create event content'
-  - 'create faq'
-  - 'create group administrator'
   - 'create noticias content'
   - 'create profile content'
-  - 'delete group administrator'
-  - 'delete own account'
-  - 'delete own shouts'
-  - 'deny membership request'
   - 'edit any noticias content'
-  - 'edit field_pais_evento'
-  - 'edit own faq'
-  - 'edit own shouts'
-  - 'manage all subscriptions'
-  - 'override group default role'
   - 'post comments'
-  - 'report abuse'
-  - 'search content profile fields'
-  - 'send invitations'
-  - 'send mass invitations'
   - 'skip comment approval'
-  - 'skip notifications'
-  - 'subscribe to author'
-  - 'subscribe to content'
-  - 'subscribe to content in groups'
-  - 'subscribe to content type'
-  - 'subscribe to content type and author'
-  - 'track invitations'
-  - 'upload files'
-  - 'use realname'
   - 'use text format 1'
   - 'use text format 2'
-  - 'view comment preview button'
-  - 'view field_foto_album'
-  - 'view field_imagen'
-  - 'view field_imagen_albun'
-  - 'view field_imagen_cgp'
-  - 'view field_imagen_pep'
   - 'view media'
-  - 'view pollfield results field_respuestas_enc'
-  - 'view uploaded files'
-  - 'view user delete button'
-  - 'view webfm attachments'
-  - 'withdraw accepted invitations'

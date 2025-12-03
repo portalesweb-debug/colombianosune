@@ -1,0 +1,31 @@
+uuid: 5d36073b-9797-4d9a-9d03-93e792115837
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:8454f182-4096-4868-8858-fc8fb92473a7'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_bannermultiplicadortoronto
+theme: colombianosune_d11
+region: none
+weight: 4
+provider: null
+plugin: 'block_content:8454f182-4096-4868-8858-fc8fb92473a7'
+settings:
+  id: 'block_content:8454f182-4096-4868-8858-fc8fb92473a7'
+  label: 'Banner Multiplicador Toronto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-toronto/*'

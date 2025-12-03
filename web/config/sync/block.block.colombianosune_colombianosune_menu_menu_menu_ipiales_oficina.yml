@@ -11,14 +11,14 @@ dependencies:
 id: colombianosune_colombianosune_menu_menu_menu_ipiales_oficina
 theme: colombianosune
 region: content_navigation
-weight: -43
+weight: -9
 provider: null
 plugin: 'system_menu_block:menu-menu-ipiales-oficina'
 settings:
   id: 'system_menu_block:menu-menu-ipiales-oficina'
   label: 'Menu Oficina Ipiales'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
@@ -26,5 +26,5 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/oficina-ipiales/*\r\n/eje4/*"
     context_mapping: {  }
+    pages: "/oficina-ipiales/*\r\n/eje4/*"

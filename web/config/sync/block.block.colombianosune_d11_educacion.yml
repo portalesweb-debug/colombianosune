@@ -1,0 +1,30 @@
+uuid: 36128a7d-42d4-4ad1-9068-78786decc727
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.educacion
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_educacion
+theme: colombianosune_d11
+region: none
+weight: 27
+provider: null
+plugin: 'system_menu_block:educacion'
+settings:
+  id: 'system_menu_block:educacion'
+  label: Educación
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /ejes/sistema-de-servicios-para-colombianos/opciones-de-educacion-para-colombianos-en-el-exterior

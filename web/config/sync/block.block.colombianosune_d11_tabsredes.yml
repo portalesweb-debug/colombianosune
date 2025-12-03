@@ -1,0 +1,31 @@
+uuid: 86f76bcf-efdd-447d-8193-6ea780e600d5
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:43612a25-b8bd-418a-b04f-5bc27404e3de'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_tabsredes
+theme: colombianosune_d11
+region: none
+weight: 18
+provider: null
+plugin: 'block_content:43612a25-b8bd-418a-b04f-5bc27404e3de'
+settings:
+  id: 'block_content:43612a25-b8bd-418a-b04f-5bc27404e3de'
+  label: 'Tabs redes'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

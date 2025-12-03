@@ -1,0 +1,30 @@
+uuid: f42f3615-ff8d-412f-99de-30c546fe04d2
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.multiplicador-en-barcelona
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_multiplicadorenbarcelona
+theme: colombianosune_d11
+region: none
+weight: 11
+provider: null
+plugin: 'system_menu_block:multiplicador-en-barcelona'
+settings:
+  id: 'system_menu_block:multiplicador-en-barcelona'
+  label: 'Multiplicador en Barcelona'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-barcelona/*'

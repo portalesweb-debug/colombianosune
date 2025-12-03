@@ -1,0 +1,30 @@
+uuid: 535339c8-189c-4034-be1a-c1f89d767c92
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.multiplicador-en-mexico
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_multiplicadorenmexico
+theme: colombianosune_d11
+region: none
+weight: 33
+provider: null
+plugin: 'system_menu_block:multiplicador-en-mexico'
+settings:
+  id: 'system_menu_block:multiplicador-en-mexico'
+  label: 'Multiplicador en México'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-méxico/*'

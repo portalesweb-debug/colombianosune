@@ -1,0 +1,33 @@
+uuid: f3994972-44ef-422a-930e-4c9bea47f0c3
+langcode: es
+status: true
+dependencies:
+  module:
+    - cnu_content_blocks
+    - system
+  theme:
+    - colombianosune_d11
+id: enlaces_destacados
+theme: colombianosune_d11
+region: content
+weight: -41
+provider: null
+plugin: cnu_content_prominent_block
+settings:
+  id: cnu_content_prominent_block
+  label: 'Enlaces destacados'
+  label_display: visible
+  provider: cnu_content_blocks
+  content_type: enlaces_detacados
+  block_title: 'Enlaces destacados'
+  limit: '4'
+  content_item_1: '126221'
+  content_item_2: '126219'
+  content_item_3: '126218'
+  content_item_4: null
+  content_item_5: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

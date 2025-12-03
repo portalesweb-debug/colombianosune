@@ -1,0 +1,31 @@
+uuid: cdc712fc-cb85-475c-9e03-69d26ca59852
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:5b2ab020-6745-4ca5-904a-49140264a402'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_banneroficinabogota
+theme: colombianosune_d11
+region: none
+weight: 6
+provider: null
+plugin: 'block_content:5b2ab020-6745-4ca5-904a-49140264a402'
+settings:
+  id: 'block_content:5b2ab020-6745-4ca5-904a-49140264a402'
+  label: 'Banner oficina Bogotá'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-bogota/*'

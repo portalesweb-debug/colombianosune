@@ -12,20 +12,20 @@ dependencies:
 id: bannermujermigrante
 theme: colombianosune
 region: content_navigation
-weight: -56
+weight: -45
 provider: null
 plugin: 'block_content:c2bee9fe-a07b-4820-8930-c0a55d714a1f'
 settings:
   id: 'block_content:c2bee9fe-a07b-4820-8930-c0a55d714a1f'
   label: 'banner mujer migrante'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/mujer/migrante/*'
     negate: false
     context_mapping: {  }
+    pages: '/mujer/migrante/*'

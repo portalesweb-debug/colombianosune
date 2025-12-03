@@ -1,0 +1,25 @@
+uuid: 8023bddf-1049-45c5-a080-db7478a91dd0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a634d388-3c54-453c-86ee-8ad163c6ecc3'
+  module:
+    - block_content
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_logocancilleria
+theme: colombianosune_d11
+region: header
+weight: -45
+provider: null
+plugin: 'block_content:a634d388-3c54-453c-86ee-8ad163c6ecc3'
+settings:
+  id: 'block_content:a634d388-3c54-453c-86ee-8ad163c6ecc3'
+  label: 'LOGO CANCILLERIA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

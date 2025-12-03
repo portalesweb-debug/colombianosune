@@ -1,0 +1,22 @@
+uuid: 7aa21f51-1bc3-4909-b3c2-85c22baef904
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.subtitle
+    - field.field.block_content.subtitle.field_title
+id: block_content.subtitle.default
+targetEntityType: block_content
+bundle: subtitle
+mode: default
+content:
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

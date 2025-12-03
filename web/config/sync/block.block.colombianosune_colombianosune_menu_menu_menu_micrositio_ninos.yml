@@ -11,14 +11,14 @@ dependencies:
 id: colombianosune_colombianosune_menu_menu_menu_micrositio_ninos
 theme: colombianosune
 region: content_navigation
-weight: -54
+weight: -43
 provider: null
 plugin: 'system_menu_block:menu-menu-micrositio-ninos'
 settings:
   id: 'system_menu_block:menu-menu-micrositio-ninos'
   label: 'Menu Niños'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
@@ -26,5 +26,5 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/ninos-colombianos/*\r\n/concursoloquemeneacolombia\r\n/loquemeuneaColombia\r\n/micrositio-concurso-niños"
     context_mapping: {  }
+    pages: "/ninos-colombianos/*\r\n/concursoloquemeneacolombia\r\n/loquemeuneaColombia\r\n/micrositio-concurso-niños"

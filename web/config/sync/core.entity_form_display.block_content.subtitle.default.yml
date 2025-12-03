@@ -1,0 +1,36 @@
+uuid: db956817-5410-4d1b-a7cc-0594a0b9ff7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.subtitle
+    - field.field.block_content.subtitle.field_title
+id: block_content.subtitle.default
+targetEntityType: block_content
+bundle: subtitle
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

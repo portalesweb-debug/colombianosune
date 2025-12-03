@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'informacion/[node:title]'
 selection_criteria:
   d3cd7bf6-3e5a-42a1-a447-d61dd1dcf52c:
-    id: entity_bundle:node
-    bundles:
-      slideshowinformacion: slideshowinformacion
+    id: 'entity_bundle:node'
     negate: false
+    uuid: d3cd7bf6-3e5a-42a1-a447-d61dd1dcf52c
     context_mapping:
       node: node
-    uuid: d3cd7bf6-3e5a-42a1-a447-d61dd1dcf52c
+    bundles:
+      slideshowinformacion: slideshowinformacion
 selection_logic: and
 weight: -5
 relationships: {  }

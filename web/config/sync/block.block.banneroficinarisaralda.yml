@@ -12,20 +12,20 @@ dependencies:
 id: banneroficinarisaralda
 theme: colombianosune
 region: content_navigation
-weight: -48
+weight: -37
 provider: null
 plugin: 'block_content:74a3b653-6ae6-459e-9176-7fce57c8dc14'
 settings:
   id: 'block_content:74a3b653-6ae6-459e-9176-7fce57c8dc14'
   label: 'Banner oficina risaralda'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-risaralda/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-risaralda/*'

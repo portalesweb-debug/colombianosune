@@ -1,0 +1,27 @@
+uuid: 0b272360-69ac-4227-8679-1d82dcf245e2
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: colombianosune_d11_tools
+theme: colombianosune_d11
+region: none
+weight: -15
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Herramientas
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

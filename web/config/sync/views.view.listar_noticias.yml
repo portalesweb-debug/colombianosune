@@ -56,46 +56,363 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Aplicar
-          reset_button: false
-          reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: 'Noticias para Colombianos en el exterior CNU'
+      fields:
+        field_fecha_publicacion:
+          id: field_fecha_publicacion
+          table: node__field_fecha_publicacion
+          field: field_fecha_publicacion
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: noticia
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_imagen:
+          id: field_imagen
+          table: node__field_imagen
+          field: field_imagen
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: content
+            image_style: image_content_page
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 250
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_trimmed
+          settings:
+            trim_length: 600
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ver-mas-link
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 'Ver Más'
+          output_url_as_text: false
+          absolute: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '<hr>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: full
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
+          items_per_page: 10
           total_pages: null
+          id: 0
           tags:
-            previous: ‹‹
             next: ››
+            previous: ‹‹
             first: '« Primero'
             last: 'Último »'
           expose:
@@ -107,6 +424,154 @@ display:
             offset: false
             offset_label: Desplazamiento
           quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            noticias: noticias
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: 'Buscar Noticia'
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 56911
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: vocabulary_16
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: views_bootstrap_table
         options:
@@ -178,494 +643,19 @@ display:
             condensed: 0
       row:
         type: fields
-      fields:
-        field_fecha_publicacion:
-          id: field_fecha_publicacion
-          table: node__field_fecha_publicacion
-          field: field_fecha_publicacion
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: noticia
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_imagen:
-          id: field_imagen
-          table: node__field_imagen
-          field: field_imagen
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: image_content_page
-            image_link: content
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 250
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: true
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 600
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        view_node:
-          id: view_node
-          table: node
-          field: view_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ver-mas-link
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: 'Ver Más'
-          entity_type: node
-          plugin_id: entity_link
-          output_url_as_text: false
-          absolute: false
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: '<hr>'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            noticias: noticias
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: title_op
-            label: 'Buscar Noticia'
-            description: ''
-            use_operator: false
-            operator: title_op
-            identifier: title
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
-            placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            - 56911
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: vocabulary_16
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-      title: 'Noticias para Colombianos en el exterior CNU'
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: listado-noticias
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: listado-noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -681,37 +671,34 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: 'Noticias Portal CNU'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: noticias-para-colombianos-cnu
-      display_description: ''
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -722,6 +709,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
           operator: contains
           value: ''
           group: 1
@@ -732,25 +722,15 @@ display:
             description: ''
             use_operator: false
             operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: title
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -763,16 +743,16 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
-      defaults:
-        filters: false
-        filter_groups: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: noticias-para-colombianos-cnu
     cache_metadata:
       max-age: -1
       contexts:
@@ -787,42 +767,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_10:
-    display_plugin: page
     id: page_10
     display_title: 'Noticias Ipiales'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-ipiales/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -833,6 +806,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 50440
@@ -844,6 +818,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -851,8 +827,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -866,16 +840,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-ipiales/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -890,17 +870,17 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_11:
-    display_plugin: page
     id: page_11
     display_title: 'Noticias Portal'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: noticias/portal
-      display_description: ''
       title: 'Noticias del Portal'
       defaults:
         title: false
+      display_description: ''
+      display_extenders: {  }
+      path: noticias/portal
     cache_metadata:
       max-age: -1
       contexts:
@@ -916,42 +896,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_12:
-    display_plugin: page
     id: page_12
     display_title: 'Noticias Antioquia'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-antioquia/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -962,6 +935,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 33516
@@ -973,6 +947,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -980,8 +956,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -995,16 +969,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-antioquia/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1019,42 +999,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_13:
-    display_plugin: page
     id: page_13
     display_title: 'Noticias Atlantico'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-atlantico/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1065,6 +1038,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 29247
@@ -1076,6 +1050,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1083,8 +1059,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1098,16 +1072,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-atlantico/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1122,42 +1102,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_14:
-    display_plugin: page
     id: page_14
     display_title: 'Noticias Juradó'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-juradó/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1168,6 +1141,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 57009
@@ -1179,6 +1153,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1186,8 +1162,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1201,16 +1175,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-juradó/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1225,42 +1205,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_15:
-    display_plugin: page
     id: page_15
     display_title: 'Noticias Valle del Cauca'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-cauca/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1271,6 +1244,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 39905
@@ -1282,6 +1256,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1289,8 +1265,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1304,16 +1278,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-cauca/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1328,42 +1308,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_16:
-    display_plugin: page
     id: page_16
     display_title: 'Noticias Bogotá'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-bogota/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1374,6 +1347,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 29441
@@ -1385,6 +1359,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1392,8 +1368,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1407,16 +1381,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-bogota/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1431,42 +1411,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_17:
-    display_plugin: page
     id: page_17
     display_title: 'Noticias Destacados'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: noticias-colombianos-destacados-en-el-exterior-cnu
-      display_description: ''
       title: 'Noticias del Portal'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1477,6 +1450,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
           operator: contains
           value: ''
           group: 1
@@ -1487,25 +1463,15 @@ display:
             description: ''
             use_operator: false
             operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: title
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1518,9 +1484,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
         tid:
           id: tid
           table: taxonomy_index
@@ -1528,6 +1491,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 56912
@@ -1539,6 +1503,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1546,8 +1512,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1561,16 +1525,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: noticias-colombianos-destacados-en-el-exterior-cnu
     cache_metadata:
       max-age: -1
       contexts:
@@ -1586,42 +1556,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_18:
-    display_plugin: page
     id: page_18
     display_title: 'Noticias Madrid'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-madrid/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1632,6 +1595,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41324
@@ -1643,6 +1607,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1650,8 +1616,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1665,16 +1629,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-madrid/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1689,42 +1659,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_19:
-    display_plugin: page
     id: page_19
     display_title: 'Noticias Barcelona'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-barcelona/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1735,6 +1698,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41783
@@ -1746,6 +1710,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1753,8 +1719,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1768,16 +1732,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-barcelona/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1792,42 +1762,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_2:
-    display_plugin: page
     id: page_2
     display_title: 'Noticias afrocolombianos'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: afrocolombianos/noticias
-      display_description: ''
       title: Noticias
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1838,6 +1801,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 53767
@@ -1849,6 +1813,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1856,8 +1822,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1871,16 +1835,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: afrocolombianos/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1895,42 +1865,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_20:
-    display_plugin: page
     id: page_20
     display_title: 'Noticias Sevilla'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-sevilla/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -1941,6 +1904,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41349
@@ -1952,6 +1916,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -1959,8 +1925,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1974,16 +1938,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-sevilla/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -1998,42 +1968,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_21:
-    display_plugin: page
     id: page_21
     display_title: 'Noticias Miami'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-miami/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2044,6 +2007,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41665
@@ -2055,6 +2019,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2062,8 +2028,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2077,16 +2041,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-miami/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2101,42 +2071,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_22:
-    display_plugin: page
     id: page_22
     display_title: 'Noticias Newark'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-newark/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2147,6 +2110,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41085
@@ -2158,6 +2122,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2165,8 +2131,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2180,16 +2144,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-newark/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2204,42 +2174,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_23:
-    display_plugin: page
     id: page_23
     display_title: 'Noticias Nueva York'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-nueva-york/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2250,6 +2213,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 40481
@@ -2261,6 +2225,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2268,8 +2234,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2283,16 +2247,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-nueva-york/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2307,42 +2277,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_24:
-    display_plugin: page
     id: page_24
     display_title: 'Noticias Toronto'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-toronto/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2353,6 +2316,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41708
@@ -2364,6 +2328,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2371,8 +2337,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2386,16 +2350,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-toronto/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2410,42 +2380,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_25:
-    display_plugin: page
     id: page_25
     display_title: 'Noticias México'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-méxico/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2456,6 +2419,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 43045
@@ -2467,6 +2431,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2474,8 +2440,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2489,16 +2453,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-méxico/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2513,42 +2483,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_26:
-    display_plugin: page
     id: page_26
     display_title: 'Noticias Guadalajara'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-guadalajara/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2559,6 +2522,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 57029
@@ -2570,6 +2534,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2577,8 +2543,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2592,16 +2556,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-guadalajara/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2616,42 +2586,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_27:
-    display_plugin: page
     id: page_27
     display_title: 'Noticias Caracas'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-caracas/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2662,6 +2625,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41788
@@ -2673,6 +2637,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2680,8 +2646,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2695,16 +2659,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-caracas/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2719,42 +2689,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_28:
-    display_plugin: page
     id: page_28
     display_title: 'Noticias Quito'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-quito/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2765,6 +2728,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 41239
@@ -2776,6 +2740,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2783,8 +2749,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2798,16 +2762,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-quito/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2822,42 +2792,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_29:
-    display_plugin: page
     id: page_29
     display_title: 'Noticias Santiago de Chile'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: multiplicador-santiago-chile/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2868,6 +2831,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 50344
@@ -2879,6 +2843,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2886,8 +2852,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2901,16 +2865,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: multiplicador-santiago-chile/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -2925,42 +2895,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_3:
-    display_plugin: page
     id: page_3
     display_title: 'Noticias Mujer'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: mujer/migrante/noticias
-      display_description: ''
       title: Noticias
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -2971,6 +2934,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 29770
@@ -2982,6 +2946,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -2989,8 +2955,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3004,16 +2968,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: mujer/migrante/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3028,42 +2998,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_30:
-    display_plugin: page
     id: page_30
     display_title: 'Noticias Emprendimiento'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: emprendimiento/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3074,6 +3037,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 28733
@@ -3085,6 +3049,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3092,8 +3058,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3107,16 +3071,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: emprendimiento/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3131,42 +3101,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_4:
-    display_plugin: page
     id: page_4
     display_title: 'Noticias Niños'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: ninos-colombianos/noticias
-      display_description: ''
       title: Noticias
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3177,6 +3140,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 31929
@@ -3188,6 +3152,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3195,8 +3161,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3210,16 +3174,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: ninos-colombianos/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3234,42 +3204,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_5:
-    display_plugin: page
     id: page_5
     display_title: 'Noticias Asociaciones'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: ejes/plancomunidad/asociaciones/noticias
-      display_description: ''
       title: 'Noticias Asociaciones'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3280,6 +3243,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
           operator: or
           value:
             - 31004
@@ -3291,6 +3256,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3298,8 +3265,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3313,18 +3278,23 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: true
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
           depth: 0
-          entity_type: node
-          plugin_id: taxonomy_index_tid_depth
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: ejes/plancomunidad/asociaciones/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3339,42 +3309,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_6:
-    display_plugin: page
     id: page_6
     display_title: 'Noticias Caldas'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-caldas/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3385,6 +3348,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 56593
@@ -3396,6 +3360,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3403,8 +3369,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3418,16 +3382,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-caldas/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3442,42 +3412,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_7:
-    display_plugin: page
     id: page_7
     display_title: 'Noticias Quindio'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-quindio/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3488,6 +3451,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 42347
@@ -3499,6 +3463,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3506,8 +3472,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3521,16 +3485,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-quindio/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3545,42 +3515,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_8:
-    display_plugin: page
     id: page_8
     display_title: 'Noticias Risaralda'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-risaralda/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3591,6 +3554,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 30255
@@ -3602,6 +3566,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3609,8 +3575,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3624,16 +3588,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-risaralda/noticias
     cache_metadata:
       max-age: -1
       contexts:
@@ -3648,42 +3618,35 @@ display:
         - 'config:field.storage.node.field_fecha_publicacion'
         - 'config:field.storage.node.field_imagen'
   page_9:
-    display_plugin: page
     id: page_9
     display_title: 'Noticias Santander'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: oficina-santander/noticias
-      display_description: ''
       title: ''
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            noticias: noticias
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            noticias: noticias
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -3694,6 +3657,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value:
             - 54257
@@ -3705,6 +3669,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -3712,8 +3678,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3727,16 +3691,22 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_16
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: oficina-santander/noticias
     cache_metadata:
       max-age: -1
       contexts:

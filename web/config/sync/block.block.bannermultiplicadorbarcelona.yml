@@ -12,20 +12,20 @@ dependencies:
 id: bannermultiplicadorbarcelona
 theme: colombianosune
 region: content_navigation
-weight: -36
+weight: -28
 provider: null
 plugin: 'block_content:d10a0336-1ba5-4611-b6d0-b2a68f455f65'
 settings:
   id: 'block_content:d10a0336-1ba5-4611-b6d0-b2a68f455f65'
   label: 'Banner Multiplicador Barcelona'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-barcelona/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-barcelona/*'

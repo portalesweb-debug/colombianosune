@@ -18,13 +18,14 @@ plugin: 'views_block:eventos_para_colombianos-block_1'
 settings:
   id: 'views_block:eventos_para_colombianos-block_1'
   label: 'Más eventos'
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Más eventos'
-  items_per_page: none
+  items_per_page: null
+  exposed: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/content/*\r\n/evento/*\r\n/diamigrante\r\n/eventos-comunidad-colombianos-en-el-exterior"
     negate: false
     context_mapping: {  }
+    pages: "/content/*\r\n/evento/*\r\n/diamigrante\r\n/eventos-comunidad-colombianos-en-el-exterior"

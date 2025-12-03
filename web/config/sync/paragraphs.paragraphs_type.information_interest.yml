@@ -1,0 +1,10 @@
+uuid: 3382d6e9-ae70-425b-a191-f202afef9ceb
+langcode: es
+status: true
+dependencies: {  }
+id: information_interest
+label: 'Información de interés'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

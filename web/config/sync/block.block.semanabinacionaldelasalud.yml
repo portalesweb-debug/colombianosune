@@ -17,14 +17,14 @@ plugin: 'system_menu_block:semana-binacional-de-la-salud'
 settings:
   id: 'system_menu_block:semana-binacional-de-la-salud'
   label: 'Semana Binacional de la Salud'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: /ejes/semana-binacional-de-la-salud
     negate: false
     context_mapping: {  }
+    pages: /ejes/semana-binacional-de-la-salud

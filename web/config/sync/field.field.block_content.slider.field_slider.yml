@@ -1,0 +1,34 @@
+uuid: 4c4d6a5d-4887-452a-89e0-bb49c0cc54c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.slider
+    - field.storage.block_content.field_slider
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: block_content.slider.field_slider
+field_name: field_slider
+entity_type: block_content
+bundle: slider
+label: slider
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slider: slider
+    negate: 0
+    target_bundles_drag_drop:
+      information_interest:
+        weight: 3
+        enabled: false
+      slider:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

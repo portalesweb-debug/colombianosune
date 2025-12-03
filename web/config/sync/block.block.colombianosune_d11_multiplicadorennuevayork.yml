@@ -1,0 +1,30 @@
+uuid: 73cff7a3-84ad-4d8d-b435-b640e02bf860
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.multiplicador-en-nueva-york
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_multiplicadorennuevayork
+theme: colombianosune_d11
+region: none
+weight: 32
+provider: null
+plugin: 'system_menu_block:multiplicador-en-nueva-york'
+settings:
+  id: 'system_menu_block:multiplicador-en-nueva-york'
+  label: 'Multiplicador en Nueva York'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-nueva-york/*'

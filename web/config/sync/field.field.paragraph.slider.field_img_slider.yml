@@ -1,0 +1,29 @@
+uuid: 94b1cdf1-e5ac-4c2c-8015-392bb2cab439
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_img_slider
+    - media.type.image
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_img_slider
+field_name: field_img_slider
+entity_type: paragraph
+bundle: slider
+label: 'img slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

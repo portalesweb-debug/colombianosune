@@ -1,0 +1,30 @@
+uuid: b4c39a67-54ce-42ee-85ad-d147e58fb15c
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.servicios-de-entidades-colombian
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_serviciosdeentidadescolombianas
+theme: colombianosune_d11
+region: none
+weight: 19
+provider: null
+plugin: 'system_menu_block:servicios-de-entidades-colombian'
+settings:
+  id: 'system_menu_block:servicios-de-entidades-colombian'
+  label: 'Servicios de entidades colombianas'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /ejes/servicios

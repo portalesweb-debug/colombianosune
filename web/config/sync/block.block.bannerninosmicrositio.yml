@@ -12,20 +12,20 @@ dependencies:
 id: bannerninosmicrositio
 theme: colombianosune
 region: content_navigation
-weight: -55
+weight: -44
 provider: null
 plugin: 'block_content:c5f85f78-e980-47ba-bf15-aaf4479b9e4f'
 settings:
   id: 'block_content:c5f85f78-e980-47ba-bf15-aaf4479b9e4f'
   label: 'banner niños micrositio'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/ninos-colombianos/*\r\n/concursoloquemeneacolombia\r\n/loquemeuneaColombia\r\n/micrositio-concurso-niños"
     negate: false
     context_mapping: {  }
+    pages: "/ninos-colombianos/*\r\n/concursoloquemeneacolombia\r\n/loquemeuneaColombia\r\n/micrositio-concurso-niños"

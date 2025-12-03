@@ -17,14 +17,14 @@ plugin: 'system_menu_block:multi-toronto'
 settings:
   id: 'system_menu_block:multi-toronto'
   label: 'Multi Toronto'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/multiplicador-toronto/nosotros\r\n/multiplicador-buenos-aires/nosotros\r\n/multiplicador-en-sao-paulo\r\n/multiplicador-en-montreal\r\n/multiplicador-en-antofagasta\r\n/san-jose\r\n/multiplicador-en-guayaquil\r\n/multiplicador-quito/nosotros\r\n/multiplicador-barcelona/nosotros\r\n/multiplicador-madrid/nosotros\r\n/multiplicador-sevilla/nosotros\r\n/los-angeles\r\n/multiplicador-en-houston\r\n/multiplicador-miami/nosotros\r\n/multiplicador-newark/nosotros\r\n/multiplicador-nueva-york/nosotros\r\n/multiplicador-en-orlando\r\n/multiplicador-en-san-francisco\r\n/multiplicador-en-abu-dhabi\r\n/multiplicador-en-paris\r\n/multiplicador-mexico/nosotros\r\n/multiplicador-guadalajara/nosotros\r\n/multiplicador-en-milan\r\n/multiplicador-en-roma\r\n/multiplicador-en-ciudad-de-panama\r\n/multiplicador-en-lima\r\n/multiplicador-en-londres\r\n/multiplicador-toronto/noticias\r\n/multiplicador-en-washington-dc\r\n/multiplicador-mexico\r\n/multiplicador-santiago-chile/nosotros"
     negate: false
     context_mapping: {  }
+    pages: "/multiplicador-toronto/nosotros\r\n/multiplicador-buenos-aires/nosotros\r\n/multiplicador-en-sao-paulo\r\n/multiplicador-en-montreal\r\n/multiplicador-en-antofagasta\r\n/san-jose\r\n/multiplicador-en-guayaquil\r\n/multiplicador-quito/nosotros\r\n/multiplicador-barcelona/nosotros\r\n/multiplicador-madrid/nosotros\r\n/multiplicador-sevilla/nosotros\r\n/los-angeles\r\n/multiplicador-en-houston\r\n/multiplicador-miami/nosotros\r\n/multiplicador-newark/nosotros\r\n/multiplicador-nueva-york/nosotros\r\n/multiplicador-en-orlando\r\n/multiplicador-en-san-francisco\r\n/multiplicador-en-abu-dhabi\r\n/multiplicador-en-paris\r\n/multiplicador-mexico/nosotros\r\n/multiplicador-guadalajara/nosotros\r\n/multiplicador-en-milan\r\n/multiplicador-en-roma\r\n/multiplicador-en-ciudad-de-panama\r\n/multiplicador-en-lima\r\n/multiplicador-en-londres\r\n/multiplicador-toronto/noticias\r\n/multiplicador-en-washington-dc\r\n/multiplicador-mexico\r\n/multiplicador-santiago-chile/nosotros"

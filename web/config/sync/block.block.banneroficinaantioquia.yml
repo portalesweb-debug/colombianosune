@@ -12,20 +12,20 @@ dependencies:
 id: banneroficinaantioquia
 theme: colombianosune
 region: content_navigation
-weight: -25
+weight: -18
 provider: null
 plugin: 'block_content:87b3f9c1-617a-4b0e-9498-6bb88ceed8b7'
 settings:
   id: 'block_content:87b3f9c1-617a-4b0e-9498-6bb88ceed8b7'
   label: 'Banner oficina antioquia'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-antioquia/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-antioquia/*'

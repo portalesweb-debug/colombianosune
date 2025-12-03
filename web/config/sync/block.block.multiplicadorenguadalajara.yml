@@ -11,20 +11,20 @@ dependencies:
 id: multiplicadorenguadalajara
 theme: colombianosune
 region: content_navigation
-weight: -20
+weight: -14
 provider: null
 plugin: 'system_menu_block:multiplicador-en-guadalajar'
 settings:
   id: 'system_menu_block:multiplicador-en-guadalajar'
   label: 'Multiplicador en Guadalajara'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: '/multiplicador-guadalajara/*'
     negate: false
     context_mapping: {  }
+    pages: '/multiplicador-guadalajara/*'

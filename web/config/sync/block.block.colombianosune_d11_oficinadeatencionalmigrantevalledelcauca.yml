@@ -1,0 +1,30 @@
+uuid: e73384bf-3187-4916-8aba-8cbedbd3d71d
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.of
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_oficinadeatencionalmigrantevalledelcauca
+theme: colombianosune_d11
+region: none
+weight: 28
+provider: null
+plugin: 'system_menu_block:of'
+settings:
+  id: 'system_menu_block:of'
+  label: 'Oficina de Atención al Migrante Valle del Cauca'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/oficina-cauca/*'

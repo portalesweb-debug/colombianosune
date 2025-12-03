@@ -1,0 +1,31 @@
+uuid: 1b2582c0-2208-4c73-9cd2-b8a8eee4a1e5
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.foros_paginas
+  module:
+    - system
+    - views
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_views_block__foros_paginas_block_1
+theme: colombianosune_d11
+region: content
+weight: -32
+provider: null
+plugin: 'views_block:foros_paginas-block_1'
+settings:
+  id: 'views_block:foros_paginas-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: 6
+  exposed: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /comunidad/foros-colombia-nos-une

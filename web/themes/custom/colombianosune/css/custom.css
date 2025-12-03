@@ -1,0 +1,739 @@
+ h2 {
+    color: #255FA2;
+    font-weight: 700;
+    border-bottom: 1px solid #255FA2;
+    margin-bottom: 25px;
+}
+
+.linktaps{
+    color: blue;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.region-header-top {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.6fr;
+    grid-template-rows: 1fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "block-header block-header block-header" "block-secciongovco-img block-gtranslate block-secciongovco-redes";
+}
+
+#block-header {
+    grid-area: block-header;
+}
+
+#block-secciongovco-img {
+    grid-area: block-secciongovco-img;
+}
+
+#block-gtranslate {
+    grid-area: block-gtranslate;
+}
+
+#block-secciongovco-redes {
+    grid-area: block-secciongovco-redes;
+}
+
+.region-header-logo {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+}
+
+.header-logo {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.region-header-logo .block-search-form-block {
+    padding: 40px 12px 0px 0px;
+}
+
+.region-header-logo .block-search-form-block .input-group,
+.region-header-logo .block-search-form-block .input-group input {
+    height: 50px;
+}
+
+.region-header-logo .block-search-form-block .input-group input {
+    border-radius: 11px;
+}
+
+.region-header-logo .input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+    height: 40px;
+    background: #3064B0;
+    border-radius: 50%;
+    right: 48px;
+    z-index: 2;
+}
+.text-ban {
+
+font-size: calc(10px + 0.7vw);
+
+}
+.text-col-nosune  {
+
+margin-top:50px;
+
+}
+
+/** Menu **/
+
+.navbar-collapse.in{
+    height: 295px;
+}
+
+
+@media (max-width: 500px) {
+
+.contenedor-texto {
+position:relative;
+
+}
+
+ }
+
+.menu-colombianosune {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Elementos del menú */
+.menu-colombianosune li {
+    list-style: none;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+/* Links principales */
+.menu-colombianosune li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Ícono arriba (asumiendo SVG o <img>) */
+.menu-colombianosune li a img,
+.menu-colombianosune li a svg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 4px;
+}
+
+/* Flecha gris del submenú */
+.menu-colombianosune li>a::after {
+    content: "▾";
+    font-size: 10px;
+    color: #999;
+    margin-top: 2px;
+}
+
+/* Hover */
+.menu-colombianosune li a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-colombianosune {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+
+.region-navigation {
+    width: 100%;
+    height: 52px;
+}
+
+.region-navigation .navbar-nav::before {
+    content: none;
+}
+
+.region-navigation .navbar-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . . . .";
+}
+
+.region-navigation .navbar-nav li {
+    display: flex;
+    justify-content: center;
+}
+
+.region-navigation .navbar-nav .dropdown a {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.region-navigation .navbar-nav .dropdown a:hover {
+    color: black;
+}
+
+.region-navigation .navbar-nav .dropdown a .caret {
+    top: 23px;
+    position: absolute;
+    right: 10px;
+}
+
+.region-navigation .navbar-nav .dropdown .dropdown-menu li,
+.region-navigation .navbar-nav .dropdown .dropdown-menu li a {
+    height: 30px;
+}
+
+.region-navigation .navbar-nav .dropdown .dropdown-menu li:hover {
+    height: 30px;
+}
+
+.region-navigation .navbar-nav .dropdown .dropdown-menu .active {
+    height: 30px;
+}
+
+.region-navigation .navbar-nav .dropdown .dropdown-menu li .dropdown-menu {
+    left: 60px;
+}
+
+
+/** slider principal **/
+
+.region-banner-principal .flexslider{
+    border: none;
+    background-color: #F7A73F;
+}
+
+.region-banner-principal .flexslider .flex-control-nav{
+    bottom: 14px;
+    z-index: 2;
+}
+
+.region-banner-principal .flexslider .contenedor-texto{
+
+    display: flex;
+    align-items: center;
+    margin-top: 25%;
+    padding: 4%;
+
+}
+
+.region-banner-principal .flexslider .contenedor-texto a{
+    color: #fff!important;
+
+}
+
+
+
+
+/** Perfiles destacados **/
+
+.col-enlaces {
+    margin-bottom: 50px;
+}
+
+.col-enlaces .perfiles-enlaces {
+    margin-bottom: 30px;
+}
+
+.col-enlaces .img-perfiles {
+    height: 240px;
+}
+
+.col-enlaces .img-perfiles img {
+    height: 100%;
+    border-radius: 7px;
+}
+
+.col-enlaces .title-perfiles {
+    padding: 0 20px;
+}
+
+.col-enlaces .title-perfiles h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.col-enlaces .title-perfiles h3 a {
+    text-decoration: underline;
+    color: #3064B0;
+}
+
+.col-enlaces .texto-perfiles {
+    padding: 0 20px;
+}
+
+.col-enlaces .texto-perfiles p {
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #7C7F82;
+}
+
+.bloque-imagenes-home {
+    margin-bottom: 55px;
+}
+
+
+
+/** Region-destacados **/
+
+
+.destacados-seccion .region-destacados {
+    margin-top: 55px;
+}
+
+.destacados-seccion .region-destacados .flexslider {
+    background-color: transparent;
+    border: none;
+}
+
+.destacados-seccion .region-destacados .flexslider ul li {
+    background-color: #fff;
+    height: 215px;
+    border-radius: 15px;
+}
+
+.destacados-seccion .region-destacados .flexslider ul li img {
+    height: 180px;
+    border-radius: 15px;
+}
+
+.destacados-seccion .region-destacados .flexslider ul li .views-field-field-enlace {
+    padding: 10px;
+}
+
+.destacados-seccion .region-destacados .flexslider ul .flex-nav-prev {
+    background-color: transparent;
+    height: auto;
+}
+
+.destacados-seccion .region-destacados .flexslider ul .flex-nav-next {
+    background-color: transparent;
+    height: auto;
+}
+
+.centros-referenciacion img {
+    height: 276px!important;
+}
+
+.centros-referenciacion h3 {
+    color: #09477B;
+}
+
+.centros-referenciacion .views-field-title-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.views-field-title-1 a {
+    border: none;
+    border-radius: 50px;
+    background-color: #5D83C3;
+    text-transform: none;
+}
+
+.views-field-title-1 a:hover {
+    text-decoration: none;
+    background-color: #5D83C3;
+    color: #fff;
+}
+
+.region-content article .content {
+    box-shadow: none!important;
+}
+
+.centros-referenciacion {
+    background-color: #F1F5F5;
+}
+
+.datos-colombianos .d-flex {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas: ". .";
+    border: 1px solid #86A2D1;
+    border-radius: 19px;
+    position: relative;
+    margin-bottom: 31px;
+    height: 185px;
+}
+
+.datos-colombianos .d-flex .img-datos img {
+    height: 183px!important;
+    width: 235px!important;
+    border-radius: 18px 0 0 18px;
+}
+
+.datos-colombianos .enlace-datos {
+    text-align: center;
+}
+
+.datos-colombianos .enlace-datos .views-field-title-1 {
+    position: absolute;
+    bottom: 20px;
+    left: 53%;
+}
+
+.datos-conocer {
+    text-align: center;
+}
+
+.img-nosune {
+
+height:65px;
+
+}
+
+.pad-link {
+
+padding:25px;
+
+}
+
+.datos-conocer a {
+    font-size: 40px;
+    color: #255FA2;
+}
+
+.datos-conocer a:hover {
+    text-decoration: none;
+    color: #255FA2;
+}
+
+.datos-colombianos .enlace-datos h3 a {
+    color: #3063B1;
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+.acompañamiento {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+}
+
+.acompañamiento .img-acompañamiento img {
+    width: 100%;
+    height: 300px;
+}
+
+.acompañamiento .texto-acompañamiento {
+    background-color: #F7A73F;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.acompañamiento .texto-acompañamiento h3 {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+/** Region Footer **/
+
+.region-footer2 .contenedor-borde {
+    background-color: #004A84;
+    height: 344px;
+    margin-top: 115px;
+}
+
+.region-footer2 .contenedor-borde .contenedor {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    align-items: center;
+}
+
+.region-footer2 .contenedor-borde .contenedor .container-footer {
+    border-radius: 15px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    top: -77px;
+    border: 1px solid #3063B1;
+}
+
+.region-footer2 .contenedor-borde .contenedor .container .margin-container {
+    margin-top: 46px;
+}
+
+.region-footer2 .contenedor-borde .contenedor .container .margin-container a {
+    color: #000;
+}
+
+.region-footer2 .contenedor-borde .contenedor .container .margin-container a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 979px) {
+    .region-header-top {
+        display: grid;
+        grid-template-columns: 1.2fr 0.5fr 1.8fr;
+        grid-template-rows: 1fr 0.3fr 0.3fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "block-header block-header block-header" "block-secciongovco-img block-secciongovco-img block-secciongovco-img" "block-gtranslate block-gtranslate block-secciongovco3redes";
+    }
+    #block-header {
+        grid-area: block-header;
+    }
+    #block-gtranslate {
+        grid-area: block-gtranslate;
+        display: flex;
+        justify-content: center;
+    }
+    #block-secciongovco-redes {
+        grid-area: block-secciongovco3redes;
+    }
+    #block-secciongovco-img {
+        grid-area: block-secciongovco-img;
+    }
+    .acompañamiento {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1.3fr;
+        gap: 0px 0px;
+        grid-template-areas: "." ".";
+    }
+    .acompañamiento .texto-acompañamiento h3 {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .grid-enlaces {
+        display: grid;
+        grid-template-columns: 1.1fr 1.1fr 1.1fr 1.1fr 0.6fr;
+        grid-template-rows: 0.7fr 1.3fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "img-logo img-logo img-logo img-logo img-logo" ". . . . .";
+    }
+    .img-logo {
+        grid-area: img-logo;
+        width: 200px;
+    }
+    .grid-footer2 {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: ". .";
+    }
+    .region-footer2 .contenedor-borde .contenedor .container-footer {
+        height: 400px;
+    }
+
+    .region-banner-principal .flexslider .contenedor-banner-p .grid-mobile{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "."
+          ".";
+    }
+
+    .region-banner-principal .flexslider .contenedor-banner-p .grid-mobile .contenedor-texto{
+        margin: 0;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .region-header-logo {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1.9fr;
+        grid-template-rows: 1fr 0fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas: "." ".";
+    }
+    .contenedor-borde .container {
+        width: auto;
+    }
+
+    .region-navigation .navbar-nav{
+        display: block;
+    }
+
+    .region-navigation .navbar-nav .dropdown a{
+        height: 32px;
+    }
+
+    .navbar-inverse{
+        background-color: #F1F5F5;
+    }
+}
+
+@media (max-width: 576px) {
+    .region-header-top {
+        display: grid;
+        grid-template-columns: 1.2fr 0.5fr 1.8fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "block-govcoimg block-govcoimg block-govcoimg" "block-secciongovco3 block-secciongovco3 block-secciongovco3" "block-gtranslate block-gtranslate block-gtranslate" "block-secciongovco3redes block-secciongovco3redes block-secciongovco3redes";
+    }
+    #block-header {
+        grid-area: block-govcoimg;
+    }
+    #block-secciongovco-img {
+        grid-area: block-secciongovco3;
+        height: 48px;
+    }
+    #block-gtranslate {
+        grid-area: block-gtranslate;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    #block-secciongovco-redes {
+        grid-area: block-secciongovco3redes;
+    }
+    .region-header-logo {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1.9fr;
+        grid-template-rows: 1fr 0fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas: "." ".";
+    }
+
+    .logo-principal{
+        text-align: center;
+    }
+    .block-search-form-block {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .region-header-logo .block-search-form-block .input-group input {
+        width: 250px;
+    }
+    .views-field-title-1 a {
+        width: 110px;
+    }
+    .region-footer2 .contenedor-borde {
+        height: 600px;
+    }
+    .region-footer2 .contenedor-borde .contenedor .container-footer {
+        width: auto;
+        height: 655px;
+    }
+    .grid-enlaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 1.4fr 1.5fr 0.3fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "img-logo img-logo img-logo img-logo" "links-1 links-1 links-2 links-2" "links-3 links-3 links-4 links-4" "top top top top";
+    }
+    .img-logo {
+        grid-area: img-logo;
+    }
+    .links-1 {
+        grid-area: links-1;
+    }
+    .links-2 {
+        grid-area: links-2;
+    }
+    .links-3 {
+        grid-area: links-3;
+    }
+    .links-4 {
+        grid-area: links-4;
+    }
+    .top {
+        grid-area: top;
+    }
+    .grid-footer2 {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "." ".";
+        margin-top: 50px;
+    }
+
+    .datos-colombianos .enlace-datos h3 a{
+        font-size: 10px;
+    }
+
+    .region-banner-principal .flexslider .contenedor-banner-p .grid-mobile{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "."
+          ".";
+    }
+
+    .region-banner-principal .flexslider .contenedor-banner-p .grid-mobile .contenedor-texto{
+        margin: 5% 2% 2% 2%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}

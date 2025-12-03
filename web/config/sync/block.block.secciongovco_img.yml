@@ -11,14 +11,14 @@ dependencies:
 id: secciongovco_img
 theme: colombianosune
 region: header_top
-weight: -60
+weight: -47
 provider: null
 plugin: 'block_content:a45380e4-c5ec-4209-9831-8b1f587081a6'
 settings:
   id: 'block_content:a45380e4-c5ec-4209-9831-8b1f587081a6'
   label: secciongovco_img
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

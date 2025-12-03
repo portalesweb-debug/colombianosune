@@ -1,0 +1,48 @@
+uuid: 8ba3dc9b-1918-4d11-9d51-3968c7489a10
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.information_interest
+    - field.field.block_content.information_interest.field_item_information_interest
+  module:
+    - paragraphs
+id: block_content.information_interest.default
+targetEntityType: block_content
+bundle: information_interest
+mode: default
+content:
+  field_item_information_interest:
+    type: paragraphs
+    weight: 26
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

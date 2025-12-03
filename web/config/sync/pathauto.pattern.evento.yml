@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'evento/[node:title]'
 selection_criteria:
   7f664bac-b6c5-4830-9bfd-3230dc582a27:
-    id: entity_bundle:node
-    bundles:
-      event: event
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 7f664bac-b6c5-4830-9bfd-3230dc582a27
     context_mapping:
       node: node
-    uuid: 7f664bac-b6c5-4830-9bfd-3230dc582a27
+    bundles:
+      event: event
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -11,20 +11,20 @@ dependencies:
 id: oficinadeatencionalmigrantebogota
 theme: colombianosune
 region: content_navigation
-weight: -11
+weight: -5
 provider: null
 plugin: 'system_menu_block:oficina-atencion-al-migrant'
 settings:
   id: 'system_menu_block:oficina-atencion-al-migrant'
   label: 'Oficina de Atención al Migrante Bogotá'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-bogota/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-bogota/*'

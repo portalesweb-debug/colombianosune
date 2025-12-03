@@ -26,73 +26,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Aplicar
-          reset_button: false
-          reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: full
-        options:
-          items_per_page: 10
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« Primero'
-            last: 'Último »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
-            offset: false
-            offset_label: Desplazamiento
-          quantity: 9
-      style:
-        type: views_bootstrap_grid
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          alignment: horizontal
-          columns: '2'
-          col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-6
-          col_lg: col-lg-6
-          col_class_default: 1
-          row_class_default: 1
-      row:
-        type: fields
+      title: ''
       fields:
         field_ciudad_aso:
           id: field_ciudad_aso
@@ -101,6 +40,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Ciudad
           exclude: false
           alter:
@@ -155,7 +95,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_objeto_aso:
           id: field_objeto_aso
           table: node__field_objeto_aso
@@ -163,6 +102,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Objetos
           exclude: false
           alter:
@@ -217,7 +157,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_servicios_aso:
           id: field_servicios_aso
           table: node__field_servicios_aso
@@ -225,6 +164,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -279,7 +219,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         view_node:
           id: view_node
           table: node
@@ -287,6 +226,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: false
           alter:
@@ -329,8 +270,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: 'Ver Más'
-          entity_type: node
-          plugin_id: entity_link
           output_url_as_text: false
           absolute: false
         nothing:
@@ -340,6 +279,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -381,35 +321,87 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
         field_anuo_aso:
           id: field_anuo_aso
           table: node__field_anuo_aso
           field: field_anuo_aso
           plugin_id: field
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Todo -'
+            offset: false
+            offset_label: Desplazamiento
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        random:
+          id: random
+          table: views
+          field: random
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: random
+          order: ASC
+          expose:
+            label: ''
+          exposed: false
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            asociaciones: asociaciones
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            asociaciones: asociaciones
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -420,6 +412,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: string
           operator: word
           value: ''
           group: 1
@@ -430,25 +423,15 @@ display:
             description: ''
             use_operator: false
             operator: field_ciudad_aso_value_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: field_ciudad_aso_value
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -461,28 +444,35 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
-      sorts:
-        random:
-          id: random
-          table: views
-          field: random
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: random
-      title: ''
+      style:
+        type: views_bootstrap_grid
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          alignment: horizontal
+          columns: '2'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-6
+          col_class_default: 1
+          row_class_default: 1
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: listado-noticias
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: listado-noticias
     cache_metadata:
       max-age: 0
       contexts:
@@ -498,15 +488,15 @@ display:
         - 'config:field.storage.node.field_objeto_aso'
         - 'config:field.storage.node.field_servicios_aso'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: 'Afros asociaciones'
+    display_plugin: page
     position: 1
     display_options:
+      enabled: false
+      display_description: ''
       display_extenders: {  }
       path: afrocolombianos/asociaciones
-      display_description: ''
-      enabled: false
     cache_metadata:
       max-age: 0
       contexts:
@@ -522,15 +512,15 @@ display:
         - 'config:field.storage.node.field_objeto_aso'
         - 'config:field.storage.node.field_servicios_aso'
   page_2:
-    display_plugin: page
     id: page_2
     display_title: 'Mujer asociaciones'
+    display_plugin: page
     position: 1
     display_options:
+      enabled: false
+      display_description: ''
       display_extenders: {  }
       path: mujer/migrante/asociaciones
-      display_description: ''
-      enabled: false
     cache_metadata:
       max-age: 0
       contexts:
@@ -546,63 +536,51 @@ display:
         - 'config:field.storage.node.field_objeto_aso'
         - 'config:field.storage.node.field_servicios_aso'
   page_3:
-    display_plugin: page
     id: page_3
     display_title: Asociaciones
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: ejes/plancomunidad/asociaciones/directorio
-      display_description: ''
+      enabled: false
       title: 'Directorio de Asociaciones de colombianos en el Mundo'
-      defaults:
-        title: false
-        header: false
-        filters: false
-        filter_groups: false
-        sorts: false
-      header:
-        area:
-          id: area
-          table: views
-          field: area
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: |-
-              <p class="contasociaciones" style="font-family:arial;font-size:12px;text-align: justify;">A través de este directorio el Programa Colombia Nos Une quiere reconocer y apoyar la labor de  las asociaciones  de colombianos en el exterior,  en cuanto a su identificación y  difusión de sus actividades y eventos, Así mismo busca brindar una herramienta útil de consulta para toda la comunidad migrante. El Programa Colombia Nos Une no tiene ninguna injerencia o responsabilidad en cuanto a la información de las asociaciones, o en la organización y desarrollo de actividades adelantadas por estos grupos.</p>
-              </br>
-              <div><p style="font-family:arial;font-size:12px;text-align: justify;">Registrar tu asociación 
-              <a href="http://www.colombianosune.com/node/add/asociaciones" title="pulsa para registrar" rel="add negocio"> <img alt="Inicio" src="/sites/default/files/img_not_die/BotonRegistroAsociacion.png" width="65" height="75"><br></a>
-              </p></div>
-            format: '2'
-          plugin_id: text
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: 'Ordenar Alfabeticamente'
+          exposed: true
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            asociaciones: asociaciones
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            asociaciones: asociaciones
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -613,6 +591,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value: {  }
           group: 1
@@ -623,25 +602,15 @@ display:
             description: ''
             use_operator: false
             operator: field_pais_aso_2_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: field_pais_aso_2_target_id
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -655,12 +624,11 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_35
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
         field_objeto_aso_value:
           id: field_objeto_aso_value
           table: node__field_objeto_aso
@@ -668,6 +636,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value: {  }
           group: 1
@@ -678,25 +647,15 @@ display:
             description: ''
             use_operator: false
             operator: field_objeto_aso_value_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: field_objeto_aso_value
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -710,27 +669,38 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+      defaults:
+        title: false
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: 'Ordenar Alfabeticamente'
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-      enabled: false
+          plugin_id: text
+          empty: false
+          content:
+            value: |-
+              <p class="contasociaciones" style="font-family:arial;font-size:12px;text-align: justify;">A través de este directorio el Programa Colombia Nos Une quiere reconocer y apoyar la labor de  las asociaciones  de colombianos en el exterior,  en cuanto a su identificación y  difusión de sus actividades y eventos, Así mismo busca brindar una herramienta útil de consulta para toda la comunidad migrante. El Programa Colombia Nos Une no tiene ninguna injerencia o responsabilidad en cuanto a la información de las asociaciones, o en la organización y desarrollo de actividades adelantadas por estos grupos.</p>
+              </br>
+              <div><p style="font-family:arial;font-size:12px;text-align: justify;">Registrar tu asociación 
+              <a href="http://www.colombianosune.com/node/add/asociaciones" title="pulsa para registrar" rel="add negocio"> <img alt="Inicio" src="/sites/default/files/img_not_die/BotonRegistroAsociacion.png" width="65" height="75"><br></a>
+              </p></div>
+            format: '2'
+          tokenize: false
+      display_extenders: {  }
+      path: ejes/plancomunidad/asociaciones/directorio
     cache_metadata:
       max-age: -1
       contexts:
@@ -749,64 +719,51 @@ display:
         - 'config:field.storage.node.field_objeto_aso'
         - 'config:field.storage.node.field_servicios_aso'
   page_4:
-    display_plugin: page
     id: page_4
     display_title: 'Archivo Asociaciones'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: ejes/plancomunidad/asociaciones/directorio
-      display_description: ''
+      enabled: false
       title: 'Directorio de Asociaciones de colombianos en el Mundo'
-      defaults:
-        title: false
-        header: false
-        filters: false
-        filter_groups: false
-        sorts: false
-        fields: true
-      header:
-        area:
-          id: area
-          table: views
-          field: area
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: |-
-              <p class="contasociaciones" style="font-family:arial;font-size:12px;text-align: justify;">A través de este directorio el Programa Colombia Nos Une quiere reconocer y apoyar la labor de  las asociaciones  de colombianos en el exterior,  en cuanto a su identificación y  difusión de sus actividades y eventos, Así mismo busca brindar una herramienta útil de consulta para toda la comunidad migrante. El Programa Colombia Nos Une no tiene ninguna injerencia o responsabilidad en cuanto a la información de las asociaciones, o en la organización y desarrollo de actividades adelantadas por estos grupos.</p>
-              </br>
-              <div><p style="font-family:arial;font-size:12px;text-align: justify;">Registrar tu asociación 
-              <a href="http://www.colombianosune.com/node/add/asociaciones" title="pulsa para registrar" rel="add negocio"> <img alt="Inicio" src="/sites/default/files/img_not_die/BotonRegistroAsociacion.png" width="65" height="75"><br></a>
-              </p></div>
-            format: '2'
-          plugin_id: text
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: 'Ordenar Alfabeticamente'
+          exposed: true
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            asociaciones: asociaciones
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            asociaciones: asociaciones
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -817,6 +774,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
           operator: or
           value: {  }
           group: 1
@@ -827,25 +785,15 @@ display:
             description: ''
             use_operator: false
             operator: field_pais_aso_2_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: field_pais_aso_2_target_id
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -859,12 +807,11 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
-          limit: true
           vid: vocabulary_35
+          type: textfield
           hierarchy: false
+          limit: true
           error_message: true
-          plugin_id: taxonomy_index_tid
         field_objeto_aso_value:
           id: field_objeto_aso_value
           table: node__field_objeto_aso
@@ -872,6 +819,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value: {  }
           group: 1
@@ -882,25 +830,15 @@ display:
             description: ''
             use_operator: false
             operator: field_objeto_aso_value_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: field_objeto_aso_value
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              asociaciones: '0'
-              editor: '0'
-              editor_contenidos: '0'
-              organizacion: '0'
-              persona: '0'
-              pre_registrado: '0'
-              usuario_administrador: '0'
-              usuarioadminnoticias: '0'
-              administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -914,27 +852,39 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+      defaults:
+        title: false
+        fields: true
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
+      display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
-          exposed: true
-          expose:
-            label: 'Ordenar Alfabeticamente'
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-      enabled: false
+          plugin_id: text
+          empty: false
+          content:
+            value: |-
+              <p class="contasociaciones" style="font-family:arial;font-size:12px;text-align: justify;">A través de este directorio el Programa Colombia Nos Une quiere reconocer y apoyar la labor de  las asociaciones  de colombianos en el exterior,  en cuanto a su identificación y  difusión de sus actividades y eventos, Así mismo busca brindar una herramienta útil de consulta para toda la comunidad migrante. El Programa Colombia Nos Une no tiene ninguna injerencia o responsabilidad en cuanto a la información de las asociaciones, o en la organización y desarrollo de actividades adelantadas por estos grupos.</p>
+              </br>
+              <div><p style="font-family:arial;font-size:12px;text-align: justify;">Registrar tu asociación 
+              <a href="http://www.colombianosune.com/node/add/asociaciones" title="pulsa para registrar" rel="add negocio"> <img alt="Inicio" src="/sites/default/files/img_not_die/BotonRegistroAsociacion.png" width="65" height="75"><br></a>
+              </p></div>
+            format: '2'
+          tokenize: false
+      display_extenders: {  }
+      path: ejes/plancomunidad/asociaciones/directorio
     cache_metadata:
       max-age: -1
       contexts:

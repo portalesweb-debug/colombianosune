@@ -1,0 +1,25 @@
+uuid: 856436f0-9994-41b2-abd4-680931c7c6c2
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a64a75d9-ba82-48d9-b8b9-69e1b2adde52'
+  module:
+    - block_content
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_secciongovco_redes
+theme: colombianosune_d11
+region: none
+weight: -22
+provider: null
+plugin: 'block_content:a64a75d9-ba82-48d9-b8b9-69e1b2adde52'
+settings:
+  id: 'block_content:a64a75d9-ba82-48d9-b8b9-69e1b2adde52'
+  label: secciongovco_redes
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

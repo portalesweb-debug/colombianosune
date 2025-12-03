@@ -1,0 +1,31 @@
+uuid: 614b03d7-46db-4c57-a92f-0d86232d20ff
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c99fd344-bc54-4253-bcda-70bbb8553cac'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_bannermultiplicadorquito
+theme: colombianosune_d11
+region: none
+weight: -7
+provider: null
+plugin: 'block_content:c99fd344-bc54-4253-bcda-70bbb8553cac'
+settings:
+  id: 'block_content:c99fd344-bc54-4253-bcda-70bbb8553cac'
+  label: 'Banner Multiplicador  Quito'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-quito/*'

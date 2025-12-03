@@ -1,0 +1,30 @@
+uuid: 5ced419a-7543-4e57-a8b9-b6fc75040895
+langcode: es
+status: false
+dependencies:
+  config:
+    - system.menu.multiplicador-en-guadalajar
+  module:
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_multiplicadorenguadalajara
+theme: colombianosune_d11
+region: none
+weight: 14
+provider: null
+plugin: 'system_menu_block:multiplicador-en-guadalajar'
+settings:
+  id: 'system_menu_block:multiplicador-en-guadalajar'
+  label: 'Multiplicador en Guadalajara'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/multiplicador-guadalajara/*'

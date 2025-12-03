@@ -12,20 +12,20 @@ dependencies:
 id: banneroficinaquindio
 theme: colombianosune
 region: content_navigation
-weight: -49
+weight: -38
 provider: null
 plugin: 'block_content:2118b649-1cb1-4218-a5cc-c7d7cb545c25'
 settings:
   id: 'block_content:2118b649-1cb1-4218-a5cc-c7d7cb545c25'
   label: 'Banner oficina quindio'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/oficina-quindio/*'
     negate: false
     context_mapping: {  }
+    pages: '/oficina-quindio/*'

@@ -12,20 +12,20 @@ dependencies:
 id: encabezadomultiplicadores
 theme: colombianosune
 region: content
-weight: -55
+weight: -42
 provider: null
 plugin: 'block_content:759c5baf-1db7-4d24-9160-e93b51ee54ea'
 settings:
   id: 'block_content:759c5baf-1db7-4d24-9160-e93b51ee54ea'
   label: MULTIPLICADORES
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /ejes/plancomunidad/multiplicadores
     negate: false
     context_mapping: {  }
+    pages: /ejes/plancomunidad/multiplicadores

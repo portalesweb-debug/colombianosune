@@ -1,0 +1,30 @@
+uuid: e2f336f7-3088-4460-9e8a-88dfd7b907b3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:information_interest:798ea313-9161-441c-ae5a-fbb84eafde35'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune
+id: colombianosune_informaciondeinteres2
+theme: colombianosune
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:798ea313-9161-441c-ae5a-fbb84eafde35'
+settings:
+  id: 'block_content:798ea313-9161-441c-ae5a-fbb84eafde35'
+  label: 'Información de interés 2'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
