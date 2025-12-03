@@ -15,6 +15,11 @@ body {
   color: var(--text-color, #333333);
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Contenedor principal */
 .container-fluid {
   padding-left: 15px;
@@ -66,25 +71,53 @@ a[href="#main-content"],
 }
 
 /* === AQUÍ está la clave: contenedor de los párrafos === */
-.block-info-interes .content {
+.block-info-interes .info-interes__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  /* separación entre ítems */
+  justify-content: center;
+  /* centra horizontalmente la fila */
+  align-items: flex-start;
+  /* alinea cada tarjeta por arriba */
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  /* usamos GRID */
-  grid-template-columns: repeat(4, 1fr);
-  /* 4 columnas */
-  column-gap: 2.5rem;
-  row-gap: 2.5rem;
-  justify-items: center;
-  /* centra cada tarjeta */
+  /* opcional: evita que heredados apliquen display:block */
+  align-content: flex-start;
 }
+
+.block-info-interes .info-interes__grid .field__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* asegúrate que los field__item no rompan layout */
+.block-info-interes .info-interes__grid .field__item {
+  display: contents;
+  /* hace que el .field__item no introduzca caja extra */
+}
+
+/* o si display:contents no es opción por compatibilidad: */
+.block-info-interes .info-interes__grid .field__item {
+  display: block;
+  margin: 0;
+}
+
+
+
+
+
+
+
 
 /* Cada párrafo = tarjeta (icono arriba, botón abajo) */
 .block-info-interes .paragraph {
   width: 230px;
   display: flex;
   flex-direction: column;
-  /* icono arriba, botón abajo */
   align-items: center;
 }
 
@@ -279,4 +312,52 @@ text-align: center;
   .subtitle-title {
     font-size: 22px;
   }
+}
+
+.slider-item-wrapper {
+  width: 100%;
+}
+
+.slider-item-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 420px;
+  /* Ajusta según diseño */
+}
+
+.slider-left {
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-right {
+  width: 50%;
+  background-color: #004B87;
+  /* Azul branding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.slider-right-content {
+  max-width: 500px;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ffffff;
+  /* azul Uniandes */
+  font-size: 40px;
 }

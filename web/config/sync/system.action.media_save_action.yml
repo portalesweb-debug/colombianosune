@@ -1,5 +1,5 @@
 uuid: b695d5f3-57ad-4ee1-a686-64431e222342
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: VVyUA6PIaVeGtcIbgEWqJ6SYDiJdReBeojFswURFpKs
 id: media_save_action
-label: 'Save media'
+label: 'Guardar medio'
 type: media
 plugin: 'entity:save_action:media'
 configuration: {  }

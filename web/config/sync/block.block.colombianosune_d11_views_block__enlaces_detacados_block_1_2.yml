@@ -12,7 +12,7 @@ dependencies:
 id: colombianosune_d11_views_block__enlaces_detacados_block_1_2
 theme: colombianosune_d11
 region: content
-weight: -44
+weight: -45
 provider: null
 plugin: 'views_block:enlaces_detacados-block_1'
 settings:

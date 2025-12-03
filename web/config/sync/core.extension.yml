@@ -6,6 +6,7 @@ module:
   admin_toolbar_tools: 0
   automated_cron: 0
   backup_migrate: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -13,6 +14,7 @@ module:
   ckeditor5: 0
   ckeditor5_plugin_pack: 0
   ckeditor5_plugin_pack_media_embed: 0
+  cnu_content_blocks: 0
   comment: 0
   config: 0
   config_translation: 0
@@ -77,6 +79,10 @@ module:
   sharethis: 0
   shortcut: 0
   sitemap: 0
+  slick: 0
+  slick_paragraphs: 0
+  slick_ui: 0
+  slick_views: 0
   system: 0
   taxonomy: 0
   text: 0

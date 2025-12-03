@@ -12,7 +12,7 @@ dependencies:
 id: colombianosune_d11_encabezadomultiplicadores
 theme: colombianosune_d11
 region: content
-weight: -45
+weight: -46
 provider: null
 plugin: 'block_content:759c5baf-1db7-4d24-9160-e93b51ee54ea'
 settings:

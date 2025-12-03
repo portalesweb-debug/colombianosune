@@ -60,6 +60,8 @@
         "drupal/sharethis": "^3.1",
         "drupal/sitemap": "^2.5",
         "drupal/slick": "^3.0",
+        "drupal/slick_paragraphs": "^3.0",
+        "drupal/slick_views": "^3.0",
         "drupal/stable": "^2.1",
         "drupal/token": "^1.16",
         "drupal/tour": "^2.0",
