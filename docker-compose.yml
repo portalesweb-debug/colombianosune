@@ -4,7 +4,7 @@ services:
     container_name: colombianosune_app
     restart: unless-stopped
     ports:
-      - "81:80"
+      - "82:80"
     environment:
       # Variables de entorno para conexión a DB externa
       - DB_HOST=${DB_HOST}
