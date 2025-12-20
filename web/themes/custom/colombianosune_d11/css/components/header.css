@@ -10,6 +10,11 @@
   color: #ffffff;
 }
 
+.govco-header__top #block-colombianosune-d11-secciongovco-img img{
+  width: auto;
+  height: 25px;
+}
+
 .govco-header__top-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,8 +58,12 @@ a.glink:active {
 /* 2) FRANJA BLANCA */
 .govco-header__middle {
   background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid #e5e5e5;*/
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
+
 
 .govco-header__middle-inner {
   max-width: 1200px;
@@ -64,6 +73,34 @@ a.glink:active {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+.govco-header__middle p{
+  margin: 0;
+}
+.govco-header__middle #block-colombianosune-d11-logoimg{
+  order: 1;
+}
+.govco-header__middle #block-colombianosune-d11-logoimg img{
+  width: 72px;
+  height: 64px;
+}
+.govco-header__middle #block-colombianosune-d11-search{
+  width: 100%;
+  max-width: 433px;
+  order: 2;
+}
+.govco-header__middle #block-colombianosune-d11-search .content{
+  width: 100%;
+}
+.govco-header__middle #block-colombianosune-d11-search .form-type-search{
+  width: 100%;
+}
+.govco-header__middle  #block-colombianosune-d11-logocancilleria{
+  order: 3;
+}
+.govco-header__middle  #block-colombianosune-d11-logocancilleria img{
+  width: 145px;
+  height: 84px;
 }
 
 .govco-header__logo img {
@@ -83,12 +120,14 @@ a.glink:active {
   max-width: 520px;
   display: flex;
   border-radius: 999px;
-  border: 1px solid #dddddd;
+  border: 1px solid #EAEAE9;
   overflow: hidden;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
+  flex-flow: nowrap !important;
 }
 
 .govco-header__search input {
+  width: 100%;
   flex: 1;
   border: none;
   padding: 0.65rem 1rem;
@@ -100,24 +139,33 @@ a.glink:active {
   outline: none;
 }
 
-.govco-header__search button {
-  border: none;
-  padding: 0 1.1rem;
+.govco-header__search #edit-actions #edit-submit{
+  width: 34px;
+  height: 34px;
+  font-size: 0;
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-head_lupa.png) center center no-repeat;
+  background-size: 80%;
+  background-color: #FFFFFF;
+  padding: 0;
   cursor: pointer;
-  background: transparent;
-  font-size: 1.1rem;
+  border-radius: 70px;
+  color: #D9D9D9;
+}
+.govco-header__search #edit-actions #edit-submit:hover{
+  background-color: #ECEBEB;
 }
 
 /* 3) FRANJA GRIS MENÚ */
 .govco-header__nav {
   background-color: #F8F8F8;
-  border-top: 1px solid #e5e5e5;
+  /*border-top: 1px solid #e5e5e5;*/
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
 }
 
 .govco-header__nav-list {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.4rem 1rem 0.6rem;
+  padding: 12px 20px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -129,9 +177,97 @@ a.glink:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.78rem;
-  color: #333333;
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 500;
   text-decoration: none;
+}
+.govco-header__nav-list li a .icon-label{
+  position: relative;
+}
+.govco-header__nav-list li a:last-child .icon-label::before {
+  display: none;
+}
+/*iconos*/
+.govco-header__nav-list .fa-asterisk:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-home.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-exclamation-triangle:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-cnu.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-wpexplorer:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-comunidades.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-repeat:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-retorno.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-hand-paper-o:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-participacion.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-file-movie-o:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-transparencia.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-slideshare:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-salaPrensa.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.govco-header__nav-list .fa-comments-o:before{
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(https://proyectosonlineweb.com/colombianosune/themes/custom/colombianosune_d11/img/ico-contacto.png) 0 0 no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+
+
+
+
+.govco-header__nav-list .icon-label:before{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #BFBFBF;
+  position: absolute;
+  right: -16px;
+  content: "";
+  bottom: 7px;
 }
 
 .govco-header__nav-list li span:first-child {
@@ -147,14 +283,62 @@ a.glink:active {
 /* Responsive básico */
 @media (max-width: 768px) {
   .govco-header__middle-inner {
-    flex-direction: column;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
   }
 
   .govco-header__nav-list {
     flex-wrap: wrap;
     justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .govco-header__top #block-colombianosune-d11-secciongovco-img img{
+    height: 16px;
+  }
+  /*logos search*/
+
+  .govco-header__search{
+    width: 90%;
+    padding: 5px 10px;
+  }
+  .govco-header__middle #block-colombianosune-d11-logoimg{
+    order: 1;
+  }
+   .govco-header__middle #block-colombianosune-d11-logoimg img{
+    width: auto;
+    height: 50px;
+  }
+  .govco-header__middle #block-colombianosune-d11-search{
+    order: 3;
+  }
+  .govco-header__middle  #block-colombianosune-d11-logocancilleria{
+    order: 2;
+  }
+  .govco-header__middle  #block-colombianosune-d11-logocancilleria img{
+    width: auto;
+    height: 50px;
   }
 }
+@media (max-width: 576px) {
+  .govco-header__nav-list {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .govco-header__nav-list li a{
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .govco-header__nav-list {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
 
 
 

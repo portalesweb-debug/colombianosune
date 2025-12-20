@@ -126,7 +126,7 @@ a[href="#main-content"],
   color: var(--accent-yellow);
   text-decoration: none;
   padding: 0.8rem 1.8rem;
-  border-radius: 999px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 0.95rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
@@ -238,12 +238,12 @@ a[href="#main-content"],
 .subtitle-line {
   display: flex;
   align-items: center;
-  gap: 4px;
+  /*gap: 4px;*/
 }
 
 .subtitle-line .line {
-  height: 4px;
-  border-radius: 2px;
+  height: 3px;
+  /*border-radius: 2px;*/
 }
 
 .subtitle-line .yellow {
@@ -300,12 +300,19 @@ a[href="#main-content"],
   width: 50%;
   overflow: hidden;
 }
-
+.slider-left .field--type-entity-reference{
+  height: 100% !important;
+  margin: 0 !important;
+}
+.slider-left .blazy .media{
+  height: 100% !important;
+}
 .slider-left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 
 .slider-right {
   width: 50%;
@@ -340,6 +347,7 @@ a[href="#main-content"],
   background: var(--background-gray);
   justify-content: space-between;
   align-items: flex-start;
+  max-width: 1280px;
 }
 
 .path-frontpage #block-colombianosune-d11-videos,
@@ -368,6 +376,56 @@ a[href="#main-content"],
   margin: 0 0 16px 0;
 }
 
+
+
+.path-frontpage .featured-top {
+	background: var(--background-gray);
+}
+
+.path-frontpage #block-colombianosune-d11-videos{ 
+  flex: 0 0 calc(65% - 12px);
+  max-width: calc(65% - 12px);
+  width: calc(65% - 12px);
+  @media (max-width: 850px) {
+      flex: auto;
+      max-width: 100%;
+      width: 100%;
+  }
+}
+
+.path-frontpage #block-colombianosune-d11-redessocialesfacebookinstagramx {
+  flex: 0 0 calc(35% - 12px);
+  max-width: calc(35% - 12px);
+  width: calc(35% - 12px);
+  @media (max-width: 850px) {
+      flex: auto;
+      max-width: 100%;
+      width: 100%;
+  }
+}
+
+
+.path-frontpage .slick-arrow {
+  width: 34px;
+  height: 34px;
+}
+
+.path-frontpage .slick-prev{
+  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' fill='%23004884'/> <path d='M11 17L19.5 8.5V25.5L11 17Z' fill='white'/></svg>");
+  left: 15px;
+  &:before{
+    content: none;
+  }
+}
+
+.path-frontpage .slick-next{
+  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' transform='matrix(-1 0 0 1 34 0)' fill='%23004884'/> <path d='M23 17L14.5 8.5V25.5L23 17Z' fill='white'/> </svg>");
+  right: 15px;
+  &:before{
+    content: none;
+  }
+}
+
 /* ===== MEDIA QUERIES ===== */
 
 /* Tablets y pantallas medianas */
@@ -392,6 +450,7 @@ a[href="#main-content"],
     max-width: 100%;
     width: 100%;
   }
+  
 }
 
 /* Móviles pequeños */
@@ -419,4 +478,102 @@ a[href="#main-content"],
   .subtitle-title {
     font-size: 22px;
   }
+
+   /*slider*/
+  .slider-item-inner {
+    flex-direction: column;
+  }
+  .slider-left{
+    width: 100%;
+  }
+  .slider-right{
+    width: 100%;
+  }
+}
+
+
+/*slider videos*/
+.slick--field-galeria img{
+  width: 100%;
+  object-fit: cover;
+  max-height: 370px;
+}
+
+
+
+
+
+.site-footer{
+    padding: 10px 0 10px;
+}
+
+.site-footer__logo{
+  max-width: 940px;
+  padding-inline: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__logo .logos{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.site-footer__logo .logos img {
+    max-height: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.site-footer__logo .logos img.img-gov1{
+  max-width: 40px;
+}
+
+.site-footer__logo .logos img.img-gov2{
+  max-width: 95px;
+}
+
+.site-footer__logo .logos .line {
+  width: 1px;
+  height: 38px;
+  background-color: white;
+  display: block;
+}
+
+.site-footer__logo .action a{
+  color: white;
+  font-size: 12px;
+}
+
+
+/* MOVER A .css de modulo */
+.social-tabs-content {
+    overflow-x: auto;
+}
+
+.govco-header__nav section.full-width{
+  width: 100% !important;
+}
+
+div.sharethis-wrapper{ display: none;}
+
+#main-wrapper{padding: 0px 10%;}
+
+.field--name-body img{
+  width:100%
+}
+
+.block-info-interes h2 {
+    font-size: 45px;
+    line-height: 35px;
+    color: #004884;
+}
+
+.block-info-interes .info-interes_grid .field_items {
+  justify-content: space-between;
+    width: 100%;
 }
