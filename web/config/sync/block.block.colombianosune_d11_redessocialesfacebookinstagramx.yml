@@ -1,0 +1,33 @@
+uuid: ba6d122e-1cf0-4995-b1bd-56d7f7f26da9
+langcode: es
+status: true
+dependencies:
+  module:
+    - redes_sociales_tabs
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_redessocialesfacebookinstagramx
+theme: colombianosune_d11
+region: featured_top
+weight: -49
+provider: null
+plugin: social_tabs_block
+settings:
+  id: social_tabs_block
+  label: 'Redes sociales'
+  label_display: visible
+  provider: redes_sociales_tabs
+  facebook_url: 'https://www.facebook.com/CancilleriaCol/'
+  instagram_url: 'https://www.instagram.com/cancilleriacol/'
+  twitter_url: 'https://twitter.com/CancilleriaCol'
+  tiktok_url: 'https://www.tiktok.com/@cancilleriacol'
+  enable_facebook: 1
+  enable_instagram: 1
+  enable_twitter: 1
+  enable_tiktok: 1
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

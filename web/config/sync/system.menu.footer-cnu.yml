@@ -1,0 +1,8 @@
+uuid: 30772516-6076-40e4-8789-a0659a2bb596
+langcode: es
+status: true
+dependencies: {  }
+id: footer-cnu
+label: 'Footer CNU'
+description: ''
+locked: false

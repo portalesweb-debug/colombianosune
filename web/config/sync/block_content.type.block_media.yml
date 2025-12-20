@@ -1,0 +1,8 @@
+uuid: c6a3fba8-8215-411a-a60f-559e5c32b9c4
+langcode: es
+status: true
+dependencies: {  }
+id: block_media
+label: 'bloque multimedia'
+revision: false
+description: null

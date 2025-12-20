@@ -22,7 +22,7 @@ content:
       admin_uri: '/admin/structure/block-content/manage/slider/display?ajax_form=1&_wrapper_format=drupal_ajax'
       use_lb: false
       use_theme_field: false
-      skin: ''
+      skin: grid
       overridables:
         arrows: '0'
         autoplay: '0'

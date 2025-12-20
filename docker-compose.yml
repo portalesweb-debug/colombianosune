@@ -1,0 +1,52 @@
+services:
+  drupal:
+    build: .
+    container_name: colombianosune_app
+    restart: unless-stopped
+    ports:
+      - "82:80"
+    environment:
+      # Variables de entorno para conexión a DB externa
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      
+    volumes:
+      - drupal_files:/var/www/html/web/sites/default/files
+      - apache_logs:/var/log/apache2
+      - php_logs:/var/log/php
+      
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+          
+    # Configuración de ulimits para manejar muchos archivos
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 20000
+        hard: 40000
+        
+    # Configuración de logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+# Volúmenes nombrados para persistencia
+volumes:
+  drupal_files:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${VOLUME_PATH:-./files}
+  apache_logs:
+    driver: local
+  php_logs:
+    driver: local

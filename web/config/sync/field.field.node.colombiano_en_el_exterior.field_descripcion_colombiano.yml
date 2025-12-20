@@ -1,0 +1,19 @@
+uuid: 720f0414-c4c8-4ba9-a044-d1d0e2a53a6b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion_colombiano
+    - node.type.colombiano_en_el_exterior
+id: node.colombiano_en_el_exterior.field_descripcion_colombiano
+field_name: field_descripcion_colombiano
+entity_type: node
+bundle: colombiano_en_el_exterior
+label: Descripción
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

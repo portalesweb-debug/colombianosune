@@ -4,33 +4,29 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.enlaces_detacados.body
+    - field.field.node.enlaces_detacados.field_enlace_destacado
+    - field.field.node.enlaces_detacados.field_imagen_destacados
+    - field.field.node.enlaces_detacados.field_texto_destacado
     - node.type.enlaces_detacados
   module:
-    - text
     - user
 id: node.enlaces_detacados.teaser
 targetEntityType: node
 bundle: enlaces_detacados
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   sharethis:
-    weight: -10
     settings: {  }
     third_party_settings: {  }
+    weight: -10
     region: content
 hidden:
+  field_enlace_destacado: true
+  field_imagen_destacados: true
+  field_texto_destacado: true
   langcode: true

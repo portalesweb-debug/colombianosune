@@ -36,5 +36,22 @@ function cnu_content_blocks_theme($existing, $type, $theme, $path) {
       ],
       'template' => 'cnu-content-prominent-block',
     ],
+     'cnu_footer_block' => [
+      'variables' => [
+        'menu' => NULL,
+        'config' => NULL,
+      ],
+      'template' => 'block--cnu-footer',
+    ],
+    'cnu_colombianos_ext' => [
+      'variables' => [
+        'items' => NULL,
+      ],
+      'template' => 'cnu-colombianos-ext',
+    ],
+    'cnu_enlaces_destacados' => [
+      'variables' => ['items' => NULL],
+      'template' => 'cnu-enlaces-destacados',
+    ],
   ];
 }

@@ -72,6 +72,10 @@
 {% set sidebar_first_exists = page.sidebar_first|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
 {% set sidebar_second_exists = page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
 
+
+{% set image_gov1 =  base_path ~  "/themes/custom/colombianosune_d11/img/gov.co_co-footer.png"  %}
+{% set image_gov2 =  base_path ~  "/themes/custom/colombianosune_d11/img/gov.co-footer.png"  %}
+
 {% block head %}
   <!-- HEADER GOVCO -->
   <header class="govco-header">
@@ -148,7 +152,17 @@
             </div>
           {% endif %}
 
-           <img src="https://colombianosune.ddev.site:33003/sites/default/files/2025-12/92ef2ab74d15d88c8093da683f668f2093e9dfeb.png" alt="GOV.CO" style="max-width: 100%;">
+           <div class="site-footer__logo">
+            <div class="logos">
+                <img src="{{image_gov1}}"  class="img-gov1" alt="CO Colombia">
+                <span class="line"></span>
+                <img src="{{image_gov2}}" class="img-gov2" alt="GOV.CO"> 
+            </div>
+            <div class="action">
+              <a href="https://www.gov.co/">Conoce GOV.CO aquí</a>
+            </div>
+          </div>
+		  
         </div>
 
 {% endblock %}

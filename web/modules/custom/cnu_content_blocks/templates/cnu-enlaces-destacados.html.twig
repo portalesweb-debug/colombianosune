@@ -1,0 +1,26 @@
+<div class="mb-cnu-content_featured" >
+  <h2 class="mb-cnu-content_featured-title"> Enlaces destacados </h2>
+  <div class="mb-cnu-content_featured-wrapper">
+    {% for item in items %}
+      <div class="mb-cnu-content_featured-item">
+          <a href="{{ item.url }}" class="mb-cnu-content_featured-item-link">
+            {% if item.image %}
+              <div class="mb-cnu-content_featured-item-image  mb-cnu-front">
+                <img src="{{ item.image }}" alt="destacado {{ i }}" loading="lazy">
+              </div>
+            {% endif %}
+            {% if item.text %}
+              <div class="mb-cnu-content_featured-item-body  mb-cnu-front">
+                <h3 class="mb-cnu-content_featured-item-title"> {{ item.text }} </h3>
+              </div>
+            {% endif %}
+
+             <div class="mb-cnu-content_featured-item-body  mb-cnu-back">
+              dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean massa
+            </div>
+
+          </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

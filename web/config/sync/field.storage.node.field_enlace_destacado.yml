@@ -1,0 +1,19 @@
+uuid: 5dc35f38-e97a-4671-afe9-c8ede2496f7a
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_enlace_destacado
+field_name: field_enlace_destacado
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
