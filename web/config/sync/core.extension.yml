@@ -73,6 +73,7 @@ module:
   path_alias: 0
   rdf: 0
   recaptcha: 0
+  redes_sociales_tabs: 0
   rest: 0
   search: 0
   serialization: 0

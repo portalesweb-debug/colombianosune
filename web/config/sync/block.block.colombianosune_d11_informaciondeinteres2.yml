@@ -11,8 +11,8 @@ dependencies:
     - colombianosune_d11
 id: colombianosune_d11_informaciondeinteres2
 theme: colombianosune_d11
-region: content
-weight: -48
+region: highlighted
+weight: -47
 provider: null
 plugin: 'block_content:798ea313-9161-441c-ae5a-fbb84eafde35'
 settings:

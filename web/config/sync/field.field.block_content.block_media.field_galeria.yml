@@ -1,0 +1,29 @@
+uuid: d432a951-dbab-40d6-8db9-63e6ce4d5209
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_media
+    - field.storage.block_content.field_galeria
+    - media.type.slick_image
+id: block_content.block_media.field_galeria
+field_name: field_galeria
+entity_type: block_content
+bundle: block_media
+label: galeria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      slick_image: slick_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

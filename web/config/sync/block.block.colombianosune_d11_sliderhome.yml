@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:slider:485388db-a44e-4e58-810b-ee76bc35d3fc'
   module:
     - block_content
+    - system
   theme:
     - colombianosune_d11
 id: colombianosune_d11_sliderhome
 theme: colombianosune_d11
 region: highlighted
-weight: 0
+weight: -48
 provider: null
 plugin: 'block_content:485388db-a44e-4e58-810b-ee76bc35d3fc'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

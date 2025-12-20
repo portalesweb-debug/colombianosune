@@ -1,0 +1,11 @@
+uuid: 15fb7bf0-a5d1-43d6-af8f-db79c6ca6b78
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colombiano_en_el_exterior
+id: node.colombiano_en_el_exterior
+target_entity_type_id: node
+target_bundle: colombiano_en_el_exterior
+default_langcode: site_default
+language_alterable: false

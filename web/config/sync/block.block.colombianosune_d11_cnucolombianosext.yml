@@ -1,0 +1,26 @@
+uuid: d0c7e735-8a64-41b4-ab67-5ab995090b56
+langcode: es
+status: true
+dependencies:
+  module:
+    - cnu_content_blocks
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_cnucolombianosext
+theme: colombianosune_d11
+region: content
+weight: 0
+provider: null
+plugin: cnu_colombianos_ext
+settings:
+  id: cnu_colombianos_ext
+  label: 'CNU - Colombianos Ext'
+  label_display: '0'
+  provider: cnu_content_blocks
+  limit: '3'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

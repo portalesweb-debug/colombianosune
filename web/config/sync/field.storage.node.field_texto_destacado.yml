@@ -1,0 +1,21 @@
+uuid: e2bee09e-7386-4245-8e9b-99a2e0f347f6
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_texto_destacado
+field_name: field_texto_destacado
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

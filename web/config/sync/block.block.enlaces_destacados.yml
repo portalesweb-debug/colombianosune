@@ -1,6 +1,6 @@
 uuid: f3994972-44ef-422a-930e-4c9bea47f0c3
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - cnu_content_blocks
@@ -9,8 +9,8 @@ dependencies:
     - colombianosune_d11
 id: enlaces_destacados
 theme: colombianosune_d11
-region: content
-weight: -41
+region: highlighted
+weight: -46
 provider: null
 plugin: cnu_content_prominent_block
 settings:

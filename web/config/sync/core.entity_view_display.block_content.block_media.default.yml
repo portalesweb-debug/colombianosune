@@ -1,0 +1,92 @@
+uuid: 43541327-e4c8-4e98-b7f4-6b729129286a
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_media
+    - field.field.block_content.block_media.field_galeria
+    - field.field.block_content.block_media.field_video
+  module:
+    - slick
+id: block_content.block_media.default
+targetEntityType: block_content
+bundle: block_media
+mode: default
+content:
+  field_galeria:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        field_media_image_1: '0'
+      optionset: default
+      class: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: true
+      by_delta: -1
+      layout: ''
+      view_mode: default
+      cache: 0
+      admin_uri: '/admin/structure/block-content/manage/block_media/display?ajax_form=1&_wrapper_format=drupal_ajax&_wrapper_format=drupal_ajax'
+      use_lb: false
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      use_theme_field: false
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: nativegrid
+      svg_inline: false
+      svg_fill: false
+      svg_sanitize: true
+      svg_sanitize_remote: false
+      svg_hide_caption: false
+      svg_attributes: ''
+      skin: split
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

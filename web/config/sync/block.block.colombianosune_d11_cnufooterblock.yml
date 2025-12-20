@@ -1,0 +1,34 @@
+uuid: a5edb22e-de6c-4996-a224-6851346f45ee
+langcode: es
+status: true
+dependencies:
+  module:
+    - cnu_content_blocks
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_cnufooterblock
+theme: colombianosune_d11
+region: featured_bottom_third
+weight: 0
+provider: null
+plugin: cnu_footer_block
+settings:
+  id: cnu_footer_block
+  label: 'CNU Footer Block'
+  label_display: '0'
+  provider: cnu_content_blocks
+  menu_machine_name: footer-cnu
+  logo_gobierno:
+    - '59086'
+  icontec1:
+    - '59087'
+  icontec2:
+    - '59088'
+  iqnet:
+    - '59089'
+  email: CNU@cancilleria.gov.co
+  link_x: 'https://x.com/ColombiaNosUne'
+  facebook: 'http://www.facebook.com/ColombiaNosUneMRE'
+  youtube: 'https://www.youtube.com/user/ColombiaNosUne'
+  instagram: 'https://www.instagram.com/colombianosune/'
+visibility: {  }

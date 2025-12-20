@@ -1,0 +1,26 @@
+uuid: 6c572b1f-1558-4b88-9f57-24e89e6833ab
+langcode: es
+status: true
+dependencies:
+  module:
+    - cnu_content_blocks
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_cnuenlacesdestacados
+theme: colombianosune_d11
+region: highlighted
+weight: 0
+provider: null
+plugin: cnu_enlaces_destacados
+settings:
+  id: cnu_enlaces_destacados
+  label: 'CNU - Enlaces Destacados'
+  label_display: '0'
+  provider: cnu_content_blocks
+  limit: '4'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

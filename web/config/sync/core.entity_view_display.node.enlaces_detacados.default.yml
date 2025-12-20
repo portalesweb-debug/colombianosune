@@ -3,32 +3,59 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.enlaces_detacados.body
+    - field.field.node.enlaces_detacados.field_enlace_destacado
+    - field.field.node.enlaces_detacados.field_imagen_destacados
+    - field.field.node.enlaces_detacados.field_texto_destacado
     - node.type.enlaces_detacados
   module:
-    - text
+    - image
+    - link
     - user
 id: node.enlaces_detacados.default
 targetEntityType: node
 bundle: enlaces_detacados
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+  field_enlace_destacado:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
+    weight: 103
+    region: content
+  field_imagen_destacados:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_texto_destacado:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   sharethis:
-    weight: -10
     settings: {  }
     third_party_settings: {  }
+    weight: -10
     region: content
 hidden:
   langcode: true
