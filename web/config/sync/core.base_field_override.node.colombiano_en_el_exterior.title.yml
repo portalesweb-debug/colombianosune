@@ -1,0 +1,18 @@
+uuid: 9f3a7795-1d0e-4d90-8d56-638c68a527b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.colombiano_en_el_exterior
+id: node.colombiano_en_el_exterior.title
+field_name: title
+entity_type: node
+bundle: colombiano_en_el_exterior
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

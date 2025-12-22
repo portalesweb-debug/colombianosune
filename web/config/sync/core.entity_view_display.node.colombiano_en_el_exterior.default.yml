@@ -1,0 +1,70 @@
+uuid: e93904e3-4282-44f7-8b54-83c133cea3d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.colombiano_en_el_exterior.field_descripcion_colombiano
+    - field.field.node.colombiano_en_el_exterior.field_foto
+    - image.style.large
+    - node.type.colombiano_en_el_exterior
+  module:
+    - blazy
+    - user
+id: node.colombiano_en_el_exterior.default
+targetEntityType: node
+bundle: colombiano_en_el_exterior
+mode: default
+content:
+  field_descripcion_colombiano:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_foto:
+    type: blazy
+    label: hidden
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      link: ''
+      by_delta: -1
+      layout: ''
+      view_mode: ''
+      cache: 0
+      admin_uri: '/colombianosune/admin/structure/types/manage/colombiano_en_el_exterior/display?ajax_form=1&_wrapper_format=drupal_ajax'
+      use_lb: false
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      use_theme_field: false
+      box_style: ''
+      image_style: large
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  sharethis:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

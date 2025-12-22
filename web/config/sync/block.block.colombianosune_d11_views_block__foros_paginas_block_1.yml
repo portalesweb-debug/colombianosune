@@ -12,7 +12,7 @@ dependencies:
 id: colombianosune_d11_views_block__foros_paginas_block_1
 theme: colombianosune_d11
 region: content
-weight: -32
+weight: -38
 provider: null
 plugin: 'views_block:foros_paginas-block_1'
 settings:

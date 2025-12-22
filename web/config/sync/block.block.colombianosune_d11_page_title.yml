@@ -9,7 +9,7 @@ _core:
 id: colombianosune_d11_page_title
 theme: colombianosune_d11
 region: content
-weight: -36
+weight: -42
 provider: null
 plugin: page_title_block
 settings:

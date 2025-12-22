@@ -1,0 +1,19 @@
+uuid: 5099f136-4b0f-40fe-adb2-c61081e02182
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texto_destacado
+    - node.type.enlaces_detacados
+id: node.enlaces_detacados.field_texto_destacado
+field_name: field_texto_destacado
+entity_type: node
+bundle: enlaces_detacados
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

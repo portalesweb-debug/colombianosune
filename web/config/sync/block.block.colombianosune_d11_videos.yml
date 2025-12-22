@@ -1,0 +1,30 @@
+uuid: 8c9a4174-f6e6-4006-948f-9d77fb387440
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:block_media:27255c37-7d07-482d-a890-435f94d5a30b'
+  module:
+    - block_content
+    - system
+  theme:
+    - colombianosune_d11
+id: colombianosune_d11_videos
+theme: colombianosune_d11
+region: featured_top
+weight: -50
+provider: null
+plugin: 'block_content:27255c37-7d07-482d-a890-435f94d5a30b'
+settings:
+  id: 'block_content:27255c37-7d07-482d-a890-435f94d5a30b'
+  label: Videos
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

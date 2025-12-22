@@ -1,6 +1,6 @@
 uuid: 87ebd775-b859-4fe8-b470-d1cdd6ce7e21
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - cnu_content_blocks
@@ -10,7 +10,7 @@ dependencies:
 id: colombianosune_d11_cnucontentprominentblock
 theme: colombianosune_d11
 region: content
-weight: -40
+weight: -46
 provider: null
 plugin: cnu_content_prominent_block
 settings:

@@ -6,14 +6,16 @@ features:
 logo:
   use_default: 1
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://favicon.ico'
+  mimetype: image/vnd.microsoft.icon
 bootstrap_source: '0'
 bootstrap_enable_color: 0
 bootstrap_system_messages: ''
 bootstrap_table_style: ''
 bootstrap_table_hover: 0
 bootstrap_table_head: ''
-bootstrap_container: container
+bootstrap_container: container-lg
 bootstrap_region_clean_top_header: 0
 bootstrap_region_width_top_header: 0
 bootstrap_region_class_top_header: row

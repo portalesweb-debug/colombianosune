@@ -12,7 +12,7 @@ dependencies:
 id: colombianosune_d11_menu_menu_informacioninteres
 theme: colombianosune_d11
 region: content
-weight: -33
+weight: -39
 provider: null
 plugin: 'system_menu_block:menu-informacioninteres'
 settings:
