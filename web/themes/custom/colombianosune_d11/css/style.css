@@ -577,3 +577,18 @@ div.sharethis-wrapper{ display: none;}
   justify-content: space-between;
     width: 100%;
 }
+
+.node--type-colombiano-en-el-exterior  img.media__element.b-lazy.b-loaded {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.mb-cnu-content_featured-item-image img{
+    height:132px;
+}
+
+.mb-cnu-content_featured-item:not(:has(.mb-cnu-content_featured-item-title)) .mb-cnu-content_featured-item-image img{
+    height:199px;
+}
