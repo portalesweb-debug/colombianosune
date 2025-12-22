@@ -80,11 +80,17 @@ class CnuEnlacesDestacadosBlock extends BlockBase implements ContainerFactoryPlu
         'text' => '',
         'url' => '',
         'image' => '',
+        'des' => '',
       ];
 
       // Texto
       if ($node->hasField('field_texto_destacado') && !$node->get('field_texto_destacado')->isEmpty()) {
         $item['text'] = $node->get('field_texto_destacado')->value;
+      }
+
+      // Des
+      if ($node->hasField('field_description') && !$node->get('field_description')->isEmpty()) {
+        $item['des'] = $node->get('field_description')->value;
       }
 
       // Enlace (field_link devuelve un objeto con ->uri y ->title)
