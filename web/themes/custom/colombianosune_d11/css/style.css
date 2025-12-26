@@ -577,3 +577,50 @@ div.sharethis-wrapper{ display: none;}
   justify-content: space-between;
     width: 100%;
 }
+
+.view-preguntas-frecuentes {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+}
+
+.view-preguntas-frecuentes .view-header img {
+    width: 100%;
+}
+
+
+.view-preguntas-frecuentes .panel-group .card h5 {
+    padding: 0;
+    margin: 4px 0;
+}
+
+.view-preguntas-frecuentes .panel-group .card button {
+    width: 100%;
+    text-align: left;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+
+.view-preguntas-frecuentes  .pagination{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+	
+	.page-item.active .page-link {
+    background-color: #f8f8f8;
+    border-color: #898989;
+	}
+
+	.page-link, .page-link:hover {
+		color: #0071b3;
+		padding: 4px 6px;
+	}
+
+}
