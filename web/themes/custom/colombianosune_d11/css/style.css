@@ -592,3 +592,35 @@ div.sharethis-wrapper{ display: none;}
 .mb-cnu-content_featured-item:not(:has(.mb-cnu-content_featured-item-title)) .mb-cnu-content_featured-item-image img{
     height:199px;
 }
+
+.pagination{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+	margin-block:2rem;
+	
+	.page-item.active .page-link {
+    background-color: #f8f8f8;
+    border-color: #898989;
+	}
+
+	.page-link, .page-link:hover {
+		color: #0071b3;
+		padding: 4px 6px;
+	}
+
+}
+
+.view-preguntas-frecuentes {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.view-preguntas-frecuentes .view-header img{
+    width:100%;
+	height:auto;
+	object-fit:cover;
+	object-position:center;
+}
