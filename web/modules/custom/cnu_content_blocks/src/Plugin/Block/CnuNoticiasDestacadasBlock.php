@@ -109,20 +109,27 @@ class CnuNoticiasDestacadasBlock extends BlockBase implements ContainerFactoryPl
       if ($node->hasField('body') && !$node->get('body')->isEmpty()) {
         $body = $node->get('body')->first();
 
-        // 1. Si existe resumen editorial, usarlo (YA viene procesado)
-        if (!empty($body->summary_processed)) {
-          $item['summary'] = $body->summary_processed;
-        }
-        else {
-          // 2. Renderizar el body como teaser (Drupal lo trunca correctamente)
-          $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+        // Obtener texto base: resumen editorial o body completo
+        $text = !empty($body->summary)
+          ? $body->summary
+          : $body->value;
 
-          $build = $view_builder->view($node, 'teaser');
+        // Quitar HTML para truncar con seguridad
+        $plain_text = trim(strip_tags($text));
 
-          if (isset($build['body'])) {
-            $item['summary'] = $build['body'];
-          }
+        // Truncar a 130 caracteres sin cortar palabras
+        if (mb_strlen($plain_text) > 130) {
+          $plain_text = mb_substr($plain_text, 0, 130);
+          $plain_text = preg_replace('/\s+\S*$/u', '', $plain_text);
+          $plain_text .= '…';
         }
+
+        // Volver a procesar el texto con el formato original
+        $item['summary'] = [
+          '#type' => 'processed_text',
+          '#text' => $plain_text,
+          '#format' => $body->format,
+        ];
       }
 
       // Imagen
