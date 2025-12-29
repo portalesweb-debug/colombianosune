@@ -1,0 +1,149 @@
+/* ===============================
+ * STICKY TOOLBAR ACCESIBILIDAD
+ * =============================== */
+
+#a11y-toolbar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 99999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding: 4px;
+  background-color: #ffffff;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+
+  isolation: isolate; /* evita que filtros globales lo afecten */
+}
+
+/* Botones */
+#a11y-toolbar button {
+  min-width: 44px;
+  min-height: 44px;
+
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hover y focus accesibles */
+#a11y-toolbar button:hover,
+#a11y-toolbar button:focus {
+  background-color: #000000;
+  color: #ffffff;
+  outline: 2px solid #00ffff;
+  outline-offset: 2px;
+}
+/* ===============================
+ * MODO ALTO CONTRASTE EXTREMO
+ * (SOLO FRONTEND – NO ADMIN)
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) {
+  background-color: #000 !important;
+  color: #fff !important;
+  filter: contrast(180%) brightness(115%);
+}
+
+/* ===============================
+ * TEXTO Y CONTENEDORES
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) *,
+body.a11y-contrast:not(.path-admin) *::before,
+body.a11y-contrast:not(.path-admin) *::after {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Links muy visibles */
+body.a11y-contrast:not(.path-admin) a {
+  color: #00ffff !important;
+  text-decoration: underline !important;
+  font-weight: 600;
+}
+
+/* Botones */
+body.a11y-contrast:not(.path-admin) button,
+body.a11y-contrast:not(.path-admin) input,
+body.a11y-contrast:not(.path-admin) select,
+body.a11y-contrast:not(.path-admin) textarea {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+}
+
+/* ===============================
+ * IMÁGENES EN NEGATIVO
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) img,
+body.a11y-contrast:not(.path-admin) picture,
+body.a11y-contrast:not(.path-admin) video,
+body.a11y-contrast:not(.path-admin) svg {
+  filter: invert(100%) contrast(160%) brightness(120%) !important;
+}
+
+/* Evitar fondos con imágenes */
+body.a11y-contrast:not(.path-admin) * {
+  background-image: none !important;
+}
+
+/* ===============================
+ * ICONOS SVG INLINE
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) svg path,
+body.a11y-contrast:not(.path-admin) svg rect,
+body.a11y-contrast:not(.path-admin) svg circle {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* ===============================
+ * TABLAS
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) table {
+  border-collapse: collapse;
+}
+
+body.a11y-contrast:not(.path-admin) th,
+body.a11y-contrast:not(.path-admin) td {
+  border: 2px solid #ffffff !important;
+  padding: 0.5rem;
+}
+
+/* ===============================
+ * FORMULARIOS
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) ::placeholder {
+  color: #cccccc !important;
+  opacity: 1;
+}
+
+/* ===============================
+ * EXCLUIR TOOLBAR DE ACCESIBILIDAD
+ * =============================== */
+
+body.a11y-contrast:not(.path-admin) #a11y-toolbar,
+body.a11y-contrast:not(.path-admin) #a11y-toolbar * {
+  filter: none !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+  background-image: none !important;
+}
