@@ -106,16 +106,13 @@ class CnuNoticiasDestacadasBlock extends BlockBase implements ContainerFactoryPl
 
       // Descripción (body)
       if ($node->hasField('body') && !$node->get('body')->isEmpty()) {
-        $full_text = $node->get('body')->value;
-
-        // Cortar a 130 caracteres respetando acentos y sin cortar palabras.
-        $summary = mb_substr($full_text, 0, 130);
-
-        if (mb_strlen($full_text) > 142) {
-          $summary .= '…';
-        }
-
-        $item['summary'] = $summary;
+        $body = $node->get('body')->first();
+        $text = !empty($body->summary) ? $body->summary : $body->value;
+        $item['summary'] = [
+          '#type' => 'processed_text',
+          '#text' => $text,
+          '#format' => $body->format,
+        ];
       }
 
       // Imagen
