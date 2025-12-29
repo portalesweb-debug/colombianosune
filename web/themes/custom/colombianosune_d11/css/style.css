@@ -123,7 +123,7 @@ a[href="#main-content"],
 .block-info-interes .paragraph a {
   display: inline-block;
   background-color: var(--secondary-blue);
-  color: var(--accent-yellow);
+  color: white;
   text-decoration: none;
   padding: 0.8rem 1.8rem;
   border-radius: 10px;
@@ -138,6 +138,7 @@ a[href="#main-content"],
   background-color: var(--primary-blue);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.30);
   transform: translateY(-2px);
+  color: white;
 }
 
 
@@ -623,4 +624,8 @@ div.sharethis-wrapper{ display: none;}
 	height:auto;
 	object-fit:cover;
 	object-position:center;
+}
+
+[class^="iconos-cnu-"], [class*=" iconos-cnu-"] {
+  font-size: 28px;
 }
