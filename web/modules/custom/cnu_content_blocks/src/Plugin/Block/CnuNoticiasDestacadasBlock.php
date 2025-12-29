@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Component\Utility\Html;
+use Drupal\text\TextSummary;
 
 /**
  * Provides "CNU - Noticias Destacadas" block.
@@ -108,11 +108,19 @@ class CnuNoticiasDestacadasBlock extends BlockBase implements ContainerFactoryPl
       // Descripción (body)
       if ($node->hasField('body') && !$node->get('body')->isEmpty()) {
         $body = $node->get('body')->first();
-        $html = !empty($body->summary) ? $body->summary : $body->value;
-        $truncated_html = Html::truncate($html, 130, TRUE, TRUE);
+
+        /** @var \Drupal\text\TextSummary $text_summary */
+        $text_summary = \Drupal::service('text.summary');
+
+        $summary = $text_summary->buildSummary(
+          $body->value,
+          $body->format,
+          130
+        );
+
         $item['summary'] = [
           '#type' => 'processed_text',
-          '#text' => $truncated_html,
+          '#text' => $summary,
           '#format' => $body->format,
         ];
       }
