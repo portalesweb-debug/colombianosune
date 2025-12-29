@@ -1,12 +1,6 @@
 <div class="mb-cnu-content_exterior">
 	<h2 class="mb-cnu-content_exterior-title">{{ custom_title }}</h2>
 
-	{% if items_count %}
-		<div class="mb-cnu-content_exterior-count">
-			{{ items_count }} - Noticias
-		</div>
-	{% endif %}
-
 	<div class="swiper" id="carousel-exterior">
 		<div class="swiper-wrapper">
 			{% for item in items %}
