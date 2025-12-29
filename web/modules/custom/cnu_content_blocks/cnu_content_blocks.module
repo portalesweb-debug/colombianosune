@@ -53,5 +53,13 @@ function cnu_content_blocks_theme($existing, $type, $theme, $path) {
       'variables' => ['items' => NULL],
       'template' => 'cnu-enlaces-destacados',
     ],
+    'cnu_noticias_destacadas' => [
+      'variables' => [
+        'items' => NULL,
+        'custom_title' => NULL,
+        'items_count' => 0,
+      ],
+      'template' => 'cnu-noticias-destacadas',
+    ],
   ];
 }

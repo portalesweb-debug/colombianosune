@@ -133,7 +133,7 @@ class CnuNoticiasDestacadasBlock extends BlockBase implements ContainerFactoryPl
     $count = count($items);
 
     return [
-      '#theme' => 'cnu_colombianos_ext',
+      '#theme' => 'cnu_noticias_destacadas',
       '#items' => $items,
       '#custom_title' => $block_title,
       '#items_count' => $count,
