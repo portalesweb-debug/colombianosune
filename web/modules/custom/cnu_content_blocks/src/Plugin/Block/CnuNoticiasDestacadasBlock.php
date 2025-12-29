@@ -135,7 +135,7 @@ class CnuNoticiasDestacadasBlock extends BlockBase implements ContainerFactoryPl
     return [
       '#theme' => 'cnu_colombianos_ext',
       '#items' => $items,
-      '#block_title' => $block_title,
+      '#custom_title' => $block_title,
       '#items_count' => $count,
       '#attached' => [
         'library' => ['cnu_content_blocks/cnu_content_blocks'],
