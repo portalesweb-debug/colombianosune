@@ -12,8 +12,8 @@
           slidesPerView: 1,
           spaceBetween: 20,
           navigation: {
-            nextEl: '#btn-swp-ext-next',
-            prevEl: '#btn-swp-ext-prev'
+            nextEl: '#btn-swp-ext-prev',
+            prevEl: '#btn-swp-ext-next'
           },
           breakpoints: {
             640: { slidesPerView: 2 },
