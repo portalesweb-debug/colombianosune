@@ -569,7 +569,10 @@ div.sharethis-wrapper{ display: none;}
 #main-wrapper{padding: 0px 10%;}
 
 .field--name-body img{
-  width:100%
+  width:100%;
+	height:auto;
+	object-fit: cover;
+	object-position:center;
 }
 
 .block-info-interes h2 {
