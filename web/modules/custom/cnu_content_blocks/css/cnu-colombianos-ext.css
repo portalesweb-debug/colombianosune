@@ -44,7 +44,7 @@
 .carousel-item-image img{
   width: 100%;
   height: auto;
-  max-height: 250px;
+  height: 250px;
   object-fit: cover;
   object-position: top;
   transform: scale(1.025);
@@ -65,9 +65,15 @@
 .carousel-item-title{
     font-weight: 600;
     font-size: 26px;
-    line-height: 38px;
+    line-height: 1.1;
     color: #004884;
     margin-block: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    height: 85px;
 }
 
 .carousel-item-meta{
