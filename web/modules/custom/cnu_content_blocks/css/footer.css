@@ -156,6 +156,10 @@ ul.mb-cnu-menu li a{
   background-image: url('../img/icon-instagram.png');
 }
 
+.mb-cnu-icon--tiktok{
+  background-image: url('../img/icon-tiktok.png');
+}
+
 .mb-cnu-icon--youtube{
   background-image: url('../img/icon-youtube.png');
 }
