@@ -51,8 +51,12 @@
 body.a11y-contrast:not(.path-admin) {
   background-color: #000 !important;
   color: #fff !important;
-  filter: contrast(180%) brightness(115%);
 }
+
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper {
+  filter: contrast(150%) brightness(115%);
+}
+
 
 /* ===============================
  * TEXTO Y CONTENEDORES
