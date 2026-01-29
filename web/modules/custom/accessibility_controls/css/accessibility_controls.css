@@ -17,10 +17,10 @@
   border-radius: 8px 0 0 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 
-  isolation: isolate; /* evita que filtros globales lo afecten */
+  isolation: isolate;
 }
 
-/* Botones */
+/* Botones del toolbar */
 #a11y-toolbar button {
   min-width: 44px;
   min-height: 44px;
@@ -35,7 +35,6 @@
   cursor: pointer;
 }
 
-/* Hover y focus accesibles */
 #a11y-toolbar button:hover,
 #a11y-toolbar button:focus {
   background-color: #000000;
@@ -43,29 +42,25 @@
   outline: 2px solid #00ffff;
   outline-offset: 2px;
 }
+
 /* ===============================
- * MODO ALTO CONTRASTE EXTREMO
- * (SOLO FRONTEND – NO ADMIN)
+ * MODO ALTO CONTRASTE
+ * (SOLO FRONTEND)
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) #a11y-page-wrapper
- {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper {
   background-color: #000 !important;
   color: #fff !important;
-}
-
-body.a11y-contrast:not(.path-admin) #a11y-page-wrapper {
   filter: contrast(150%) brightness(115%);
 }
-
 
 /* ===============================
  * TEXTO Y CONTENEDORES
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) *,
-body.a11y-contrast:not(.path-admin) *::before,
-body.a11y-contrast:not(.path-admin) *::after {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper *,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper *::before,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper *::after {
   background-color: transparent !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
@@ -73,14 +68,20 @@ body.a11y-contrast:not(.path-admin) *::after {
   text-shadow: none !important;
 }
 
-/* Links muy visibles */
+/* ===============================
+ * LINKS
+ * =============================== */
+
 body.a11y-contrast:not(.path-admin) #a11y-page-wrapper a {
   color: #00ffff !important;
   text-decoration: underline !important;
   font-weight: 600;
 }
 
-/* Botones */
+/* ===============================
+ * BOTONES Y FORMULARIOS
+ * =============================== */
+
 body.a11y-contrast:not(.path-admin) #a11y-page-wrapper button,
 body.a11y-contrast:not(.path-admin) #a11y-page-wrapper input,
 body.a11y-contrast:not(.path-admin) #a11y-page-wrapper select,
@@ -91,7 +92,7 @@ body.a11y-contrast:not(.path-admin) #a11y-page-wrapper textarea {
 }
 
 /* ===============================
- * IMÁGENES EN NEGATIVO
+ * IMÁGENES / VIDEO / SVG
  * =============================== */
 
 body.a11y-contrast:not(.path-admin) #a11y-page-wrapper img,
@@ -101,7 +102,7 @@ body.a11y-contrast:not(.path-admin) #a11y-page-wrapper svg {
   filter: invert(100%) contrast(160%) brightness(120%) !important;
 }
 
-/* Evitar fondos con imágenes */
+/* Eliminar fondos con imágenes */
 body.a11y-contrast:not(.path-admin) #a11y-page-wrapper * {
   background-image: none !important;
 }
