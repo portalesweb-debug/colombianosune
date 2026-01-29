@@ -636,3 +636,7 @@ div.sharethis-wrapper{ display: none;}
 [class^="iconos-cnu-"], [class*=" iconos-cnu-"] {
   font-size: 28px;
 }
+
+.acompañamiento .texto-acompañamiento h3 strong {
+  color: #004884;
+}
