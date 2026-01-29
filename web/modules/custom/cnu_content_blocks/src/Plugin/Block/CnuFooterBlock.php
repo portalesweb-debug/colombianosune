@@ -104,6 +104,12 @@ class CnuFooterBlock extends BlockBase {
       '#default_value' => $this->configuration['instagram'],
     ];
 
+    $form['tiktok'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Tiktok'),
+      '#default_value' => $this->configuration['tiktok'],
+    ];
+
     return $form;
   }
 
@@ -124,7 +130,7 @@ class CnuFooterBlock extends BlockBase {
       $this->configuration[$field] = $fid;
     }
 
-    foreach (['menu_machine_name','email','link_x','facebook','youtube','instagram'] as $field) {
+    foreach (['menu_machine_name','email','link_x','facebook','youtube','instagram', 'tiktok'] as $field) {
       $this->configuration[$field] = $form_state->getValue($field);
     }
   }
