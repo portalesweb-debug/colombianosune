@@ -48,7 +48,8 @@
  * (SOLO FRONTEND – NO ADMIN)
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper
+ {
   background-color: #000 !important;
   color: #fff !important;
 }
@@ -73,17 +74,17 @@ body.a11y-contrast:not(.path-admin) *::after {
 }
 
 /* Links muy visibles */
-body.a11y-contrast:not(.path-admin) a {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper a {
   color: #00ffff !important;
   text-decoration: underline !important;
   font-weight: 600;
 }
 
 /* Botones */
-body.a11y-contrast:not(.path-admin) button,
-body.a11y-contrast:not(.path-admin) input,
-body.a11y-contrast:not(.path-admin) select,
-body.a11y-contrast:not(.path-admin) textarea {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper button,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper input,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper select,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper textarea {
   background-color: #000 !important;
   color: #fff !important;
   border: 2px solid #fff !important;
@@ -93,15 +94,15 @@ body.a11y-contrast:not(.path-admin) textarea {
  * IMÁGENES EN NEGATIVO
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) img,
-body.a11y-contrast:not(.path-admin) picture,
-body.a11y-contrast:not(.path-admin) video,
-body.a11y-contrast:not(.path-admin) svg {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper img,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper picture,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper video,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper svg {
   filter: invert(100%) contrast(160%) brightness(120%) !important;
 }
 
 /* Evitar fondos con imágenes */
-body.a11y-contrast:not(.path-admin) * {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper * {
   background-image: none !important;
 }
 
@@ -109,9 +110,9 @@ body.a11y-contrast:not(.path-admin) * {
  * ICONOS SVG INLINE
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) svg path,
-body.a11y-contrast:not(.path-admin) svg rect,
-body.a11y-contrast:not(.path-admin) svg circle {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper svg path,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper svg rect,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper svg circle {
   fill: #ffffff !important;
   stroke: #ffffff !important;
 }
@@ -120,12 +121,12 @@ body.a11y-contrast:not(.path-admin) svg circle {
  * TABLAS
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) table {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper table {
   border-collapse: collapse;
 }
 
-body.a11y-contrast:not(.path-admin) th,
-body.a11y-contrast:not(.path-admin) td {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper th,
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper td {
   border: 2px solid #ffffff !important;
   padding: 0.5rem;
 }
@@ -134,7 +135,7 @@ body.a11y-contrast:not(.path-admin) td {
  * FORMULARIOS
  * =============================== */
 
-body.a11y-contrast:not(.path-admin) ::placeholder {
+body.a11y-contrast:not(.path-admin) #a11y-page-wrapper ::placeholder {
   color: #cccccc !important;
   opacity: 1;
 }
