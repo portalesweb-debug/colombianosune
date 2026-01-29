@@ -5,38 +5,40 @@
       once('a11y-controls', 'body', context).forEach(() => {
 
         // No ejecutar en el admin de Drupal
-          if (document.body.classList.contains('path-admin')) {
+        if (document.body.classList.contains('path-admin')) {
+          return;
+        }
+
+        /* ===============================
+         * Helper: ensure A11Y page wrapper
+         * =============================== */
+        function ensureA11yWrapper() {
+          if (document.getElementById('a11y-page-wrapper')) {
             return;
           }
-          /* ===============================
-           * Create A11Y page wrapper
-           * =============================== */
-          if (!document.getElementById('a11y-page-wrapper')) {
-            const body = document.body;
-            const wrapper = document.createElement('div');
-        
-            wrapper.id = 'a11y-page-wrapper';
-        
-            Array.from(body.children).forEach((child) => {
-              // No mover el toolbar
-              if (child.id === 'a11y-toolbar') {
-                return;
-              }
-        
-              // No mover modales / overlays
-              if (
-                child.classList.contains('ui-dialog') ||
-                child.classList.contains('drupal-modal')
-              ) {
-                return;
-              }
-        
-              wrapper.appendChild(child);
-            });
-        
-            body.appendChild(wrapper);
-          }
 
+          const wrapper = document.createElement('div');
+          wrapper.id = 'a11y-page-wrapper';
+
+          Array.from(document.body.children).forEach((child) => {
+            // No mover el toolbar
+            if (child.id === 'a11y-toolbar') {
+              return;
+            }
+
+            // No mover modales / overlays
+            if (
+              child.classList.contains('ui-dialog') ||
+              child.classList.contains('drupal-modal')
+            ) {
+              return;
+            }
+
+            wrapper.appendChild(child);
+          });
+
+          document.body.appendChild(wrapper);
+        }
 
         /* ===============================
          * Create toolbar
@@ -46,7 +48,7 @@
         toolbar.innerHTML = `
           <button id="a11y-increase" aria-label="Aumentar tamaño del texto">A+</button>
           <button id="a11y-decrease" aria-label="Disminuir tamaño del texto">A−</button>
-          <button id="a11y-contrast" aria-label="Activar alto contraste">◐</button>
+          <button id="a11y-contrast" aria-label="Activar alto contraste" aria-pressed="false">◐</button>
           <button id="a11y-reset" aria-label="Restablecer accesibilidad">⟳</button>
         `;
         document.body.appendChild(toolbar);
@@ -60,8 +62,11 @@
         }
         document.documentElement.style.fontSize = fontSize + '%';
 
-        if (localStorage.getItem('a11y-contrast') === 'true') {
+        const contrastEnabled = localStorage.getItem('a11y-contrast') === 'true';
+        if (contrastEnabled) {
+          ensureA11yWrapper();
           document.body.classList.add('a11y-contrast');
+          document.getElementById('a11y-contrast').setAttribute('aria-pressed', 'true');
         }
 
         /* ===============================
@@ -71,7 +76,7 @@
         // Increase font
         document.getElementById('a11y-increase').addEventListener('click', () => {
           if (fontSize < 160) {
-            fontSize = parseInt(fontSize) + 10;
+            fontSize = parseInt(fontSize, 10) + 10;
             document.documentElement.style.fontSize = fontSize + '%';
             localStorage.setItem('a11y-font-size', fontSize);
           }
@@ -80,7 +85,7 @@
         // Decrease font
         document.getElementById('a11y-decrease').addEventListener('click', () => {
           if (fontSize > 70) {
-            fontSize = parseInt(fontSize) - 10;
+            fontSize = parseInt(fontSize, 10) - 10;
             document.documentElement.style.fontSize = fontSize + '%';
             localStorage.setItem('a11y-font-size', fontSize);
           }
@@ -88,8 +93,13 @@
 
         // Toggle contrast
         document.getElementById('a11y-contrast').addEventListener('click', () => {
+          ensureA11yWrapper();
+
           const enabled = document.body.classList.toggle('a11y-contrast');
           localStorage.setItem('a11y-contrast', enabled);
+          document
+            .getElementById('a11y-contrast')
+            .setAttribute('aria-pressed', enabled ? 'true' : 'false');
         });
 
         // Reset accessibility
@@ -101,6 +111,10 @@
           document.documentElement.style.fontSize = '100%';
 
           fontSize = 100;
+
+          document
+            .getElementById('a11y-contrast')
+            .setAttribute('aria-pressed', 'false');
         });
 
       });
