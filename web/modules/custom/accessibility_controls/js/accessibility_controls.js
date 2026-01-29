@@ -8,6 +8,34 @@
           if (document.body.classList.contains('path-admin')) {
             return;
           }
+          /* ===============================
+           * Create A11Y page wrapper
+           * =============================== */
+          if (!document.getElementById('a11y-page-wrapper')) {
+            const body = document.body;
+            const wrapper = document.createElement('div');
+        
+            wrapper.id = 'a11y-page-wrapper';
+        
+            Array.from(body.children).forEach((child) => {
+              // No mover el toolbar
+              if (child.id === 'a11y-toolbar') {
+                return;
+              }
+        
+              // No mover modales / overlays
+              if (
+                child.classList.contains('ui-dialog') ||
+                child.classList.contains('drupal-modal')
+              ) {
+                return;
+              }
+        
+              wrapper.appendChild(child);
+            });
+        
+            body.appendChild(wrapper);
+          }
 
 
         /* ===============================
