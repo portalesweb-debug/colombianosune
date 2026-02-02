@@ -4,9 +4,9 @@ services:
     arguments:
       - '@config.factory'
       - '@menu.link_tree'
-      - '@path_alias.manager'
       - '@path.current'
+      - '@path_alias.manager'
       - '@current_route_match'
       - '@request_stack'
       - '@title_resolver'
-      
+
