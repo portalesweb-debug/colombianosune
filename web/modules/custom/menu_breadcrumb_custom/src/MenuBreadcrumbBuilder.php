@@ -1,263 +1,224 @@
 <?php
 
-
 namespace Drupal\menu_breadcrumb_custom;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
-use Drupal\Core\Controller\TitleResolverInterface;
-use Drupal\Core\Link;
-use Drupal\Core\Menu\MenuLinkTreeElement;
 use Drupal\Core\Menu\MenuLinkTreeInterface;
-use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\Core\Path\AliasManagerInterface;
 use Drupal\Core\Path\CurrentPathStack;
 use Drupal\Core\Routing\CurrentRouteMatch;
-use Drupal\Core\Url;
-use Drupal\path_alias\AliasManagerInterface;
+use Drupal\Core\TitleResolverInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Drupal\Core\Url;
 
 /**
- * Builds breadcrumbs from a configured menu (Drupal 11 compatible).
+ * Builds a breadcrumb based on menu hierarchy or URL alias fallback.
  */
-final class MenuBreadcrumbBuilder {
+class MenuBreadcrumbBuilder {
+
+  protected ConfigFactoryInterface $configFactory;
+  protected MenuLinkTreeInterface $menuLinkTree;
+  protected AliasManagerInterface $aliasManager;
+  protected CurrentPathStack $currentPath;
+  protected CurrentRouteMatch $currentRouteMatch;
+  protected RequestStack $requestStack;
+  protected TitleResolverInterface $titleResolver;
 
   public function __construct(
-    private readonly ConfigFactoryInterface $configFactory,
-    private readonly MenuLinkTreeInterface $menuLinkTree,
-    private readonly CurrentPathStack $currentPath,
-    private readonly AliasManagerInterface $aliasManager,
-    private readonly CurrentRouteMatch $routeMatch,
-    private readonly RequestStack $requestStack,
-    private readonly TitleResolverInterface $titleResolver,
-  ) {}
-
-  public function buildRenderArray(): array {
-    $config = $this->configFactory->get('menu_breadcrumb_custom.settings');
-    $menu_name = (string) ($config->get('menu_name') ?: 'main');
-    $show_home = (bool) $config->get('show_home');
-    $home_label = (string) ($config->get('home_label') ?: 'Inicio');
-    $always_show_current = (bool) $config->get('always_show_current_page');
-
-    $current_internal = $this->normalizePath($this->currentPath->getPath()); // e.g. /node/123
-    $current_alias = $this->normalizePath($this->aliasManager->getAliasByPath($current_internal)); // e.g. /tramites/...
-
-    $current_node_id = $this->getCurrentNodeId();
-
-    $trail = $this->findTrailInMenu($menu_name, $current_internal, $current_alias, $current_node_id);
-
-    $items = [];
-    if ($show_home) {
-      $items[] = [
-        'title' => $home_label,
-        'url' => Url::fromRoute('<front>'),
-        'link' => TRUE,
-      ];
-    }
-
-    if (!empty($trail)) {
-      foreach ($trail as $t) {
-        $items[] = $t;
-      }
-      // Ensure last is current (no-link).
-      $items[count($items) - 1]['link'] = FALSE;
-      $items[count($items) - 1]['url'] = NULL;
-    }
-    elseif ($always_show_current) {
-      $items[] = [
-        'title' => $this->getCurrentPageTitle(),
-        'url' => NULL,
-        'link' => FALSE,
-      ];
-    }
-
-    // If we only have "Inicio", don't render anything.
-    if (count($items) < 2) {
-      return [];
-    }
-
-    return $this->render($items, $menu_name);
-  }
-
-  private function findTrailInMenu(string $menu_name, string $current_internal, string $current_alias, ?int $current_node_id): array {
-    $params = (new MenuTreeParameters())->onlyEnabledLinks();
-    $tree = $this->menuLinkTree->load($menu_name, $params);
-
-    $found = $this->walk($tree, [], $current_internal, $current_alias, $current_node_id);
-    return $found ?? [];
+    ConfigFactoryInterface $configFactory,
+    MenuLinkTreeInterface $menuLinkTree,
+    AliasManagerInterface $aliasManager,
+    CurrentPathStack $currentPath,
+    CurrentRouteMatch $currentRouteMatch,
+    RequestStack $requestStack,
+    TitleResolverInterface $titleResolver
+  ) {
+    $this->configFactory = $configFactory;
+    $this->menuLinkTree = $menuLinkTree;
+    $this->aliasManager = $aliasManager;
+    $this->currentPath = $currentPath;
+    $this->currentRouteMatch = $currentRouteMatch;
+    $this->requestStack = $requestStack;
+    $this->titleResolver = $titleResolver;
   }
 
   /**
-   * @param \Drupal\Core\Menu\MenuLinkTreeElement[] $tree
-   * @param array $trail
+   * Builds the breadcrumb render array.
    */
-  private function walk(array $tree, array $trail, string $current_internal, string $current_alias, ?int $current_node_id): ?array {
-    foreach ($tree as $element) {
-      if (!$element instanceof MenuLinkTreeElement) {
-        continue;
+  public function buildRenderArray(): array {
+    $config = $this->configFactory->get('menu_breadcrumb_custom.settings');
+
+    $menuName = $config->get('menu_name');
+    $showHome = $config->get('show_home');
+    $homeLabel = $config->get('home_label') ?: t('Home');
+    $alwaysShowCurrent = $config->get('always_show_current_page');
+
+    $items = [];
+
+    // Home link.
+    if ($showHome) {
+      $items[] = [
+        'title' => $homeLabel,
+        'url' => Url::fromRoute('<front>'),
+      ];
+    }
+
+    // Current path and alias.
+    $internalPath = $this->currentPath->getPath();
+    $alias = $this->aliasManager->getAliasByPath($internalPath);
+
+    // Current node ID if available.
+    $nodeId = NULL;
+    if ($this->currentRouteMatch->getRouteName() === 'entity.node.canonical') {
+      $node = $this->currentRouteMatch->getParameter('node');
+      if ($node && $node->id()) {
+        $nodeId = (int) $node->id();
+      }
+    }
+
+    // Try to find trail in menu.
+    $trail = $this->findTrailInMenu($menuName, $internalPath, $alias, $nodeId);
+
+    if (!empty($trail)) {
+      foreach ($trail as $delta => $link) {
+        $isLast = ($delta === array_key_last($trail));
+
+        $items[] = [
+          'title' => $link['title'],
+          'url' => $isLast ? NULL : $link['url'],
+        ];
+      }
+    }
+    elseif ($alwaysShowCurrent) {
+      // Resolve title from route.
+      $request = $this->requestStack->getCurrentRequest();
+      $route = $this->currentRouteMatch->getRouteObject();
+      $routeTitle = $route ? $this->titleResolver->getTitle($request, $route) : '';
+
+      $title = is_string($routeTitle) ? trim($routeTitle) : '';
+
+      // Fallback to alias if title is empty or generic.
+      if ($title === '' || mb_strtolower($title) === 'página') {
+        $aliasTitle = $this->aliasToTitle($alias);
+        if ($aliasTitle !== '') {
+          $title = $aliasTitle;
+        }
       }
 
+      if ($title !== '') {
+        $items[] = [
+          'title' => $title,
+          'url' => NULL,
+        ];
+      }
+    }
+
+    // Avoid rendering breadcrumb with only Home.
+    if (count($items) <= 1) {
+      return [];
+    }
+
+    return [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['menu-breadcrumb-custom'],
+      ],
+      'breadcrumb' => [
+        '#theme' => 'item_list',
+        '#items' => array_map(function ($item) {
+          if ($item['url']) {
+            return [
+              '#type' => 'link',
+              '#title' => $item['title'],
+              '#url' => $item['url'],
+            ];
+          }
+          return [
+            '#markup' => '<span aria-current="page">' . $item['title'] . '</span>',
+          ];
+        }, $items),
+        '#attributes' => [
+          'class' => ['breadcrumb'],
+        ],
+      ],
+      '#cache' => [
+        'contexts' => ['url.path', 'user.permissions'],
+        'tags' => ['config:system.menu.' . $menuName],
+      ],
+    ];
+  }
+
+  /**
+   * Converts a URL alias into a human readable title.
+   */
+  protected function aliasToTitle(string $alias): string {
+    $alias = trim($alias, '/');
+
+    if ($alias === '') {
+      return '';
+    }
+
+    $parts = explode('/', $alias);
+    $last = end($parts);
+
+    return ucfirst(str_replace('-', ' ', $last));
+  }
+
+  /**
+   * Finds breadcrumb trail inside a menu.
+   */
+  protected function findTrailInMenu(string $menuName, string $internalPath, string $alias, ?int $nodeId): array {
+    $parameters = $this->menuLinkTree->getCurrentRouteMenuTreeParameters($menuName);
+    $parameters->onlyEnabledLinks();
+
+    $tree = $this->menuLinkTree->load($menuName, $parameters);
+
+    $trail = [];
+    $this->walkTree($tree, $internalPath, $alias, $nodeId, [], $trail);
+
+    return $trail;
+  }
+
+  /**
+   * Walks menu tree recursively.
+   */
+  protected function walkTree(array $tree, string $internalPath, string $alias, ?int $nodeId, array $parents, array &$trail): void {
+    foreach ($tree as $element) {
       $link = $element->link;
       $url = $link->getUrlObject();
 
-      // Skip invalid/unrouted URLs.
-      if (!$url instanceof Url) {
-        continue;
+      $current = array_merge($parents, [[
+        'title' => $link->getTitle(),
+        'url' => $url,
+      ]]);
+
+      if ($this->urlMatchesCurrent($url, $internalPath, $alias, $nodeId)) {
+        $trail = $current;
+        return;
       }
 
-      $title = (string) $link->getTitle();
-
-      // Determine if this menu link matches current page.
-      if ($this->urlMatchesCurrent($url, $current_internal, $current_alias, $current_node_id)) {
-        return array_merge($trail, [[
-          'title' => $title,
-          'url' => $url,
-          'link' => TRUE,
-        ]]);
-      }
-
-      if (!empty($element->subtree)) {
-        $next_trail = array_merge($trail, [[
-          'title' => $title,
-          'url' => $url,
-          'link' => TRUE,
-        ]]);
-        $found = $this->walk($element->subtree, $next_trail, $current_internal, $current_alias, $current_node_id);
-        if ($found) {
-          return $found;
-        }
+      if ($element->subtree) {
+        $this->walkTree($element->subtree, $internalPath, $alias, $nodeId, $current, $trail);
       }
     }
-    return NULL;
   }
 
-  private function urlMatchesCurrent(Url $url, string $current_internal, string $current_alias, ?int $current_node_id): bool {
-    // 1) Exact match by route (node canonical).
-    if ($current_node_id !== NULL && $url->isRouted()) {
+  /**
+   * Checks if a menu link URL matches the current page.
+   */
+  protected function urlMatchesCurrent(Url $url, string $internalPath, string $alias, ?int $nodeId): bool {
+    if ($url->isRouted() && $nodeId !== NULL) {
       if ($url->getRouteName() === 'entity.node.canonical') {
         $params = $url->getRouteParameters();
-        if (isset($params['node']) && (int) $params['node'] === $current_node_id) {
+        if (isset($params['node']) && (int) $params['node'] === $nodeId) {
           return TRUE;
         }
       }
     }
 
-    // 2) Match by internal path.
-    $link_internal = $this->internalPathFromUrl($url); // "/node/123" or "/tramites"
-    if ($link_internal && $link_internal === $current_internal) {
-      return TRUE;
-    }
+    $urlString = '/' . ltrim($url->toString(), '/');
 
-    // 3) Match by alias of the link internal path (covers menu item pointing to /node/123 while page is alias).
-    if ($link_internal) {
-      $link_alias = $this->normalizePath($this->aliasManager->getAliasByPath($link_internal));
-      if ($link_alias === $current_alias) {
-        return TRUE;
-      }
-    }
-
-    // 4) As last resort, compare string URL (may include base path).
-    try {
-      $as_string = $this->normalizePath($url->toString());
-      if ($as_string === $current_alias || $as_string === $current_internal) {
-        return TRUE;
-      }
-    }
-    catch (\Throwable) {}
-
-    return FALSE;
-  }
-
-  private function internalPathFromUrl(Url $url): ?string {
-    try {
-      $internal = $url->getInternalPath(); // "node/123" or "<front>" or "tramites"
-      if ($internal === '<front>') {
-        return '/';
-      }
-      // getInternalPath does not include leading slash.
-      return $this->normalizePath('/' . ltrim($internal, '/'));
-    }
-    catch (\Throwable) {
-      return NULL;
-    }
-  }
-
-  private function normalizePath(string $path): string {
-    $path = trim($path);
-    if ($path === '') {
-      return '/';
-    }
-    // Remove scheme/host if any.
-    $path = preg_replace('#^https?://[^/]+#', '', $path);
-    if ($path === '') {
-      return '/';
-    }
-    if ($path[0] !== '/') {
-      $path = '/' . $path;
-    }
-    if ($path !== '/') {
-      $path = rtrim($path, '/');
-    }
-    return $path;
-  }
-
-  private function getCurrentNodeId(): ?int {
-    $node = $this->routeMatch->getParameter('node');
-    if (is_object($node) && method_exists($node, 'id')) {
-      return (int) $node->id();
-    }
-    if (is_numeric($node)) {
-      return (int) $node;
-    }
-    return NULL;
-  }
-
-  private function getCurrentPageTitle(): string {
-    $request = $this->requestStack->getCurrentRequest();
-    if (!$request) {
-      return 'Página';
-    }
-    $title = $this->titleResolver->getTitle($request, $this->routeMatch->getRouteObject());
-    return (is_string($title) && $title !== '') ? $title : 'Página';
-  }
-
-  private function render(array $items, string $menu_name): array {
-    $list_items = [];
-    foreach ($items as $idx => $item) {
-      $is_last = ($idx === count($items) - 1);
-
-      if (!$is_last && !empty($item['link']) && $item['url'] instanceof Url) {
-        $list_items[] = Link::fromTextAndUrl((string) $item['title'], $item['url'])->toRenderable();
-      }
-      else {
-        $list_items[] = [
-          '#type' => 'html_tag',
-          '#tag' => 'span',
-          '#value' => (string) $item['title'],
-          '#attributes' => $is_last ? ['aria-current' => 'page'] : [],
-        ];
-      }
-    }
-
-    return [
-      '#type' => 'container',
-      '#attributes' => ['class' => ['menu-breadcrumb-custom']],
-      'nav' => [
-        '#type' => 'html_tag',
-        '#tag' => 'nav',
-        '#attributes' => [
-          'class' => ['breadcrumb'],
-          'aria-label' => 'Breadcrumb',
-        ],
-        'list' => [
-          '#theme' => 'item_list',
-          '#items' => $list_items,
-          '#attributes' => ['class' => ['breadcrumb__list']],
-        ],
-      ],
-      '#cache' => [
-        'contexts' => ['url.path', 'user.permissions'],
-        'tags' => ['config:system.menu.' . $menu_name],
-      ],
-    ];
+    return $urlString === $internalPath || $urlString === $alias;
   }
 
 }
