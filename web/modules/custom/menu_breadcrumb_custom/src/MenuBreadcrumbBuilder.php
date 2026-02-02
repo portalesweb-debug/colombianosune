@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Drupal\menu_breadcrumb_custom;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
@@ -14,48 +13,52 @@ use Drupal\Core\Routing\CurrentRouteMatch;
 use Drupal\Core\Url;
 use Drupal\path_alias\AliasManagerInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
-use Drupal\Core\Path\CurrentPathStack;
-use Drupal\path_alias\AliasManagerInterface;
+use Symfony\Component\Routing\Exception\ResourceNotFoundException;
+use Symfony\Component\Routing\Exception\MethodNotAllowedException;
 
 /**
- * Builds breadcrumbs from a configured menu (Drupal 11 compatible).
+ * Builds breadcrumbs based on menu hierarchy or URL alias fallback.
  */
 final class MenuBreadcrumbBuilder {
 
   public function __construct(
-  ConfigFactoryInterface $configFactory,
-  MenuLinkTreeInterface $menuLinkTree,
-  CurrentPathStack $currentPath,
-  AliasManagerInterface $aliasManager,
-  CurrentRouteMatch $routeMatch,
-  RequestStack $requestStack,
-  TitleResolverInterface $titleResolver,
-) {
-  $this->configFactory = $configFactory;
-  $this->menuLinkTree = $menuLinkTree;
-  $this->currentPath = $currentPath;
-  $this->aliasManager = $aliasManager;
-  $this->routeMatch = $routeMatch;
-  $this->requestStack = $requestStack;
-  $this->titleResolver = $titleResolver;
-}
- 
+    private readonly ConfigFactoryInterface $configFactory,
+    private readonly MenuLinkTreeInterface $menuLinkTree,
+    private readonly CurrentPathStack $currentPath,
+    private readonly AliasManagerInterface $aliasManager,
+    private readonly CurrentRouteMatch $routeMatch,
+    private readonly RequestStack $requestStack,
+    private readonly TitleResolverInterface $titleResolver,
+  ) {}
 
+  /**
+   * Main builder.
+   */
   public function buildRenderArray(): array {
     $config = $this->configFactory->get('menu_breadcrumb_custom.settings');
+
     $menu_name = (string) ($config->get('menu_name') ?: 'main');
     $show_home = (bool) $config->get('show_home');
     $home_label = (string) ($config->get('home_label') ?: 'Inicio');
     $always_show_current = (bool) $config->get('always_show_current_page');
 
-    $current_internal = $this->normalizePath($this->currentPath->getPath()); // e.g. /node/123
-    $current_alias = $this->normalizePath($this->aliasManager->getAliasByPath($current_internal)); // e.g. /tramites/...
+    $internal_path = $this->normalizePath($this->currentPath->getPath());
+    $alias_path = $this->normalizePath(
+      $this->aliasManager->getAliasByPath($internal_path)
+    );
 
     $current_node_id = $this->getCurrentNodeId();
 
-    $trail = $this->findTrailInMenu($menu_name, $current_internal, $current_alias, $current_node_id);
+    // 1. Try menu-based breadcrumb first.
+    $trail = $this->findTrailInMenu(
+      $menu_name,
+      $internal_path,
+      $alias_path,
+      $current_node_id
+    );
 
     $items = [];
+
     if ($show_home) {
       $items[] = [
         'title' => $home_label,
@@ -65,21 +68,37 @@ final class MenuBreadcrumbBuilder {
     }
 
     if (!empty($trail)) {
-      foreach ($trail as $t) {
-        $items[] = $t;
+      foreach ($trail as $item) {
+        $items[] = $item;
       }
-      // Ensure last is current (no-link).
+
+      // Force last item to be current page (no link).
       $items[count($items) - 1]['link'] = FALSE;
       $items[count($items) - 1]['url'] = NULL;
     }
     elseif ($always_show_current) {
+      // 2. Alias-based fallback (your requirement).
+      $segments = explode('/', trim($alias_path, '/'));
+
+      // Example: /noticia/slug → ["noticia", "slug"]
+      if (!empty($segments[0])) {
+        $first_segment_path = '/' . $segments[0];
+
+        // If /noticia does NOT exist as a real route, show it as text only.
+        if (!$this->routeExists($first_segment_path)) {
+          $items[] = [
+            'title' => $this->segmentToTitle($segments[0]),
+            'url' => NULL,
+            'link' => FALSE,
+          ];
+        }
+      }
+
+      // Current page title (never linked).
       $title = $this->getCurrentPageTitle();
 
-      // ✅ Ajuste solicitado:
-      // Si no existe en el menú y el TitleResolver devuelve un título genérico ("Página"),
-      // usamos el alias actual como label del breadcrumb.
       if ($title === 'Página') {
-        $alias_title = $this->aliasToTitle($current_alias);
+        $alias_title = $this->aliasToTitle($alias_path);
         if ($alias_title !== '') {
           $title = $alias_title;
         }
@@ -92,7 +111,7 @@ final class MenuBreadcrumbBuilder {
       ];
     }
 
-    // If we only have "Inicio", don't render anything.
+    // Avoid rendering breadcrumb with only "Inicio".
     if (count($items) < 2) {
       return [];
     }
@@ -100,45 +119,60 @@ final class MenuBreadcrumbBuilder {
     return $this->render($items, $menu_name);
   }
 
-  private function findTrailInMenu(string $menu_name, string $current_internal, string $current_alias, ?int $current_node_id): array {
-    $parameters = (new MenuTreeParameters())
-      ->onlyEnabledLinks();
-
+  /**
+   * Menu traversal.
+   */
+  private function findTrailInMenu(
+    string $menu_name,
+    string $internal_path,
+    string $alias_path,
+    ?int $node_id
+  ): array {
+    $parameters = (new MenuTreeParameters())->onlyEnabledLinks();
     $tree = $this->menuLinkTree->load($menu_name, $parameters);
 
     $trail = [];
-    $this->walk($tree, $current_internal, $current_alias, $current_node_id, [], $trail);
+    $this->walkTree($tree, $internal_path, $alias_path, $node_id, [], $trail);
 
     return $trail;
   }
 
-  /**
-   * Depth-first walk with parent stack.
-   *
-   * @param \Drupal\Core\Menu\MenuLinkTreeElement[] $tree
-   * @param array $parents
-   * @param array $trail
-   */
-  private function walk(array $tree, string $current_internal, string $current_alias, ?int $current_node_id, array $parents, array &$trail): void {
+  private function walkTree(
+    array $tree,
+    string $internal_path,
+    string $alias_path,
+    ?int $node_id,
+    array $parents,
+    array &$trail
+  ): void {
     foreach ($tree as $element) {
       if (!$element instanceof MenuLinkTreeElement) {
         continue;
       }
 
       $url = $element->link->getUrlObject();
+
       $current = array_merge($parents, [[
         'title' => $element->link->getTitle(),
         'url' => $url,
         'link' => TRUE,
       ]]);
 
-      if ($this->urlMatchesCurrent($url, $current_internal, $current_alias, $current_node_id)) {
+      if ($this->urlMatchesCurrent($url, $internal_path, $alias_path, $node_id)) {
         $trail = $current;
         return;
       }
 
       if (!empty($element->subtree)) {
-        $this->walk($element->subtree, $current_internal, $current_alias, $current_node_id, $current, $trail);
+        $this->walkTree(
+          $element->subtree,
+          $internal_path,
+          $alias_path,
+          $node_id,
+          $current,
+          $trail
+        );
+
         if (!empty($trail)) {
           return;
         }
@@ -146,19 +180,35 @@ final class MenuBreadcrumbBuilder {
     }
   }
 
-  private function urlMatchesCurrent(Url $url, string $current_internal, string $current_alias, ?int $current_node_id): bool {
-    // Best match: node canonical with same ID.
-    if ($current_node_id !== NULL && $url->isRouted() && $url->getRouteName() === 'entity.node.canonical') {
+  private function urlMatchesCurrent(
+    Url $url,
+    string $internal_path,
+    string $alias_path,
+    ?int $node_id
+  ): bool {
+    if ($node_id !== NULL && $url->isRouted() && $url->getRouteName() === 'entity.node.canonical') {
       $params = $url->getRouteParameters();
-      if (isset($params['node']) && (int) $params['node'] === $current_node_id) {
+      if (isset($params['node']) && (int) $params['node'] === $node_id) {
         return TRUE;
       }
     }
 
-    // Compare normalized strings (internal path or alias).
     $url_string = $this->normalizePath($url->toString());
 
-    return ($url_string === $current_internal) || ($url_string === $current_alias);
+    return $url_string === $internal_path || $url_string === $alias_path;
+  }
+
+  /**
+   * Helpers
+   */
+  private function routeExists(string $path): bool {
+    try {
+      \Drupal::service('router')->match($path);
+      return TRUE;
+    }
+    catch (ResourceNotFoundException | MethodNotAllowedException) {
+      return FALSE;
+    }
   }
 
   private function normalizePath(string $path): string {
@@ -166,36 +216,25 @@ final class MenuBreadcrumbBuilder {
     if ($path === '') {
       return '/';
     }
-    // Ensure leading slash.
     if ($path[0] !== '/') {
       $path = '/' . $path;
     }
-    // Remove trailing slash except root.
-    $path = rtrim($path, '/');
-    return $path === '' ? '/' : $path;
+    return rtrim($path, '/') ?: '/';
   }
 
-  /**
-   * Convierte el alias en un label legible.
-   * Ej: /noticias-para-colombianos-cnu -> Noticias para colombianos cnu
-   */
   private function aliasToTitle(string $alias): string {
-    $alias = $this->normalizePath($alias);
-
-    if ($alias === '/' || $alias === '') {
-      return '';
-    }
-
     $alias = trim($alias, '/');
-    $parts = explode('/', $alias);
-    $last = (string) end($parts);
-
-    if ($last === '') {
+    if ($alias === '') {
       return '';
     }
+    $parts = explode('/', $alias);
+    $last = end($parts);
+    return $this->segmentToTitle($last);
+  }
 
-    $last = str_replace(['-', '_'], ' ', $last);
-    return mb_strtoupper(mb_substr($last, 0, 1)) . mb_substr($last, 1);
+  private function segmentToTitle(string $segment): string {
+    $segment = str_replace(['-', '_'], ' ', $segment);
+    return mb_strtoupper(mb_substr($segment, 0, 1)) . mb_substr($segment, 1);
   }
 
   private function getCurrentNodeId(): ?int {
@@ -214,23 +253,27 @@ final class MenuBreadcrumbBuilder {
     if (!$request) {
       return 'Página';
     }
-    $title = $this->titleResolver->getTitle($request, $this->routeMatch->getRouteObject());
+    $title = $this->titleResolver->getTitle(
+      $request,
+      $this->routeMatch->getRouteObject()
+    );
     return (is_string($title) && $title !== '') ? $title : 'Página';
   }
 
   private function render(array $items, string $menu_name): array {
-    $list_items = [];
-    foreach ($items as $idx => $item) {
-      $is_last = ($idx === count($items) - 1);
+    $list = [];
+
+    foreach ($items as $index => $item) {
+      $is_last = ($index === count($items) - 1);
 
       if (!$is_last && !empty($item['link']) && $item['url'] instanceof Url) {
-        $list_items[] = Link::fromTextAndUrl((string) $item['title'], $item['url'])->toRenderable();
+        $list[] = Link::fromTextAndUrl($item['title'], $item['url'])->toRenderable();
       }
       else {
-        $list_items[] = [
+        $list[] = [
           '#type' => 'html_tag',
           '#tag' => 'span',
-          '#value' => (string) $item['title'],
+          '#value' => $item['title'],
           '#attributes' => $is_last ? ['aria-current' => 'page'] : [],
         ];
       }
@@ -248,8 +291,7 @@ final class MenuBreadcrumbBuilder {
         ],
         'list' => [
           '#theme' => 'item_list',
-          '#items' => $list_items,
-          '#attributes' => ['class' => ['breadcrumb__list']],
+          '#items' => $list,
         ],
       ],
       '#cache' => [
