@@ -1,0 +1,26 @@
+.cancilleria-social {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.cancilleria-social__item {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.cancilleria-social__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cancilleria-social__item:hover {
+  opacity: 0.85;
+}
