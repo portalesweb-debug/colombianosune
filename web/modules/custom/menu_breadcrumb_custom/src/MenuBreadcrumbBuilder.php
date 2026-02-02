@@ -14,6 +14,8 @@ use Drupal\Core\Routing\CurrentRouteMatch;
 use Drupal\Core\Url;
 use Drupal\path_alias\AliasManagerInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Drupal\Core\Path\CurrentPathStack;
+use Drupal\path_alias\AliasManagerInterface;
 
 /**
  * Builds breadcrumbs from a configured menu (Drupal 11 compatible).
@@ -21,14 +23,23 @@ use Symfony\Component\HttpFoundation\RequestStack;
 final class MenuBreadcrumbBuilder {
 
   public function __construct(
-    private readonly ConfigFactoryInterface $configFactory,
-    private readonly MenuLinkTreeInterface $menuLinkTree,
-    private readonly CurrentPathStack $currentPath,
-    private readonly AliasManagerInterface $aliasManager,
-    private readonly CurrentRouteMatch $routeMatch,
-    private readonly RequestStack $requestStack,
-    private readonly TitleResolverInterface $titleResolver,
-  ) {}
+  ConfigFactoryInterface $configFactory,
+  MenuLinkTreeInterface $menuLinkTree,
+  CurrentPathStack $currentPath,
+  AliasManagerInterface $aliasManager,
+  CurrentRouteMatch $routeMatch,
+  RequestStack $requestStack,
+  TitleResolverInterface $titleResolver,
+) {
+  $this->configFactory = $configFactory;
+  $this->menuLinkTree = $menuLinkTree;
+  $this->currentPath = $currentPath;
+  $this->aliasManager = $aliasManager;
+  $this->routeMatch = $routeMatch;
+  $this->requestStack = $requestStack;
+  $this->titleResolver = $titleResolver;
+}
+ 
 
   public function buildRenderArray(): array {
     $config = $this->configFactory->get('menu_breadcrumb_custom.settings');
