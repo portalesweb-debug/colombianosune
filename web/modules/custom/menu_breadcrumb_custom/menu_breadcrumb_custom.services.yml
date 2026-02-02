@@ -1,12 +1,11 @@
-
 services:
   menu_breadcrumb_custom.builder:
     class: Drupal\menu_breadcrumb_custom\MenuBreadcrumbBuilder
     arguments:
       - '@config.factory'
       - '@menu.link_tree'
-      - '@path.current'
       - '@path_alias.manager'
+      - '@path.current'
       - '@current_route_match'
       - '@request_stack'
       - '@title_resolver'
