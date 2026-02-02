@@ -24,23 +24,24 @@ class MenuBreadcrumbBuilder {
   protected RequestStack $requestStack;
   protected TitleResolverInterface $titleResolver;
 
-  public function __construct(
-    ConfigFactoryInterface $configFactory,
-    MenuLinkTreeInterface $menuLinkTree,
-    AliasManagerInterface $aliasManager,
-    CurrentPathStack $currentPath,
-    CurrentRouteMatch $currentRouteMatch,
-    RequestStack $requestStack,
-    TitleResolverInterface $titleResolver
-  ) {
-    $this->configFactory = $configFactory;
-    $this->menuLinkTree = $menuLinkTree;
-    $this->aliasManager = $aliasManager;
-    $this->currentPath = $currentPath;
-    $this->currentRouteMatch = $currentRouteMatch;
-    $this->requestStack = $requestStack;
-    $this->titleResolver = $titleResolver;
-  }
+ public function __construct(
+  ConfigFactoryInterface $configFactory,
+  MenuLinkTreeInterface $menuLinkTree,
+  CurrentPathStack $currentPath,
+  AliasManagerInterface $aliasManager,
+  CurrentRouteMatch $currentRouteMatch,
+  RequestStack $requestStack,
+  TitleResolverInterface $titleResolver
+) {
+  $this->configFactory = $configFactory;
+  $this->menuLinkTree = $menuLinkTree;
+  $this->currentPath = $currentPath;
+  $this->aliasManager = $aliasManager;
+  $this->currentRouteMatch = $currentRouteMatch;
+  $this->requestStack = $requestStack;
+  $this->titleResolver = $titleResolver;
+}
+
 
   /**
    * Builds the breadcrumb render array.
