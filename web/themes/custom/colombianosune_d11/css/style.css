@@ -229,7 +229,7 @@ a[href="#main-content"],
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 40px 0;
+  margin-top: 20px;
 }
 
 .subtitle-title {
@@ -639,4 +639,68 @@ div.sharethis-wrapper{ display: none;}
 
 .acompañamiento .texto-acompañamiento h3 strong {
   color: #004884;
+}
+
+
+.slick--view--noticias-destacadas {
+  
+  position: relative;
+  
+  .slide__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+        background:#004884;
+        color:grey;
+  }
+  
+  .slide__description .views-field-title { 
+    width: 50%;
+    order:2;
+        min-height:150px;
+        a {
+            color:white;
+            text-decoration:none;
+            font-size: 24px;
+            line-height: 1;
+            padding-inline: 1rem 2.5rem;
+            margin:0;
+            text-align:center;
+            display:inline-block;
+        }
+  }
+  
+  .slide__description .views-field-field-imagen { 
+    width: 50%;
+    order:1;
+        img {
+             width:100%;
+             height: 400px;
+             object-fit:cover;
+             object-position:center;
+         }
+  }
+
+   @media (max-width:600px) {
+      .slide__description {
+         flex-direction:column;
+      }
+     .slide__description .views-field-field-imagen, .slide__description .views-field-title {
+        width: 100%;
+      }
+   }
+  
+}
+
+#block-colombianosune-d11-views-block-noticias-destacadas-block-1 {
+    max-width: 900px;
+    margin: auto;
+}
+
+.slide__media .is-b-loading{ min-height: auto !important; }
+
+.ui-accordion .ui-accordion-content {
+    height: auto !important;
+    min-height: 50px;
 }
