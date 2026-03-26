@@ -8,4 +8,4 @@ Colombianos UNE D11 Theme Screenshot
 [Aquí iría una imagen screenshot del tema]
 
 Bootstrap 5 Subtheme para Drupal 11
-Colombianos UNE - Edición 2025
+Colombianos UNE - Edición 2026

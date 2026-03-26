@@ -1,0 +1,7 @@
+
+[33mIn SqlCommands.php line 189:[39m
+[37;41m                                                                               [39;49m
+[37;41m  Query failed. Rerun with --debug to see any error message. ERROR 2026 (HY00  [39;49m
+[37;41m  0): TLS/SSL error: self-signed certificate in certificate chain              [39;49m
+[37;41m                                                                               [39;49m
+

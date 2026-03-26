@@ -1,59 +1,70 @@
-{#
-/**
- * @file
- * Theme override to display a menu.
- *
- * Available variables:
- * - menu_name: The machine name of the menu.
- * - items: A nested list of menu items. Each menu item contains:
- *   - attributes: HTML attributes for the menu item.
- *   - below: The menu item child items.
- *   - title: The menu link title.
- *   - url: The menu link url, instance of \Drupal\Core\Url
- *   - localized_options: Menu link localized options.
- *   - is_expanded: TRUE if the link has visible children within the current
- *     menu tree.
- *   - is_collapsed: TRUE if the link has children within the current menu tree
- *     that are not currently visible.
- *   - in_active_trail: TRUE if the link is in the active trail.
- */
-#}
-{% import _self as menus %}
-
-{#
-  We call a macro which calls itself to render the full tree.
-  @see http://twig.sensiolabs.org/doc/tags/macro.html
-#}
-{{ menus.menu_links(items, attributes, 0) }}
-
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
+  
+  {# 1. Forzamos la obtención de la ruta actual de forma limpia #}
+  {% set current_path = path('<current>')|replace({'index.php/': '', '/index.php': ''}) %}
+
   {% if items %}
     {% if menu_level == 0 %}
-        <ul{{ attributes.addClass('govco-header__nav-list', 'menu', 'nav', 'navbar-nav') }}>
+      <ul class="navbar-nav w-100">
     {% else %}
-        <ul{{ attributes.addClass('dropdown-menu') }}>
+      <ul class="dropdown-menu">
     {% endif %}
-        {% for item in items %}
-            {%
-            set item_classes = [
-            'expanded',
-            'dropdown',
-            item.in_active_trail ? 'active',
-            ]
-            %}
-            {% if menu_level == 0 and item.is_expanded %}
-            <li{{ item.attributes.addClass(item_classes) }}>
-                <a href="{{ item.url }}" class="dropdown-toggle" data-target="#" data-toggle="dropdown">{{ item.title }} <span class="caret"></span></a>
-            {% else %}
-                <li{{ item.attributes.addClass(item_classes) }}>
-                {{ link(item.title, item.url) }}
-            {% endif %}
-            {% if item.below %}
-                {{ menus.menu_links(item.below, attributes.removeClass('nav', 'navbar-nav'), menu_level + 1) }}
-            {% endif %}
-            </li>
-        {% endfor %}
+
+    {% for item in items %}
+      {% set url_string = item.url.toString() %}
+      {% set clean_url = url_string|replace({'index.php/': '', '/index.php': ''}) %}
+      
+      {# 2. Si es la home, aseguramos el slash #}
+      {% if clean_url == '' %}{% set clean_url = '/' %}{% endif %}
+
+      {# 3. Comparación robusta: ruta exacta O rastro activo de Drupal #}
+      {% set is_active = (clean_url == current_path or item.in_active_trail) ? true : false %}
+
+      {% set item_classes = [
+        menu_level == 0 ? 'nav-item' : '',
+        item.below ? 'dropdown' : '',
+        is_active ? 'active' : ''
+      ] %}
+      
+      <li{{ item.attributes.addClass(item_classes).addClass('menu-item-container') }}>
+        <div class="menu-link-wrapper d-inline-flex align-items-center justify-content-center">
+          <a href="{{ clean_url }}" 
+             class="{{ menu_level == 0 ? 'nav-link' : 'dropdown-item' }} {{ is_active ? 'active' : '' }}" 
+             style="display: inline-block;">
+            {{ item.title }}
+          </a>
+          
+          {% if item.below %}
+            <span class="dropdown-toggle-custom ms-1 d-flex align-items-center" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false" 
+                  style="cursor: pointer; height: 100%;">
+              <i class="bi bi-chevron-down" style="font-size: 0.8rem; line-height: 1;"></i>
+            </span>
+          {% endif %}
+        </div>
+
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes.removeClass('navbar-nav'), menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
     </ul>
   {% endif %}
 {% endmacro %}
+
+{% import _self as menus %}
+
+{# 4. Instrucción crítica para que Drupal refresque el estado activo #}
+{{ { '#cache': { 'contexts': [ 'url.path', 'url.query_args' ] } }|render }}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarGovco" aria-controls="mainNavbarGovco" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNavbarGovco">
+    {{ menus.menu_links(items, attributes, 0) }}
+  </div>
+</nav>

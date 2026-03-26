@@ -6,11 +6,23 @@
 <div{{ attributes.addClass('slider-item-wrapper') }}>
   <div class="slider-item-inner">
     <div class="slider-left">
+      {# La imagen también podría ser un link si lo deseas, envolviéndola igual que abajo #}
       {{ content.field_img_slider }}
     </div>
     <div class="slider-right">
       <div class="slider-right-content">
-        {{ content.field_desc_slider }}
+        
+        {# Verificamos si hay un link configurado #}
+        {% if content.field_link_slider_inicio[0] %}
+          {# Envolvemos toda la descripción en el enlace #}
+          <a href="{{ content.field_link_slider_inicio.0['#url'] }}" class="slider-link-full">
+            {{ content.field_desc_slider }}
+          </a>
+        {% else %}
+          {# Si no hay link, solo mostramos el texto normal #}
+          {{ content.field_desc_slider }}
+        {% endif %}
+        
       </div>
     </div>
   </div>

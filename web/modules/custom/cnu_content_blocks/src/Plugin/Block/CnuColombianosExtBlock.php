@@ -90,20 +90,27 @@ class CnuColombianosExtBlock extends BlockBase implements ContainerFactoryPlugin
       $item = [
         'title'   => $node->label(),
         'url'     => $node->toUrl()->toString(),
+        'link_noticia' => '',
         'summary' => '',
         'date'    => $this->dateFormatter->format($node->getCreatedTime(), 'custom', 'F d, Y'),
         'image'   => '',
       ];
+
+
+      // Nuevo: Capturar el Link de la noticia
+      if ($node->hasField('field_link_de_la_noticia') && !$node->get('field_link_de_la_noticia')->isEmpty()) {
+        $item['link_noticia'] = $node->get('field_link_de_la_noticia')->first()->getUrl()->toString();
+      }
 
       // Descripción
       if ($node->hasField('field_descripcion_colombiano') && !$node->get('field_descripcion_colombiano')->isEmpty()) {
         $full_text = $node->get('field_descripcion_colombiano')->value;
 
         // Cortar a 142 caracteres respetando acentos y sin cortar palabras.
-        $summary = mb_substr($full_text, 0, 130);
+        $summary = mb_substr($full_text, 0, 300);
 
         // Opcional: agregar "…" si el texto fue truncado
-        if (mb_strlen($full_text) > 142) {
+        if (mb_strlen($full_text) > 300) {
           $summary .= '…';
         }
 

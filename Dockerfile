@@ -11,12 +11,21 @@ LABEL description="Drupal con PHP 8.3 y Apache optimizado"
 # Variables de entorno
 ENV DRUPAL_ROOT=/var/www/html \
     APACHE_DOCUMENT_ROOT=/var/www/html/web \
-    MEMORY_LIMIT=1024M \
+    MEMORY_LIMIT=4024M \
     MAX_EXECUTION_TIME=300 \
     UPLOAD_MAX_FILESIZE=1024M \
     POST_MAX_SIZE=1024M
 
 USER root
+
+# ============================================
+# UID/GID (CLAVE PARA PERMISOS)
+# ============================================
+ARG UID=0
+ARG GID=0
+
+RUN groupmod -g $GID www-data && \
+    usermod -u $UID -g $GID www-data
 
 # Instalar dependencias básicas
 RUN apt-get update && apt-get install -y \
@@ -92,10 +101,10 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Cambiar a usuario www-data
-#USER www-data
+USER www-data
 
 # Volumen solo para archivos
-VOLUME ["${DRUPAL_ROOT}/web/sites/default/files"]
+# VOLUME ["${DRUPAL_ROOT}/web/sites/default/files"]
 
 EXPOSE 80
 

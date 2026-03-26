@@ -18,9 +18,9 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-inline: auto;
-    max-width: 900px;
-    padding-inline: 20px;
-    padding-block: 10px;
+    max-width: 1000px;
+    padding-inline: 50px;
+    padding-block: 40px;
     position: relative;
     z-index: 2;
 }
@@ -166,13 +166,13 @@ ul.mb-cnu-menu li a{
 
 .img-esccol{
     max-width: 120px;
-    max-height: 70px;
+    max-height: 100px;
     width: 100%;
     height: auto;
 }
 
 .img-iqnet{
-    max-width: 315px;
+    max-width: 200px !important;
     max-height: 160px;
     width: 100%;
     height: auto;

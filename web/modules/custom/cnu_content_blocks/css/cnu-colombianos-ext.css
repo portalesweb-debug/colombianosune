@@ -1,3 +1,25 @@
+/*Ajustes*/
+
+.carousel-item-image {
+    width: 100% !important;
+    height: 220px !important; 
+    overflow: hidden !important;
+    background-color: #f0f0f0 !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.carousel-item-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 15% !important; 
+    transition: transform 0.3s ease !important;
+}
+
+.carousel-item-image img:hover {
+    transform: scale(1.03) !important;
+}
+
 .mb-cnu-content_exterior{
     max-width: 1280px;
     margin: 0 auto;
@@ -13,12 +35,12 @@
 }
 
 .mb-cnu-content_exterior-title{
+  font-size: 32px;
+  line-height: 51px;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 35px;
+  color: #00446b;
   text-align: center;
-  padding-block: 20px;
-  color: #0055A5;
+  /*padding-block: 20px;*/
 }
 
 .mb-cnu-content_exterior__carousel{
@@ -72,7 +94,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    height: 85px;
+    height: 40px;
 }
 
 .carousel-item-meta{
@@ -84,7 +106,7 @@
 
 .carousel-item-summary{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
     color: #000000;
     margin-block: 10px;
@@ -93,7 +115,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    height: 134px;
+    height: 150px;
 }
 
 .carousel-item-actions{
@@ -136,12 +158,16 @@
       filter: drop-shadow(2px 2px 2px white);
     }
 
-  #btn-swp-ext-next {
-    background-image: url(data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' fill='%23004884'/> <path d='M11 17L19.5 8.5V25.5L11 17Z' fill='white'/></svg>);
-    left: 15px;
+#btn-swp-ext-prev {
+  background-image: url('data:image/svg+xml;utf8,<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" rx="17" fill="%23004884"/><path d="M11 17L19.5 8.5V25.5L11 17Z" fill="white"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 15px;
 }
 
-#btn-swp-ext-prev {
-  background-image: url("data:image/svg+xml;utf8,<svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'> <rect width='34' height='34' rx='17' transform='matrix(-1 0 0 1 34 0)' fill='%23004884'/> <path d='M23 17L14.5 8.5V25.5L23 17Z' fill='white'/> </svg>");
+#btn-swp-ext-next {
+  background-image: url('data:image/svg+xml;utf8,<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="34" height="34" rx="17" transform="matrix(-1 0 0 1 34 0)" fill="%23004884"/><path d="M23 17L14.5 8.5V25.5L23 17Z" fill="white"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
   right: 15px;
 }

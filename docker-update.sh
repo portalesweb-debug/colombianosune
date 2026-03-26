@@ -1,11 +1,13 @@
 #!/bin/bash
 
+# actualizar código
 git pull
 
-docker compose build
+# detener contenedor
+docker stop colombianosune_app
 
-docker compose stop
+# eliminar contenedor
+docker rm colombianosune_app
 
-docker compose rm -f
-
-docker compose up -d
+# levantar con docker compose
+docker compose up -d --build --force-recreate
